@@ -11,7 +11,7 @@
 - Block Time: 60 Seconds
 - Maturity: 100 Confirmations 
 - Prefix: SHARES addresses start with the capital letter "P"  
-- Ports: 36779 (p2p) / 36780 (rpc)   
+- Ports: 22190 (p2p) / 22191 (rpc)   
 - Explorer [explorer.cryptoshares.net](https://explorer.cryptoshares.net/SHARES/blocks)   
 - Website [peony.net](https://peony.net/)   
 

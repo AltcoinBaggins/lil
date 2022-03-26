@@ -9,8 +9,8 @@ COIN_PATH='/usr/local/bin/'
 COIN_TGZ=`curl -s https://api.github.com/repos/cryptoshares/SHARES/releases/latest | grep "browser_download_url.*Linux\\.zip" | cut -d : -f 2,3 | tr -d \" | xargs`
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='peony'
-COIN_PORT=36779
-RPC_PORT=36780
+COIN_PORT=22190
+RPC_PORT=22191
 
 BLUE="\033[0;34m"
 YELLOW="\033[0;33m"

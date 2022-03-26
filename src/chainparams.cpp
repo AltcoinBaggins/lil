@@ -70,7 +70,7 @@ static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits
  */
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256S("000004c7da0d7f51dfedea7925831315afb00a41ac2fd1cba3ea54e034efd369"))
+    (0, uint256S("00000e2ef10b1a68f6cb3be6b7236c928a6b538cc363c6d83431d20da551dc1d"))
 /* //    
     (3671, uint256S("034ba66bd27cb6973999af575315e594496d4fe8ed485e550f55d12cd121214b"))
     (7343, uint256S("749af841c6d589eae6f8e001d559dd1a570ab3ac52fba19908d98ddc9007694d"))
@@ -211,7 +211,7 @@ public:
         strNetworkID = "main";
 
         // // This is used inorder to mine the genesis block. Once found, we can use the nonce and block hash found to create a valid genesis block
-        // /////////////////////////////////////////////////////////////////
+/*
 
          uint32_t nGenesisTime = 1648294666;
 
@@ -254,12 +254,12 @@ public:
 
          exit(0);
 
-        // /////////////////////////////////////////////////////////////////
+*/
 
-        genesis = CreateGenesisBlock(1648294666, 580458, 0x1e0ffff0, 1, 0 * COIN);
+        genesis = CreateGenesisBlock(1648294666, 843626, 0x1e0ffff0, 1, 0 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x000004c7da0d7f51dfedea7925831315afb00a41ac2fd1cba3ea54e034efd369"));
-        assert(genesis.hashMerkleRoot == uint256S("0xa5567533e1f5261c38b1b68fcb552f692558d820b338222777893e616bbff4d2"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000e2ef10b1a68f6cb3be6b7236c928a6b538cc363c6d83431d20da551dc1d"));
+        assert(genesis.hashMerkleRoot == uint256S("0xbdf973831136c309d99fe01de7fbdfb635c7dd51e471f94a855291d96d47aba7"));
 
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.powLimit   = ~UINT256_ZERO >> 20;   

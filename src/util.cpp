@@ -85,12 +85,12 @@
 #include <openssl/crypto.h>
 #include <openssl/rand.h>
 
-const char * const PIVX_CONF_FILENAME = "peony.conf";
-const char * const PIVX_PID_FILENAME = "peony.pid";
+const char * const PIVX_CONF_FILENAME = "cryptoshares.conf";
+const char * const PIVX_PID_FILENAME = "cryptoshares.pid";
 const char * const PIVX_MASTERNODE_CONF_FILENAME = "masternode.conf";
 
 
-// Peony only features
+// CRYPTOSHARES only features
 // Masternode
 bool fMasterNode = false;
 std::string strMasterNodePrivKey = "";
@@ -267,7 +267,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "peony";
+    const char* pszModule = "cryptoshares";
 #endif
     if (pex)
         return strprintf(
@@ -287,13 +287,13 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 
 fs::path GetDefaultDataDir()
 {
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\peony
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\peony
-// Mac: ~/Library/Application Support/peony
-// Unix: ~/.peony
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\cryptoshares
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\cryptoshares
+// Mac: ~/Library/Application Support/cryptoshares
+// Unix: ~/.cryptoshares
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Peony";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "CRYPTOSHARES";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -305,10 +305,10 @@ fs::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "Peony";
+    return pathRet / "CRYPTOSHARES";
 #else
     // Unix
-    return pathRet / ".peony";
+    return pathRet / ".cryptoshares";
 #endif
 #endif
 }
@@ -321,13 +321,13 @@ static RecursiveMutex csPathCached;
 static fs::path ZC_GetBaseParamsDir()
 {
     // Copied from GetDefaultDataDir and adapter for zcash params.
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\peonyParams
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\peonyParams
-    // Mac: ~/Library/Application Support/peonyParams
-    // Unix: ~/.peony-params
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\cryptosharesParams
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\cryptosharesParams
+    // Mac: ~/Library/Application Support/cryptosharesParams
+    // Unix: ~/.cryptoshares-params
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "PeonyParams";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "CRYPTOSHARESParams";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -339,10 +339,10 @@ static fs::path ZC_GetBaseParamsDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "PeonyParams";
+    return pathRet / "CRYPTOSHARESParams";
 #else
     // Unix
-    return pathRet / ".peony-params";
+    return pathRet / ".cryptoshares-params";
 #endif
 #endif
 }
@@ -426,7 +426,7 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
 {
     fs::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()) {
-        // Create empty peony.conf if it does not exist
+        // Create empty cryptoshares.conf if it does not exist
         FILE* configFile = fsbridge::fopen(GetConfigFile(), "a");
         if (configFile != NULL)
             fclose(configFile);
@@ -437,7 +437,7 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
     setOptions.insert("*");
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it) {
-        // Don't overwrite existing settings so command line settings override peony.conf
+        // Don't overwrite existing settings so command line settings override cryptoshares.conf
         std::string strKey = std::string("-") + it->string_key;
         std::string strValue = it->value[0];
         InterpretNegativeSetting(strKey, strValue);

@@ -15,7 +15,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.peony.Peony-Qt";
+        return @"io.cryptoshares.CRYPTOSHARES-Qt";
     } else {
         return [self __bundleIdentifier];
     }

@@ -267,11 +267,11 @@ UniValue stop(const JSONRPCRequest& jsonRequest)
     if (jsonRequest.fHelp || jsonRequest.params.size() > 1)
         throw std::runtime_error(
             "stop\n"
-            "\nStop Peony server.");
+            "\nStop CRYPTOSHARES server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "Peony server stopping";
+    return "CRYPTOSHARES server stopping";
 }
 
 
@@ -363,31 +363,31 @@ static const CRPCCommand vRPCCommands[] =
         { "hidden",             "waitforblockheight",     &waitforblockheight,     true },
 
         /* SHARES features */
-        {"peony", "listmasternodes", &listmasternodes, true },
-        {"peony", "getmasternodecount", &getmasternodecount, true },
-        {"peony", "createmasternodebroadcast", &createmasternodebroadcast, true },
-        {"peony", "decodemasternodebroadcast", &decodemasternodebroadcast, true },
-        {"peony", "relaymasternodebroadcast", &relaymasternodebroadcast, true },
-        {"peony", "masternodecurrent", &masternodecurrent, true },
-        {"peony", "startmasternode", &startmasternode, true },
-        {"peony", "createmasternodekey", &createmasternodekey, true },
-        {"peony", "getmasternodeoutputs", &getmasternodeoutputs, true },
-        {"peony", "listmasternodeconf", &listmasternodeconf, true },
-        {"peony", "getmasternodestatus", &getmasternodestatus, true },
-        {"peony", "getmasternodewinners", &getmasternodewinners, true },
-        {"peony", "getmasternodescores", &getmasternodescores, true },
-        {"peony", "preparebudget", &preparebudget, true },
-        {"peony", "submitbudget", &submitbudget, true },
-        {"peony", "mnbudgetvote", &mnbudgetvote, true },
-        {"peony", "getbudgetvotes", &getbudgetvotes, true },
-        {"peony", "getnextsuperblock", &getnextsuperblock, true },
-        {"peony", "getbudgetprojection", &getbudgetprojection, true },
-        {"peony", "getbudgetinfo", &getbudgetinfo, true },
-        {"peony", "mnbudgetrawvote", &mnbudgetrawvote, true },
-        {"peony", "mnfinalbudget", &mnfinalbudget, true },
-        {"peony", "checkbudgets", &checkbudgets, true },
-        {"peony", "mnsync", &mnsync, true },
-        {"peony", "spork", &spork, true },
+        {"cryptoshares", "listmasternodes", &listmasternodes, true },
+        {"cryptoshares", "getmasternodecount", &getmasternodecount, true },
+        {"cryptoshares", "createmasternodebroadcast", &createmasternodebroadcast, true },
+        {"cryptoshares", "decodemasternodebroadcast", &decodemasternodebroadcast, true },
+        {"cryptoshares", "relaymasternodebroadcast", &relaymasternodebroadcast, true },
+        {"cryptoshares", "masternodecurrent", &masternodecurrent, true },
+        {"cryptoshares", "startmasternode", &startmasternode, true },
+        {"cryptoshares", "createmasternodekey", &createmasternodekey, true },
+        {"cryptoshares", "getmasternodeoutputs", &getmasternodeoutputs, true },
+        {"cryptoshares", "listmasternodeconf", &listmasternodeconf, true },
+        {"cryptoshares", "getmasternodestatus", &getmasternodestatus, true },
+        {"cryptoshares", "getmasternodewinners", &getmasternodewinners, true },
+        {"cryptoshares", "getmasternodescores", &getmasternodescores, true },
+        {"cryptoshares", "preparebudget", &preparebudget, true },
+        {"cryptoshares", "submitbudget", &submitbudget, true },
+        {"cryptoshares", "mnbudgetvote", &mnbudgetvote, true },
+        {"cryptoshares", "getbudgetvotes", &getbudgetvotes, true },
+        {"cryptoshares", "getnextsuperblock", &getnextsuperblock, true },
+        {"cryptoshares", "getbudgetprojection", &getbudgetprojection, true },
+        {"cryptoshares", "getbudgetinfo", &getbudgetinfo, true },
+        {"cryptoshares", "mnbudgetrawvote", &mnbudgetrawvote, true },
+        {"cryptoshares", "mnfinalbudget", &mnfinalbudget, true },
+        {"cryptoshares", "checkbudgets", &checkbudgets, true },
+        {"cryptoshares", "mnsync", &mnsync, true },
+        {"cryptoshares", "spork", &spork, true },
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -606,7 +606,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(std::string methodname, std::string args)
 {
-    return "> peony-cli " + methodname + " " + args + "\n";
+    return "> cryptoshares-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(std::string methodname, std::string args)

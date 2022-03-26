@@ -29,8 +29,8 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called Peony (https://peonycoin.io/),
- * which enables instant payments to anyone, anywhere in the world. Peony uses peer-to-peer technology to operate
+ * This is the developer documentation of the reference client for an experimental new digital currency called CRYPTOSHARES (https://cryptosharescoin.io/),
+ * which enables instant payments to anyone, anywhere in the world. CRYPTOSHARES uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.
@@ -68,13 +68,13 @@ bool AppInit(int argc, char* argv[])
 
     // Process help and version before taking care about datadir
     if (mapArgs.count("-?") || mapArgs.count("-help") || mapArgs.count("-version")) {
-        std::string strUsage = _("Peony Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
+        std::string strUsage = _("CRYPTOSHARES Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
 
         if (mapArgs.count("-version")) {
             strUsage += LicenseInfo();
         } else {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  peonyd [options]                     " + _("Start Peony Daemon") + "\n";
+                        "  cryptosharesd [options]                     " + _("Start CRYPTOSHARES Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -110,17 +110,17 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "peony:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "cryptoshares:"))
                 fCommandLine = true;
 
         if (fCommandLine) {
-            fprintf(stderr, "Error: There is no RPC client functionality in peonyd anymore. Use the peony-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in cryptosharesd anymore. Use the cryptoshares-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32
         fDaemon = GetBoolArg("-daemon", false);
         if (fDaemon) {
-            fprintf(stdout, "Peony server starting\n");
+            fprintf(stdout, "CRYPTOSHARES server starting\n");
 
             // Daemonize
             pid_t pid = fork();
@@ -165,7 +165,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect peonyd signal handlers
+    // Connect cryptosharesd signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? 0 : 1);

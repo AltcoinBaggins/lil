@@ -1,6 +1,6 @@
-![Example-Logo](https://sappcoin.com/wp-content/uploads/2021/05/Peony-logo-with-text-transparent-600x600-1.png)
+![Example-Logo](https://sappcoin.com/wp-content/uploads/2021/05/CRYPTOSHARES-logo-with-text-transparent-600x600-1.png)
 
-# Peony Masternode Setup Guide
+# CRYPTOSHARES Masternode Setup Guide
 ***
 ## Required
 1) **SHARES collateral value at current block** ([consult the collateral table](../../README.md#rewards-breakdown))
@@ -43,14 +43,14 @@ bash masternodesetup.sh
 
 * Last thing script will ask you is to provide Masternode Genkey. Copy the one you got previously (createmasternodekey) and press enter.
 
-Remember to do `peony-cli getblockcount` to check if VPS catching blocks till it synced with chain, if not follow this procedure:
+Remember to do `cryptoshares-cli getblockcount` to check if VPS catching blocks till it synced with chain, if not follow this procedure:
 
-* Go to your wallet-qt and check peers list (tools - peers list) and select one ip from the list. With that ip do the follow command at VPS `peony-cli addnode "ip" onetry`
+* Go to your wallet-qt and check peers list (tools - peers list) and select one ip from the list. With that ip do the follow command at VPS `cryptoshares-cli addnode "ip" onetry`
 
       Example:
-		  peony-cli addnode 45.32.144.158 onetry
+		  cryptoshares-cli addnode 45.32.144.158 onetry
     
-* Check now if VPS already downloading blocks with the command `peony-cli getblockcount`, and if yes give it time now to catch last block number 
+* Check now if VPS already downloading blocks with the command `cryptoshares-cli getblockcount`, and if yes give it time now to catch last block number 
 
 Do not close your terminal/ command prompt window at this point.
 
@@ -76,9 +76,9 @@ Do not close your terminal/ command prompt window at this point.
 ***Go back to Putty***
 
 ```
-peony-cli getmasternodestatus
+cryptoshares-cli getmasternodestatus
 ```
 
 You need to get **"status" : 4** 
 
-## Congratulations your Peony node it's running
+## Congratulations your CRYPTOSHARES node it's running

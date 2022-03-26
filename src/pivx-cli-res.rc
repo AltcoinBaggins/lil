@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Peony"
-            VALUE "FileDescription",    "Peony-cli (OSS RPC client for Peony)"
+            VALUE "CompanyName",        "CRYPTOSHARES"
+            VALUE "FileDescription",    "CRYPTOSHARES-cli (OSS RPC client for CRYPTOSHARES)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "peony-cli"
+            VALUE "InternalName",       "cryptoshares-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "peony-cli.exe"
-            VALUE "ProductName",        "Peony-cli"
+            VALUE "OriginalFilename",   "cryptoshares-cli.exe"
+            VALUE "ProductName",        "CRYPTOSHARES-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

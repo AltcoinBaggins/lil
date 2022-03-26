@@ -11,10 +11,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both peonyd and peony-qt, to make it harder for attackers to
+ * for both cryptosharesd and cryptoshares-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Peony Core");
+const std::string CLIENT_NAME("CRYPTOSHARES Core");
 
 /**
  * Client version number

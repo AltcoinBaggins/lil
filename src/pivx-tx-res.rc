@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Peony"
-            VALUE "FileDescription",    "peony-tx (CLI Peony transaction editor utility)"
+            VALUE "CompanyName",        "CRYPTOSHARES"
+            VALUE "FileDescription",    "cryptoshares-tx (CLI CRYPTOSHARES transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "peony-tx"
+            VALUE "InternalName",       "cryptoshares-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "peony-tx.exe"
-            VALUE "ProductName",        "peony-tx"
+            VALUE "OriginalFilename",   "cryptoshares-tx.exe"
+            VALUE "ProductName",        "cryptoshares-tx"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

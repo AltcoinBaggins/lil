@@ -5,10 +5,10 @@
 """Test bitcoind with different proxy configuration.
 
 Test plan:
-- Start peonyd's with different proxy configurations
+- Start cryptosharesd's with different proxy configurations
 - Use addnode to initiate connections
 - Verify that proxies are connected to, and the right connection command is given
-- Proxy configurations to test on peonyd side:
+- Proxy configurations to test on cryptosharesd side:
     - `-proxy` (proxy everything)
     - `-onion` (proxy just onions)
     - `-proxyrandomize` Circuit randomization
@@ -18,8 +18,8 @@ Test plan:
     - proxy on IPv6
 
 - Create various proxies (as threads)
-- Create peonyds that connect to them
-- Manipulate the peonyds using addnode (onetry) an observe effects
+- Create cryptosharesds that connect to them
+- Manipulate the cryptosharesds using addnode (onetry) an observe effects
 
 addnode connect to IPv4
 addnode connect to IPv6

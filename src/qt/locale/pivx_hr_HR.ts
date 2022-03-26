@@ -880,16 +880,16 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
         <translation>verzija</translation>
     </message>
     <message>
-        <source>Peony</source>
-        <translation>Peony</translation>
+        <source>CRYPTOSHARES</source>
+        <translation>CRYPTOSHARES</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Peony</source>
-        <translation>O Peony-u</translation>
+        <source>About CRYPTOSHARES</source>
+        <translation>O CRYPTOSHARES-u</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -943,16 +943,16 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
         <translation>Dobrodošli</translation>
     </message>
     <message>
-        <source>Welcome to Peony.</source>
-        <translation>Dobrodošli u Peony.</translation>
+        <source>Welcome to CRYPTOSHARES.</source>
+        <translation>Dobrodošli u CRYPTOSHARES.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Peony will store its data.</source>
-        <translation>Budući da je prvi put pokrenut program, možete odabrati gdje će Peony pohraniti svoje podatke.</translation>
+        <source>As this is the first time the program is launched, you can choose where CRYPTOSHARES will store its data.</source>
+        <translation>Budući da je prvi put pokrenut program, možete odabrati gdje će CRYPTOSHARES pohraniti svoje podatke.</translation>
     </message>
     <message>
-        <source>Peony will download and store a copy of the SHARES block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Peony preuzima i pohranjuje kopiju SHARES blok-lanca. Barem će %1GB podataka biti pohranjeno u ovom direktoriju i to će s vremenom rasti. Novčanik će također biti pohranjena u ovom direktoriju.</translation>
+        <source>CRYPTOSHARES will download and store a copy of the SHARES block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>CRYPTOSHARES preuzima i pohranjuje kopiju SHARES blok-lanca. Barem će %1GB podataka biti pohranjeno u ovom direktoriju i to će s vremenom rasti. Novčanik će također biti pohranjena u ovom direktoriju.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -971,8 +971,8 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
         <translation>OK</translation>
     </message>
     <message>
-        <source>Peony</source>
-        <translation>Peony</translation>
+        <source>CRYPTOSHARES</source>
+        <translation>CRYPTOSHARES</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1286,7 +1286,7 @@ Molimo pričekajte nekoliko minuta (zalog za Masternode zahtjeva %1 potvrda).</t
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the peony.conf file
+You will only have to paste the data in the cryptoshares.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1294,7 +1294,7 @@ this controller wallet (select the Masternode in the list and press "start").
 na udaljenom poslužitelju u medjuspremnik.
 
 
-Podatke ćete morati zalijepiti u datoteku peony.conf
+Podatke ćete morati zalijepiti u datoteku cryptoshares.conf
 na udaljenom poslužitelju i pokrenuti ga, a zatim pokrenite Masternode
 koristeći ovaj controller novčanik (na popisu odaberite Masternode i pritisnite "start").
 </translation>
@@ -1474,8 +1474,8 @@ NODEOVI</translation>
         <translation>Parsirani podaci preveliki</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "peony" prefix</source>
-        <translation>Nevažeći URI, ne počinje "peony" prefiksom</translation>
+        <source>Invalid URI, not starting with "cryptoshares" prefix</source>
+        <translation>Nevažeći URI, ne počinje "cryptoshares" prefiksom</translation>
     </message>
 </context>
 <context>
@@ -1769,8 +1769,8 @@ NODEOVI</translation>
 <context>
     <name>PIVXGUI</name>
     <message>
-        <source>Peony</source>
-        <translation>Peony</translation>
+        <source>CRYPTOSHARES</source>
+        <translation>CRYPTOSHARES</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1797,8 +1797,8 @@ NODEOVI</translation>
         <translation>Napusti aplikaciju</translation>
     </message>
     <message>
-        <source>Peony client</source>
-        <translation>Peony Klijent</translation>
+        <source>CRYPTOSHARES client</source>
+        <translation>CRYPTOSHARES Klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1864,8 +1864,8 @@ Adresa: %4
         <translation>Nevažeća adresa za plaćanje %1</translation>
     </message>
     <message>
-        <source>Cannot start peony: click-to-pay handler</source>
-        <translation>Ne može se pokrenuti peony: clik-to-pay handler</translation>
+        <source>Cannot start cryptoshares: click-to-pay handler</source>
+        <translation>Ne može se pokrenuti cryptoshares: clik-to-pay handler</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid SHARES address or malformed URI parameters.</source>
@@ -2006,8 +2006,8 @@ Adresa: %4
         <translation>Dogodila se fatalna pogreška. SHARES ne može sigurno nastaviti i izaći će.</translation>
     </message>
     <message>
-        <source>Peony</source>
-        <translation>Peony</translation>
+        <source>CRYPTOSHARES</source>
+        <translation>CRYPTOSHARES</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -2026,8 +2026,8 @@ Adresa: %4
         <translation>Greška pri čitanju masternode konfiguracijske datoteke: %1</translation>
     </message>
     <message>
-        <source>Peony didn't yet exit safely...</source>
-        <translation>Peony nije ugašen sigurno...</translation>
+        <source>CRYPTOSHARES didn't yet exit safely...</source>
+        <translation>CRYPTOSHARES nije ugašen sigurno...</translation>
     </message>
     <message>
         <source>Contact</source>
@@ -3441,8 +3441,8 @@ Došlo je do greške prilikom spremanja popisa adresa u %1. Molimo pokušajte po
         <translation>2) Zašto se moji SHARES ne mogu potrošiti?</translation>
     </message>
     <message>
-        <source>https://peonycoin.io/</source>
-        <translation>https://peonycoin.io/</translation>
+        <source>https://cryptosharescoin.io/</source>
+        <translation>https://cryptosharescoin.io/</translation>
     </message>
     <message>
         <source>1</source>
@@ -3590,7 +3590,7 @@ da biste vidjeli i mogli potrošiti sredstva na mreži.
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Masternode je računalo koje pokreće full node Peony novčanik sa
+Masternode je računalo koje pokreće full node CRYPTOSHARES novčanik sa
 zahtjevanih 10,000 SHARES-a osiguranog zaloga da pruži dodatne usluge
 mreži, i zauzvrat redovito primi dio nagrade blokova.
 Te usluge uključuju:
@@ -3742,8 +3742,8 @@ Zahtjevi:
         <translation>Ne može se otvoriti mapa sigurnosne kopije</translation>
     </message>
     <message>
-        <source>Unable to open peony.conf with default application</source>
-        <translation>Nije moguće otvoriti peony.conf sa zadanom aplikacijom</translation>
+        <source>Unable to open cryptoshares.conf with default application</source>
+        <translation>Nije moguće otvoriti cryptoshares.conf sa zadanom aplikacijom</translation>
     </message>
     <message>
         <source>In:</source>
@@ -4360,8 +4360,8 @@ Jeste li sigurni?
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Peony is shutting down...</source>
-        <translation>Peony se zatvara...</translation>
+        <source>CRYPTOSHARES is shutting down...</source>
+        <translation>CRYPTOSHARES se zatvara...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -4390,8 +4390,8 @@ Jeste li sigurni?
         <translation>Učitavanje...</translation>
     </message>
     <message>
-        <source>Peony</source>
-        <translation>Peony</translation>
+        <source>CRYPTOSHARES</source>
+        <translation>CRYPTOSHARES</translation>
     </message>
 </context>
 <context>
@@ -4900,9 +4900,9 @@ se nova sigurnosna kopija.
     </message>
     <message>
         <source>Welcome to
-Peony Wallet</source>
+CRYPTOSHARES Wallet</source>
         <translation>Dobrodošli u
-        Peony temeljni novčanik</translation>
+        CRYPTOSHARES temeljni novčanik</translation>
     </message>
     <message>
         <source>SHARES is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
@@ -4952,8 +4952,8 @@ Peony Wallet</source>
         <translation>Pridržavajte se na navedenu adresu da biste slušali veze JSON-RPC. Koristite [host]: port notation za IPv6. Ova se opcija može odrediti više puta (zadano: vezati se na sva sučelja)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Peony is probably already running.</source>
-        <translation>Nije moguće dobiti zaključavanje na direktoriju podataka %s. Peony vjerojatno već radi.</translation>
+        <source>Cannot obtain a lock on data directory %s. CRYPTOSHARES is probably already running.</source>
+        <translation>Nije moguće dobiti zaključavanje na direktoriju podataka %s. CRYPTOSHARES vjerojatno već radi.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -5112,8 +5112,8 @@ Peony Wallet</source>
         <translation>Ukupna duljina teksta mrežne verzije (%i) prelazi maksimalnu duljinu (%i). Smanjite broj ili veličinu uacommentsa.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Peony is probably already running.</source>
-        <translation>Nije moguće vezati se na %s na ovom računalu. Peony vjerojatno već radi.</translation>
+        <source>Unable to bind to %s on this computer. CRYPTOSHARES is probably already running.</source>
+        <translation>Nije moguće vezati se na %s na ovom računalu. CRYPTOSHARES vjerojatno već radi.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5128,8 +5128,8 @@ Peony Wallet</source>
         <translation>Upozorenje: -paytxfee je vrlo visoka! To je transakcijska naknada koju ćete platiti ako šaljete transakciju.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Peony will not work properly.</source>
-        <translation>Upozorenje: Provjerite jesu li datum i vrijeme vašeg računala točni! Ako je vaš sat pogrešan, Peony neće raditi ispravno.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong CRYPTOSHARES will not work properly.</source>
+        <translation>Upozorenje: Provjerite jesu li datum i vrijeme vašeg računala točni! Ako je vaš sat pogrešan, CRYPTOSHARES neće raditi ispravno.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5337,8 +5337,8 @@ Peony Wallet</source>
         <translation>Informacije</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Peony is shutting down.</source>
-        <translation>Provjera ispravnosti inicijalizacije nije uspjela. Peony se zatvara.</translation>
+        <source>Initialization sanity check failed. CRYPTOSHARES is shutting down.</source>
+        <translation>Provjera ispravnosti inicijalizacije nije uspjela. CRYPTOSHARES se zatvara.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -5625,8 +5625,8 @@ Peony Wallet</source>
         <translation>Priprema za resinkronizaciju...</translation>
     </message>
     <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong Peony will not work properly.</source>
-        <translation>Provjerite jesu li datum i vrijeme vašeg računala točni! Ako je vaš sat pogrešan, Peony neće raditi ispravno.</translation>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong CRYPTOSHARES will not work properly.</source>
+        <translation>Provjerite jesu li datum i vrijeme vašeg računala točni! Ako je vaš sat pogrešan, CRYPTOSHARES neće raditi ispravno.</translation>
     </message>
     <message>
         <source>Specify location of debug log file: this can be an absolute path or a path relative to the data directory (default: %s)</source>
@@ -5959,8 +5959,8 @@ Peony Wallet</source>
         <translation>Novčanik %s nalazi se izvan direktorija podataka %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Peony to complete</source>
-        <translation>Potrebno je prepisati novčanik: ponovo pokrenite Peony</translation>
+        <source>Wallet needed to be rewritten: restart CRYPTOSHARES to complete</source>
+        <translation>Potrebno je prepisati novčanik: ponovo pokrenite CRYPTOSHARES</translation>
     </message>
     <message>
         <source>Wallet options:</source>

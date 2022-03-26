@@ -7,11 +7,11 @@ then
 fi
 
 # Clone code from official Github repository
-    rm -rf peony
-    git clone https://github.com/PeonyTeam/peony
+    rm -rf cryptoshares
+    git clone https://github.com/cryptoshares/cryptoshares
 
 # Entering directory
-    cd peony
+    cd cryptoshares
 
 # Compile dependencies
     cd depends
@@ -31,6 +31,6 @@ fi
     cd ..
 
 # Create zip file of binaries
-    cp peony/src/peonyd peony/src/peony-cli peony/src/peony-tx peony/src/qt/peony-qt peony/Peony-Core.dmg .
-    zip SHARES-MacOS.zip peonyd peony-cli peony-tx peony-qt Peony-Core.dmg
-    rm -f peonyd peony-cli peony-tx peony-qt Peony-Core.dmg
+    cp cryptoshares/src/cryptosharesd cryptoshares/src/cryptoshares-cli cryptoshares/src/cryptoshares-tx cryptoshares/src/qt/cryptoshares-qt cryptoshares/CRYPTOSHARES-Core.dmg .
+    zip SHARES-MacOS.zip cryptosharesd cryptoshares-cli cryptoshares-tx cryptoshares-qt CRYPTOSHARES-Core.dmg
+    rm -f cryptosharesd cryptoshares-cli cryptoshares-tx cryptoshares-qt CRYPTOSHARES-Core.dmg

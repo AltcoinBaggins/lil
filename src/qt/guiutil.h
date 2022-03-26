@@ -44,7 +44,7 @@ public:
     GUIException(const std::string &message) : message(message) {}
 };
 
-/** Utility functions used by the Peony Qt UI.
+/** Utility functions used by the CRYPTOSHARES Qt UI.
  */
 namespace GUIUtil
 {
@@ -69,7 +69,7 @@ void setupAmountWidget(QLineEdit* widget, QWidget* parent);
 // Update the cursor of the widget after a text change
 void updateWidgetTextAndCursorPosition(QLineEdit* widget, const QString& str);
 
-// Parse "peony:" URI into recipient object, return true on successful parsing
+// Parse "cryptoshares:" URI into recipient object, return true on successful parsing
 bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out);
 bool parseBitcoinURI(QString uri, SendCoinsRecipient* out);
 QString formatBitcoinURI(const SendCoinsRecipient& info);
@@ -138,7 +138,7 @@ bool isObscured(QWidget* w);
 // Open debug.log
 bool openDebugLogfile();
 
-// Open peony.conf
+// Open cryptoshares.conf
 bool openConfigfile();
 
 // Open masternode.conf

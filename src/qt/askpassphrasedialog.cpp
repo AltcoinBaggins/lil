@@ -349,7 +349,7 @@ void AskPassphraseDialog::warningMessage()
     openStandardDialog(
             tr("Wallet encrypted"),
             "<qt>" +
-            tr("Peony will close now to finish the encryption process. "
+            tr("CRYPTOSHARES will close now to finish the encryption process. "
                "Remember that encrypting your wallet cannot fully protect "
                "your SHARESs from being stolen by malware infecting your computer.") +
             "<br><br><b>" +

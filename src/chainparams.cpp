@@ -350,15 +350,15 @@ public:
         pchMessageStart[3] = 0x1a;
         nDefaultPort = 22190;
 
-        vSeeds.push_back(CDNSSeedData("seeder", "seeder.peony.net"));
-	    vSeeds.push_back(CDNSSeedData("seed1", "seed1.peony.net"));
-        vSeeds.push_back(CDNSSeedData("seed2", "seed2.peony.net"));
-        vSeeds.push_back(CDNSSeedData("seed3", "seed3.peony.net"));
-        vSeeds.push_back(CDNSSeedData("seed4", "seed4.peony.net"));
-	    vSeeds.push_back(CDNSSeedData("seed5", "seed5.peony.net"));
-	    vSeeds.push_back(CDNSSeedData("seed6", "seed6.peony.net"));
-	    vSeeds.push_back(CDNSSeedData("seed7", "seed7.peony.net"));
-	    vSeeds.push_back(CDNSSeedData("seed8", "seed8.peony.net"));
+        vSeeds.push_back(CDNSSeedData("seeder", "seeder.cryptoshares.net"));
+	    vSeeds.push_back(CDNSSeedData("seed1", "seed1.cryptoshares.net"));
+        vSeeds.push_back(CDNSSeedData("seed2", "seed2.cryptoshares.net"));
+        vSeeds.push_back(CDNSSeedData("seed3", "seed3.cryptoshares.net"));
+        vSeeds.push_back(CDNSSeedData("seed4", "seed4.cryptoshares.net"));
+	    vSeeds.push_back(CDNSSeedData("seed5", "seed5.cryptoshares.net"));
+	    vSeeds.push_back(CDNSSeedData("seed6", "seed6.cryptoshares.net"));
+	    vSeeds.push_back(CDNSSeedData("seed7", "seed7.cryptoshares.net"));
+	    vSeeds.push_back(CDNSSeedData("seed8", "seed8.cryptoshares.net"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63);     // S
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 28);     // C
@@ -397,7 +397,7 @@ public:
         //assert(genesis.hashMerkleRoot == uint256S("0x1b2ef6e2f28be914103a277377ae7729dcd125dfeb8bf97bd5964ba72b6dc39b"));
 
         consensus.fPowAllowMinDifficultyBlocks = true;
-        consensus.powLimit   = ~UINT256_ZERO >> 20;   // peony starting difficulty is 1 / 2^12
+        consensus.powLimit   = ~UINT256_ZERO >> 20;   // cryptoshares starting difficulty is 1 / 2^12
         consensus.posLimitV1 = ~UINT256_ZERO >> 24;
         consensus.posLimitV2 = ~UINT256_ZERO >> 20;
         consensus.nBudgetCycleBlocks = 144;         // approx 10 cycles per day
@@ -483,24 +483,24 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.push_back(CDNSSeedData("tseeder", "tseeder.peony.net"));
-	    vSeeds.push_back(CDNSSeedData("tseed1", "tseed1.peony.net"));
-        vSeeds.push_back(CDNSSeedData("tseed2", "tseed2.peony.net"));
-        vSeeds.push_back(CDNSSeedData("tseed3", "tseed3.peony.net"));
-        vSeeds.push_back(CDNSSeedData("tseed4", "tseed4.peony.net"));
-	    vSeeds.push_back(CDNSSeedData("tseed5", "tseed5.peony.net"));
-	    vSeeds.push_back(CDNSSeedData("tseed6", "tseed6.peony.net"));
-	    vSeeds.push_back(CDNSSeedData("tseed7", "tseed7.peony.net"));
-	    vSeeds.push_back(CDNSSeedData("tseed8", "tseed8.peony.net"));
+        vSeeds.push_back(CDNSSeedData("tseeder", "tseeder.cryptoshares.net"));
+	    vSeeds.push_back(CDNSSeedData("tseed1", "tseed1.cryptoshares.net"));
+        vSeeds.push_back(CDNSSeedData("tseed2", "tseed2.cryptoshares.net"));
+        vSeeds.push_back(CDNSSeedData("tseed3", "tseed3.cryptoshares.net"));
+        vSeeds.push_back(CDNSSeedData("tseed4", "tseed4.cryptoshares.net"));
+	    vSeeds.push_back(CDNSSeedData("tseed5", "tseed5.cryptoshares.net"));
+	    vSeeds.push_back(CDNSSeedData("tseed6", "tseed6.cryptoshares.net"));
+	    vSeeds.push_back(CDNSSeedData("tseed7", "tseed7.cryptoshares.net"));
+	    vSeeds.push_back(CDNSSeedData("tseed8", "tseed8.cryptoshares.net"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet peony addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet peony script addresses start with '8' or '9'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet cryptoshares addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet cryptoshares script addresses start with '8' or '9'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        // Testnet peony BIP32 pubkeys start with 'DRKV'
+        // Testnet cryptoshares BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet peony BIP32 prvkeys start with 'DRKP'
+        // Testnet cryptoshares BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet peony BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet cryptoshares BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
@@ -530,7 +530,7 @@ public:
         //assert(genesis.hashMerkleRoot == uint256S("0x1b2ef6e2f28be914103a277377ae7729dcd125dfeb8bf97bd5964ba72b6dc39b"));
 
         consensus.fPowAllowMinDifficultyBlocks = true;
-        consensus.powLimit   = ~UINT256_ZERO >> 20;   // peony starting difficulty is 1 / 2^12
+        consensus.powLimit   = ~UINT256_ZERO >> 20;   // cryptoshares starting difficulty is 1 / 2^12
         consensus.posLimitV1 = ~UINT256_ZERO >> 24;
         consensus.posLimitV2 = ~UINT256_ZERO >> 20;
         consensus.nBudgetCycleBlocks = 144;         // approx 10 cycles per day

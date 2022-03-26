@@ -72,7 +72,7 @@ extern double NSAppKitVersionNumber;
 #endif
 #endif
 
-#define URI_SCHEME "peony"
+#define URI_SCHEME "cryptoshares"
 
 #if defined(Q_OS_MAC)
 #pragma GCC diagnostic push
@@ -209,9 +209,9 @@ bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient* out)
 {
-    // Convert peony:// to peony:
+    // Convert cryptoshares:// to cryptoshares:
     //
-    //    Cannot handle this later, because peony:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because cryptoshares:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
     if (uri.startsWith(URI_SCHEME "://", Qt::CaseInsensitive)) {
         uri.replace(0, std::strlen(URI_SCHEME) + 3, URI_SCHEME ":");
@@ -630,12 +630,12 @@ bool DHMSTableWidgetItem::operator<(QTableWidgetItem const& item) const
 #ifdef WIN32
 fs::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "peony.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "cryptoshares.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for peony.lnk
+    // check for cryptoshares.lnk
     return fs::exists(StartupShortcutPath());
 }
 
@@ -707,7 +707,7 @@ fs::path static GetAutostartDir()
 
 fs::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "peony.desktop";
+    return GetAutostartDir() / "cryptoshares.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -743,10 +743,10 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         fs::ofstream optionFile(GetAutostartFilePath(), std::ios_base::out | std::ios_base::trunc);
         if (!optionFile.good())
             return false;
-        // Write a peony.desktop file to the autostart directory:
+        // Write a cryptoshares.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=Peony\n";
+        optionFile << "Name=CRYPTOSHARES\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";
@@ -762,7 +762,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
 LSSharedFileListItemRef findStartupItemInList(LSSharedFileListRef list, CFURLRef findUrl);
 LSSharedFileListItemRef findStartupItemInList(LSSharedFileListRef list, CFURLRef findUrl)
 {
-    // loop through the list of startup items and try to find the peony app
+    // loop through the list of startup items and try to find the cryptoshares app
     CFArrayRef listSnapshot = LSSharedFileListCopySnapshot(list, NULL);
     for (int i = 0; i < CFArrayGetCount(listSnapshot); i++) {
         LSSharedFileListItemRef item = (LSSharedFileListItemRef)CFArrayGetValueAtIndex(listSnapshot, i);
@@ -807,7 +807,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
     LSSharedFileListItemRef foundItem = findStartupItemInList(loginItems, bitcoinAppUrl);
 
     if (fAutoStart && !foundItem) {
-        // add peony app to startup item list
+        // add cryptoshares app to startup item list
         LSSharedFileListInsertItemURL(loginItems, kLSSharedFileListItemBeforeFirst, NULL, NULL, bitcoinAppUrl, NULL, NULL);
     } else if (!fAutoStart && foundItem) {
         // remove item

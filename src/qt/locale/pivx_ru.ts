@@ -895,16 +895,16 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>версия</translation>
     </message>
     <message>
-        <source>Peony</source>
-        <translation>Peony</translation>
+        <source>CRYPTOSHARES</source>
+        <translation>CRYPTOSHARES</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-бит)</translation>
     </message>
     <message>
-        <source>About Peony</source>
-        <translation>О Peony</translation>
+        <source>About CRYPTOSHARES</source>
+        <translation>О CRYPTOSHARES</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -958,16 +958,16 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>Добро пожаловать</translation>
     </message>
     <message>
-        <source>Welcome to Peony.</source>
-        <translation>Добро пожаловать в Peony.</translation>
+        <source>Welcome to CRYPTOSHARES.</source>
+        <translation>Добро пожаловать в CRYPTOSHARES.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Peony will store its data.</source>
-        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные Peony.</translation>
+        <source>As this is the first time the program is launched, you can choose where CRYPTOSHARES will store its data.</source>
+        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные CRYPTOSHARES.</translation>
     </message>
     <message>
-        <source>Peony will download and store a copy of the SHARES block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Peony загрузит и сохранит копию цепочки блоков SHARES. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
+        <source>CRYPTOSHARES will download and store a copy of the SHARES block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>CRYPTOSHARES загрузит и сохранит копию цепочки блоков SHARES. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -986,8 +986,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>ХОРОШО</translation>
     </message>
     <message>
-        <source>Peony</source>
-        <translation>Peony</translation>
+        <source>CRYPTOSHARES</source>
+        <translation>CRYPTOSHARES</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1316,7 +1316,7 @@ Please wait few more minutes (masternode collaterals require %1 confirmations).<
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the peony.conf file
+You will only have to paste the data in the cryptoshares.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1324,7 +1324,7 @@ this controller wallet (select the Masternode in the list and press "start").
 на удаленном сервере в буфер обмена.
 
 
-Вам необходимо только вставить данные в файл peony.conf
+Вам необходимо только вставить данные в файл cryptoshares.conf
 вашего удаленного сервера и запустить его, а затем запустить мастерноду,
 используя этот кошелек контроллера (выберите мастерноду из списка и нажмите «Старт»).
 </translation>
@@ -1508,8 +1508,8 @@ NODES</source>
         <translation>Проанализированные данные слишком большие</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "peony" prefix</source>
-        <translation>Неверный URI, не начинается с префикса "peony"</translation>
+        <source>Invalid URI, not starting with "cryptoshares" prefix</source>
+        <translation>Неверный URI, не начинается с префикса "cryptoshares"</translation>
     </message>
 </context>
 <context>
@@ -1803,8 +1803,8 @@ NODES</source>
 <context>
     <name>PIVXGUI</name>
     <message>
-        <source>Peony</source>
-        <translation>Peony</translation>
+        <source>CRYPTOSHARES</source>
+        <translation>CRYPTOSHARES</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1831,8 +1831,8 @@ NODES</source>
         <translation>Завершить работу</translation>
     </message>
     <message>
-        <source>Peony client</source>
-        <translation>Клиент Peony</translation>
+        <source>CRYPTOSHARES client</source>
+        <translation>Клиент CRYPTOSHARES</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1898,8 +1898,8 @@ Address: %4
         <translation>Неверный адрес оплаты %1</translation>
     </message>
     <message>
-        <source>Cannot start peony: click-to-pay handler</source>
-        <translation>Не удалось запустить peony: обработчик click-to-pay </translation>
+        <source>Cannot start cryptoshares: click-to-pay handler</source>
+        <translation>Не удалось запустить cryptoshares: обработчик click-to-pay </translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid SHARES address or malformed URI parameters.</source>
@@ -2036,8 +2036,8 @@ Address: %4
         <translation>Произошла фатальная ошибка. SHARES больше не может безопасно продолжать работу и завершит работу.</translation>
     </message>
     <message>
-        <source>Peony</source>
-        <translation>Peony</translation>
+        <source>CRYPTOSHARES</source>
+        <translation>CRYPTOSHARES</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -2056,8 +2056,8 @@ Address: %4
         <translation>Ошибка чтения файла конфигурации мастерноды: %1</translation>
     </message>
     <message>
-        <source>Peony didn't yet exit safely...</source>
-        <translation>Peony еще не вышел безопасно...</translation>
+        <source>CRYPTOSHARES didn't yet exit safely...</source>
+        <translation>CRYPTOSHARES еще не вышел безопасно...</translation>
     </message>
     <message>
         <source>Contact</source>
@@ -3509,8 +3509,8 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <translation>2) Почему мои SHARES невозможно потратить?</translation>
     </message>
     <message>
-        <source>https://peonycoin.io/</source>
-        <translation>https://peonycoin.io/</translation>
+        <source>https://cryptosharescoin.io/</source>
+        <translation>https://cryptosharescoin.io/</translation>
     </message>
     <message>
         <source>1</source>
@@ -3803,8 +3803,8 @@ SHARES использует консенсус PoS (Proof of Stake), позво�
         <translation>Невозможно открыть папку резервных копий</translation>
     </message>
     <message>
-        <source>Unable to open peony.conf with default application</source>
-        <translation>Невозможно открыть peony.conf с приложением по умолчанию</translation>
+        <source>Unable to open cryptoshares.conf with default application</source>
+        <translation>Невозможно открыть cryptoshares.conf с приложением по умолчанию</translation>
     </message>
     <message>
         <source>In:</source>
@@ -4465,8 +4465,8 @@ Are you sure?
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Peony is shutting down...</source>
-        <translation>Peony выключается...</translation>
+        <source>CRYPTOSHARES is shutting down...</source>
+        <translation>CRYPTOSHARES выключается...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -4495,8 +4495,8 @@ Are you sure?
         <translation>Загрузка...</translation>
     </message>
     <message>
-        <source>Peony</source>
-        <translation>Peony</translation>
+        <source>CRYPTOSHARES</source>
+        <translation>CRYPTOSHARES</translation>
     </message>
 </context>
 <context>
@@ -5014,9 +5014,9 @@ Select fewer inputs with coin control.</source>
     </message>
     <message>
         <source>Welcome to
-Peony Wallet</source>
+CRYPTOSHARES Wallet</source>
         <translation>Добро пожаловать
-в основной кошелек Peony</translation>
+в основной кошелек CRYPTOSHARES</translation>
     </message>
     <message>
         <source>SHARES is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
@@ -5066,8 +5066,8 @@ Peony Wallet</source>
         <translation>Привяжите к указанному адресу для прослушивания соединений JSON-RPC. Используйте [host]: обозначение порта для IPv6. Эта опция может быть указана несколько раз (по умолчанию: привязка ко всем интерфейсам)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Peony is probably already running.</source>
-        <translation>Не удается получить блокировку в каталоге данных %s. Peony, вероятно, уже запущен.</translation>
+        <source>Cannot obtain a lock on data directory %s. CRYPTOSHARES is probably already running.</source>
+        <translation>Не удается получить блокировку в каталоге данных %s. CRYPTOSHARES, вероятно, уже запущен.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -5226,8 +5226,8 @@ Peony Wallet</source>
         <translation>Общая длина строки версии сети (%i) превышает максимальную длину (%i). Уменьшите количество или размер uacomments.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Peony is probably already running.</source>
-        <translation>Не удалось привязать к %s на этом компьютере. Peony, вероятно, уже запущен.</translation>
+        <source>Unable to bind to %s on this computer. CRYPTOSHARES is probably already running.</source>
+        <translation>Не удалось привязать к %s на этом компьютере. CRYPTOSHARES, вероятно, уже запущен.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5242,8 +5242,8 @@ Peony Wallet</source>
         <translation>Предупреждение: -paytxfee установлен очень высоко! Это комиссия за транзакцию, которую вы заплатите, если вы отправляете транзакцию.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Peony will not work properly.</source>
-        <translation>Внимание: проверьте правильность даты и времени вашего компьютера! Если ваши часы ошибочны, Peony не будет работать должным образом.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong CRYPTOSHARES will not work properly.</source>
+        <translation>Внимание: проверьте правильность даты и времени вашего компьютера! Если ваши часы ошибочны, CRYPTOSHARES не будет работать должным образом.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5450,8 +5450,8 @@ Peony Wallet</source>
         <translation>Информация</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Peony is shutting down.</source>
-        <translation>Инициализация проверки работоспособности не удалась. Peony отключается.</translation>
+        <source>Initialization sanity check failed. CRYPTOSHARES is shutting down.</source>
+        <translation>Инициализация проверки работоспособности не удалась. CRYPTOSHARES отключается.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -5774,8 +5774,8 @@ Peony Wallet</source>
         <translation>Минимальная положительная сумма (в SHARES), разрешенная GUI и RPC для порога разделения стекинга (по умолчанию: %s)</translation>
     </message>
     <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong Peony will not work properly.</source>
-        <translation>Пожалуйста, проверьте правильность даты и времени на вашем компьютере! Если ваши часы не точны, Peony не будет работать должным образом.</translation>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong CRYPTOSHARES will not work properly.</source>
+        <translation>Пожалуйста, проверьте правильность даты и времени на вашем компьютере! Если ваши часы не точны, CRYPTOSHARES не будет работать должным образом.</translation>
     </message>
     <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect/-noconnect)</source>
@@ -6180,8 +6180,8 @@ Peony Wallet</source>
         <translation>Кошелек %s находится за пределами каталога данных %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Peony to complete</source>
-        <translation>Кошелек необходимо переписать: перезапустите Peony, чтобы завершить</translation>
+        <source>Wallet needed to be rewritten: restart CRYPTOSHARES to complete</source>
+        <translation>Кошелек необходимо переписать: перезапустите CRYPTOSHARES, чтобы завершить</translation>
     </message>
     <message>
         <source>Wallet options:</source>

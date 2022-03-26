@@ -1,9 +1,9 @@
 #!/usr/bin/make -f
 # -*- mode: makefile; coding: utf-8 -*-
 
-#DEB_MAKE_CHECK_TARGET = test_peony
+#DEB_MAKE_CHECK_TARGET = test_cryptoshares
 #build/bitcoind::
-#	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_peony)
+#	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_cryptoshares)
 
 DEB_INSTALL_EXAMPLES_bitcoind += debian/examples/*
 DEB_INSTALL_MANPAGES_bitcoind += debian/manpages/*

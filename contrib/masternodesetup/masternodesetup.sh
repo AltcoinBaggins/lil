@@ -1,14 +1,14 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='peony.conf'
-CONFIGFOLDER='/root/.peony'
-COIN_DAEMON='peonyd'
-COIN_CLI='peony-cli'
+CONFIG_FILE='cryptoshares.conf'
+CONFIGFOLDER='/root/.cryptoshares'
+COIN_DAEMON='cryptosharesd'
+COIN_CLI='cryptoshares-cli'
 COIN_PATH='/usr/local/bin/'
 COIN_TGZ=`curl -s https://api.github.com/repos/cryptoshares/SHARES/releases/latest | grep "browser_download_url.*Linux\\.zip" | cut -d : -f 2,3 | tr -d \" | xargs`
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='peony'
+COIN_NAME='cryptoshares'
 COIN_PORT=22190
 RPC_PORT=22191
 

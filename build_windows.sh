@@ -12,11 +12,11 @@ fi
 	echo "1" | sudo update-alternatives --config x86_64-w64-mingw32-g++
 
 # Clone code from official Github repository
-	rm -rf peony
-	git clone https://github.com/PeonyTeam/peony
+	rm -rf cryptoshares
+	git clone https://github.com/cryptoshares/cryptoshares
 
 # Entering directory
-	cd peony
+	cd cryptoshares
 
 # Compile dependencies
 	cd depends
@@ -30,6 +30,6 @@ fi
 	cd ..
 
 # Create zip file of binaries
-	cp peony/src/peonyd.exe peony/src/peony-cli.exe peony/src/peony-tx.exe peony/src/qt/peony-qt.exe .
-	zip SHARES-Windows.zip peonyd.exe peony-cli.exe peony-tx.exe peony-qt.exe
-	rm -f peonyd.exe peony-cli.exe peony-tx.exe peony-qt.exe
+	cp cryptoshares/src/cryptosharesd.exe cryptoshares/src/cryptoshares-cli.exe cryptoshares/src/cryptoshares-tx.exe cryptoshares/src/qt/cryptoshares-qt.exe .
+	zip SHARES-Windows.zip cryptosharesd.exe cryptoshares-cli.exe cryptoshares-tx.exe cryptoshares-qt.exe
+	rm -f cryptosharesd.exe cryptoshares-cli.exe cryptoshares-tx.exe cryptoshares-qt.exe

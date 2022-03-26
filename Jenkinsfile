@@ -3,8 +3,8 @@ pipeline {
     agent any
 
     environment {
-        NAME = 'Peony'
-        BASE_NAME = 'peony'
+        NAME = 'CRYPTOSHARES'
+        BASE_NAME = 'cryptoshares'
         ZIP_NAME = 'SHARES'
     }
 

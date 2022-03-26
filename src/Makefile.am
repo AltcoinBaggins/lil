@@ -67,15 +67,15 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += peonyd
+  bin_PROGRAMS += cryptosharesd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += peony-cli peony-tx
+  bin_PROGRAMS += cryptoshares-cli cryptoshares-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
-# peony core #
+# cryptoshares core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrdb.h \
@@ -227,7 +227,7 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between peonyd and peony-qt
+# server: shared between cryptosharesd and cryptoshares-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -282,7 +282,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between peonyd and peony-qt, but only linked
+# wallet: shared between cryptosharesd and cryptoshares-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -412,7 +412,7 @@ if USE_NUM_OPENSSL
   libzerocoin_libbitcoin_zerocoin_a_SOURCES += libzerocoin/bignum_openssl.cpp
 endif
 
-# common: shared between peonyd, and peony-qt and non-server tools
+# common: shared between cryptosharesd, and cryptoshares-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -487,7 +487,7 @@ if GLIBC_BACK_COMPAT
 AM_LDFLAGS += $(COMPAT_LDFLAGS)
 endif
 
-# cli: shared between peony-cli and peony-qt
+# cli: shared between cryptoshares-cli and cryptoshares-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -497,16 +497,16 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# peonyd binary #
-peonyd_SOURCES = pivxd.cpp
-peonyd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-peonyd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-peonyd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# cryptosharesd binary #
+cryptosharesd_SOURCES = pivxd.cpp
+cryptosharesd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+cryptosharesd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+cryptosharesd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-peonyd_SOURCES += pivxd-res.rc
+cryptosharesd_SOURCES += pivxd-res.rc
 endif
-peonyd_LDADD = \
+cryptosharesd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_WALLET) \
   $(LIBBITCOIN_COMMON) \
@@ -520,38 +520,38 @@ peonyd_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-peonyd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+cryptosharesd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# peony-cli binary #
-peony_cli_SOURCES = pivx-cli.cpp
-peony_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-peony_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-peony_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# cryptoshares-cli binary #
+cryptoshares_cli_SOURCES = pivx-cli.cpp
+cryptoshares_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+cryptoshares_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+cryptoshares_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-peony_cli_SOURCES += pivx-cli-res.rc
+cryptoshares_cli_SOURCES += pivx-cli-res.rc
 endif
 
-peony_cli_LDADD = \
+cryptoshares_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-peony_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+cryptoshares_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# peony-tx binary #
-peony_tx_SOURCES = pivx-tx.cpp
-peony_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-peony_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-peony_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# cryptoshares-tx binary #
+cryptoshares_tx_SOURCES = pivx-tx.cpp
+cryptoshares_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+cryptoshares_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+cryptoshares_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-peony_tx_SOURCES += pivx-tx-res.rc
+cryptoshares_tx_SOURCES += pivx-tx-res.rc
 endif
 
-peony_tx_LDADD = \
+cryptoshares_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -559,7 +559,7 @@ peony_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-peony_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+cryptoshares_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

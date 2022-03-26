@@ -11,11 +11,11 @@ fi
 	sudo apt install git zip unzip build-essential libtool bsdmainutils autotools-dev autoconf pkg-config automake python3 libqt5svg5-dev -y
 
 # Clone code from official Github repository
-	rm -rf peony
-	git clone https://github.com/PeonyTeam/peony
+	rm -rf cryptoshares
+	git clone https://github.com/cryptoshares/cryptoshares
 
 # Entering directory
-	cd peony
+	cd cryptoshares
 
 # Compile dependencies
 	cd depends
@@ -29,6 +29,6 @@ fi
 	cd ..
 
 # Create zip file of binaries
-	cp peony/src/peonyd peony/src/peony-cli peony/src/peony-tx peony/src/qt/peony-qt .
-	zip SHARES-$(git describe --abbrev=0 --tags | sed s/v//)-Linux.zip peonyd peony-cli peony-tx peony-qt
-	rm -f peonyd peony-cli peony-tx peony-qt
+	cp cryptoshares/src/cryptosharesd cryptoshares/src/cryptoshares-cli cryptoshares/src/cryptoshares-tx cryptoshares/src/qt/cryptoshares-qt .
+	zip SHARES-$(git describe --abbrev=0 --tags | sed s/v//)-Linux.zip cryptosharesd cryptoshares-cli cryptoshares-tx cryptoshares-qt
+	rm -f cryptosharesd cryptoshares-cli cryptoshares-tx cryptoshares-qt

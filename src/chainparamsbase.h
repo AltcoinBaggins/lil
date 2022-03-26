@@ -12,8 +12,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between peony-cli and peonyd)
- * of a given instance of the peony system.
+ * CBaseChainParams defines the base parameters (shared between cryptoshares-cli and cryptosharesd)
+ * of a given instance of the cryptoshares system.
  */
 class CBaseChainParams
 {

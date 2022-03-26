@@ -1,4 +1,4 @@
-# Peony Standard Wallet
+# CRYPTOSHARES Standard Wallet
 
 ## Coin Specs
 
@@ -13,7 +13,7 @@
 - Prefix: SHARES addresses start with the capital letter "P"  
 - Ports: 22190 (p2p) / 22191 (rpc)   
 - Explorer [explorer.cryptoshares.net](https://explorer.cryptoshares.net/SHARES/blocks)   
-- Website [peony.net](https://peony.net/)   
+- Website [cryptoshares.net](https://cryptoshares.net/)   
 
 ## Rewards Breakdown
 

@@ -1,6 +1,6 @@
 [Protocol]
-exec=peony-qt '%u'
-protocol=peony
+exec=cryptoshares-qt '%u'
+protocol=cryptoshares
 input=none
 output=none
 helper=true

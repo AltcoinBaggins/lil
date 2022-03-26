@@ -261,8 +261,8 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x00000e2ef10b1a68f6cb3be6b7236c928a6b538cc363c6d83431d20da551dc1d"));
         assert(genesis.hashMerkleRoot == uint256S("0xbdf973831136c309d99fe01de7fbdfb635c7dd51e471f94a855291d96d47aba7"));
 
-        consensus.fPowAllowMinDifficultyBlocks = false;
-        consensus.powLimit   = ~UINT256_ZERO >> 20;   
+        consensus.fPowAllowMinDifficultyBlocks = true;
+        consensus.powLimit   = ~UINT256_ZERO >> 14;
         consensus.posLimitV1 = ~UINT256_ZERO >> 24;
         consensus.posLimitV2 = ~UINT256_ZERO >> 20;
         consensus.nBudgetCycleBlocks = 30 * 24 * 60;       // approx. 1 every 30 days

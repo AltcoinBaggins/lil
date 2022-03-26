@@ -114,12 +114,12 @@
         <translation>Adres odbiorczy</translation>
     </message>
     <message>
-        <source>These are your PNY addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>To są twoje adresy PNY do wysyłania płatności. Zawsze sprawdzaj kwotę i adres odbiorcy przed wysłaniem monet.</translation>
+        <source>These are your SHARES addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>To są twoje adresy SHARES do wysyłania płatności. Zawsze sprawdzaj kwotę i adres odbiorcy przed wysłaniem monet.</translation>
     </message>
     <message>
-        <source>These are your PNY addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>To są twoje adresy PNY do otrzymywania płatności. Zaleca się użycie nowego adresu odbiorczego dla każdej transakcji.</translation>
+        <source>These are your SHARES addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>To są twoje adresy SHARES do otrzymywania płatności. Zaleca się użycie nowego adresu odbiorczego dla każdej transakcji.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -349,8 +349,8 @@ do stakingu</translation>
         <translation>ANULUJ</translation>
     </message>
     <message>
-        <source>PNY will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PNYs from being stolen by malware infecting your computer.</source>
-        <translation>PNY zamknie się teraz, aby zakończyć proces szyfrowania. Pamiętaj, że zaszyfrowanie portfela nie chroni w pełni Twoich PNY przed kradzieżą przez złośliwe oprogramowanie infekujące Twój komputer.</translation>
+        <source>SHARES will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SHARESs from being stolen by malware infecting your computer.</source>
+        <translation>SHARES zamknie się teraz, aby zakończyć proces szyfrowania. Pamiętaj, że zaszyfrowanie portfela nie chroni w pełni Twoich SHARES przed kradzieżą przez złośliwe oprogramowanie infekujące Twój komputer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -434,8 +434,8 @@ do stakingu</translation>
         <translation>Wybór monet</translation>
     </message>
     <message>
-        <source>Select PNY Outputs to Spend</source>
-        <translation>Wybierz adres wyjściowy PNY do wydania</translation>
+        <source>Select SHARES Outputs to Spend</source>
+        <translation>Wybierz adres wyjściowy SHARES do wydania</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -462,8 +462,8 @@ do stakingu</translation>
         <translation>Ilość</translation>
     </message>
     <message>
-        <source>0.00 PNY</source>
-        <translation>0.00 PNY</translation>
+        <source>0.00 SHARES</source>
+        <translation>0.00 SHARES</translation>
     </message>
     <message>
         <source>0</source>
@@ -704,8 +704,8 @@ do stakingu</translation>
         <translation>Filtruj według</translation>
     </message>
     <message>
-        <source>Amount of PNY and zPNY staked.</source>
-        <translation>Ilość PNY i zPNY staked.</translation>
+        <source>Amount of SHARES and zSHARES staked.</source>
+        <translation>Ilość SHARES i zSHARES staked.</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -801,8 +801,8 @@ Rozpocznie się automatycznie, gdy portfel będzie miał wystarczającą liczbę
         <translation>Edytuj adres wysyłania</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PNY address.</source>
-        <translation>Wprowadzony adres "%1" nie jest prawidłowym adresem PNY.</translation>
+        <source>The entered address "%1" is not a valid SHARES address.</source>
+        <translation>Wprowadzony adres "%1" nie jest prawidłowym adresem SHARES.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -925,8 +925,8 @@ Rozpocznie się automatycznie, gdy portfel będzie miał wystarczającą liczbę
         <translation>Ponieważ program jest uruchamiany po raz pierwszy, możesz wybrać miejsce, w którym Peony będzie przechowywać swoje dane.</translation>
     </message>
     <message>
-        <source>Peony will download and store a copy of the PNY block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Peony pobierze i zapisze kopię łańcucha bloków PNY. Przynajmniej %1 GB danych zostanie zapisanych w tym katalogu, a jego liczba będzie rosnąć z czasem. Portfel zostanie również zapisany w tym katalogu.</translation>
+        <source>Peony will download and store a copy of the SHARES block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Peony pobierze i zapisze kopię łańcucha bloków SHARES. Przynajmniej %1 GB danych zostanie zapisanych w tym katalogu, a jego liczba będzie rosnąć z czasem. Portfel zostanie również zapisany w tym katalogu.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1045,8 +1045,8 @@ Rozpocznie się automatycznie, gdy portfel będzie miał wystarczającą liczbę
         <translation>Utwórz nowy kontroler Masternode</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PNY Masternode you must dedicate a collateral amount of PNY (the unit of PNY) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Aby utworzyć Masternode PNY, musisz przeznaczyć 10.000 PNY (jednostkę PNY) na sieć (jednak monety te są nadal twoje i nigdy nie zmienią swojego właściciela).&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Możesz dezaktywować węzeł i odblokować monety w dowolnym momencie.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a SHARES Masternode you must dedicate a collateral amount of SHARES (the unit of SHARES) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Aby utworzyć Masternode SHARES, musisz przeznaczyć 10.000 SHARES (jednostkę SHARES) na sieć (jednak monety te są nadal twoje i nigdy nie zmienią swojego właściciela).&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Możesz dezaktywować węzeł i odblokować monety w dowolnym momencie.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Set Masternode Name</source>
@@ -1066,7 +1066,7 @@ Rozpocznie się automatycznie, gdy portfel będzie miał wystarczającą liczbę
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of collateral amount will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Dokonana zostanie transakcja 10 000 PNY&lt;/p&gt;&lt;p&gt;na nowy pusty adres w portfelu.&lt;/p&gt;&lt;p&gt;Adres jest oznaczony pod nazwą węzła głównego.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Dokonana zostanie transakcja 10 000 SHARES&lt;/p&gt;&lt;p&gt;na nowy pusty adres w portfelu.&lt;/p&gt;&lt;p&gt;Adres jest oznaczony pod nazwą węzła głównego.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1436,8 +1436,8 @@ Jesteś pewny?</translation>
         <translation>Jeśli wyłączysz wydawanie niepotwierdzonych reszt, reszta z transakcji nie może być użyta, dopóki transakcja nie uzyska co najmniej jednego potwierdzenia. Ma to również wpływ na sposób obliczania salda.</translation>
     </message>
     <message>
-        <source>Automatically open the PNY client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatycznie otwórz port klienta PNY na routerze. Działa to tylko wtedy, gdy twój router obsługuje UPnP i jest włączony.</translation>
+        <source>Automatically open the SHARES client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatycznie otwórz port klienta SHARES na routerze. Działa to tylko wtedy, gdy twój router obsługuje UPnP i jest włączony.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1456,12 +1456,12 @@ Jesteś pewny?</translation>
         <translation>Ekspert</translation>
     </message>
     <message>
-        <source>Automatically start PNY after logging in to the system.</source>
-        <translation>Automatycznie uruchom PNY po zalogowaniu do systemu</translation>
+        <source>Automatically start SHARES after logging in to the system.</source>
+        <translation>Automatycznie uruchom SHARES po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start PNY on system login</source>
-        <translation>&amp;Uruchom PNY podczas logowania do systemu</translation>
+        <source>&amp;Start SHARES on system login</source>
+        <translation>&amp;Uruchom SHARES podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1488,8 +1488,8 @@ Jesteś pewny?</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PNY.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie PNY</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting SHARES.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie SHARES</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1502,44 +1502,44 @@ Jesteś pewny?</translation>
         <translation>Mapuj port za pomocą &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PNY units to zPNY</source>
-        <translation>Włącz automatyczny minting PNY do zPNY</translation>
+        <source>Enable automatic minting of SHARES units to zSHARES</source>
+        <translation>Włącz automatyczny minting SHARES do zSHARES</translation>
     </message>
     <message>
-        <source>Enable zPNY Automint</source>
-        <translation>Włącz zPNY Automint</translation>
+        <source>Enable zSHARES Automint</source>
+        <translation>Włącz zSHARES Automint</translation>
     </message>
     <message>
-        <source>Enable automatic zPNY minting from specific addresses</source>
-        <translation>Włącz automatyczne wybijanie zPNY-ów z określonych adresów</translation>
+        <source>Enable automatic zSHARES minting from specific addresses</source>
+        <translation>Włącz automatyczne wybijanie zSHARES-ów z określonych adresów</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Włącz adresy Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming PNY which get automatically converted to zPNY via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procent PNY, które są automatycznie konwertowane na zPNY za pomocą protokołu Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming SHARES which get automatically converted to zSHARES via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procent SHARES, które są automatycznie konwertowane na zSHARES za pomocą protokołu Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPNY</source>
-        <translation>Procent automint zPNY</translation>
+        <source>Percentage of autominted zSHARES</source>
+        <translation>Procent automint zSHARES</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PNY for this denomination is available</source>
-        <translation>Zaczekaj z automatyczną konwersją na Zerocoin, aż będzie dostępna wystarczająca wartość PNY dla tego nominału</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough SHARES for this denomination is available</source>
+        <translation>Zaczekaj z automatyczną konwersją na Zerocoin, aż będzie dostępna wystarczająca wartość SHARES dla tego nominału</translation>
     </message>
     <message>
-        <source>Preferred Automint zPNY Denomination</source>
-        <translation>Preferowane nominały Automint zPNY</translation>
+        <source>Preferred Automint zSHARES Denomination</source>
+        <translation>Preferowane nominały Automint zSHARES</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Próg podziału stawki 'stake' :</translation>
     </message>
     <message>
-        <source>Connect to the PNY network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią PNY poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the SHARES network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią SHARES poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1784,8 +1784,8 @@ Adres: %4
         <translation>Nie można uruchomić peony: click-to-pay handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PNY address or malformed URI parameters.</source>
-        <translation>Nie można przeanalizować identyfikatora URI! Może to być spowodowane nieprawidłowym adresem PNY lub nieprawidłowymi parametrami URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid SHARES address or malformed URI parameters.</source>
+        <translation>Nie można przeanalizować identyfikatora URI! Może to być spowodowane nieprawidłowym adresem SHARES lub nieprawidłowymi parametrami URI.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1870,8 +1870,8 @@ Adres: %4
         <translation>Ilość</translation>
     </message>
     <message>
-        <source>Enter PNY address (e.g. %1)</source>
-        <translation>Wpisz adres PNY (np. %1)</translation>
+        <source>Enter SHARES address (e.g. %1)</source>
+        <translation>Wpisz adres SHARES (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1914,8 +1914,8 @@ Adres: %4
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>A fatal error occurred. PNY can no longer continue safely and will quit.</source>
-        <translation>Wystąpił błąd krytyczny. PNY nie może już działać bezpiecznie i zakończy działanie.</translation>
+        <source>A fatal error occurred. SHARES can no longer continue safely and will quit.</source>
+        <translation>Wystąpił błąd krytyczny. SHARES nie może już działać bezpiecznie i zakończy działanie.</translation>
     </message>
     <message>
         <source>Peony</source>
@@ -2097,8 +2097,8 @@ Adres: %4
         <translation>Łańcuch bloków</translation>
     </message>
     <message>
-        <source>Open the PNY debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otwórz plik dziennika debugowania PNY z bieżącego katalogu danych. Może to potrwać kilka sekund w przypadku dużych plików dziennika.</translation>
+        <source>Open the SHARES debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otwórz plik dziennika debugowania SHARES z bieżącego katalogu danych. Może to potrwać kilka sekund w przypadku dużych plików dziennika.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2241,8 +2241,8 @@ Adres: %4
         <translation>Standardowa ścieżka kopii zapasowej:</translation>
     </message>
     <message>
-        <source>Custom zPNY Backup Path:</source>
-        <translation>standardowa ścieżka kopii zapasowej zPNY:</translation>
+        <source>Custom zSHARES Backup Path:</source>
+        <translation>standardowa ścieżka kopii zapasowej zSHARES:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2321,8 +2321,8 @@ Adres: %4
         <translation>Z</translation>
     </message>
     <message>
-        <source>Welcome to the PNY RPC console.</source>
-        <translation>Witamy w konsoli PNY RPC.</translation>
+        <source>Welcome to the SHARES RPC console.</source>
+        <translation>Witamy w konsoli SHARES RPC.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -2569,8 +2569,8 @@ Adres: %4
         <translation>Ilość</translation>
     </message>
     <message>
-        <source>PNY</source>
-        <translation>PNY</translation>
+        <source>SHARES</source>
+        <translation>SHARES</translation>
     </message>
     <message>
         <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
@@ -2640,7 +2640,7 @@ Adres: %4
         <translation>Niestandardowa adresu reszty</translation>
     </message>
     <message>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" PNY address</source>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" SHARES address</source>
         <translation>Pozostała wartość wynikająca z wpłat i wypłat trafia na adresu „reszty”</translation>
     </message>
     <message>
@@ -2667,8 +2667,8 @@ Adres: %4
         <translation>Zalecane</translation>
     </message>
     <message>
-        <source>PNY/kilobyte</source>
-        <translation>PNY/kilobyte</translation>
+        <source>SHARES/kilobyte</source>
+        <translation>SHARES/kilobyte</translation>
     </message>
     <message>
         <source>0.00 KB</source>
@@ -2927,8 +2927,8 @@ Czy chcesz kontynuować?</translation>
         <translation>KLUCZ DESZYFRUJĄCY</translation>
     </message>
     <message>
-        <source>PNY address</source>
-        <translation>Adres PNY</translation>
+        <source>SHARES address</source>
+        <translation>Adres SHARES</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -3052,8 +3052,8 @@ Verify that you have installed a predetermined text editor.</source>
 Sprawdź, czy zainstalowałeś określony edytor tekstu.</translation>
     </message>
     <message>
-        <source>Welcome to the PNY RPC console.</source>
-        <translation>Witamy w konsoli PNY RPC.</translation>
+        <source>Welcome to the SHARES RPC console.</source>
+        <translation>Witamy w konsoli SHARES RPC.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -3237,28 +3237,28 @@ Wystąpił błąd podczas próby zapisania listy adresów w %1. Proszę spróbuj
         <translation>Formularz</translation>
     </message>
     <message>
-        <source>1) What is PNY?</source>
-        <translation>1) Co to jest PNY?</translation>
+        <source>1) What is SHARES?</source>
+        <translation>1) Co to jest SHARES?</translation>
     </message>
     <message>
-        <source>2) Why are my PNY unspendable?</source>
-        <translation>2) Dlaczego mojego PNY nie można wydać?</translation>
+        <source>2) Why are my SHARES unspendable?</source>
+        <translation>2) Dlaczego mojego SHARES nie można wydać?</translation>
     </message>
     <message>
         <source>1</source>
         <translation>1</translation>
     </message>
     <message>
-        <source>What is PNY?</source>
-        <translation>Co to jest PNY?</translation>
+        <source>What is SHARES?</source>
+        <translation>Co to jest SHARES?</translation>
     </message>
     <message>
         <source>2</source>
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my PNY unspendable?</source>
-        <translation>Dlaczego mojego PNY nie można wydać?</translation>
+        <source>Why are my SHARES unspendable?</source>
+        <translation>Dlaczego mojego SHARES nie można wydać?</translation>
     </message>
     <message>
         <source>3</source>
@@ -3451,8 +3451,8 @@ Wystąpił błąd podczas próby zapisania listy adresów w %1. Proszę spróbuj
         <translation>Liczba wątków weryfikujących skrypt</translation>
     </message>
     <message>
-        <source>Start PNY on system login</source>
-        <translation>Uruchom PNY przy logowaniu do systemu</translation>
+        <source>Start SHARES on system login</source>
+        <translation>Uruchom SHARES przy logowaniu do systemu</translation>
     </message>
     <message>
         <source>Minimize to the tray instead of the taskbar</source>
@@ -3539,8 +3539,8 @@ Jesteś pewny?
         <translation>CheckBox</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PNY addresses after it matures.</source>
-        <translation>MultiSend pozwala automatycznie wysyłać do 100% stake lub nagrody masternode na listę innych adresów PNY po ich dojrzaniu.</translation>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SHARES addresses after it matures.</source>
+        <translation>MultiSend pozwala automatycznie wysyłać do 100% stake lub nagrody masternode na listę innych adresów SHARES po ich dojrzaniu.</translation>
     </message>
     <message>
         <source>Active</source>
@@ -3662,8 +3662,8 @@ Zaznacz jedno lub oba pola wyboru, aby wysłać stake i / lub nagrode masternode
         <translation>Wiadomość</translation>
     </message>
     <message>
-        <source>PNY address or contact label</source>
-        <translation>Adres PNY lub etykieta kontaktowa</translation>
+        <source>SHARES address or contact label</source>
+        <translation>Adres SHARES lub etykieta kontaktowa</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -3939,8 +3939,8 @@ Zaznacz jedno lub oba pola wyboru, aby wysłać stake i / lub nagrode masternode
         <translation>FAQ</translation>
     </message>
     <message>
-        <source>About PNY</source>
-        <translation>o PNY</translation>
+        <source>About SHARES</source>
+        <translation>o SHARES</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -4477,16 +4477,16 @@ Peony Wallet</source>
 Portfel Peony</translation>
     </message>
     <message>
-        <source>PNY is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>PNY to najbardziej innowacyjna na świecie technologia oparta na blockchain Proof of Stake. Opracowany przez zespół wysoce doświadczonych programistów i kryptografów.</translation>
+        <source>SHARES is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>SHARES to najbardziej innowacyjna na świecie technologia oparta na blockchain Proof of Stake. Opracowany przez zespół wysoce doświadczonych programistów i kryptografów.</translation>
     </message>
     <message>
-        <source>The masternode network is PNY's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
-        <translation>Sieć masternode jest siecią drugiej warstwy PNY na szczycie blockchain, która umożliwia naszemu DAO zapewnienie zdecentralizowanego zarządzania i skarbca.</translation>
+        <source>The masternode network is SHARES's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>Sieć masternode jest siecią drugiej warstwy SHARES na szczycie blockchain, która umożliwia naszemu DAO zapewnienie zdecentralizowanego zarządzania i skarbca.</translation>
     </message>
     <message>
-        <source>How PNY respects your privacy?</source>
-        <translation>Jak PNY szanuje twoją prywatność?</translation>
+        <source>How SHARES respects your privacy?</source>
+        <translation>Jak SHARES szanuje twoją prywatność?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -4936,8 +4936,8 @@ Portfel Peony</translation>
         <translation>Nieprawidłowa netmask podana w -whitelist: '%s'</translation>
     </message>
     <message>
-        <source>Recalculating PNY supply...</source>
-        <translation>Przeliczanie podaży PNY ...</translation>
+        <source>Recalculating SHARES supply...</source>
+        <translation>Przeliczanie podaży SHARES ...</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -4956,8 +4956,8 @@ Portfel Peony</translation>
         <translation>Jest to wersja testowa pre-release - korzystaj z niej na własne ryzyko - nie używaj do staking lub prawdziwych transakcji!</translation>
     </message>
     <message>
-        <source>Disable all PNY specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
-        <translation>Wyłącz wszystkie funkcje specyficzne dla PNY (Masternodes, Zerocoin, Budgeting) (0-1, domyślnie: %u)</translation>
+        <source>Disable all SHARES specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
+        <translation>Wyłącz wszystkie funkcje specyficzne dla SHARES (Masternodes, Zerocoin, Budgeting) (0-1, domyślnie: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5376,8 +5376,8 @@ Portfel Peony</translation>
         <translation>Synchronizowanie sporks...</translation>
     </message>
     <message>
-        <source>Syncing zPNY wallet...</source>
-        <translation>Synchronizuję portfel zPNY ...</translation>
+        <source>Syncing zSHARES wallet...</source>
+        <translation>Synchronizuję portfel zSHARES ...</translation>
     </message>
     <message>
         <source>This help message</source>
@@ -5480,8 +5480,8 @@ Portfel Peony</translation>
         <translation>Nazwa użytkownika dla połączeń JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPNY</source>
-        <translation>Wartość jest mniejsza od najmniejszej dostępnej (= 1) zPNY</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSHARES</source>
+        <translation>Wartość jest mniejsza od najmniejszej dostępnej (= 1) zSHARES</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -5563,8 +5563,8 @@ Portfel Peony</translation>
         <translation>Wyślij</translation>
     </message>
     <message>
-        <source>PNY address or contact label</source>
-        <translation>Adres PNY lub etykieta kontaktowa</translation>
+        <source>SHARES address or contact label</source>
+        <translation>Adres SHARES lub etykieta kontaktowa</translation>
     </message>
     <message>
         <source>Amount</source>

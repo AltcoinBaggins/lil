@@ -1,6 +1,6 @@
 // Copyright (c) 2014 The Bitcoin Core developers
 // Copyright (c) 2019 The PIVX developers
-// Copyright (c) 2021-2022 The DECENOMY Core Developers
+// Copyright (c) 2022 The CRYPTOSHARES Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -298,7 +298,7 @@ BOOST_AUTO_TEST_CASE(updatecoins_simulation_test)
 
             // 2/20 times create a new coinbase
             if (randiter % 20 < 2 || coinbase_coins.size() < 10) {
-                // PNY: don't test for duplicate coinbases as those are not possible due to
+                // SHARES: don't test for duplicate coinbases as those are not possible due to
                 // BIP34 enforced since the beginning.
                 assert(CTransaction(tx).IsCoinBase());
                 coinbase_coins.insert(COutPoint(tx.GetHash(), 0));
@@ -312,7 +312,7 @@ BOOST_AUTO_TEST_CASE(updatecoins_simulation_test)
                     auto utxod = FindRandomFrom(coinbase_coins);
                     tx = std::get<0>(utxod->second);
                     prevout = tx.vin[0].prevout;
-                    // PNY: no duplicates
+                    // SHARES: no duplicates
                     BOOST_CHECK(!utxoset.count(prevout));
                     disconnected_coins.erase(utxod->first);
                     continue;
@@ -447,7 +447,7 @@ BOOST_AUTO_TEST_CASE(ccoins_serialization)
     BOOST_CHECK_EQUAL(cc2.out.nValue, 110397);
     BOOST_CHECK_EQUAL(HexStr(cc2.out.scriptPubKey), HexStr(GetScriptForDestination(CKeyID(uint160(ParseHex("8c988f1a4a4de2161e0f50aac7f17e7f9555caa4"))))));
 
-    // PNY: Example with fCoinStake
+    // SHARES: Example with fCoinStake
     CDataStream ss2b(ParseHex("97b401808b63008c988f1a4a4de2161e0f50aac7f17e7f9555caa4"), SER_DISK, CLIENT_VERSION);
     Coin cc2b;
     ss2b >> cc2b;

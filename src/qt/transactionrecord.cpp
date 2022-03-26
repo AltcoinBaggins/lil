@@ -2,6 +2,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
+// Copyright (c) 2022 The CRYPTOSHARES Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -35,7 +36,7 @@ bool TransactionRecord::decomposeCoinStake(const CWallet* wallet, const CWalletT
     TransactionRecord sub(hash, wtx.GetTxTime(), wtx.GetTotalSize());
 
     if (wtx.HasZerocoinSpendInputs() && (fZSpendFromMe || wallet->zpivTracker->HasMintTx(hash))) {
-        //zPNY stake reward
+        //zSHARES stake reward
         sub.involvesWatchAddress = false;
         sub.type = TransactionRecord::StakeZPIV;
         sub.address = getValueOrReturnEmpty(wtx.mapValue, "zerocoinmint");
@@ -46,7 +47,7 @@ bool TransactionRecord::decomposeCoinStake(const CWallet* wallet, const CWalletT
         }
         sub.debit -= wtx.vin[0].nSequence * COIN;
     } else if (isminetype mine = wallet->IsMine(wtx.vout[1])) {
-        // PNY stake reward
+        // SHARES stake reward
         CTxDestination address;
         if (!ExtractDestination(wtx.vout[1].scriptPubKey, address))
             return true;
@@ -162,7 +163,7 @@ bool TransactionRecord::decomposeCreditTransaction(const CWallet* wallet, const 
             sub.credit = txout.nValue;
             sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
             if (ExtractDestination(txout.scriptPubKey, address) && IsMine(*wallet, address)) {
-                // Received by PNY Address
+                // Received by SHARES Address
                 sub.type = TransactionRecord::RecvWithAddress;
                 sub.address = EncodeDestination(address);
             } else {
@@ -243,7 +244,7 @@ bool TransactionRecord::decomposeDebitTransaction(const CWallet* wallet, const C
             //private keys that the change was sent to. Do not display a "sent to" here.
             if (wtx.HasZerocoinMintOutputs())
                 continue;
-            // Sent to PNY Address
+            // Sent to SHARES Address
             sub.type = TransactionRecord::SendToAddress;
             sub.address = EncodeDestination(address);
         } else if (txout.IsZerocoinMint()){

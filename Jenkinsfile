@@ -5,7 +5,7 @@ pipeline {
     environment {
         NAME = 'Peony'
         BASE_NAME = 'peony'
-        ZIP_NAME = 'PNY'
+        ZIP_NAME = 'SHARES'
     }
 
     stages {

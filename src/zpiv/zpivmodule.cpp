@@ -1,5 +1,6 @@
 // Copyright (c) 2019-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
+// Copyright (c) 2022 The CRYPTOSHARES Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -159,12 +160,12 @@ namespace ZPIVModule {
         if (!fUseV1Params) {
             CKey key;
             if (!mint.GetKeyPair(key))
-                return error("%s: failed to set zPNY privkey mint.", __func__);
+                return error("%s: failed to set zSHARES privkey mint.", __func__);
             spend.setPubKey(key.GetPubKey(), true);
 
             std::vector<unsigned char> vchSig;
             if (!key.Sign(spend.signatureHash(), vchSig))
-                return error("%s: ZPNYModule failed to sign signatureHash.", __func__);
+                return error("%s: ZSHARESModule failed to sign signatureHash.", __func__);
             spend.setVchSig(vchSig);
 
         }
@@ -231,7 +232,7 @@ namespace ZPIVModule {
         }
         if (!ZPIVModule::parseCoinSpend(txIn, tx, prevOut, publicSpend)) {
             return state.Invalid(error("%s: invalid public coin spend parse %s\n", __func__,
-                                       tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zPNY");
+                                       tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zSHARES");
         }
         return true;
     }

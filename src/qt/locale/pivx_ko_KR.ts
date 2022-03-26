@@ -114,12 +114,12 @@
         <translation>받을 주소</translation>
     </message>
     <message>
-        <source>These are your PNY addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>이 주소들은 송금할 PNY 주소입니다. 송금하기 전 항상 금액과 주소를 확인해주세요.</translation>
+        <source>These are your SHARES addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>이 주소들은 송금할 SHARES 주소입니다. 송금하기 전 항상 금액과 주소를 확인해주세요.</translation>
     </message>
     <message>
-        <source>These are your PNY addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>이 주소들은 입금 받을 PNY 주소입니다. 매 거래마다 새로운 입금 주소를 사용하는 것이 좋습니다.</translation>
+        <source>These are your SHARES addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>이 주소들은 입금 받을 SHARES 주소입니다. 매 거래마다 새로운 입금 주소를 사용하는 것이 좋습니다.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -345,8 +345,8 @@ for staking</source>
         <translation>취소</translation>
     </message>
     <message>
-        <source>PNY will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PNYs from being stolen by malware infecting your computer.</source>
-        <translation>PNY는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 PNYs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
+        <source>SHARES will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SHARESs from being stolen by malware infecting your computer.</source>
+        <translation>SHARES는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 SHARESs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -430,8 +430,8 @@ for staking</source>
         <translation>코인 선택</translation>
     </message>
     <message>
-        <source>Select PNY Outputs to Spend</source>
-        <translation>사용할 PNY 아웃풋 선택</translation>
+        <source>Select SHARES Outputs to Spend</source>
+        <translation>사용할 SHARES 아웃풋 선택</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -458,8 +458,8 @@ for staking</source>
         <translation>금액</translation>
     </message>
     <message>
-        <source>0.00 PNY</source>
-        <translation>0.00 PNY</translation>
+        <source>0.00 SHARES</source>
+        <translation>0.00 SHARES</translation>
     </message>
     <message>
         <source>0</source>
@@ -700,8 +700,8 @@ for staking</source>
         <translation>Filter by</translation>
     </message>
     <message>
-        <source>Amount of PNY and zPNY staked.</source>
-        <translation>스테이킹 된 PNY와 zPNY 양</translation>
+        <source>Amount of SHARES and zSHARES staked.</source>
+        <translation>스테이킹 된 SHARES와 zSHARES 양</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -795,8 +795,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>보내는 주소 수정</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PNY address.</source>
-        <translation>입력된 주소 "%1"는 올바른 PNY 주소가 아닙니다.</translation>
+        <source>The entered address "%1" is not a valid SHARES address.</source>
+        <translation>입력된 주소 "%1"는 올바른 SHARES 주소가 아닙니다.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -919,8 +919,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>이 프로그램이 처음 실행되었으므로 Peony가 데이터를 저장할 위치를 선택할 수 있습니다.</translation>
     </message>
     <message>
-        <source>Peony will download and store a copy of the PNY block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Peony는 PNY 블록체인을 다운로드하여 저장합니다. 최소 %1GB의 데이터가 디렉토리에 저장되며 시간이 지날수록 증가합니다. 또한 지갑도 해당 디렉토리에 저장됩니다.</translation>
+        <source>Peony will download and store a copy of the SHARES block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Peony는 SHARES 블록체인을 다운로드하여 저장합니다. 최소 %1GB의 데이터가 디렉토리에 저장되며 시간이 지날수록 증가합니다. 또한 지갑도 해당 디렉토리에 저장됩니다.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1039,8 +1039,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>새로운 마스터노드 컨트롤러 만들기</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PNY Masternode you must dedicate a collateral amount of PNY (the unit of PNY) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;PNY 마스터노드를 생성하기 위해서는 10,000 PNY (PNY 단위)를 네트워크에 예치해야 합니다. (예치한 코인은 계속 본인의 소유입니다.) &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;언제든지 노드를 비활성화 시키고 코인을 잠금해제할 수 있습니다.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a SHARES Masternode you must dedicate a collateral amount of SHARES (the unit of SHARES) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;SHARES 마스터노드를 생성하기 위해서는 10,000 SHARES (SHARES 단위)를 네트워크에 예치해야 합니다. (예치한 코인은 계속 본인의 소유입니다.) &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;언제든지 노드를 비활성화 시키고 코인을 잠금해제할 수 있습니다.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Set Masternode Name</source>
@@ -1060,7 +1060,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of collateral amount will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;10,000 PNY의 트랜잭션은&lt;/p&gt;&lt;p&gt;지갑의 새로운 빈 주소로 만들어질 것입니다.&lt;/p&gt;&lt;p&gt;그 주소는 마스터노드 이름에 따라 레이블링됩니다.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;10,000 SHARES의 트랜잭션은&lt;/p&gt;&lt;p&gt;지갑의 새로운 빈 주소로 만들어질 것입니다.&lt;/p&gt;&lt;p&gt;그 주소는 마스터노드 이름에 따라 레이블링됩니다.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1434,8 +1434,8 @@ Are you sure?</source>
         <translation>확인되지 않은 잔엑을 사용하지 않도록 설정하면 해당 트랜잭션에 하나 이상의 컨펌이 진행되야&lt;br/&gt;트랜잭션의 잔액을 전송할 수 있습니다.&lt;br/&gt;또한 이것은 잔액 계산 방식에도 영향을 줍니다.</translation>
     </message>
     <message>
-        <source>Automatically open the PNY client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>라우터에서 PNY 클라이언트 포트를 자동으로 엽니다. 이 기능은 라우터가 UPnP를 지원하고 활성화 된 경우에만 사용할 수 있습니다.</translation>
+        <source>Automatically open the SHARES client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>라우터에서 SHARES 클라이언트 포트를 자동으로 엽니다. 이 기능은 라우터가 UPnP를 지원하고 활성화 된 경우에만 사용할 수 있습니다.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1454,12 +1454,12 @@ Are you sure?</source>
         <translation>전문적</translation>
     </message>
     <message>
-        <source>Automatically start PNY after logging in to the system.</source>
-        <translation>시스템 로그인 후 PNY을 자동으로 시작합니다.</translation>
+        <source>Automatically start SHARES after logging in to the system.</source>
+        <translation>시스템 로그인 후 SHARES을 자동으로 시작합니다.</translation>
     </message>
     <message>
-        <source>&amp;Start PNY on system login</source>
-        <translation>&amp;시스템 로그인시 PNY 시작</translation>
+        <source>&amp;Start SHARES on system login</source>
+        <translation>&amp;시스템 로그인시 SHARES 시작</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1486,8 +1486,8 @@ Are you sure?</source>
         <translation>&amp;네트워크</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PNY.</source>
-        <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 PNY을 다시 시작한 후에 적용됩니다.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting SHARES.</source>
+        <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 SHARES을 다시 시작한 후에 적용됩니다.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1500,44 +1500,44 @@ Are you sure?</source>
         <translation>&amp;UPnp를 사용하여 포트 매핑</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PNY units to zPNY</source>
-        <translation>보상받은 PNY를 zPNY로 자동변환 활성화</translation>
+        <source>Enable automatic minting of SHARES units to zSHARES</source>
+        <translation>보상받은 SHARES를 zSHARES로 자동변환 활성화</translation>
     </message>
     <message>
-        <source>Enable zPNY Automint</source>
-        <translation>zPNY 자동생성 활성화</translation>
+        <source>Enable zSHARES Automint</source>
+        <translation>zSHARES 자동생성 활성화</translation>
     </message>
     <message>
-        <source>Enable automatic zPNY minting from specific addresses</source>
-        <translation>특정 주소들로부터 자동으로 zPNY 민트되는 것을 허용</translation>
+        <source>Enable automatic zSHARES minting from specific addresses</source>
+        <translation>특정 주소들로부터 자동으로 zSHARES 민트되는 것을 허용</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint 주소 사용</translation>
     </message>
     <message>
-        <source>Percentage of incoming PNY which get automatically converted to zPNY via Zerocoin Protocol (min: 10%)</source>
-        <translation>PNY수신시 자동변환 zPNY 비율 (최소값:10%)</translation>
+        <source>Percentage of incoming SHARES which get automatically converted to zSHARES via Zerocoin Protocol (min: 10%)</source>
+        <translation>SHARES수신시 자동변환 zSHARES 비율 (최소값:10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPNY</source>
-        <translation>자동 변환되는 zPNY 비율</translation>
+        <source>Percentage of autominted zSHARES</source>
+        <translation>자동 변환되는 zSHARES 비율</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PNY for this denomination is available</source>
-        <translation>이 디노미네이션의 PNY가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough SHARES for this denomination is available</source>
+        <translation>이 디노미네이션의 SHARES가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
     </message>
     <message>
-        <source>Preferred Automint zPNY Denomination</source>
-        <translation>선호하는 자동생성 zPNY 디노미네이션 </translation>
+        <source>Preferred Automint zSHARES Denomination</source>
+        <translation>선호하는 자동생성 zSHARES 디노미네이션 </translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Stake split threshold:</translation>
     </message>
     <message>
-        <source>Connect to the PNY network through a SOCKS5 proxy.</source>
-        <translation>SOCKS5 프록시를 통해 PNY 네트워크에 연결해주세요.</translation>
+        <source>Connect to the SHARES network through a SOCKS5 proxy.</source>
+        <translation>SOCKS5 프록시를 통해 SHARES 네트워크에 연결해주세요.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1782,8 +1782,8 @@ Address: %4
         <translation>peony을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PNY address or malformed URI parameters.</source>
-        <translation>URI를 분석할 수 없습니다! 이는 잘못된 PNY 주소 또는 URI 매개변수 손상으로 인해 발생할 수 있습니다.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid SHARES address or malformed URI parameters.</source>
+        <translation>URI를 분석할 수 없습니다! 이는 잘못된 SHARES 주소 또는 URI 매개변수 손상으로 인해 발생할 수 있습니다.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1868,8 +1868,8 @@ Address: %4
         <translation>금액</translation>
     </message>
     <message>
-        <source>Enter PNY address (e.g. %1)</source>
-        <translation>PNY 주소 입력(예 : %1)</translation>
+        <source>Enter SHARES address (e.g. %1)</source>
+        <translation>SHARES 주소 입력(예 : %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1912,8 +1912,8 @@ Address: %4
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>A fatal error occurred. PNY can no longer continue safely and will quit.</source>
-        <translation>치명적인 오류가 발생하였습니다. PNY는 더 이상 안전하게 계속될 수 없으며, 곧 종료됩니다.</translation>
+        <source>A fatal error occurred. SHARES can no longer continue safely and will quit.</source>
+        <translation>치명적인 오류가 발생하였습니다. SHARES는 더 이상 안전하게 계속될 수 없으며, 곧 종료됩니다.</translation>
     </message>
     <message>
         <source>Peony</source>
@@ -2067,8 +2067,8 @@ Address: %4
         <translation>블록체인</translation>
     </message>
     <message>
-        <source>Open the PNY debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>현재 데이터 디렉토리에서 PNY 디버그 로그 파일을 엽니다. 로그 파일이 클 경우, 약간의 시간이 걸릴 수 있습니다.</translation>
+        <source>Open the SHARES debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>현재 데이터 디렉토리에서 SHARES 디버그 로그 파일을 엽니다. 로그 파일이 클 경우, 약간의 시간이 걸릴 수 있습니다.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2211,8 +2211,8 @@ Address: %4
         <translation>맞춤 백업 경로 :</translation>
     </message>
     <message>
-        <source>Custom zPNY Backup Path:</source>
-        <translation>맞춤 zPNY 백업 경로 :</translation>
+        <source>Custom zSHARES Backup Path:</source>
+        <translation>맞춤 zSHARES 백업 경로 :</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2292,8 +2292,8 @@ Address: %4
         <translation>출력:</translation>
     </message>
     <message>
-        <source>Welcome to the PNY RPC console.</source>
-        <translation>PNY RPC 콘솔에 오신 것을 환영합니다.</translation>
+        <source>Welcome to the SHARES RPC console.</source>
+        <translation>SHARES RPC 콘솔에 오신 것을 환영합니다.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -2540,8 +2540,8 @@ Address: %4
         <translation>금액</translation>
     </message>
     <message>
-        <source>PNY</source>
-        <translation>PNY</translation>
+        <source>SHARES</source>
+        <translation>SHARES</translation>
     </message>
     <message>
         <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
@@ -2626,8 +2626,8 @@ Address: %4
         <translation>권장</translation>
     </message>
     <message>
-        <source>PNY/kilobyte</source>
-        <translation>PNY/Kilobyte</translation>
+        <source>SHARES/kilobyte</source>
+        <translation>SHARES/Kilobyte</translation>
     </message>
     <message>
         <source>0.00 KB</source>
@@ -2862,8 +2862,8 @@ Address: %4
         <translation>키 암호 해재</translation>
     </message>
     <message>
-        <source>PNY address</source>
-        <translation>PNY 주소</translation>
+        <source>SHARES address</source>
+        <translation>SHARES 주소</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -2979,8 +2979,8 @@ Verify that you have installed a predetermined text editor.</source>
 미리 결정된 텍스트 에디터를 인스톨했는지 확인하세요.</translation>
     </message>
     <message>
-        <source>Welcome to the PNY RPC console.</source>
-        <translation>PNY RPC 콘솔에 오신 것을 환영합니다.</translation>
+        <source>Welcome to the SHARES RPC console.</source>
+        <translation>SHARES RPC 콘솔에 오신 것을 환영합니다.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -3294,8 +3294,8 @@ Verify that you have installed a predetermined text editor.</source>
         <translation>스크립트 검증 스레드 개수</translation>
     </message>
     <message>
-        <source>Start PNY on system login</source>
-        <translation>시스템 로그인시 PNY 지갑 시작</translation>
+        <source>Start SHARES on system login</source>
+        <translation>시스템 로그인시 SHARES 지갑 시작</translation>
     </message>
     <message>
         <source>Minimize to the tray instead of the taskbar</source>
@@ -3382,7 +3382,7 @@ Are you sure?
         <translation>체크박스</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PNY addresses after it matures.</source>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SHARES addresses after it matures.</source>
         <translation>멀티 전송 기능은 확인된 새로 받은 스테이킹 혹은 마스터노드 보상을 100% 전부 까지 지정된 다른 주소로 자동 전송할수 있는 기능입니다.</translation>
     </message>
     <message>
@@ -3475,8 +3475,8 @@ Please check the address and try again.</source>
         <translation>메세지</translation>
     </message>
     <message>
-        <source>PNY address or contact label</source>
-        <translation>PNY 주소 / 연락처 라벨</translation>
+        <source>SHARES address or contact label</source>
+        <translation>SHARES 주소 / 연락처 라벨</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -3744,8 +3744,8 @@ Please check the address and try again.</source>
         <translation>FAQ</translation>
     </message>
     <message>
-        <source>About PNY</source>
-        <translation>PNY 정보</translation>
+        <source>About SHARES</source>
+        <translation>SHARES 정보</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -4268,16 +4268,16 @@ Peony Wallet</source>
 Peony Wallet</translation>
     </message>
     <message>
-        <source>PNY is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>PNY 는 많은 경험과 뛰어난 실력을 겸비한 개발자와 암호학자로 구성된 팀이 개발하는 연신적인 Proof of Stake 블록체인 기술을 자랑하는 오픈소스 프로젝트 입니다. </translation>
+        <source>SHARES is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>SHARES 는 많은 경험과 뛰어난 실력을 겸비한 개발자와 암호학자로 구성된 팀이 개발하는 연신적인 Proof of Stake 블록체인 기술을 자랑하는 오픈소스 프로젝트 입니다. </translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - PNY believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;PNY 는 Manifesto 선언서에 적힌대로: 프라이버시는 협상이 불가능한 인간의 기본적인 인권중 하나이다. 이로 인해 그 언제나 그 누구에게나 데이터를 공유할수 있는 자유를 얻게 될것이다. PNY 프로젝트는 개인 독립을 추구한다. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - SHARES believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;SHARES 는 Manifesto 선언서에 적힌대로: 프라이버시는 협상이 불가능한 인간의 기본적인 인권중 하나이다. 이로 인해 그 언제나 그 누구에게나 데이터를 공유할수 있는 자유를 얻게 될것이다. SHARES 프로젝트는 개인 독립을 추구한다. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>How PNY respects your privacy?</source>
-        <translation>PNY 가 당신의 프라이버시를 존중하는 방법은?</translation>
+        <source>How SHARES respects your privacy?</source>
+        <translation>SHARES 가 당신의 프라이버시를 존중하는 방법은?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -4703,8 +4703,8 @@ Peony Wallet</translation>
         <translation>-whitelist: '%s' 에 지정된 넷마스크가 유효하지 않습니다.</translation>
     </message>
     <message>
-        <source>Recalculating PNY supply...</source>
-        <translation>PNY 공급 재계산중...</translation>
+        <source>Recalculating SHARES supply...</source>
+        <translation>SHARES 공급 재계산중...</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -4723,8 +4723,8 @@ Peony Wallet</translation>
         <translation>이것은 사전 릴리스 테스트 빌드입니다 - 사용상 책임은 귀하에게 있습니다. - staking이나 상업적인 용도로는 절대 사용하지 마십시오!</translation>
     </message>
     <message>
-        <source>Disable all PNY specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
-        <translation>PNY의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, Budgeting) (0-1, 기본값: %u)</translation>
+        <source>Disable all SHARES specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
+        <translation>SHARES의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, Budgeting) (0-1, 기본값: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5115,8 +5115,8 @@ Peony Wallet</translation>
         <translation>sporks와 동기화 중입니다...</translation>
     </message>
     <message>
-        <source>Syncing zPNY wallet...</source>
-        <translation>zPNY 지갑 동기화중...</translation>
+        <source>Syncing zSHARES wallet...</source>
+        <translation>zSHARES 지갑 동기화중...</translation>
     </message>
     <message>
         <source>This help message</source>
@@ -5211,8 +5211,8 @@ Peony Wallet</translation>
         <translation>JSON-RPC 연결 사용자 이름</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPNY</source>
-        <translation>Value is below the smallest available denomination (= 1) of zPNY</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSHARES</source>
+        <translation>Value is below the smallest available denomination (= 1) of zSHARES</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -5256,7 +5256,7 @@ Peony Wallet</translation>
     </message>
     <message>
         <source>You don't have enough Zerocoins in your wallet</source>
-        <translation>지갑에 zPNY 가 부족합니다.</translation>
+        <translation>지갑에 zSHARES 가 부족합니다.</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
@@ -5290,8 +5290,8 @@ Peony Wallet</translation>
         <translation>보내기</translation>
     </message>
     <message>
-        <source>PNY address or contact label</source>
-        <translation>PNY 주소 / 연락처 라벨</translation>
+        <source>SHARES address or contact label</source>
+        <translation>SHARES 주소 / 연락처 라벨</translation>
     </message>
     <message>
         <source>Amount</source>

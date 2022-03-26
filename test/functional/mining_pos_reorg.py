@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2021-2022 The DECENOMY Core Developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -53,11 +54,11 @@ class ReorgStakeTest(PivxTestFramework):
 
     def check_money_supply(self, expected_piv, expected_zpiv):
         g_info = [self.nodes[i].getinfo() for i in range(self.num_nodes)]
-        # verify that nodes have the expected PNY and zPNY supply
+        # verify that nodes have the expected SHARES and zSHARES supply
         for node in g_info:
             assert_equal(node['moneysupply'], DecimalAmt(expected_piv))
-            for denom in node['zPNYsupply']:
-                assert_equal(node['zPNYsupply'][denom], DecimalAmt(expected_zpiv[denom]))
+            for denom in node['zSHARESsupply']:
+                assert_equal(node['zSHARESsupply'][denom], DecimalAmt(expected_zpiv[denom]))
 
 
     def run_test(self):
@@ -68,9 +69,9 @@ class ReorgStakeTest(PivxTestFramework):
                     return True, x
             return False, None
 
-        # Check PNY and zPNY supply at the beginning
+        # Check SHARES and zSHARES supply at the beginning
         # ------------------------------------------
-        # zPNY supply: 2 coins for each denomination
+        # zSHARES supply: 2 coins for each denomination
         expected_zpiv_supply = {
             "1": 2,
             "5": 10,
@@ -82,7 +83,7 @@ class ReorgStakeTest(PivxTestFramework):
             "5000": 10000,
             "total": 13332,
         }
-        # PNY supply: block rewards minus burned fees for minting
+        # SHARES supply: block rewards minus burned fees for minting
         expected_money_supply = 250.0 * 330 - 16 * 0.01
         self.check_money_supply(expected_money_supply, expected_zpiv_supply)
 
@@ -230,8 +231,8 @@ class ReorgStakeTest(PivxTestFramework):
         res, utxo = findUtxoInList(stakeinput["txid"], stakeinput["vout"], self.nodes[0].listunspent())
         assert (not res or not utxo["spendable"])
 
-        # Verify that PNY and zPNY supplies were properly updated after the spends and reorgs
-        self.log.info("Check PNY and zPNY supply...")
+        # Verify that SHARES and zSHARES supplies were properly updated after the spends and reorgs
+        self.log.info("Check SHARES and zSHARES supply...")
         expected_money_supply += 250.0 * (self.nodes[1].getblockcount() - 330)
         spent_coin_0 = mints[0]["denomination"]
         spent_coin_1 = mints[1]["denomination"]

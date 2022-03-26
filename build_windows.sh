@@ -31,5 +31,5 @@ fi
 
 # Create zip file of binaries
 	cp peony/src/peonyd.exe peony/src/peony-cli.exe peony/src/peony-tx.exe peony/src/qt/peony-qt.exe .
-	zip PNY-Windows.zip peonyd.exe peony-cli.exe peony-tx.exe peony-qt.exe
+	zip SHARES-Windows.zip peonyd.exe peony-cli.exe peony-tx.exe peony-qt.exe
 	rm -f peonyd.exe peony-cli.exe peony-tx.exe peony-qt.exe

@@ -1,5 +1,6 @@
 // Copyright (c) 2017-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
+// Copyright (c) 2022 The CRYPTOSHARES Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -22,7 +23,7 @@ CzPIVWallet::CzPIVWallet(CWallet* parent)
     uint256 hashSeed;
     bool fFirstRun = !walletdb.ReadCurrentSeedHash(hashSeed);
 
-    //Check for old db version of storing zPNY seed
+    //Check for old db version of storing zSHARES seed
     if (fFirstRun) {
         uint256 seed;
         if (walletdb.ReadZPIVSeed_deprecated(seed)) {
@@ -31,10 +32,10 @@ CzPIVWallet::CzPIVWallet(CWallet* parent)
             hashSeed = Hash(seed.begin(), seed.end());
             if (wallet->AddDeterministicSeed(seed)) {
                 if (walletdb.EraseZPIVSeed_deprecated()) {
-                    LogPrintf("%s: Updated zPNY seed databasing\n", __func__);
+                    LogPrintf("%s: Updated zSHARES seed databasing\n", __func__);
                     fFirstRun = false;
                 } else {
-                    LogPrintf("%s: failed to remove old zPNY seed\n", __func__);
+                    LogPrintf("%s: failed to remove old zSHARES seed\n", __func__);
                 }
             }
         }
@@ -56,7 +57,7 @@ CzPIVWallet::CzPIVWallet(CWallet* parent)
         key.MakeNewKey(true);
         seed = key.GetPrivKey_256();
         seedMaster = seed;
-        LogPrintf("%s: first run of zPNY wallet detected, new seed generated. Seedhash=%s\n", __func__, Hash(seed.begin(), seed.end()).GetHex());
+        LogPrintf("%s: first run of zSHARES wallet detected, new seed generated. Seedhash=%s\n", __func__, Hash(seed.begin(), seed.end()).GetHex());
     } else if (!parent->GetDeterministicSeed(hashSeed, seed)) {
         LogPrintf("%s: failed to get deterministic seed for hashseed %s\n", __func__, hashSeed.GetHex());
         return;
@@ -340,7 +341,7 @@ bool CzPIVWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const 
         wallet->AddToWallet(wtx);
     }
 
-    // Add to zPNYTracker which also adds to database
+    // Add to zSHARESTracker which also adds to database
     wallet->zpivTracker->Add(dMint, true);
 
     //Update the count if it is less than the mint's count

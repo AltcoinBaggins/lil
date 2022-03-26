@@ -114,12 +114,12 @@
         <translation>Alıcı Adres</translation>
     </message>
     <message>
-        <source>These are your PNY addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Bunlar ödemeleri göndermek için olan PNY adreslerinizdir.Coinleri göndermeden önce her zaman gönderilen miktarı ve adresi kontrol edin</translation>
+        <source>These are your SHARES addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Bunlar ödemeleri göndermek için olan SHARES adreslerinizdir.Coinleri göndermeden önce her zaman gönderilen miktarı ve adresi kontrol edin</translation>
     </message>
     <message>
-        <source>These are your PNY addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Bunlar ödemeleri almak için olan PNY adreslerinizdirHer işlem için yeni bir adres kullanmanız önerilir.</translation>
+        <source>These are your SHARES addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Bunlar ödemeleri almak için olan SHARES adreslerinizdirHer işlem için yeni bir adres kullanmanız önerilir.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -348,8 +348,8 @@ Stake için kaldırın</translation>
         <translation>İPTAL</translation>
     </message>
     <message>
-        <source>PNY will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PNYs from being stolen by malware infecting your computer.</source>
-        <translation>PNY şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, PNY'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
+        <source>SHARES will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SHARESs from being stolen by malware infecting your computer.</source>
+        <translation>SHARES şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, SHARES'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -433,8 +433,8 @@ Stake için kaldırın</translation>
         <translation>Koin Seçimi</translation>
     </message>
     <message>
-        <source>Select PNY Outputs to Spend</source>
-        <translation>Harcama için PNY Çıktılarını Seçin</translation>
+        <source>Select SHARES Outputs to Spend</source>
+        <translation>Harcama için SHARES Çıktılarını Seçin</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -461,8 +461,8 @@ Stake için kaldırın</translation>
         <translation>Miktar</translation>
     </message>
     <message>
-        <source>0.00 PNY</source>
-        <translation>0.00 PNY</translation>
+        <source>0.00 SHARES</source>
+        <translation>0.00 SHARES</translation>
     </message>
     <message>
         <source>0</source>
@@ -699,8 +699,8 @@ Stake için kaldırın</translation>
         <translation>Filtrele</translation>
     </message>
     <message>
-        <source>Amount of PNY and zPNY staked.</source>
-        <translation>Stake edilmiş PNY ve zPNY miktarı</translation>
+        <source>Amount of SHARES and zSHARES staked.</source>
+        <translation>Stake edilmiş SHARES ve zSHARES miktarı</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -795,8 +795,8 @@ Cüzdanınız senkronize olduktan ve harcanmamış bakiyeniz yeterli miktarda on
         <translation>Gönderen adresini düzenle</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PNY address.</source>
-        <translation>Girilen "%1" adresi geçerli bir PNY adresi değil.</translation>
+        <source>The entered address "%1" is not a valid SHARES address.</source>
+        <translation>Girilen "%1" adresi geçerli bir SHARES adresi değil.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -915,8 +915,8 @@ Cüzdanınız senkronize olduktan ve harcanmamış bakiyeniz yeterli miktarda on
         <translation>Program ilk başlatıldığında Peony'un verilerini nerede saklayacağını seçebilirsiniz.</translation>
     </message>
     <message>
-        <source>Peony will download and store a copy of the PNY block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Peony, PNY blok zincirinin bir kopyasını indirecek ve depolayacaktır. Bu dizinde en az %1GB veri saklanacak ve zamanla büyüyecektir. Ayrıca cüzdanınız da bu dizinde saklanır.</translation>
+        <source>Peony will download and store a copy of the SHARES block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Peony, SHARES blok zincirinin bir kopyasını indirecek ve depolayacaktır. Bu dizinde en az %1GB veri saklanacak ve zamanla büyüyecektir. Ayrıca cüzdanınız da bu dizinde saklanır.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1036,7 +1036,7 @@ Cüzdanınız senkronize olduktan ve harcanmamış bakiyeniz yeterli miktarda on
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of collateral amount will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;10.000 PNY'lik bir transfer &lt;/p&gt;&lt;p&gt;yeni ve boş bir adrese yapılacaktır.&lt;/p&gt;&lt;p&gt;Adres Masternode'unuz ismi ile etiketlenecektir.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;10.000 SHARES'lik bir transfer &lt;/p&gt;&lt;p&gt;yeni ve boş bir adrese yapılacaktır.&lt;/p&gt;&lt;p&gt;Adres Masternode'unuz ismi ile etiketlenecektir.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1315,8 +1315,8 @@ Emin misiniz?</translation>
         <translation>Doğrulanmamış değişikliğin harcamasını devre dışı bırakırsanız, bir işlemdeki değişiklik&lt;br/&gt;Bu işlem en az bir onay alıncaya kadar kullanılamaz.&lt;br/&gt;Bu aynı zamanda bakiyenizin nasıl hesaplandığını etkiler.</translation>
     </message>
     <message>
-        <source>Automatically open the PNY client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Yönelticideki PNY istemci bağlantı noktasını otomatik olarak açın. Bu, yalnızca yönlendiriciniz UPnP'yi destekliyorsa ve etkinleştirilmişse çalışır.</translation>
+        <source>Automatically open the SHARES client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Yönelticideki SHARES istemci bağlantı noktasını otomatik olarak açın. Bu, yalnızca yönlendiriciniz UPnP'yi destekliyorsa ve etkinleştirilmişse çalışır.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1335,12 +1335,12 @@ Emin misiniz?</translation>
         <translation>Uzman</translation>
     </message>
     <message>
-        <source>Automatically start PNY after logging in to the system.</source>
-        <translation>Sisteme giriş yaptıktan sonra otomatik olarak PNY'i başlatın.</translation>
+        <source>Automatically start SHARES after logging in to the system.</source>
+        <translation>Sisteme giriş yaptıktan sonra otomatik olarak SHARES'i başlatın.</translation>
     </message>
     <message>
-        <source>&amp;Start PNY on system login</source>
-        <translation>&amp; Sistem oturum açma işleminde PNY'i başlat</translation>
+        <source>&amp;Start SHARES on system login</source>
+        <translation>&amp; Sistem oturum açma işleminde SHARES'i başlat</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1367,8 +1367,8 @@ Emin misiniz?</translation>
         <translation>&amp;Ağ</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PNY.</source>
-        <translation>Kullanıcı arabirimi dili burada ayarlanabilir. Bu ayar, PNY yeniden başlatıldıktan sonra geçerli olur.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting SHARES.</source>
+        <translation>Kullanıcı arabirimi dili burada ayarlanabilir. Bu ayar, SHARES yeniden başlatıldıktan sonra geçerli olur.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1381,44 +1381,44 @@ Emin misiniz?</translation>
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PNY units to zPNY</source>
-        <translation>PNY birimlerinin zPNY'e otomatik basımını ektinleştir</translation>
+        <source>Enable automatic minting of SHARES units to zSHARES</source>
+        <translation>SHARES birimlerinin zSHARES'e otomatik basımını ektinleştir</translation>
     </message>
     <message>
-        <source>Enable zPNY Automint</source>
-        <translation>zPNY Otomatik basımı etkinleştir</translation>
+        <source>Enable zSHARES Automint</source>
+        <translation>zSHARES Otomatik basımı etkinleştir</translation>
     </message>
     <message>
-        <source>Enable automatic zPNY minting from specific addresses</source>
-        <translation>Belirli bir adresten otomatik zPNY minting yapılmasını etkinleştir</translation>
+        <source>Enable automatic zSHARES minting from specific addresses</source>
+        <translation>Belirli bir adresten otomatik zSHARES minting yapılmasını etkinleştir</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint adreslerini etkinleştir</translation>
     </message>
     <message>
-        <source>Percentage of incoming PNY which get automatically converted to zPNY via Zerocoin Protocol (min: 10%)</source>
-        <translation>Zerocoin Protokolü üzerinden otomatik olarak zPNY'ye dönüştürülen gelen PNY yüzdesi (dakika: 10%)</translation>
+        <source>Percentage of incoming SHARES which get automatically converted to zSHARES via Zerocoin Protocol (min: 10%)</source>
+        <translation>Zerocoin Protokolü üzerinden otomatik olarak zSHARES'ye dönüştürülen gelen SHARES yüzdesi (dakika: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPNY</source>
-        <translation>Otomatikleştirilmiş zPNY yüzdesi</translation>
+        <source>Percentage of autominted zSHARES</source>
+        <translation>Otomatikleştirilmiş zSHARES yüzdesi</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PNY for this denomination is available</source>
-        <translation>Bu bölen için yeterli PNY bulunana kadar Zerocoin'e otomatik dönüştürmede kalın</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough SHARES for this denomination is available</source>
+        <translation>Bu bölen için yeterli SHARES bulunana kadar Zerocoin'e otomatik dönüştürmede kalın</translation>
     </message>
     <message>
-        <source>Preferred Automint zPNY Denomination</source>
-        <translation>Tercih edilen Automint zPNY Nominal değeri</translation>
+        <source>Preferred Automint zSHARES Denomination</source>
+        <translation>Tercih edilen Automint zSHARES Nominal değeri</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Stake bölme eşiği</translation>
     </message>
     <message>
-        <source>Connect to the PNY network through a SOCKS5 proxy.</source>
-        <translation>Bir SOCKS5 proxy vasıtasıyla PNY ağına bağlanın.</translation>
+        <source>Connect to the SHARES network through a SOCKS5 proxy.</source>
+        <translation>Bir SOCKS5 proxy vasıtasıyla SHARES ağına bağlanın.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1663,8 +1663,8 @@ Adres: %4
         <translation>Peony başlatılamıyor: tıkla ve ödeme işleyicisi</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PNY address or malformed URI parameters.</source>
-        <translation>URI ayrıştırılamaz! Bunun nedeni, geçersiz bir PNY adresi veya hatalı biçimlendirilmiş URI parametrelerinden kaynaklanabilir.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid SHARES address or malformed URI parameters.</source>
+        <translation>URI ayrıştırılamaz! Bunun nedeni, geçersiz bir SHARES adresi veya hatalı biçimlendirilmiş URI parametrelerinden kaynaklanabilir.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1789,8 +1789,8 @@ Adres: %4
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>A fatal error occurred. PNY can no longer continue safely and will quit.</source>
-        <translation>Onarılamaz bir hata oluştu. PNY güvenli bir şekilde çalışamaz, kapanacaktır.</translation>
+        <source>A fatal error occurred. SHARES can no longer continue safely and will quit.</source>
+        <translation>Onarılamaz bir hata oluştu. SHARES güvenli bir şekilde çalışamaz, kapanacaktır.</translation>
     </message>
     <message>
         <source>Peony</source>
@@ -1928,8 +1928,8 @@ Adres: %4
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the PNY debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Geçerli veri dizininden PNY hata ayıklama günlük dosyasını açın. Bu, büyük günlük dosyaları için birkaç saniye sürebilir.</translation>
+        <source>Open the SHARES debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Geçerli veri dizininden SHARES hata ayıklama günlük dosyasını açın. Bu, büyük günlük dosyaları için birkaç saniye sürebilir.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2072,8 +2072,8 @@ Adres: %4
         <translation>Özel Yedekleme Yolu:</translation>
     </message>
     <message>
-        <source>Custom zPNY Backup Path:</source>
-        <translation>Özel zPNY Yedekleme Yolu:</translation>
+        <source>Custom zSHARES Backup Path:</source>
+        <translation>Özel zSHARES Yedekleme Yolu:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2152,8 +2152,8 @@ Adres: %4
         <translation>Dışa:</translation>
     </message>
     <message>
-        <source>Welcome to the PNY RPC console.</source>
-        <translation>PNY RPC konsola hoşgeldiniz</translation>
+        <source>Welcome to the SHARES RPC console.</source>
+        <translation>SHARES RPC konsola hoşgeldiniz</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -2392,8 +2392,8 @@ Adres: %4
         <translation>Miktar</translation>
     </message>
     <message>
-        <source>PNY</source>
-        <translation>PNY</translation>
+        <source>SHARES</source>
+        <translation>SHARES</translation>
     </message>
     <message>
         <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
@@ -2447,8 +2447,8 @@ Adres: %4
         <translation>Özel fark adresi</translation>
     </message>
     <message>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" PNY address</source>
-        <translation>Giriş ve çıkış değerleri arasındaki kalan tutar "fark" PNY adresine gider</translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" SHARES address</source>
+        <translation>Giriş ve çıkış değerleri arasındaki kalan tutar "fark" SHARES adresine gider</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -2811,8 +2811,8 @@ Verify that you have installed a predetermined text editor.</source>
 Önceden belirlenmiş bir text editleme programınız olup olmadığını kontrol ediniz.</translation>
     </message>
     <message>
-        <source>Welcome to the PNY RPC console.</source>
-        <translation>PNY RPC konsola hoşgeldiniz</translation>
+        <source>Welcome to the SHARES RPC console.</source>
+        <translation>SHARES RPC konsola hoşgeldiniz</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -2932,46 +2932,46 @@ Verify that you have installed a predetermined text editor.</source>
         <translation>Form</translation>
     </message>
     <message>
-        <source>1) What is PNY?</source>
-        <translation>1)PNY nedir?</translation>
+        <source>1) What is SHARES?</source>
+        <translation>1)SHARES nedir?</translation>
     </message>
     <message>
-        <source>2) Why are my PNY unspendable?</source>
-        <translation>2) PNY'lerim neden harcanabilir değil?</translation>
+        <source>2) Why are my SHARES unspendable?</source>
+        <translation>2) SHARES'lerim neden harcanabilir değil?</translation>
     </message>
     <message>
         <source>1</source>
         <translation>1</translation>
     </message>
     <message>
-        <source>What is PNY?</source>
-        <translation>PNY Nedir?</translation>
+        <source>What is SHARES?</source>
+        <translation>SHARES Nedir?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           PNY is a form of digital online money using blockchain technology
+                           SHARES is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  PNY incorporates market leading security &amp;
+                           zero fees.  SHARES incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zPNY) and Zerocoin staking.
+                           to implement ZeroCoin(zSHARES) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           PNY utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of PNY to participate in earning block rewards
+                           SHARES utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of SHARES to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to create and vote on proposals.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           PNY blockchain teknolojisini kullanan bir dijital online para birimidir
+                           SHARES blockchain teknolojisini kullanan bir dijital online para birimidir
                            global olarak anında ve sıfıra yakın ücretlerle transfer edilebilir
-                           PNY sektördeki en ileri güvenlik ve gizliliğe sahip olmakla birlikte
-                          Zerocoin (zPNY) ve Zerocoin staking özelliklerini
+                           SHARES sektördeki en ileri güvenlik ve gizliliğe sahip olmakla birlikte
+                          Zerocoin (zSHARES) ve Zerocoin staking özelliklerini
                           uygulayan ilk PoS (Proof of Stake) Kriptoparadır.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           PNY bir  Proof of Stake (PoS) konsensüs algoritma sistemi kullanmaktadır,
-bu sayede PNY sahipleri blok ödülü kazanımına katılabilmektedir
+                           SHARES bir  Proof of Stake (PoS) konsensüs algoritma sistemi kullanmaktadır,
+bu sayede SHARES sahipleri blok ödülü kazanımına katılabilmektedir
                            ağı diğer tam düğüm sahibi cüzdanlarla birlikte güvenli hale getirirler
                            ayrıca Masternode oluşturarak tekliflere oy verirler.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -2982,25 +2982,25 @@ bu sayede PNY sahipleri blok ödülü kazanımına katılabilmektedir
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my PNY unspendable?</source>
-        <translation>PNY'lerim neden harcanabilir değil?</translation>
+        <source>Why are my SHARES unspendable?</source>
+        <translation>SHARES'lerim neden harcanabilir değil?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received PNY requires 6 confirmations on the network
+                           Newly received SHARES requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Your PNY wallet also needs to be completely synchronized
+                           Your SHARES wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Yeni alınmış PNY'lerin harcanabilr hale gelmesi için ağdan 6 onay
+                           Yeni alınmış SHARES'lerin harcanabilr hale gelmesi için ağdan 6 onay
                            alması gerekmektedir, bu işlem yaklaşık olarak 6 dakika sürer.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           PNY cüzdanınızın ağdaki bakiyesini görebilmesi ve harcayabilmesi
+                           SHARES cüzdanınızın ağdaki bakiyesini görebilmesi ve harcayabilmesi
                            için tamamen senkronize olması gerekmektedir.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -3028,7 +3028,7 @@ bu sayede PNY sahipleri blok ödülü kazanımına katılabilmektedir
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           A masternode is a computer running a full node PNY wallet with a
+                           A masternode is a computer running a full node SHARES wallet with a
                            required amount of secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
@@ -3050,10 +3050,10 @@ bu sayede PNY sahipleri blok ödülü kazanımına katılabilmektedir
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in PNY Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in SHARES Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the PNY network&lt;/li&gt;
+                           &lt;li&gt;Help secure the SHARES network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
@@ -3069,7 +3069,7 @@ bu sayede PNY sahipleri blok ödülü kazanımına katılabilmektedir
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Tam düğüm PNY cüzdanını çalıştıran, gereken 10,000 PNY
+                           Tam düğüm SHARES cüzdanını çalıştıran, gereken 10,000 SHARES
                            teminat bakiyesini barındırarak ağa ekstra hizmetler sunan ve
                            karşılığında da her blok ödülünden düzenli olarak pay alan bir
                            bilgisayardır.Bu hizmetler aşağıdaki gibidir:
@@ -3091,17 +3091,17 @@ işletim maliyetleri sonrası pasif bir gelir sunar.
                            Masternode Avantajları:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;PNY yönetimine katılın&lt;/li&gt;
+                           &lt;li&gt;SHARES yönetimine katılın&lt;/li&gt;
                            &lt;li&gt;Masternode Ödülleri kazanın&lt;/li&gt;
                            &lt;li&gt;İlerde satabileceğiniz bir varlık opsiyonu&lt;/li&gt;
-                           &lt;li&gt;PNY ağını güvenliğine destek olun&lt;/li&gt;
+                           &lt;li&gt;SHARES ağını güvenliğine destek olun&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            Gereksinimler:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Her Masternod için ayrı 10,000 PNY
+                           &lt;li&gt;Her Masternod için ayrı 10,000 SHARES
                            &lt;li&gt;Core cüzdan içinde saklanmalıdır.&lt;/li&gt;
                            &lt;li&gt;Atanmış IP adresi gerekmektedir. &lt;/li&gt;
                            &lt;li&gt;Masternode cüzdanının online olması&lt;/li&gt;
@@ -3232,8 +3232,8 @@ işletim maliyetleri sonrası pasif bir gelir sunar.
         <translation>Komut onay parça sayısı</translation>
     </message>
     <message>
-        <source>Start PNY on system login</source>
-        <translation>Sistem açılışında PNY'i başlat</translation>
+        <source>Start SHARES on system login</source>
+        <translation>Sistem açılışında SHARES'i başlat</translation>
     </message>
     <message>
         <source>Minimize to the tray instead of the taskbar</source>
@@ -3312,8 +3312,8 @@ Emin misiniz?
         <translation>CheckBox</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PNY addresses after it matures.</source>
-        <translation>ÇokluGönder olgunlaşmış masternode ve staking ödüllerinizin 100% 'üne kadarını diğer PNY adreslerine otomatik olarak göndermenizi sağlar. </translation>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SHARES addresses after it matures.</source>
+        <translation>ÇokluGönder olgunlaşmış masternode ve staking ödüllerinizin 100% 'üne kadarını diğer SHARES adreslerine otomatik olarak göndermenizi sağlar. </translation>
     </message>
     <message>
         <source>Active</source>
@@ -3692,8 +3692,8 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation>SSS</translation>
     </message>
     <message>
-        <source>About PNY</source>
-        <translation>PNY Hakkında</translation>
+        <source>About SHARES</source>
+        <translation>SHARES Hakkında</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -4142,20 +4142,20 @@ Peony Wallet</source>
 Hoşgeldiniz</translation>
     </message>
     <message>
-        <source>PNY is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>PNY Proof of Stake tabanlı dünyadaki en yenilikçi blockchain teknolojisidir. Yüksek tecrübeye sahip yazılımcılar ve kriptograflardan oluşan bir ekip tarafından geliştirilmiştir.</translation>
+        <source>SHARES is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>SHARES Proof of Stake tabanlı dünyadaki en yenilikçi blockchain teknolojisidir. Yüksek tecrübeye sahip yazılımcılar ve kriptograflardan oluşan bir ekip tarafından geliştirilmiştir.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - PNY believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Manifestomuzda yazdığı gibi: Gizlilik, pazarlık yapılamayacak temel bir insan hakkıdır; kullanıcılarına istedikleri zaman ve istedikleri kişiyle verilerini paylaşma özgürlüğü verir - PNY özerkliğe inanır.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - SHARES believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Manifestomuzda yazdığı gibi: Gizlilik, pazarlık yapılamayacak temel bir insan hakkıdır; kullanıcılarına istedikleri zaman ve istedikleri kişiyle verilerini paylaşma özgürlüğü verir - SHARES özerkliğe inanır.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>The masternode network is PNY's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
-        <translation>Masternode ağı dağıtık yönetim ve hazine yönetimini sağlayan PNY blockchaini üzerindeki ikinci katmandır.</translation>
+        <source>The masternode network is SHARES's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>Masternode ağı dağıtık yönetim ve hazine yönetimini sağlayan SHARES blockchaini üzerindeki ikinci katmandır.</translation>
     </message>
     <message>
-        <source>How PNY respects your privacy?</source>
-        <translation>PNY gizliliğinize nasıl saygı duyar?</translation>
+        <source>How SHARES respects your privacy?</source>
+        <translation>SHARES gizliliğinize nasıl saygı duyar?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -4601,8 +4601,8 @@ Hoşgeldiniz</translation>
         <translation>Whitelist içinde belirtilen geçersiz netmask: '%s'</translation>
     </message>
     <message>
-        <source>Recalculating PNY supply...</source>
-        <translation>PNY tedariği tekrar hesaplanıyor...</translation>
+        <source>Recalculating SHARES supply...</source>
+        <translation>SHARES tedariği tekrar hesaplanıyor...</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -4621,8 +4621,8 @@ Hoşgeldiniz</translation>
         <translation>Bu ön-sürümdeki bir test programıdır - riski kabullenerek kullanınız - staking ve ticaret uygulamalarında kullanmayın.</translation>
     </message>
     <message>
-        <source>Disable all PNY specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
-        <translation>PNY spesifik tüm fonksiyonaliteyi devre dışı bırak (Masternodes, Zerocoin, Budgeting) (0-1, varsayılan: %u)</translation>
+        <source>Disable all SHARES specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
+        <translation>SHARES spesifik tüm fonksiyonaliteyi devre dışı bırak (Masternodes, Zerocoin, Budgeting) (0-1, varsayılan: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5009,8 +5009,8 @@ Hoşgeldiniz</translation>
         <translation>Sporklar eşzamanlanıyor..</translation>
     </message>
     <message>
-        <source>Syncing zPNY wallet...</source>
-        <translation>zPNY cüzdanı eşzamanlanıyor..</translation>
+        <source>Syncing zSHARES wallet...</source>
+        <translation>zSHARES cüzdanı eşzamanlanıyor..</translation>
     </message>
     <message>
         <source>This help message</source>
@@ -5105,8 +5105,8 @@ Hoşgeldiniz</translation>
         <translation>JSON-RPC bağlantısı için kullanıcı adı</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPNY</source>
-        <translation>Aşağıdaki değer zPNY'in mümkün olan en küçük bölüm değeridir (=1)</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSHARES</source>
+        <translation>Aşağıdaki değer zSHARES'in mümkün olan en küçük bölüm değeridir (=1)</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

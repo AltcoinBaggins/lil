@@ -95,11 +95,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>选择发送PNY coin的地址</translation>
+        <translation>选择发送SHARES coin的地址</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>选择接收PNY coin的地址</translation>
+        <translation>选择接收SHARES coin的地址</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -114,12 +114,12 @@
         <translation>接收地址</translation>
     </message>
     <message>
-        <source>These are your PNY addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>这是用于发送PNY的地址。在发送PNY之前，请认真核查发送金额和接收地址。</translation>
+        <source>These are your SHARES addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>这是用于发送SHARES的地址。在发送SHARES之前，请认真核查发送金额和接收地址。</translation>
     </message>
     <message>
-        <source>These are your PNY addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>这是用于接收PNY的钱包地址。建议每一笔交易都使用一个新的钱包地址。</translation>
+        <source>These are your SHARES addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>这是用于接收SHARES的钱包地址。建议每一笔交易都使用一个新的钱包地址。</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -348,8 +348,8 @@ for staking</source>
         <translation>删除</translation>
     </message>
     <message>
-        <source>PNY will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PNYs from being stolen by malware infecting your computer.</source>
-        <translation>PNY将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取PNYs。</translation>
+        <source>SHARES will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SHARESs from being stolen by malware infecting your computer.</source>
+        <translation>SHARES将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取SHARESs。</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -433,8 +433,8 @@ for staking</source>
         <translation>币选择</translation>
     </message>
     <message>
-        <source>Select PNY Outputs to Spend</source>
-        <translation>选择PNY支出花费</translation>
+        <source>Select SHARES Outputs to Spend</source>
+        <translation>选择SHARES支出花费</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -461,8 +461,8 @@ for staking</source>
         <translation>金额</translation>
     </message>
     <message>
-        <source>0.00 PNY</source>
-        <translation>0.00 PNY</translation>
+        <source>0.00 SHARES</source>
+        <translation>0.00 SHARES</translation>
     </message>
     <message>
         <source>0</source>
@@ -703,8 +703,8 @@ for staking</source>
         <translation>过滤</translation>
     </message>
     <message>
-        <source>Amount of PNY and zPNY staked.</source>
-        <translation>已加注的PNY 和 zPNY 金额</translation>
+        <source>Amount of SHARES and zSHARES staked.</source>
+        <translation>已加注的SHARES 和 zSHARES 金额</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -799,8 +799,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>编辑发送地址</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PNY address.</source>
-        <translation>所输入的地址“%1”不是有效的PNY地址。</translation>
+        <source>The entered address "%1" is not a valid SHARES address.</source>
+        <translation>所输入的地址“%1”不是有效的SHARES地址。</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -923,8 +923,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>由于这是该程序第一次启动，您可以选择存储Peony 数据的位置。</translation>
     </message>
     <message>
-        <source>Peony will download and store a copy of the PNY block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Peony将下载并存储PNY区块链副本。 至少 %1 GB的数据将存储在此目录中，并且会随着时间的推移而增长。 钱包也将存储在此目录中。</translation>
+        <source>Peony will download and store a copy of the SHARES block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Peony将下载并存储SHARES区块链副本。 至少 %1 GB的数据将存储在此目录中，并且会随着时间的推移而增长。 钱包也将存储在此目录中。</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1043,8 +1043,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>创建新的主节点控制器</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PNY Masternode you must dedicate a collateral amount of PNY (the unit of PNY) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;要去创建一个PNY主节点，你必须奉献10,000 PNY（PNY的单位）到网络（但是这些币还是属于你的，一直为你所有）。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;你可以在任何时候关闭该节点并解锁币。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a SHARES Masternode you must dedicate a collateral amount of SHARES (the unit of SHARES) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;要去创建一个SHARES主节点，你必须奉献10,000 SHARES（SHARES的单位）到网络（但是这些币还是属于你的，一直为你所有）。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;你可以在任何时候关闭该节点并解锁币。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Set Masternode Name</source>
@@ -1064,7 +1064,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of collateral amount will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;将进行10,000 PNY的交易&lt;/p&gt;&lt;p&gt;到您的钱包空地址&lt;/p&gt;&lt;p&gt;地址被标记在主节点的名称之下&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;将进行10,000 SHARES的交易&lt;/p&gt;&lt;p&gt;到您的钱包空地址&lt;/p&gt;&lt;p&gt;地址被标记在主节点的名称之下&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1440,8 +1440,8 @@ Are you sure?</source>
         <translation>如果您要禁用未经确认发送，在至少有一个确认之前&lt;br/&gt;不能更改。&lt;br/&gt;这也将影响您的余额计算。</translation>
     </message>
     <message>
-        <source>Automatically open the PNY client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自动打开路由器上的PNY钱包使用的端口。 这只有当您的路由器支持UPnP并且该享生效时才有用。</translation>
+        <source>Automatically open the SHARES client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>自动打开路由器上的SHARES钱包使用的端口。 这只有当您的路由器支持UPnP并且该享生效时才有用。</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1460,12 +1460,12 @@ Are you sure?</source>
         <translation>专家</translation>
     </message>
     <message>
-        <source>Automatically start PNY after logging in to the system.</source>
-        <translation>登录系统后自动启动PNY。</translation>
+        <source>Automatically start SHARES after logging in to the system.</source>
+        <translation>登录系统后自动启动SHARES。</translation>
     </message>
     <message>
-        <source>&amp;Start PNY on system login</source>
-        <translation>&amp;开机启动PNY</translation>
+        <source>&amp;Start SHARES on system login</source>
+        <translation>&amp;开机启动SHARES</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1492,8 +1492,8 @@ Are you sure?</source>
         <translation>&amp;网络</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PNY.</source>
-        <translation>可以在这里设置用户界面语言。此设置将在重新启动PNY后生效。</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting SHARES.</source>
+        <translation>可以在这里设置用户界面语言。此设置将在重新启动SHARES后生效。</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1506,44 +1506,44 @@ Are you sure?</source>
         <translation>端口使用&amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PNY units to zPNY</source>
-        <translation>启动自动铸造PNY到zPNY</translation>
+        <source>Enable automatic minting of SHARES units to zSHARES</source>
+        <translation>启动自动铸造SHARES到zSHARES</translation>
     </message>
     <message>
-        <source>Enable zPNY Automint</source>
-        <translation>启动自动铸造zPNY</translation>
+        <source>Enable zSHARES Automint</source>
+        <translation>启动自动铸造zSHARES</translation>
     </message>
     <message>
-        <source>Enable automatic zPNY minting from specific addresses</source>
-        <translation>启用从特定地址自动生成zPNY</translation>
+        <source>Enable automatic zSHARES minting from specific addresses</source>
+        <translation>启用从特定地址自动生成zSHARES</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>启动自动铸造地址</translation>
     </message>
     <message>
-        <source>Percentage of incoming PNY which get automatically converted to zPNY via Zerocoin Protocol (min: 10%)</source>
-        <translation>通过零币协议自动转换为zPNY的传入PNY的百分比(最小:10%)</translation>
+        <source>Percentage of incoming SHARES which get automatically converted to zSHARES via Zerocoin Protocol (min: 10%)</source>
+        <translation>通过零币协议自动转换为zSHARES的传入SHARES的百分比(最小:10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPNY</source>
-        <translation>自动铸造的zPNY百分比</translation>
+        <source>Percentage of autominted zSHARES</source>
+        <translation>自动铸造的zSHARES百分比</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PNY for this denomination is available</source>
-        <translation>等待自动转换为零币，直到足够的PNY为这种面额可用</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough SHARES for this denomination is available</source>
+        <translation>等待自动转换为零币，直到足够的SHARES为这种面额可用</translation>
     </message>
     <message>
-        <source>Preferred Automint zPNY Denomination</source>
-        <translation>首选自动铸造zPNY面额</translation>
+        <source>Preferred Automint zSHARES Denomination</source>
+        <translation>首选自动铸造zSHARES面额</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>股权分割阈值:</translation>
     </message>
     <message>
-        <source>Connect to the PNY network through a SOCKS5 proxy.</source>
-        <translation>通过SOCKS5代理连接到PNY网络。</translation>
+        <source>Connect to the SHARES network through a SOCKS5 proxy.</source>
+        <translation>通过SOCKS5代理连接到SHARES网络。</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1599,7 +1599,7 @@ Are you sure?</source>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>选择显示发送PNY的默认单位。</translation>
+        <translation>选择显示发送SHARES的默认单位。</translation>
     </message>
     <message>
         <source>Decimal digits</source>
@@ -1788,8 +1788,8 @@ Address: %4
         <translation>无法启动peony:点击支付处理程序</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PNY address or malformed URI parameters.</source>
-        <translation>URI不能被解析!这可能是由无效的PNY地址或格式错误的URI参数造成的。</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid SHARES address or malformed URI parameters.</source>
+        <translation>URI不能被解析!这可能是由无效的SHARES地址或格式错误的URI参数造成的。</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1874,8 +1874,8 @@ Address: %4
         <translation>金额</translation>
     </message>
     <message>
-        <source>Enter PNY address (e.g. %1)</source>
-        <translation>输入PNY a地址(e.g. %1)</translation>
+        <source>Enter SHARES address (e.g. %1)</source>
+        <translation>输入SHARES a地址(e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1918,8 +1918,8 @@ Address: %4
         <translation>%1 毫秒</translation>
     </message>
     <message>
-        <source>A fatal error occurred. PNY can no longer continue safely and will quit.</source>
-        <translation>发生了一个致命的错误。PNY不能继续安全，将退出。</translation>
+        <source>A fatal error occurred. SHARES can no longer continue safely and will quit.</source>
+        <translation>发生了一个致命的错误。SHARES不能继续安全，将退出。</translation>
     </message>
     <message>
         <source>Peony</source>
@@ -2101,8 +2101,8 @@ Address: %4
         <translation>区块链</translation>
     </message>
     <message>
-        <source>Open the PNY debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>从当前数据目录打开PNY调试日志文件。对于大型日志文件，这可能需要几秒钟。</translation>
+        <source>Open the SHARES debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>从当前数据目录打开SHARES调试日志文件。对于大型日志文件，这可能需要几秒钟。</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2245,8 +2245,8 @@ Address: %4
         <translation>自定义备份路径:</translation>
     </message>
     <message>
-        <source>Custom zPNY Backup Path:</source>
-        <translation>自定义zPNY备份路径:</translation>
+        <source>Custom zSHARES Backup Path:</source>
+        <translation>自定义zSHARES备份路径:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2325,8 +2325,8 @@ Address: %4
         <translation>出：</translation>
     </message>
     <message>
-        <source>Welcome to the PNY RPC console.</source>
-        <translation>欢迎访问PNY RPC控制台</translation>
+        <source>Welcome to the SHARES RPC console.</source>
+        <translation>欢迎访问SHARES RPC控制台</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -2573,8 +2573,8 @@ Address: %4
         <translation>金额</translation>
     </message>
     <message>
-        <source>PNY</source>
-        <translation>PNY</translation>
+        <source>SHARES</source>
+        <translation>SHARES</translation>
     </message>
     <message>
         <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
@@ -2644,8 +2644,8 @@ Address: %4
         <translation>自定义更改地址</translation>
     </message>
     <message>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" PNY address</source>
-        <translation>输入值减去输出值所得的值的其余部分归为“更改”PNY地址</translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" SHARES address</source>
+        <translation>输入值减去输出值所得的值的其余部分归为“更改”SHARES地址</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -2671,8 +2671,8 @@ Address: %4
         <translation>已推荐</translation>
     </message>
     <message>
-        <source>PNY/kilobyte</source>
-        <translation>PNY/k字节</translation>
+        <source>SHARES/kilobyte</source>
+        <translation>SHARES/k字节</translation>
     </message>
     <message>
         <source>0.00 KB</source>
@@ -2923,8 +2923,8 @@ Do you want to continue?</source>
         <translation>解密钥匙</translation>
     </message>
     <message>
-        <source>PNY address</source>
-        <translation>PNY地址</translation>
+        <source>SHARES address</source>
+        <translation>SHARES地址</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -3048,8 +3048,8 @@ Verify that you have installed a predetermined text editor.</source>
 确认您已经安装了预定的文本编辑器</translation>
     </message>
     <message>
-        <source>Welcome to the PNY RPC console.</source>
-        <translation>欢迎访问PNY RPC控制台</translation>
+        <source>Welcome to the SHARES RPC console.</source>
+        <translation>欢迎访问SHARES RPC控制台</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -3233,46 +3233,46 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <translation>来自</translation>
     </message>
     <message>
-        <source>1) What is PNY?</source>
-        <translation>1）什么是PNY?</translation>
+        <source>1) What is SHARES?</source>
+        <translation>1）什么是SHARES?</translation>
     </message>
     <message>
-        <source>2) Why are my PNY unspendable?</source>
-        <translation>2) 我的PNY为什么不能用？</translation>
+        <source>2) Why are my SHARES unspendable?</source>
+        <translation>2) 我的SHARES为什么不能用？</translation>
     </message>
     <message>
         <source>1</source>
         <translation>1</translation>
     </message>
     <message>
-        <source>What is PNY?</source>
-        <translation>PNY是什么?</translation>
+        <source>What is SHARES?</source>
+        <translation>SHARES是什么?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           PNY is a form of digital online money using blockchain technology
+                           SHARES is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  PNY incorporates market leading security &amp;
+                           zero fees.  SHARES incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zPNY) and Zerocoin staking.
+                           to implement ZeroCoin(zSHARES) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           PNY utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of PNY to participate in earning block rewards
+                           SHARES utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of SHARES to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to create and vote on proposals.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-PNY是一种使用区块链技术的数字在线货币
+SHARES是一种使用区块链技术的数字在线货币
 全球范围内快捷交易，即时，基本为
-零的交易费用。PNY是市场上领先的安全和
+零的交易费用。SHARES是市场上领先的安全和
 隐私加密货币，也是第一个PoS(股权证明)加密货币
-实现零币(zPNY)和零币加注。
+实现零币(zSHARES)和零币加注。
 &lt;/p&gt;&lt;p align="justify"&gt;
-PNY使用了一个股权证明(PoS)一致系统算法，
-允许所有PNY的所有者参与赚取区块奖励
+SHARES使用了一个股权证明(PoS)一致系统算法，
+允许所有SHARES的所有者参与赚取区块奖励
 同时保护网络与完整的节点钱包，以及
 运行主节点创建和投票来进行提案。</translation>
     </message>
@@ -3281,25 +3281,25 @@ PNY使用了一个股权证明(PoS)一致系统算法，
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my PNY unspendable?</source>
-        <translation>我的PNY为什么不能用？</translation>
+        <source>Why are my SHARES unspendable?</source>
+        <translation>我的SHARES为什么不能用？</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received PNY requires 6 confirmations on the network
+                           Newly received SHARES requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Your PNY wallet also needs to be completely synchronized
+                           Your SHARES wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-接收到的PNY需要网络上的6个确认
+接收到的SHARES需要网络上的6个确认
 才能成为有资格的花费，可以花~6分钟。
 &lt;/p&gt;&lt;p align="justify"&gt;
-您的PNY钱包也需要完全同步
+您的SHARES钱包也需要完全同步
 查看网络收支余额。
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
@@ -3334,12 +3334,12 @@ PNY使用了一个股权证明(PoS)一致系统算法，
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the collateral amount can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;主节点控制器钱包是控制器-远程主节点建立期间10,000 PNY抵押可以驻留的地方。这是一个可以激活远程主节点钱包(s)的钱包，可以让你的抵押币离线但远程主节点保持在线。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;主节点控制器钱包是控制器-远程主节点建立期间10,000 SHARES抵押可以驻留的地方。这是一个可以激活远程主节点钱包(s)的钱包，可以让你的抵押币离线但远程主节点保持在线。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           A masternode is a computer running a full node PNY wallet with a
+                           A masternode is a computer running a full node SHARES wallet with a
                            required amount of secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
@@ -3361,10 +3361,10 @@ PNY使用了一个股权证明(PoS)一致系统算法，
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in PNY Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in SHARES Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the PNY network&lt;/li&gt;
+                           &lt;li&gt;Help secure the SHARES network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
@@ -3380,8 +3380,8 @@ PNY使用了一个股权证明(PoS)一致系统算法，
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-主节点是运行完整节点PNY核心钱包的计算机
-需要10,000个PNY作抵押以提供额外服务
+主节点是运行完整节点SHARES核心钱包的计算机
+需要10,000个SHARES作抵押以提供额外服务
 到网络，会收到一部分的区块奖励作为定期
 回报
 这些服务包括:
@@ -3402,17 +3402,17 @@ PNY使用了一个股权证明(PoS)一致系统算法，
 主节点福利：
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ul&gt;
-&lt;li&gt;参与PNY治理&lt;/li&gt;
+&lt;li&gt;参与SHARES治理&lt;/li&gt;
 &lt;li&gt;赢取主节点奖励&lt;/li&gt;
 &lt;li&gt;商品期货期权&lt;/li&gt;
-&lt;li&gt;帮助保护PNY网络&lt;/li&gt;
+&lt;li&gt;帮助保护SHARES网络&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
 
 要求：
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ul&gt;
-&lt;li&gt;每个主节点实例有10,000 PNY&lt;/li&gt;
+&lt;li&gt;每个主节点实例有10,000 SHARES&lt;/li&gt;
 &lt;li&gt;必须存储在核心钱包&lt;/li&gt;
 &lt;li&gt;需要专用IP地址&lt;/li&gt;
 主节点钱包保持在线&lt;li&gt;
@@ -3584,8 +3584,8 @@ PNY使用了一个股权证明(PoS)一致系统算法，
         <translation>脚本&amp;验证线程数</translation>
     </message>
     <message>
-        <source>Start PNY on system login</source>
-        <translation>开机启动PNY</translation>
+        <source>Start SHARES on system login</source>
+        <translation>开机启动SHARES</translation>
     </message>
     <message>
         <source>Minimize to the tray instead of the taskbar</source>
@@ -3672,8 +3672,8 @@ Are you sure?
         <translation>查看列表</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PNY addresses after it matures.</source>
-        <translation>成熟以后，多重花费允许您自动发送高达 100% 的股权或主节点奖励到其他PNY地址列表</translation>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SHARES addresses after it matures.</source>
+        <translation>成熟以后，多重花费允许您自动发送高达 100% 的股权或主节点奖励到其他SHARES地址列表</translation>
     </message>
     <message>
         <source>Active</source>
@@ -3791,8 +3791,8 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation>消息 </translation>
     </message>
     <message>
-        <source>PNY address or contact label</source>
-        <translation>PNY 地址或者联系人标签</translation>
+        <source>SHARES address or contact label</source>
+        <translation>SHARES 地址或者联系人标签</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -4068,8 +4068,8 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation>常见问题</translation>
     </message>
     <message>
-        <source>About PNY</source>
-        <translation>关于PNY </translation>
+        <source>About SHARES</source>
+        <translation>关于SHARES </translation>
     </message>
     <message>
         <source>Settings</source>
@@ -4606,20 +4606,20 @@ Peony Wallet</source>
 Peony心钱包</translation>
     </message>
     <message>
-        <source>PNY is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>PNY是世界上最先进的隐私保护技术，由经验丰富的开发人员和密码专家开发。</translation>
+        <source>SHARES is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>SHARES是世界上最先进的隐私保护技术，由经验丰富的开发人员和密码专家开发。</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - PNY believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;正如我们的宣言所说:隐私是一项不容协商的基本人权;它赋予用户随时随地与任何人共享数据的自由——PNY相信自我主权&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - SHARES believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;正如我们的宣言所说:隐私是一项不容协商的基本人权;它赋予用户随时随地与任何人共享数据的自由——SHARES相信自我主权&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>The masternode network is PNY's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
-        <translation>主节点网络是PNY在区块链之上的第二层网络，它使我们的DAO能够提供去中心的治理。</translation>
+        <source>The masternode network is SHARES's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>主节点网络是SHARES在区块链之上的第二层网络，它使我们的DAO能够提供去中心的治理。</translation>
     </message>
     <message>
-        <source>How PNY respects your privacy?</source>
-        <translation>PNY 到底是怎么尊重你的隐私的？</translation>
+        <source>How SHARES respects your privacy?</source>
+        <translation>SHARES 到底是怎么尊重你的隐私的？</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -5069,8 +5069,8 @@ Peony心钱包</translation>
         <translation>白名单中指定的无效网络掩码:'%s'</translation>
     </message>
     <message>
-        <source>Recalculating PNY supply...</source>
-        <translation>重新计算PNY供应量……</translation>
+        <source>Recalculating SHARES supply...</source>
+        <translation>重新计算SHARES供应量……</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5089,8 +5089,8 @@ Peony心钱包</translation>
         <translation>这是一个预发行测试版本 - 您自己承担风险 - 不要用于商业应用！</translation>
     </message>
     <message>
-        <source>Disable all PNY specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
-        <translation>禁用所有PNY特定功能(主节点, 零币, budget)(0-1，默认值:%u)</translation>
+        <source>Disable all SHARES specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
+        <translation>禁用所有SHARES特定功能(主节点, 零币, budget)(0-1，默认值:%u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5509,8 +5509,8 @@ Peony心钱包</translation>
         <translation>正在同步分叉...</translation>
     </message>
     <message>
-        <source>Syncing zPNY wallet...</source>
-        <translation>正在同步zPNY钱包……</translation>
+        <source>Syncing zSHARES wallet...</source>
+        <translation>正在同步zSHARES钱包……</translation>
     </message>
     <message>
         <source>This help message</source>
@@ -5613,8 +5613,8 @@ Peony心钱包</translation>
         <translation>JSON-RPC连接的用户名</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPNY</source>
-        <translation>值小于zPNY的最小可用面额(= 1)</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSHARES</source>
+        <translation>值小于zSHARES的最小可用面额(= 1)</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -5696,8 +5696,8 @@ Peony心钱包</translation>
         <translation>发送</translation>
     </message>
     <message>
-        <source>PNY address or contact label</source>
-        <translation>PNY 地址或者联系人标签</translation>
+        <source>SHARES address or contact label</source>
+        <translation>SHARES 地址或者联系人标签</translation>
     </message>
     <message>
         <source>Amount</source>

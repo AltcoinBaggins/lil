@@ -3,16 +3,16 @@
 ## Coin Specs
 
 - PoW Algorithm: X11KVS  
-- Premine: 7.750.000 PNY (Total coin supply from previous blockchain, distributed after maturing, the remaining is burned)
-- Max. Supply: 1.200.000.000 PNY 
+- Premine: 7.750.000 SHARES (Total coin supply from previous blockchain, distributed after maturing, the remaining is burned)
+- Max. Supply: 1.200.000.000 SHARES 
 - PoW Blocks: 1 - 1000
 - PoS Blocks: Starting from 1001
 - MN Blocks: Starting from 3001
 - Block Time: 60 Seconds
 - Maturity: 100 Confirmations 
-- Prefix: PNY addresses start with the capital letter "P"  
+- Prefix: SHARES addresses start with the capital letter "P"  
 - Ports: 36779 (p2p) / 36780 (rpc)   
-- Explorer [explorer.decenomy.net](https://explorer.decenomy.net/PNY/blocks)   
+- Explorer [explorer.cryptoshares.net](https://explorer.cryptoshares.net/SHARES/blocks)   
 - Website [peony.net](https://peony.net/)   
 
 ## Rewards Breakdown

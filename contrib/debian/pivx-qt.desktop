@@ -1,9 +1,9 @@
 [Desktop Entry]
 Version=1.0
 Name=Peony
-Comment= PNY P2P Cryptocurrency
-Comment[fr]= PNY, monnaie virtuelle cryptographique pair à pair
-Comment[tr]= PNY, eşten eşe kriptografik sanal para birimi
+Comment= SHARES P2P Cryptocurrency
+Comment[fr]= SHARES, monnaie virtuelle cryptographique pair à pair
+Comment[tr]= SHARES, eşten eşe kriptografik sanal para birimi
 Exec=peony-qt %u
 Terminal=false
 Type=Application

@@ -1,4 +1,4 @@
-# Valgrind suppressions file for  PNY.
+# Valgrind suppressions file for  SHARES.
 #
 # Includes known Valgrind warnings in our dependencies that cannot be fixed
 # in-tree.

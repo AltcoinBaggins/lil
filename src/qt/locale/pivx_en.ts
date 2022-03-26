@@ -152,12 +152,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your PNY addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your SHARES addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your PNY addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your SHARES addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -448,7 +448,7 @@ for staking</source>
     </message>
     <message>
         <location line="+161"/>
-        <source>PNY will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PNYs from being stolen by malware infecting your computer.</source>
+        <source>SHARES will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SHARESs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -579,7 +579,7 @@ for staking</source>
     </message>
     <message>
         <location line="+81"/>
-        <source>Select PNY Outputs to Spend</source>
+        <source>Select SHARES Outputs to Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -617,7 +617,7 @@ for staking</source>
         <location line="-393"/>
         <location line="+124"/>
         <location line="+461"/>
-        <source>0.00 PNY</source>
+        <source>0.00 SHARES</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -910,7 +910,7 @@ for staking</source>
     </message>
     <message>
         <location line="+357"/>
-        <source>How to get PNY</source>
+        <source>How to get SHARES</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -940,7 +940,7 @@ for staking</source>
     </message>
     <message>
         <location line="-558"/>
-        <source>Amount of PNY and zPNY staked.</source>
+        <source>Amount of SHARES and zSHARES staked.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1060,7 +1060,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+67"/>
-        <source>The entered address &quot;%1&quot; is not a valid PNY address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid SHARES address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1213,7 +1213,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+18"/>
-        <source>Peony will download and store a copy of the PNY block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Peony will download and store a copy of the SHARES block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1370,7 +1370,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+23"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PNY Masternode you must dedicate a collateral amount of PNY (the unit of PNY) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a SHARES Masternode you must dedicate a collateral amount of SHARES (the unit of SHARES) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1910,7 +1910,7 @@ NODES</source>
     </message>
     <message>
         <location line="+33"/>
-        <source>Automatically open the PNY client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the SHARES client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1935,12 +1935,12 @@ NODES</source>
     </message>
     <message>
         <location line="-236"/>
-        <source>Automatically start PNY after logging in to the system.</source>
+        <source>Automatically start SHARES after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start PNY on system login</source>
+        <source>&amp;Start SHARES on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1975,7 +1975,7 @@ NODES</source>
     </message>
     <message>
         <location line="+192"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting PNY.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting SHARES.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1991,17 +1991,17 @@ NODES</source>
     </message>
     <message>
         <location line="-187"/>
-        <source>Enable automatic minting of PNY units to zPNY</source>
+        <source>Enable automatic minting of SHARES units to zSHARES</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Enable zPNY Automint</source>
+        <source>Enable zSHARES Automint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Enable automatic zPNY minting from specific addresses</source>
+        <source>Enable automatic zSHARES minting from specific addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2011,23 +2011,23 @@ NODES</source>
     </message>
     <message>
         <location line="+11"/>
-        <source>Percentage of incoming PNY which get automatically converted to zPNY via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming SHARES which get automatically converted to zSHARES via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Percentage of autominted zPNY</source>
+        <source>Percentage of autominted zSHARES</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+30"/>
         <location line="+16"/>
-        <source>Wait with automatic conversion to Zerocoin until enough PNY for this denomination is available</source>
+        <source>Wait with automatic conversion to Zerocoin until enough SHARES for this denomination is available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-13"/>
-        <source>Preferred Automint zPNY Denomination</source>
+        <source>Preferred Automint zSHARES Denomination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2037,7 +2037,7 @@ NODES</source>
     </message>
     <message>
         <location line="+98"/>
-        <source>Connect to the PNY network through a SOCKS5 proxy.</source>
+        <source>Connect to the SHARES network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2353,7 +2353,7 @@ Address: %4
     </message>
     <message>
         <location line="+107"/>
-        <source>URI cannot be parsed! This can be caused by an invalid PNY address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid SHARES address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2466,11 +2466,11 @@ Address: %4
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+138"/>
-        <source>Enter PNY address (e.g. %1)</source>
+        <source>Enter SHARES address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+PNY"/>
+        <location line="+SHARES"/>
         <source>%1 d</source>
         <translation>%1 d</translation>
     </message>
@@ -2522,7 +2522,7 @@ Address: %4
     </message>
     <message>
         <location filename="../pivx.cpp" line="+518"/>
-        <source>A fatal error occurred. PNY can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. SHARES can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2847,7 +2847,7 @@ Address: %4
     </message>
     <message>
         <location line="+93"/>
-        <source>Open the PNY debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the SHARES debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3029,7 +3029,7 @@ Address: %4
     </message>
     <message>
         <location line="+29"/>
-        <source>Custom zPNY Backup Path:</source>
+        <source>Custom zSHARES Backup Path:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3129,7 +3129,7 @@ Address: %4
     </message>
     <message>
         <location line="-39"/>
-        <source>Welcome to the PNY RPC console.</source>
+        <source>Welcome to the SHARES RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3310,7 +3310,7 @@ Address: %4
     </message>
     <message>
         <location filename="../pivx/forms/receivewidget.ui" line="+61"/>
-        <source>Scan the QR code or copy the address to receive PNY</source>
+        <source>Scan the QR code or copy the address to receive SHARES</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3473,12 +3473,12 @@ Address: %4
     </message>
     <message>
         <location line="+74"/>
-        <source>PNY</source>
+        <source>SHARES</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-117"/>
-        <source>Instead of sharing only a PNY address, you can create a payment request, bundling up more information</source>
+        <source>Instead of sharing only a SHARES address, you can create a payment request, bundling up more information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3577,7 +3577,7 @@ Address: %4
     </message>
     <message>
         <location line="+72"/>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the &quot;change&quot; PNY address</source>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the &quot;change&quot; SHARES address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3610,7 +3610,7 @@ Address: %4
     </message>
     <message>
         <location line="+86"/>
-        <source>PNY/kilobyte</source>
+        <source>SHARES/kilobyte</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3943,7 +3943,7 @@ Remember to write it down and store it safely, otherwise you might lose access t
     </message>
     <message>
         <location line="+7"/>
-        <source>Encrypt your PNY addresses (key pair actually) using BIP38 encryption.
+        <source>Encrypt your SHARES addresses (key pair actually) using BIP38 encryption.
 Using this mechanism you can share your keys without middle-man risk, only need to store your passphrase safely</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3990,7 +3990,7 @@ Using this mechanism you can share your keys without middle-man risk, only need 
     </message>
     <message>
         <location line="+77"/>
-        <source>PNY address</source>
+        <source>SHARES address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4157,7 +4157,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+148"/>
-        <source>Welcome to the PNY RPC console.</source>
+        <source>Welcome to the SHARES RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4385,12 +4385,12 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+152"/>
-        <source>1) What is PNY?</source>
+        <source>1) What is SHARES?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>2) Why are my PNY unspendable?</source>
+        <source>2) Why are my SHARES unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4405,21 +4405,21 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+18"/>
-        <source>What is PNY?</source>
+        <source>What is SHARES?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           PNY is a form of digital online money using blockchain technology
+                           SHARES is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  PNY incorporates market leading security &amp;
+                           zero fees.  SHARES incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zPNY) and Zerocoin staking.
+                           to implement ZeroCoin(zSHARES) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           PNY utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of PNY to participate in earning block rewards
+                           SHARES utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of SHARES to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to create and vote on proposals.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4433,17 +4433,17 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+21"/>
-        <source>Why are my PNY unspendable?</source>
+        <source>Why are my SHARES unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           Newly received PNY requires 6 confirmations on the network
+                           Newly received SHARES requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           Your PNY wallet also needs to be completely synchronized
+                           Your SHARES wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -4456,12 +4456,12 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+18"/>
-        <source>How do I stake PNY?</source>
+        <source>How do I stake SHARES?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Make sure your wallet is completely synchronized and you are using the latest release. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You must have a balance of PNY with a minimum of 600 confirmations. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Your wallet must stay online and be unlocked for staking purposes. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Once all those steps are followed staking should be enabled. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &amp;quot;Staking Enabled&amp;quot; to indicate it is staking. Using the command line interface (peony-cli); the command &lt;span style=&quot; font-style:italic;&quot;&gt;getstakingstatus&lt;/span&gt; will confirm that staking is active. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Make sure your wallet is completely synchronized and you are using the latest release. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You must have a balance of SHARES with a minimum of 600 confirmations. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Your wallet must stay online and be unlocked for staking purposes. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Once all those steps are followed staking should be enabled. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &amp;quot;Staking Enabled&amp;quot; to indicate it is staking. Using the command line interface (peony-cli); the command &lt;span style=&quot; font-style:italic;&quot;&gt;getstakingstatus&lt;/span&gt; will confirm that staking is active. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4514,7 +4514,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <location line="-131"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           A masternode is a computer running a full node PNY wallet with a
+                           A masternode is a computer running a full node SHARES wallet with a
                            required amount of secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
@@ -4536,10 +4536,10 @@ There was an error trying to save the address list to %1. Please try again.</sou
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in PNY Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in SHARES Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the PNY network&lt;/li&gt;
+                           &lt;li&gt;Help secure the SHARES network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
 
@@ -4562,7 +4562,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+158"/>
-        <source>3) How do I stake PNY?</source>
+        <source>3) How do I stake SHARES?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4783,7 +4783,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location filename="../pivx/settings/settingsmainoptionswidget.cpp" line="+57"/>
-        <source>Start PNY on system login</source>
+        <source>Start SHARES on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4891,7 +4891,7 @@ Are you sure?
     </message>
     <message>
         <location filename="../pivx/settings/settingsmultisendwidget.cpp" line="+164"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PNY addresses after it matures.</source>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SHARES addresses after it matures.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5046,7 +5046,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     </message>
     <message>
         <location line="-62"/>
-        <source>PNY address or contact label</source>
+        <source>SHARES address or contact label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5456,7 +5456,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     </message>
     <message>
         <location line="+31"/>
-        <source>About PNY</source>
+        <source>About SHARES</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6276,22 +6276,22 @@ Peony Wallet</source>
     </message>
     <message>
         <location line="+27"/>
-        <source>PNY is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <source>SHARES is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - PNY believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - SHARES believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+83"/>
-        <source>The masternode network is PNY&apos;s second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <source>The masternode network is SHARES&apos;s second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-103"/>
-        <source>How PNY respects your privacy?</source>
+        <source>How SHARES respects your privacy?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6859,7 +6859,7 @@ Peony Wallet</source>
     </message>
     <message>
         <location line="+50"/>
-        <source>Recalculating PNY supply...</source>
+        <source>Recalculating SHARES supply...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6894,7 +6894,7 @@ Peony Wallet</source>
     </message>
     <message>
         <location line="-144"/>
-        <source>Disable all PNY specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all SHARES specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7254,7 +7254,7 @@ Peony Wallet</source>
     </message>
     <message>
         <location line="+37"/>
-        <source>Minimum positive amount (in PNY) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
+        <source>Minimum positive amount (in SHARES) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7636,7 +7636,7 @@ Peony Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Syncing zPNY wallet...</source>
+        <source>Syncing zSHARES wallet...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7791,7 +7791,7 @@ Peony Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Value is below the smallest available denomination (= 1) of zPNY</source>
+        <source>Value is below the smallest available denomination (= 1) of zSHARES</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7900,12 +7900,12 @@ Peony Wallet</source>
     </message>
     <message>
         <location line="-505"/>
-        <source>Send public coins (PNY)</source>
+        <source>Send public coins (SHARES)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+60"/>
-        <source>PNY address or contact label</source>
+        <source>SHARES address or contact label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

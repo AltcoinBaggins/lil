@@ -2,10 +2,10 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Peony Core"
-#define MyAppPublisher "2022 DECENOMY Core Developers"
+#define MyAppPublisher "2022 CRYPTOSHARES Core Developers"
 #define MyAppURL "https://peony.net"
 #define MyAppExeName "peony-qt.exe"
-#define MyAppExtraData "https://explorer.decenomy.net/bootstraps/PNY/bootstrap.zip"
+#define MyAppExtraData "https://explorer.cryptoshares.net/bootstraps/SHARES/bootstrap.zip"
 #define MyAppVersion GetVersionNumbersString(".\package\" + MyAppExeName)
 
 #include ReadReg(HKLM, 'Software\WOW6432Node\Mitrich Software\Inno Download Plugin', 'InstallDir') + '\idp.iss'

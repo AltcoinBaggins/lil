@@ -32,5 +32,5 @@ fi
 
 # Create zip file of binaries
     cp peony/src/peonyd peony/src/peony-cli peony/src/peony-tx peony/src/qt/peony-qt peony/Peony-Core.dmg .
-    zip PNY-MacOS.zip peonyd peony-cli peony-tx peony-qt Peony-Core.dmg
+    zip SHARES-MacOS.zip peonyd peony-cli peony-tx peony-qt Peony-Core.dmg
     rm -f peonyd peony-cli peony-tx peony-qt Peony-Core.dmg

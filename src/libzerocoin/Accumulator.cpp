@@ -10,6 +10,7 @@
  * @license    This project is released under the MIT license.
  **/
 // Copyright (c) 2017-2020 The PIVX developers
+// Copyright (c) 2021-2022 The DECENOMY Core Developers
 
 #include <sstream>
 #include <iostream>

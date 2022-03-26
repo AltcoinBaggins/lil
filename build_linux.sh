@@ -30,5 +30,5 @@ fi
 
 # Create zip file of binaries
 	cp peony/src/peonyd peony/src/peony-cli peony/src/peony-tx peony/src/qt/peony-qt .
-	zip PNY-$(git describe --abbrev=0 --tags | sed s/v//)-Linux.zip peonyd peony-cli peony-tx peony-qt
+	zip SHARES-$(git describe --abbrev=0 --tags | sed s/v//)-Linux.zip peonyd peony-cli peony-tx peony-qt
 	rm -f peonyd peony-cli peony-tx peony-qt

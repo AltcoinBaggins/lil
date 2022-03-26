@@ -122,12 +122,12 @@
         <translation>Адреса получения</translation>
     </message>
     <message>
-        <source>These are your PNY addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Это ваши PNY-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
+        <source>These are your SHARES addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Это ваши SHARES-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
     </message>
     <message>
-        <source>These are your PNY addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Это ваши PNY-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
+        <source>These are your SHARES addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Это ваши SHARES-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -363,8 +363,8 @@ for staking</source>
         <translation>ОТМЕНА</translation>
     </message>
     <message>
-        <source>PNY will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PNYs from being stolen by malware infecting your computer.</source>
-        <translation>PNY сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши PNY от кражи с использованием вредоносного ПО.</translation>
+        <source>SHARES will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SHARESs from being stolen by malware infecting your computer.</source>
+        <translation>SHARES сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши SHARES от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -464,8 +464,8 @@ for staking</source>
         <translation>Выбор монеты</translation>
     </message>
     <message>
-        <source>Select PNY Outputs to Spend</source>
-        <translation>Выберите PNY выходы для расходов</translation>
+        <source>Select SHARES Outputs to Spend</source>
+        <translation>Выберите SHARES выходы для расходов</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -492,8 +492,8 @@ for staking</source>
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>0.00 PNY</source>
-        <translation>0.00 PNY </translation>
+        <source>0.00 SHARES</source>
+        <translation>0.00 SHARES </translation>
     </message>
     <message>
         <source>0</source>
@@ -722,8 +722,8 @@ for staking</source>
         <translation>Обзор истории вашего аккаунта</translation>
     </message>
     <message>
-        <source>How to get PNY</source>
-        <translation>Как получить PNY</translation>
+        <source>How to get SHARES</source>
+        <translation>Как получить SHARES</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -746,8 +746,8 @@ for staking</source>
         <translation>Сортировать по</translation>
     </message>
     <message>
-        <source>Amount of PNY and zPNY staked.</source>
-        <translation>Сумма добытых PNY и zPNY</translation>
+        <source>Amount of SHARES and zSHARES staked.</source>
+        <translation>Сумма добытых SHARES и zSHARES</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -842,8 +842,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>Изменить адрес отправки</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PNY address.</source>
-        <translation>Введенный адрес "%1" не является PNY адресом.</translation>
+        <source>The entered address "%1" is not a valid SHARES address.</source>
+        <translation>Введенный адрес "%1" не является SHARES адресом.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -966,8 +966,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные Peony.</translation>
     </message>
     <message>
-        <source>Peony will download and store a copy of the PNY block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Peony загрузит и сохранит копию цепочки блоков PNY. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
+        <source>Peony will download and store a copy of the SHARES block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Peony загрузит и сохранит копию цепочки блоков SHARES. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1111,7 +1111,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of collateral amount will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;На новый пустой адрес в вашем кошельке&lt;/p&gt;&lt;p&gt; будет сделана транзакция в 10 000 PNY. &lt;/p&gt;&lt;p&gt;Адрес отмечен под именем мастерноды.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;На новый пустой адрес в вашем кошельке&lt;/p&gt;&lt;p&gt; будет сделана транзакция в 10 000 SHARES. &lt;/p&gt;&lt;p&gt;Адрес отмечен под именем мастерноды.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1554,8 +1554,8 @@ NODES</source>
         <translation>Отключив проведение неподтвержденных изменений все изменения о транзакции &lt;br/&gt;не будут использованы пока транзакция не получит хотя бы одно подтверждение.&lt;br/&gt;Также это влияет на расчет вашего баланса.</translation>
     </message>
     <message>
-        <source>Automatically open the PNY client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть клиентский порт PNY через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
+        <source>Automatically open the SHARES client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть клиентский порт SHARES через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1574,12 +1574,12 @@ NODES</source>
         <translation>Эксперт</translation>
     </message>
     <message>
-        <source>Automatically start PNY after logging in to the system.</source>
-        <translation>Автоматически запускать PNY после входа в систему.</translation>
+        <source>Automatically start SHARES after logging in to the system.</source>
+        <translation>Автоматически запускать SHARES после входа в систему.</translation>
     </message>
     <message>
-        <source>&amp;Start PNY on system login</source>
-        <translation>&amp;Запускать PNY при входе в систему</translation>
+        <source>&amp;Start SHARES on system login</source>
+        <translation>&amp;Запускать SHARES при входе в систему</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1606,8 +1606,8 @@ NODES</source>
         <translation>&amp;Сеть</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PNY.</source>
-        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска PNY.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting SHARES.</source>
+        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска SHARES.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1620,44 +1620,44 @@ NODES</source>
         <translation>Карта порта, использующего &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PNY units to zPNY</source>
-        <translation>Невозможно автоматически отчеканить единицы PNY для zPNY</translation>
+        <source>Enable automatic minting of SHARES units to zSHARES</source>
+        <translation>Невозможно автоматически отчеканить единицы SHARES для zSHARES</translation>
     </message>
     <message>
-        <source>Enable zPNY Automint</source>
-        <translation>Невозможно авточеканка  zPNY</translation>
+        <source>Enable zSHARES Automint</source>
+        <translation>Невозможно авточеканка  zSHARES</translation>
     </message>
     <message>
-        <source>Enable automatic zPNY minting from specific addresses</source>
-        <translation>Включить автоматическое чеканку zPNY с определенных адресов</translation>
+        <source>Enable automatic zSHARES minting from specific addresses</source>
+        <translation>Включить автоматическое чеканку zSHARES с определенных адресов</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Включить адреса с автоматической чеканкой</translation>
     </message>
     <message>
-        <source>Percentage of incoming PNY which get automatically converted to zPNY via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент приходящих PNY, которые автоматически конвертируются в zPNY благодаря Zerocoin протоколу (min: 10%)</translation>
+        <source>Percentage of incoming SHARES which get automatically converted to zSHARES via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент приходящих SHARES, которые автоматически конвертируются в zSHARES благодаря Zerocoin протоколу (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPNY</source>
-        <translation>Процент  авточеканненых zPNY</translation>
+        <source>Percentage of autominted zSHARES</source>
+        <translation>Процент  авточеканненых zSHARES</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PNY for this denomination is available</source>
-        <translation>Подождите с автоматическим преобразованием в Zerocoin, пока не будет достаточно PNY для этой номинации.</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough SHARES for this denomination is available</source>
+        <translation>Подождите с автоматическим преобразованием в Zerocoin, пока не будет достаточно SHARES для этой номинации.</translation>
     </message>
     <message>
-        <source>Preferred Automint zPNY Denomination</source>
-        <translation>Предпочитаемый номинал авточеканной  монеты  zPNY</translation>
+        <source>Preferred Automint zSHARES Denomination</source>
+        <translation>Предпочитаемый номинал авточеканной  монеты  zSHARES</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Порог разделения доли:</translation>
     </message>
     <message>
-        <source>Connect to the PNY network through a SOCKS5 proxy.</source>
-        <translation>Подключиться к сети PNY через SOCKS5 прокси.</translation>
+        <source>Connect to the SHARES network through a SOCKS5 proxy.</source>
+        <translation>Подключиться к сети SHARES через SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1902,8 +1902,8 @@ Address: %4
         <translation>Не удалось запустить peony: обработчик click-to-pay </translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PNY address or malformed URI parameters.</source>
-        <translation>URI не интерпретируется! Причиной этому может быть неверный PNY адрес или неверные параметеры URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid SHARES address or malformed URI parameters.</source>
+        <translation>URI не интерпретируется! Причиной этому может быть неверный SHARES адрес или неверные параметеры URI.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1988,8 +1988,8 @@ Address: %4
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>Enter PNY address (e.g. %1)</source>
-        <translation>Введите адрес PNY (например, %1)</translation>
+        <source>Enter SHARES address (e.g. %1)</source>
+        <translation>Введите адрес SHARES (например, %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2032,8 +2032,8 @@ Address: %4
         <translation>%1 мс</translation>
     </message>
     <message>
-        <source>A fatal error occurred. PNY can no longer continue safely and will quit.</source>
-        <translation>Произошла фатальная ошибка. PNY больше не может безопасно продолжать работу и завершит работу.</translation>
+        <source>A fatal error occurred. SHARES can no longer continue safely and will quit.</source>
+        <translation>Произошла фатальная ошибка. SHARES больше не может безопасно продолжать работу и завершит работу.</translation>
     </message>
     <message>
         <source>Peony</source>
@@ -2267,8 +2267,8 @@ Address: %4
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the PNY debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть протокол отладки PNY. Это может занять некоторе время, если файл протокола очень большой.</translation>
+        <source>Open the SHARES debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть протокол отладки SHARES. Это может занять некоторе время, если файл протокола очень большой.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2411,8 +2411,8 @@ Address: %4
         <translation>Пользовательский путь резервного копирования:</translation>
     </message>
     <message>
-        <source>Custom zPNY Backup Path:</source>
-        <translation>Пользовательский путь резервного копирования zPNY:</translation>
+        <source>Custom zSHARES Backup Path:</source>
+        <translation>Пользовательский путь резервного копирования zSHARES:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2492,8 +2492,8 @@ Address: %4
         <translation>Вывод:</translation>
     </message>
     <message>
-        <source>Welcome to the PNY RPC console.</source>
-        <translation>Добро пожаловать в окружение PNY RPC.</translation>
+        <source>Welcome to the SHARES RPC console.</source>
+        <translation>Добро пожаловать в окружение SHARES RPC.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -2634,8 +2634,8 @@ Address: %4
         <translation>Нет адресов</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive PNY</source>
-        <translation>Сканируйте QR-код или скопируйте адрес для получения PNY</translation>
+        <source>Scan the QR code or copy the address to receive SHARES</source>
+        <translation>Сканируйте QR-код или скопируйте адрес для получения SHARES</translation>
     </message>
     <message>
         <source>Add Label</source>
@@ -2764,12 +2764,12 @@ Address: %4
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>PNY</source>
-        <translation>PNY</translation>
+        <source>SHARES</source>
+        <translation>SHARES</translation>
     </message>
     <message>
-        <source>Instead of sharing only a PNY address, you can create a payment request, bundling up more information</source>
-        <translation>Вместо того, чтобы делиться только адресом PNY, вы можете создать запрос на оплату, связывая больше информации</translation>
+        <source>Instead of sharing only a SHARES address, you can create a payment request, bundling up more information</source>
+        <translation>Вместо того, чтобы делиться только адресом SHARES, вы можете создать запрос на оплату, связывая больше информации</translation>
     </message>
     <message>
         <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
@@ -2847,8 +2847,8 @@ Address: %4
         <translation>Смена адреса</translation>
     </message>
     <message>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" PNY address</source>
-        <translation>Остаточная часть значения, полученного от значения входов минус выходов, идет на «изменение» адреса PNY</translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" SHARES address</source>
+        <translation>Остаточная часть значения, полученного от значения входов минус выходов, идет на «изменение» адреса SHARES</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -2874,8 +2874,8 @@ Address: %4
         <translation>рекомендуемые</translation>
     </message>
     <message>
-        <source>PNY/kilobyte</source>
-        <translation>PNY/килобайт</translation>
+        <source>SHARES/kilobyte</source>
+        <translation>SHARES/килобайт</translation>
     </message>
     <message>
         <source>0.00 KB</source>
@@ -3146,9 +3146,9 @@ Remember to write it down and store it safely, otherwise you might lose access t
         <translation>Инструмент BIP38</translation>
     </message>
     <message>
-        <source>Encrypt your PNY addresses (key pair actually) using BIP38 encryption.
+        <source>Encrypt your SHARES addresses (key pair actually) using BIP38 encryption.
 Using this mechanism you can share your keys without middle-man risk, only need to store your passphrase safely</source>
-        <translation>Зашифруйте свои адреса PNY (фактически, пару ключей), используя шифрование BIP38.
+        <translation>Зашифруйте свои адреса SHARES (фактически, пару ключей), используя шифрование BIP38.
 С помощью этого механизма вы можете делиться своими ключами без риска посредника, вам нужно только безопасно хранить вашу парольную фразу</translation>
     </message>
     <message>
@@ -3184,8 +3184,8 @@ Using this mechanism you can share your keys without middle-man risk, only need 
         <translation>Расшифровать ключ</translation>
     </message>
     <message>
-        <source>PNY address</source>
-        <translation>Адрес PNY</translation>
+        <source>SHARES address</source>
+        <translation>Адрес SHARES</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -3317,8 +3317,8 @@ Verify that you have installed a predetermined text editor.</source>
 Убедитесь, что вы установили заранее установленный текстовый редактор.</translation>
     </message>
     <message>
-        <source>Welcome to the PNY RPC console.</source>
-        <translation>Добро пожаловать в окружение PNY RPC.</translation>
+        <source>Welcome to the SHARES RPC console.</source>
+        <translation>Добро пожаловать в окружение SHARES RPC.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -3501,12 +3501,12 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <translation>Вид</translation>
     </message>
     <message>
-        <source>1) What is PNY?</source>
-        <translation>1) Что такое PNY?</translation>
+        <source>1) What is SHARES?</source>
+        <translation>1) Что такое SHARES?</translation>
     </message>
     <message>
-        <source>2) Why are my PNY unspendable?</source>
-        <translation>2) Почему мои PNY невозможно потратить?</translation>
+        <source>2) Why are my SHARES unspendable?</source>
+        <translation>2) Почему мои SHARES невозможно потратить?</translation>
     </message>
     <message>
         <source>https://peonycoin.io/</source>
@@ -3517,33 +3517,33 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <translation>1</translation>
     </message>
     <message>
-        <source>What is PNY?</source>
-        <translation>Что такое PNY?</translation>
+        <source>What is SHARES?</source>
+        <translation>Что такое SHARES?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           PNY is a form of digital online money using blockchain technology
+                           SHARES is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  PNY incorporates market leading security &amp;
+                           zero fees.  SHARES incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zPNY) and Zerocoin staking.
+                           to implement ZeroCoin(zSHARES) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           PNY utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of PNY to participate in earning block rewards
+                           SHARES utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of SHARES to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to create and vote on proposals.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-PNY - это форма цифровых онлайн-денег, использующая технологию блокчейн,
+SHARES - это форма цифровых онлайн-денег, использующая технологию блокчейн,
 которая может быть легко переведена по всему миру, мгновенно и с практически
-нулевой комиссией. PNY включает в себя лидирующую на рынке защиту и
+нулевой комиссией. SHARES включает в себя лидирующую на рынке защиту и
 «конфиденциальность», а также является первой PoS криптовалютой (Proof of Stake),
-в которой реализована система стекинга ZeroCoin (zPNY) и Zerocoin.
+в которой реализована система стекинга ZeroCoin (zSHARES) и Zerocoin.
 &lt;/p&gt;&lt;p align="justify"&gt;
-PNY использует консенсус PoS (Proof of Stake), позволяя всем владельцам PNY участвовать в заработке вознаграждений
+SHARES использует консенсус PoS (Proof of Stake), позволяя всем владельцам SHARES участвовать в заработке вознаграждений
 при этом обеспечивая безопасность сети с помощью кошельков с полными узлами, а также позволяет
 запускать мастерноды для создания предложений и голосования по ним.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
@@ -3553,25 +3553,25 @@ PNY использует консенсус PoS (Proof of Stake), позволя
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my PNY unspendable?</source>
-        <translation>Почему мои PNY невозможно потратить?</translation>
+        <source>Why are my SHARES unspendable?</source>
+        <translation>Почему мои SHARES невозможно потратить?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received PNY requires 6 confirmations on the network
+                           Newly received SHARES requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Your PNY wallet also needs to be completely synchronized
+                           Your SHARES wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Недавно полученным PNY требуется 6 подтверждений в сети,
+Недавно полученным SHARES требуется 6 подтверждений в сети,
 чтобы получить право быть расходуемыми. Это может занять примерно 6 минут.
 &lt;/p&gt;&lt;p align="justify"&gt;
-Ваш кошелек PNY также должен быть полностью синхронизирован,
+Ваш кошелек SHARES также должен быть полностью синхронизирован,
 чтобы видеть баланс и расходовать его в сети.
  &lt;/p&gt;&lt;/body&gt;&lt;/html&gt; </translation>
     </message>
@@ -3580,8 +3580,8 @@ PNY использует консенсус PoS (Proof of Stake), позволя
         <translation>3</translation>
     </message>
     <message>
-        <source>How do I stake PNY?</source>
-        <translation>Как мне запустить стекинг PNY?</translation>
+        <source>How do I stake SHARES?</source>
+        <translation>Как мне запустить стекинг SHARES?</translation>
     </message>
     <message>
         <source>4</source>
@@ -3612,7 +3612,7 @@ PNY использует консенсус PoS (Proof of Stake), позволя
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           A masternode is a computer running a full node PNY wallet with a
+                           A masternode is a computer running a full node SHARES wallet with a
                            required amount of secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
@@ -3634,10 +3634,10 @@ PNY использует консенсус PoS (Proof of Stake), позволя
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in PNY Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in SHARES Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the PNY network&lt;/li&gt;
+                           &lt;li&gt;Help secure the SHARES network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
@@ -3652,7 +3652,7 @@ PNY использует консенсус PoS (Proof of Stake), позволя
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
-Мастернода - это компьютер, на котором запущен базовый кошелек PNY с полным узлом и для которого требуется обеспечение в 10000 PNY для обеспечения дополнительных услуг сети и, в свою очередь, регулярного получения части вознаграждения за блок. Эти услуги в себя включают:
+Мастернода - это компьютер, на котором запущен базовый кошелек SHARES с полным узлом и для которого требуется обеспечение в 10000 SHARES для обеспечения дополнительных услуг сети и, в свою очередь, регулярного получения части вознаграждения за блок. Эти услуги в себя включают:
 
 Децентрализованное управление (Голосование по предложениям)
 Децентрализованная система бюджетирования (Казначейство)
@@ -3663,14 +3663,14 @@ PNY использует консенсус PoS (Proof of Stake), позволя
 
 Привилегии мастерноды:
 
-Участие в управлении PNY
+Участие в управлении SHARES
 Получение вознаграждений за мастерноду
 Товарные опционы для будущей продажи
-Помощь в защите сети PNY
+Помощь в защите сети SHARES
 
 Требования:
 
-10 000 PNY для каждой мастерноды
+10 000 SHARES для каждой мастерноды
 Должен храниться в основном кошельке
 Требуется выделенный IP-адрес
 Кошелек мастерноды должен оставаться в сети</translation>
@@ -3680,8 +3680,8 @@ PNY использует консенсус PoS (Proof of Stake), позволя
         <translation>Часто задаваемые вопросы</translation>
     </message>
     <message>
-        <source>3) How do I stake PNY?</source>
-        <translation>3) Как мне запустить стекинг PNY?</translation>
+        <source>3) How do I stake SHARES?</source>
+        <translation>3) Как мне запустить стекинг SHARES?</translation>
     </message>
     <message>
         <source>4) Where I should go if I need support?</source>
@@ -3858,8 +3858,8 @@ PNY использует консенсус PoS (Proof of Stake), позволя
         <translation>Количество потоков проверки скрипта</translation>
     </message>
     <message>
-        <source>Start PNY on system login</source>
-        <translation>Запускать PNY при входе в систему</translation>
+        <source>Start SHARES on system login</source>
+        <translation>Запускать SHARES при входе в систему</translation>
     </message>
     <message>
         <source>Minimize to the tray instead of the taskbar</source>
@@ -3946,8 +3946,8 @@ Are you sure?
         <translation>Флажок</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PNY addresses after it matures.</source>
-        <translation>MultiSend позволяет автоматически отправлять до 100% ваших вознаграждений от стекинга или мастернод в список других адресов PNY после его созревания.</translation>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SHARES addresses after it matures.</source>
+        <translation>MultiSend позволяет автоматически отправлять до 100% ваших вознаграждений от стекинга или мастернод в список других адресов SHARES после его созревания.</translation>
     </message>
     <message>
         <source>Active</source>
@@ -4073,8 +4073,8 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation>Сообщение</translation>
     </message>
     <message>
-        <source>PNY address or contact label</source>
-        <translation>PNY адрес или лейбл контакта</translation>
+        <source>SHARES address or contact label</source>
+        <translation>SHARES адрес или лейбл контакта</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -4394,8 +4394,8 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation>ЧаВо</translation>
     </message>
     <message>
-        <source>About PNY</source>
-        <translation>О PNY</translation>
+        <source>About SHARES</source>
+        <translation>О SHARES</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -5019,20 +5019,20 @@ Peony Wallet</source>
 в основной кошелек Peony</translation>
     </message>
     <message>
-        <source>PNY is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>PNY - самая инновационная в мире технология на основе блокчейна Proof of Stake. Разработана командой опытных разработчиков и криптографов.</translation>
+        <source>SHARES is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>SHARES - самая инновационная в мире технология на основе блокчейна Proof of Stake. Разработана командой опытных разработчиков и криптографов.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - PNY believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Как говорится в нашем манифесте: конфиденциальность является не подлежащим обсуждению основным правом человека; это дает пользователям свободу делиться своими данными в любое время и с кем угодно, ведь PNY верит в собственный суверенитет.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - SHARES believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Как говорится в нашем манифесте: конфиденциальность является не подлежащим обсуждению основным правом человека; это дает пользователям свободу делиться своими данными в любое время и с кем угодно, ведь SHARES верит в собственный суверенитет.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>The masternode network is PNY's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
-        <translation>Сеть мастернод - это сеть второго уровня PNY поверх блокчейна, которая позволяет нашему ДАО обеспечивать децентрализованное управление и казначейство.</translation>
+        <source>The masternode network is SHARES's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>Сеть мастернод - это сеть второго уровня SHARES поверх блокчейна, которая позволяет нашему ДАО обеспечивать децентрализованное управление и казначейство.</translation>
     </message>
     <message>
-        <source>How PNY respects your privacy?</source>
-        <translation>Как PNY уважает вашу конфиденциальность?</translation>
+        <source>How SHARES respects your privacy?</source>
+        <translation>Как SHARES уважает вашу конфиденциальность?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -5482,8 +5482,8 @@ Peony Wallet</source>
         <translation>Недопустимая сетевая маска, указанная в -whitelist: '%s'</translation>
     </message>
     <message>
-        <source>Recalculating PNY supply...</source>
-        <translation>Перерасчет предложения PNY...</translation>
+        <source>Recalculating SHARES supply...</source>
+        <translation>Перерасчет предложения SHARES...</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5502,8 +5502,8 @@ Peony Wallet</source>
         <translation>Это предварительная версия сборки - используйте на свой страх и риск - не используйте для ставок или коммерческих приложений!</translation>
     </message>
     <message>
-        <source>Disable all PNY specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
-        <translation>Отключите все специфические функции PNY (Masternodes, Zerocoin, Бюджетирование) (0-1, по умолчанию: %u)</translation>
+        <source>Disable all SHARES specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
+        <translation>Отключите все специфические функции SHARES (Masternodes, Zerocoin, Бюджетирование) (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5770,8 +5770,8 @@ Peony Wallet</source>
         <translation>Комиссия (в %s/Кбайт) меньше этого значения считается с нулевой комиссией за создание транзакции (по умолчанию: %s)</translation>
     </message>
     <message>
-        <source>Minimum positive amount (in PNY) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
-        <translation>Минимальная положительная сумма (в PNY), разрешенная GUI и RPC для порога разделения стекинга (по умолчанию: %s)</translation>
+        <source>Minimum positive amount (in SHARES) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
+        <translation>Минимальная положительная сумма (в SHARES), разрешенная GUI и RPC для порога разделения стекинга (по умолчанию: %s)</translation>
     </message>
     <message>
         <source>Please check that your computer's date and time are correct! If your clock is wrong Peony will not work properly.</source>
@@ -6044,8 +6044,8 @@ Peony Wallet</source>
         <translation>Синхронизация спорков ...</translation>
     </message>
     <message>
-        <source>Syncing zPNY wallet...</source>
-        <translation>Синхронизация zPNY кошелька ...</translation>
+        <source>Syncing zSHARES wallet...</source>
+        <translation>Синхронизация zSHARES кошелька ...</translation>
     </message>
     <message>
         <source>The threshold value cannot be less than %s</source>
@@ -6164,8 +6164,8 @@ Peony Wallet</source>
         <translation>Имя пользователя для соединений JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPNY</source>
-        <translation>Значение ниже наименьшего доступного номинала (= 1) zPNY</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSHARES</source>
+        <translation>Значение ниже наименьшего доступного номинала (= 1) zSHARES</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -6247,12 +6247,12 @@ Peony Wallet</source>
         <translation>Отправить</translation>
     </message>
     <message>
-        <source>Send public coins (PNY)</source>
-        <translation>Отправить монеты (PNY)</translation>
+        <source>Send public coins (SHARES)</source>
+        <translation>Отправить монеты (SHARES)</translation>
     </message>
     <message>
-        <source>PNY address or contact label</source>
-        <translation>PNY адрес или лейбл контакта</translation>
+        <source>SHARES address or contact label</source>
+        <translation>SHARES адрес или лейбл контакта</translation>
     </message>
     <message>
         <source>Amount</source>

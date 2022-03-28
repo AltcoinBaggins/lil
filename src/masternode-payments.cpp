@@ -350,7 +350,7 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, const CBloc
         }
     }
 
-    CTxDestination dev_destination = CBitcoinAddress(Params().GetConsensus().devAddress).Get();
+    CTxDestination dev_destination = DecodeDestination(Params().GetConsensus().devAddress);
     CScript devScript = GetScriptForDestination(dev_destination);
 
     // fallback when no MNs currently available

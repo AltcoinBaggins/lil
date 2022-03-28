@@ -268,6 +268,7 @@ public:
     static CAmount GetMasternodeNodeCollateral(int nHeight);
     static CAmount GetBlockValue(int nHeight);
     static CAmount GetMasternodePayment(int nHeight);
+    static CAmount GetDevPayment(int nHeight);
     static void InitMasternodeCollateralList();
     static std::pair<int, CAmount> GetNextMasternodeCollateral(int nHeight);
 };

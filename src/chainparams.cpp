@@ -270,7 +270,7 @@ public:
         consensus.nCoinbaseMaturity = 100;
         consensus.nFutureTimeDriftPoW = 7200;
         consensus.nFutureTimeDriftPoS = 180;
-        consensus.nMaxMoneyOut = 9999999999 * COIN;
+        consensus.nMaxMoneyOut = 60000000 * COIN;
         consensus.nPoolMaxTransactions = 3;
         consensus.nProposalEstablishmentTime = 60 * 60 * 24;    // must be at least a day old to make it into a budget
         consensus.nStakeMinAge = 30 * 60; // 30 min
@@ -286,6 +286,9 @@ public:
         consensus.strSporkPubKeyOld = "";
         consensus.nTime_EnforceNewSporkKey = 0;
         consensus.nTime_RejectOldSporkKey = 0;
+
+        // dev address
+        consensus.devAddress = "SXARDKdzEHXUwKYCGESQji79EYNvPicono";
 
         // burn addresses
         consensus.mBurnAddresses = {
@@ -422,6 +425,9 @@ public:
         consensus.nTime_EnforceNewSporkKey = 0;
         consensus.nTime_RejectOldSporkKey = 0;
 
+        // dev address
+        consensus.devAddress = "SZQ7FehpbJBL5zcx6VGmtYxNPRJzHvWExx";
+
         // height based activations
         consensus.height_last_ZC_AccumCheckpoint    = 999999999;
         consensus.height_last_ZC_WrappedSerials     = 999999999;
@@ -557,6 +563,9 @@ public:
         consensus.strSporkPubKeyOld = "";
         consensus.nTime_EnforceNewSporkKey = 0;
         consensus.nTime_RejectOldSporkKey = 0;
+
+        // dev address
+        consensus.devAddress = "SZQ7FehpbJBL5zcx6VGmtYxNPRJzHvWExx";
 
         // height based activations
         consensus.height_last_ZC_AccumCheckpoint = 310;     // no checkpoints on regtest

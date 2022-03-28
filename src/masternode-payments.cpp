@@ -360,7 +360,7 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, const CBloc
 
     CAmount masternodePayment = CMasternode::GetMasternodePayment(pindexPrev->nHeight + 1);
     CAmount blockValue = CMasternode::GetBlockValue(pindexPrev->nHeight + 1);
-    CAmount nDevReward = CMasternode::GetDevPayment(pindexPrev->nHeight + 1, blockValue);
+    CAmount nDevReward = CMasternode::GetDevPayment(pindexPrev->nHeight + 1);
 
     if (fProofOfStake) {
         /**For Proof Of Stake vout[0] must be null

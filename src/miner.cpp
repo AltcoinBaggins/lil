@@ -652,7 +652,9 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             if (!ProcessBlockFound(pblock, *pwallet, opReservekey)) {
                 LogPrintf("%s: New block orphaned\n", __func__);
                 continue;
-            }
+            } 
+            // update fStakeableCoins after we have used one of the outputs
+            fStakeableCoins = pwallet->StakeableCoins(availableCoins);
             SetThreadPriority(THREAD_PRIORITY_LOWEST);
             continue;
         }

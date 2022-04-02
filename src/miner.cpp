@@ -654,7 +654,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                 continue;
             } 
             // update fStakeableCoins after we have used one of the outputs
-            fStakeableCoins = pwallet->StakeableCoins(availableCoins);
+            fStakeableCoins = pwallet->StakeableCoins(&availableCoins);
             SetThreadPriority(THREAD_PRIORITY_LOWEST);
             continue;
         }

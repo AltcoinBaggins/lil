@@ -2547,8 +2547,10 @@ bool CWallet::CreateCoinStake(
         }
 
         nCredit = 0;
-
         nAttempts++;
+
+	if (nAttempts == 1) continue;
+
         fKernelFound = Stake(pindexPrev, &stakeInput, nBits, nTxNewTime);
 
         // update staker status (time, attempts)

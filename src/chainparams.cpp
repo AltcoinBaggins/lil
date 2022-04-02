@@ -353,15 +353,10 @@ public:
         pchMessageStart[3] = 0x1a;
         nDefaultPort = 22190;
 
-        vSeeds.push_back(CDNSSeedData("seeder", "seeder.cryptoshares.net"));
-	    vSeeds.push_back(CDNSSeedData("seed1", "seed1.cryptoshares.net"));
-        vSeeds.push_back(CDNSSeedData("seed2", "seed2.cryptoshares.net"));
-        vSeeds.push_back(CDNSSeedData("seed3", "seed3.cryptoshares.net"));
-        vSeeds.push_back(CDNSSeedData("seed4", "seed4.cryptoshares.net"));
-	    vSeeds.push_back(CDNSSeedData("seed5", "seed5.cryptoshares.net"));
-	    vSeeds.push_back(CDNSSeedData("seed6", "seed6.cryptoshares.net"));
-	    vSeeds.push_back(CDNSSeedData("seed7", "seed7.cryptoshares.net"));
-	    vSeeds.push_back(CDNSSeedData("seed8", "seed8.cryptoshares.net"));
+        vSeeds.push_back(CDNSSeedData("173.199.119.55", "173.199.119.55"));
+	    vSeeds.push_back(CDNSSeedData("207.148.18.27", "207.148.18.27"));
+        vSeeds.push_back(CDNSSeedData("45.77.222.79", "45.77.222.79"));
+        vSeeds.push_back(CDNSSeedData("108.61.81.41", "108.61.81.41"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63);     // S
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 28);     // C

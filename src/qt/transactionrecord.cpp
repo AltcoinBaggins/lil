@@ -69,7 +69,7 @@ bool TransactionRecord::decomposeCoinStake(const CWallet* wallet, const CWalletT
 
         // Dev reward
         CTxDestination dest;
-        CTxDestination destDev = CBitcoinAddress(Params().GetConsensus().devAddress).Get();
+        CTxDestination destDev = DecodeDestination(Params().GetConsensus().devAddress);
         int nIndexDev = wtx.vout.size() - 1;
         if (ExtractDestination(wtx.vout[nIndexDev].scriptPubKey, dest) && (mine = IsMine(*wallet, destMN) && dest == destDev) ) {
             sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;

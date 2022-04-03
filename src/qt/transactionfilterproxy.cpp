@@ -154,7 +154,7 @@ int TransactionFilterProxy::rowCount(const QModelIndex& parent) const
 bool TransactionFilterProxy::isOrphan(const int status, const int type)
 {
     return ( (type == TransactionRecord::Generated || type == TransactionRecord::StakeMint ||
-            type == TransactionRecord::StakeZPIV || type == TransactionRecord::MNReward)
+            type == TransactionRecord::StakeZPIV || type == TransactionRecord::MNReward || type == TransactionRecord::DevReward)
             && (status == TransactionStatus::Conflicted || status == TransactionStatus::NotAccepted) );
 }
 

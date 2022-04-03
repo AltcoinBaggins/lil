@@ -57,14 +57,25 @@ bool TransactionRecord::decomposeCoinStake(const CWallet* wallet, const CWalletT
         sub.address = EncodeDestination(address);
         sub.credit = nCredit - nDebit;
     } else {
-        //Masternode reward
+        // Masternode reward
         CTxDestination destMN;
-        int nIndexMN = (int) wtx.vout.size() - 1;
+        int nIndexMN = (int) wtx.vout.size() - 2;
         if (ExtractDestination(wtx.vout[nIndexMN].scriptPubKey, destMN) && (mine = IsMine(*wallet, destMN)) ) {
             sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
             sub.type = TransactionRecord::MNReward;
             sub.address = EncodeDestination(destMN);
             sub.credit = wtx.vout[nIndexMN].nValue;
+        }
+
+        // Dev reward
+        CTxDestination dest;
+        CTxDestination destDev = CBitcoinAddress(Params().GetConsensus().devAddress).Get();
+        int nIndexDev = wtx.vout.size() - 1;
+        if (ExtractDestination(wtx.vout[nIndexDev].scriptPubKey, dest) && (mine = IsMine(*wallet, destMN) && dest == destDev) ) {
+            sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
+            sub.type = TransactionRecord::DevReward;
+            sub.address = EncodeDestination(destDev);
+            sub.credit = wtx.vout[nIndexDev].nValue;
         }
     }
 
@@ -422,7 +433,8 @@ void TransactionRecord::updateStatus(const CWalletTx& wtx)
     else if (type == TransactionRecord::Generated ||
             type == TransactionRecord::StakeMint ||
             type == TransactionRecord::StakeZPIV ||
-            type == TransactionRecord::MNReward) {
+            type == TransactionRecord::MNReward ||
+            type == TransactionRecord::DevReward) {
 
         if (nBlocksToMaturity > 0) {
             status.status = TransactionStatus::Immature;

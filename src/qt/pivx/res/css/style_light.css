@@ -1586,7 +1586,7 @@ HH      SPLASH
 HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 
 *[cssClass="container-splash"] {
-  background-color: transparent;
+  background-color: #000000;
   background-image: url("://bg-splash-png");
   font-family: Nunito;
 }

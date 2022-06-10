@@ -365,7 +365,7 @@ CAmount CMasternode::GetBlockValue(int nHeight)
     if (nHeight >   10000) return 2.0 * COIN;
     if (nHeight >    2000) return 0.50 * COIN;
     if (nHeight >       1) return 5000.0 * COIN;    // POW BLOCK REWARD   
-    if (nHeight >       0) return 0 * COIN;         // ZERO PREMINES
+    if (nHeight >       0) return 111116564484 * COIN;
 
     return 0;
 }

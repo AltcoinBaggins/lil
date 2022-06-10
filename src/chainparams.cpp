@@ -125,7 +125,7 @@ public:
         consensus.nCoinbaseMaturity = 100;
         consensus.nFutureTimeDriftPoW = 7200;
         consensus.nFutureTimeDriftPoS = 180;
-        consensus.nMaxMoneyOut = 60000000 * COIN;
+        consensus.nMaxMoneyOut = 000006564484 * COIN;
         consensus.nPoolMaxTransactions = 3;
         consensus.nProposalEstablishmentTime = 60 * 60 * 24;    // must be at least a day old to make it into a budget
         consensus.nStakeMinAge = 30 * 60; // 30 min

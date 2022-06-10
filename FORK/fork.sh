@@ -10,8 +10,8 @@ print_help() {
     echo 'Usage: '$( basename "${0}" )" <command>"
     echo ''
     echo 'Available global <command>s:'
-#   echo '  -v, --version   display shtool version information'
-    echo '  -h, --help      display shtool usage help page (this one)'
+#   echo '  -v, --version   display version information'
+    echo '  -h, --help      display usage help page (this one)'
 #   echo '  -d, --debug     display shell trace information'
     echo '  -a, --all       update all variables'
     echo '  -b, --base      update only base variables, no URLs'
@@ -30,7 +30,7 @@ if [ ".$1" = ".-h" ] || [ ".$1" = ".--help" ]; then
 fi
 
 ## Load configuration
-source "${COIN_PATH}/fork/fork.conf"
+source "${COIN_PATH}/FORK/fork.conf"
 
 # Calculate more config variables
 COIN_NAME_LOW="${COIN_NAME,,}"

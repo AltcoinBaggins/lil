@@ -4,11 +4,11 @@ PWD=$(pwd)
 
 if [ $# -eq 0 ]; then
     echo "$0:Error: invalid command line" 1>&2
-    print_help()
+    print_help
     exit 1
 fi
 if [ ".$1" = ".-h" ] || [ ".$1" = ".--help" ]; then
-    print_help()
+    print_help
     exit 0
 fi
 

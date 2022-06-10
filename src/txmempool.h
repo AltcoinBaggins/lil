@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2016-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The CRYPTOSHARES Core Developers
+// Copyright (c) 2022 The Cortez Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -81,7 +81,7 @@ private:
     size_t nModSize;      //! ... and modified size for priority
     size_t nUsageSize;    //! ... and total memory usage
     CFeeRate feeRate;     //! ... and fee per kB
-    bool hasZerocoins{false}; //! ... and checking if it contains zSHARES (mints/spends)
+    bool hasZerocoins{false}; //! ... and checking if it contains zCRTZ (mints/spends)
     int64_t nTime;        //! Local time when entering the mempool
     double entryPriority;     //! Priority when entering the mempool
     unsigned int entryHeight; //! Chain height when entering the mempool

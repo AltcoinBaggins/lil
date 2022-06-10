@@ -6,7 +6,7 @@
 // Copyright (c) 2014-2018 The BlackCoin Developers
 // Copyright (c) 2015-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The CRYPTOSHARES Core Developers
+// Copyright (c) 2022 The Cortez Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -511,14 +511,14 @@ std::string HelpMessage(HelpMessageMode mode)
     }
     strUsage += HelpMessageOpt("-shrinkdebugfile", _("Shrink debug.log file on client startup (default: 1 when no -debug)"));
     strUsage += HelpMessageOpt("-testnet", _("Use the test network"));
-    strUsage += HelpMessageOpt("-litemode=<n>", strprintf(_("Disable all SHARES specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)"), 0));
+    strUsage += HelpMessageOpt("-litemode=<n>", strprintf(_("Disable all CRTZ specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)"), 0));
 
     strUsage += HelpMessageGroup(_("Masternode options:"));
     strUsage += HelpMessageOpt("-masternode=<n>", strprintf(_("Enable the client to act as a masternode (0-1, default: %u)"), DEFAULT_MASTERNODE));
     strUsage += HelpMessageOpt("-mnconf=<file>", strprintf(_("Specify masternode configuration file (default: %s)"), PIVX_MASTERNODE_CONF_FILENAME));
     strUsage += HelpMessageOpt("-mnconflock=<n>", strprintf(_("Lock masternodes from masternode configuration file (default: %u)"), DEFAULT_MNCONFLOCK));
     strUsage += HelpMessageOpt("-masternodeprivkey=<n>", _("Set the masternode private key"));
-    strUsage += HelpMessageOpt("-masternodeaddr=<n>", strprintf(_("Set external address:port to get to this masternode (example: %s)"), "128.127.106.235:22190"));
+    strUsage += HelpMessageOpt("-masternodeaddr=<n>", strprintf(_("Set external address:port to get to this masternode (example: %s)"), "128.127.106.235:9991"));
     strUsage += HelpMessageOpt("-budgetvotemode=<mode>", _("Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)"));
 
     strUsage += HelpMessageGroup(_("Zerocoin options:"));
@@ -566,7 +566,7 @@ std::string LicenseInfo()
            "\n" +
            FormatParagraph(strprintf(_("Copyright (C) 2015-%i The PIVX Core Developers"), COPYRIGHT_YEAR)) + "\n" +
            "\n" +
-           FormatParagraph(strprintf(_("Copyright (C) %i The CRYPTOSHARES Core Developers"), COPYRIGHT_YEAR)) + "\n" +
+           FormatParagraph(strprintf(_("Copyright (C) %i The Cortez Core Developers"), COPYRIGHT_YEAR)) + "\n" +
            "\n" +
            FormatParagraph(_("This is experimental software.")) + "\n" +
            "\n" +
@@ -694,7 +694,7 @@ void ThreadImport(std::vector<fs::path> vImportFiles)
 }
 
 /** Sanity checks
- *  Ensure that CRYPTOSHARES is running in a usable environment with all
+ *  Ensure that Cortez is running in a usable environment with all
  *  necessary library support.
  */
 bool InitSanityCheck(void)
@@ -925,10 +925,10 @@ void InitLogging()
 #else
     version_string += " (release build)";
 #endif
-    LogPrintf("CRYPTOSHARES version %s (%s)\n", version_string, CLIENT_DATE);
+    LogPrintf("Cortez version %s (%s)\n", version_string, CLIENT_DATE);
 }
 
-/** Initialize cryptoshares.
+/** Initialize cortez.
  *  @pre Parameters should be parsed and config file should be read.
  */
 bool AppInit2()
@@ -1087,11 +1087,11 @@ bool AppInit2()
 
     // Sanity check
     if (!InitSanityCheck())
-        return UIError(_("Initialization sanity check failed. CRYPTOSHARES is shutting down."));
+        return UIError(_("Initialization sanity check failed. Cortez is shutting down."));
 
     std::string strDataDir = GetDataDir().string();
 
-    // Make sure only a single CRYPTOSHARES process is using the data directory.
+    // Make sure only a single Cortez process is using the data directory.
     fs::path pathLockFile = GetDataDir() / ".lock";
     FILE* file = fsbridge::fopen(pathLockFile, "a"); // empty lock file; created if it doesn't exist.
     if (file) fclose(file);
@@ -1099,7 +1099,7 @@ bool AppInit2()
 
     // Wait maximum 10 seconds if an old wallet is still running. Avoids lockup during restart
     if (!lock.timed_lock(boost::get_system_time() + boost::posix_time::seconds(10)))
-        return UIError(strprintf(_("Cannot obtain a lock on data directory %s. CRYPTOSHARES is probably already running."), strDataDir));
+        return UIError(strprintf(_("Cannot obtain a lock on data directory %s. Cortez is probably already running."), strDataDir));
 
 #ifndef WIN32
     CreatePidFile(GetPidFile(), getpid());
@@ -1447,7 +1447,7 @@ bool AppInit2()
                 delete zerocoinDB;
                 delete pSporkDB;
 
-                //CRYPTOSHARES specific: zerocoin and spork DB's
+                //Cortez specific: zerocoin and spork DB's
                 zerocoinDB = new CZerocoinDB(0, false, fReindex);
                 pSporkDB = new CSporkDB(0, false, false);
 
@@ -1470,7 +1470,7 @@ bool AppInit2()
                 // End loop if shutdown was requested
                 if (ShutdownRequested()) break;
 
-                // CRYPTOSHARES: load previous sessions sporks if we have them.
+                // Cortez: load previous sessions sporks if we have them.
                 uiInterface.InitMessage(_("Loading sporks..."));
                 sporkManager.LoadSporksFromDB();
 
@@ -1514,17 +1514,17 @@ bool AppInit2()
                     LOCK(cs_main);
                     chainHeight = chainActive.Height();
 
-                    // initialize SHARES and zSHARES supply to 0
+                    // initialize CRTZ and zCRTZ supply to 0
                     mapZerocoinSupply.clear();
                     for (auto& denom : libzerocoin::zerocoinDenomList) mapZerocoinSupply.insert(std::make_pair(denom, 0));
                     nMoneySupply = 0;
 
-                    // Load SHARES and zSHARES supply from DB
+                    // Load CRTZ and zCRTZ supply from DB
                     if (chainHeight >= 0) {
                         const uint256& tipHash = chainActive[chainHeight]->GetBlockHash();
                         CLegacyBlockIndex bi;
 
-                        // Load zSHARES supply map
+                        // Load zCRTZ supply map
                         if (!fReindexZerocoin && consensus.NetworkUpgradeActive(chainHeight, Consensus::UPGRADE_ZC) &&
                                 !zerocoinDB->ReadZCSupply(mapZerocoinSupply)) {
                             // try first reading legacy block index from DB
@@ -1536,7 +1536,7 @@ bool AppInit2()
                             }
                         }
 
-                        // Load SHARES supply amount
+                        // Load CRTZ supply amount
                         if (!fReindexMoneySupply && !pblocktree->ReadMoneySupply(nMoneySupply)) {
                             // try first reading legacy block index from DB
                             if (pblocktree->ReadLegacyBlockIndex(tipHash, bi)) {
@@ -1563,7 +1563,7 @@ bool AppInit2()
                 // Recalculate money supply
                 if (fReindexMoneySupply) {
                     LOCK(cs_main);
-                    // Skip zSHARES if already reindexed
+                    // Skip zCRTZ if already reindexed
                     RecalculatePIVSupply(1, fReindexZerocoin);
                 }
 

@@ -67,15 +67,15 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += cryptosharesd
+  bin_PROGRAMS += cortezd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += cryptoshares-cli cryptoshares-tx
+  bin_PROGRAMS += cortez-cli cortez-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
-# cryptoshares core #
+# cortez core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrdb.h \
@@ -227,7 +227,7 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between cryptosharesd and cryptoshares-qt
+# server: shared between cortezd and cortez-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -282,7 +282,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between cryptosharesd and cryptoshares-qt, but only linked
+# wallet: shared between cortezd and cortez-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -412,7 +412,7 @@ if USE_NUM_OPENSSL
   libzerocoin_libbitcoin_zerocoin_a_SOURCES += libzerocoin/bignum_openssl.cpp
 endif
 
-# common: shared between cryptosharesd, and cryptoshares-qt and non-server tools
+# common: shared between cortezd, and cortez-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -487,7 +487,7 @@ if GLIBC_BACK_COMPAT
 AM_LDFLAGS += $(COMPAT_LDFLAGS)
 endif
 
-# cli: shared between cryptoshares-cli and cryptoshares-qt
+# cli: shared between cortez-cli and cortez-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -497,16 +497,16 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# cryptosharesd binary #
-cryptosharesd_SOURCES = pivxd.cpp
-cryptosharesd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-cryptosharesd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-cryptosharesd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# cortezd binary #
+cortezd_SOURCES = pivxd.cpp
+cortezd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+cortezd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+cortezd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-cryptosharesd_SOURCES += pivxd-res.rc
+cortezd_SOURCES += pivxd-res.rc
 endif
-cryptosharesd_LDADD = \
+cortezd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_WALLET) \
   $(LIBBITCOIN_COMMON) \
@@ -520,38 +520,38 @@ cryptosharesd_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-cryptosharesd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+cortezd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# cryptoshares-cli binary #
-cryptoshares_cli_SOURCES = pivx-cli.cpp
-cryptoshares_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-cryptoshares_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-cryptoshares_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# cortez-cli binary #
+cortez_cli_SOURCES = pivx-cli.cpp
+cortez_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+cortez_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+cortez_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-cryptoshares_cli_SOURCES += pivx-cli-res.rc
+cortez_cli_SOURCES += pivx-cli-res.rc
 endif
 
-cryptoshares_cli_LDADD = \
+cortez_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-cryptoshares_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+cortez_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# cryptoshares-tx binary #
-cryptoshares_tx_SOURCES = pivx-tx.cpp
-cryptoshares_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-cryptoshares_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-cryptoshares_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# cortez-tx binary #
+cortez_tx_SOURCES = pivx-tx.cpp
+cortez_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+cortez_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+cortez_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-cryptoshares_tx_SOURCES += pivx-tx-res.rc
+cortez_tx_SOURCES += pivx-tx-res.rc
 endif
 
-cryptoshares_tx_LDADD = \
+cortez_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -559,7 +559,7 @@ cryptoshares_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-cryptoshares_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+cortez_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

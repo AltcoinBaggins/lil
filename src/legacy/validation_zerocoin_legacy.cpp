@@ -1,6 +1,6 @@
 // Copyright (c) 2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The CRYPTOSHARES Core Developers
+// Copyright (c) 2022 The Cortez Core Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or https://www.opensource.org/licenses/mit-license.php.
 #include "legacy/validation_zerocoin_legacy.h"
@@ -17,7 +17,7 @@ bool AcceptToMemoryPoolZerocoin(const CTransaction& tx, CAmount& nValueIn, int c
     //Check that txid is not already in the chain
     int nHeightTx = 0;
     if (IsTransactionInChain(tx.GetHash(), nHeightTx))
-        return state.Invalid(error("%s : zSHARES spend tx %s already in block %d", __func__, tx.GetHash().GetHex(), nHeightTx),
+        return state.Invalid(error("%s : zCRTZ spend tx %s already in block %d", __func__, tx.GetHash().GetHex(), nHeightTx),
                              REJECT_DUPLICATE, "bad-txns-inputs-spent");
 
     //Check for double spending of serial #'s
@@ -46,7 +46,7 @@ bool AcceptToMemoryPoolZerocoin(const CTransaction& tx, CAmount& nValueIn, int c
 bool DisconnectZerocoinTx(const CTransaction& tx, CAmount& nValueIn, CZerocoinDB* zerocoinDB)
 {
     /** UNDO ZEROCOIN DATABASING
-         * note we only undo zerocoin databasing in the following statement, value to and from SHARES
+         * note we only undo zerocoin databasing in the following statement, value to and from CRTZ
          * addresses should still be handled by the typical bitcoin based undo code
          * */
     if (tx.ContainsZerocoins()) {

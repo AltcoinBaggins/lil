@@ -1,6 +1,6 @@
 // Copyright (c) 2019-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The CRYPTOSHARES Core Developers
+// Copyright (c) 2022 The Cortez Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -102,7 +102,7 @@ SettingsInformationWidget::SettingsInformationWidget(PIVXGUI* _window,QWidget *p
     });
     connect(ui->pushButtonFile, &QPushButton::clicked, [this](){
         if (!GUIUtil::openConfigfile())
-            inform(tr("Unable to open cryptoshares.conf with default application"));
+            inform(tr("Unable to open cortez.conf with default application"));
     });
     connect(ui->pushButtonNetworkMonitor, &QPushButton::clicked, this, &SettingsInformationWidget::openNetworkMonitor);
 }

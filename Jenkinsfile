@@ -3,9 +3,9 @@ pipeline {
     agent any
 
     environment {
-        NAME = 'CRYPTOSHARES'
-        BASE_NAME = 'cryptoshares'
-        ZIP_NAME = 'SHARES'
+        NAME = 'Cortez'
+        BASE_NAME = 'cortez'
+        ZIP_NAME = 'CRTZ'
     }
 
     stages {

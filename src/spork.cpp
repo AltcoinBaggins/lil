@@ -1,7 +1,7 @@
 // Copyright (c) 2014-2016 The Dash developers
 // Copyright (c) 2016-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The CRYPTOSHARES Core Developers
+// Copyright (c) 2022 The Cortez Core Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -59,7 +59,7 @@ void CSporkManager::Clear()
     mapSporksActive.clear();
 }
 
-// CRYPTOSHARES: on startup load spork values from previous session if they exist in the sporkDB
+// Cortez: on startup load spork values from previous session if they exist in the sporkDB
 void CSporkManager::LoadSporksFromDB()
 {
     for (const auto& sporkDef : sporkDefs) {
@@ -164,7 +164,7 @@ void CSporkManager::ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStr
         }
         spork.Relay();
 
-        // CRYPTOSHARES: add to spork database.
+        // Cortez: add to spork database.
         pSporkDB->WriteSpork(spork.nSporkID, spork);
     }
     if (strCommand == NetMsgType::GETSPORKS) {

@@ -1,6 +1,6 @@
 // Copyright (c) 2019-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The CRYPTOSHARES Core Developers
+// Copyright (c) 2022 The Cortez Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -35,7 +35,7 @@ class WalletModel;
 
 
 /**
-  CRYPTOSHARES GUI main class. This class represents the main window of the CRYPTOSHARES UI. It communicates with both the client and
+  Cortez GUI main class. This class represents the main window of the Cortez UI. It communicates with both the client and
   wallet models to give the user an up-to-date view of the current core state.
 */
 class PIVXGUI : public QMainWindow

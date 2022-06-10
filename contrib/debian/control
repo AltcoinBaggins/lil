@@ -1,4 +1,4 @@
-Source: cryptoshares
+Source: cortez
 Section: utils
 Priority: optional
 Maintainer: Fuzzbawls <fuzzbawls@gmail.com>
@@ -28,15 +28,15 @@ Build-Depends: debhelper,
  libzmq3-dev,
  dh-systemd
 Standards-Version: 3.9.2
-Homepage: https://cryptosharescoin.io/
-Vcs-Git: git://github.com/cryptoshares/SHARES.git
-Vcs-Browser: https://github.com/cryptoshares/SHARES
+Homepage: https://cortezcoin.io/
+Vcs-Git: git://github.com/cortez-project/cortez.git
+Vcs-Browser: https://github.com/cortez-project/cortez
 
-Package: cryptosharesd
+Package: cortezd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- CRYPTOSHARES is a free, open source peer-to-peer electronic cash system that
+ Cortez is a free, open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -45,14 +45,14 @@ Description: peer-to-peer network based digital currency - daemon
  Full transaction history is stored locally at each client.  This
  requires 18.5+ GB of space, slowly growing.
  .
- This package provides the daemon, cryptosharesd, and the CLI tool
- cryptoshares-cli to interact with the daemon.
+ This package provides the daemon, cortezd, and the CLI tool
+ cortez-cli to interact with the daemon.
 
-Package: cryptoshares-qt
+Package: cortez-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- CRYPTOSHARES is a free, open source peer-to-peer electronic cash system that
+ Cortez is a free, open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -61,4 +61,4 @@ Description: peer-to-peer network based digital currency - Qt GUI
  Full transaction history is stored locally at each client.  This
  requires 18.5+ GB of space, slowly growing.
  .
- This package provides CRYPTOSHARES-Qt, a GUI for CRYPTOSHARES based on Qt.
+ This package provides Cortez-Qt, a GUI for Cortez based on Qt.

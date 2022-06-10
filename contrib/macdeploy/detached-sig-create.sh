@@ -7,7 +7,7 @@ export LC_ALL=C
 set -e
 
 ROOTDIR=dist
-BUNDLE=${ROOTDIR}/CRYPTOSHARES-Qt.app
+BUNDLE=${ROOTDIR}/Cortez-Qt.app
 CODESIGN=codesign
 TEMPDIR=sign.temp
 TEMPLIST=${TEMPDIR}/signatures.txt

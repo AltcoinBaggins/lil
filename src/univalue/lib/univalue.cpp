@@ -1,6 +1,6 @@
 // Copyright 2014 BitPay Inc.
 // Copyright 2015 Bitcoin Core Developers
-// Copyright (c) 2022 The CRYPTOSHARES Core Developers
+// Copyright (c) 2022 The Cortez Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 

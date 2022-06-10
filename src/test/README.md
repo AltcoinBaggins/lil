@@ -5,42 +5,42 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with `make check`.
 
-To run the cryptosharesd tests manually, launch `src/test/test_cryptoshares`. To recompile
+To run the cortezd tests manually, launch `src/test/test_cortez`. To recompile
 after a test file was modified, run `make` and then run the test again. If you
 modify a non-test file, use `make -C src/test` to recompile only what's needed
-to run the cryptosharesd tests.
+to run the cortezd tests.
 
-To add more cryptosharesd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more cortezd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the `test/` directory or add new .cpp files that
 implement new BOOST_FIXTURE_TEST_SUITE sections.
 
-To run the cryptoshares-qt tests manually, launch `src/qt/test/test_cryptoshares-qt`
+To run the cortez-qt tests manually, launch `src/qt/test/test_cortez-qt`
 
-To add more cryptoshares-qt tests, add them to the `src/qt/test/` directory and
+To add more cortez-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.
 
 ### Running individual tests
 
-test_cryptoshares has some built-in command-line arguments; for
+test_cortez has some built-in command-line arguments; for
 example, to run just the getarg_tests verbosely:
 
-    test_cryptoshares --log_level=all --run_test=getarg_tests
+    test_cortez --log_level=all --run_test=getarg_tests
 
 ... or to run just the doubledash test:
 
-    test_cryptoshares --run_test=getarg_tests/doubledash
+    test_cortez --run_test=getarg_tests/doubledash
 
-Run `test_cryptoshares --help` for the full list.
+Run `test_cortez --help` for the full list.
 
 ### Note on adding test cases
 
 The sources in this directory are unit test cases.  Boost includes a
-unit testing framework, and since cryptoshares already uses boost, it makes
+unit testing framework, and since cortez already uses boost, it makes
 sense to simply use this framework rather than require developers to
 configure some other framework (we want as few impediments to creating
 unit tests as possible).
 
-The build system is setup to compile an executable called `test_cryptoshares`
+The build system is setup to compile an executable called `test_cortez`
 that runs all of the unit tests.  The main source file is called
 test_pivx.cpp, which simply includes other files that contain the
 actual unit tests (outside of a couple required preprocessor

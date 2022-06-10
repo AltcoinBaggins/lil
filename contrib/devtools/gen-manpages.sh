@@ -7,10 +7,10 @@ BUILDDIR=${BUILDDIR:-$TOPDIR}
 BINDIR=${BINDIR:-$BUILDDIR/src}
 MANDIR=${MANDIR:-$TOPDIR/doc/man}
 
-BITCOIND=${BITCOIND:-$BINDIR/cryptosharesd}
-BITCOINCLI=${BITCOINCLI:-$BINDIR/cryptoshares-cli}
-BITCOINTX=${BITCOINTX:-$BINDIR/cryptoshares-tx}
-BITCOINQT=${BITCOINQT:-$BINDIR/qt/cryptoshares-qt}
+BITCOIND=${BITCOIND:-$BINDIR/cortezd}
+BITCOINCLI=${BITCOINCLI:-$BINDIR/cortez-cli}
+BITCOINTX=${BITCOINTX:-$BINDIR/cortez-tx}
+BITCOINQT=${BITCOINQT:-$BINDIR/qt/cortez-qt}
 
 [ ! -x $BITCOIND ] && echo "$BITCOIND not found or not executable." && exit 1
 

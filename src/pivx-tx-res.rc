@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "CRYPTOSHARES"
-            VALUE "FileDescription",    "cryptoshares-tx (CLI CRYPTOSHARES transaction editor utility)"
+            VALUE "CompanyName",        "Cortez"
+            VALUE "FileDescription",    "cortez-tx (CLI Cortez transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "cryptoshares-tx"
+            VALUE "InternalName",       "cortez-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "cryptoshares-tx.exe"
-            VALUE "ProductName",        "cryptoshares-tx"
+            VALUE "OriginalFilename",   "cortez-tx.exe"
+            VALUE "ProductName",        "cortez-tx"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

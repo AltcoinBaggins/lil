@@ -7,16 +7,16 @@ define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_RC, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2022)
-AC_INIT([CRYPTOSHARES Core],m4_join([.], _CLIENT_VERSION_MAJOR, _CLIENT_VERSION_MINOR, _CLIENT_VERSION_REVISION, m4_if(_CLIENT_VERSION_BUILD, [0], [], _CLIENT_VERSION_BUILD))m4_if(_CLIENT_VERSION_RC, [0], [], [rc]_CLIENT_VERSION_RC),[https://github.com/cryptoshares/SHARES/issues],[cryptoshares],[https://cryptosharescoin.io/])
+AC_INIT([Cortez Core],m4_join([.], _CLIENT_VERSION_MAJOR, _CLIENT_VERSION_MINOR, _CLIENT_VERSION_REVISION, m4_if(_CLIENT_VERSION_BUILD, [0], [], _CLIENT_VERSION_BUILD))m4_if(_CLIENT_VERSION_RC, [0], [], [rc]_CLIENT_VERSION_RC),[https://github.com/cortez-project/cortez/issues],[cortez],[https://cortezcoin.io/])
 AC_CONFIG_SRCDIR([src/main.cpp])
 AC_CONFIG_HEADERS([src/config/pivx-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=cryptosharesd
-BITCOIN_GUI_NAME=cryptoshares-qt
-BITCOIN_CLI_NAME=cryptoshares-cli
-BITCOIN_TX_NAME=cryptoshares-tx
+BITCOIN_DAEMON_NAME=cortezd
+BITCOIN_GUI_NAME=cortez-qt
+BITCOIN_CLI_NAME=cortez-cli
+BITCOIN_TX_NAME=cortez-tx
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 AC_ARG_VAR(ARFLAGS, [Flags for the archiver, defaults to <cr> if not set])
@@ -449,7 +449,7 @@ CPPFLAGS="$CPPFLAGS -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS"
 
 AC_ARG_WITH([utils],
   [AS_HELP_STRING([--with-utils],
-  [build cryptoshares-cli cryptoshares-tx (default=yes)])],
+  [build cortez-cli cortez-tx (default=yes)])],
   [build_bitcoin_utils=$withval],
   [build_bitcoin_utils=yes])
 
@@ -461,7 +461,7 @@ AC_ARG_WITH([libs],
 
 AC_ARG_WITH([daemon],
   [AS_HELP_STRING([--with-daemon],
-  [build cryptosharesd daemon (default=yes)])],
+  [build cortezd daemon (default=yes)])],
   [build_bitcoind=$withval],
   [build_bitcoind=yes])
 
@@ -1189,11 +1189,11 @@ AX_CHECK_COMPILE_FLAG([-Wno-builtin-declaration-mismatch],[CXXFLAGS="$CXXFLAGS -
 
 LIBZCASH_LIBS="$BOOST_SYSTEM_LIB $CRYPTO_LIBS"
 
-AC_MSG_CHECKING([whether to build cryptosharesd])
+AC_MSG_CHECKING([whether to build cortezd])
 AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_bitcoind = xyes])
 AC_MSG_RESULT($build_bitcoind)
 
-AC_MSG_CHECKING([whether to build utils (cryptoshares-cli cryptoshares-tx)])
+AC_MSG_CHECKING([whether to build utils (cortez-cli cortez-tx)])
 AM_CONDITIONAL([BUILD_BITCOIN_UTILS], [test x$build_bitcoin_utils = xyes])
 AC_MSG_RESULT($build_bitcoin_utils)
 
@@ -1321,7 +1321,7 @@ if test x$bitcoin_enable_qt != xno; then
     AC_MSG_WARN("xgettext is required to update qt translations")
   fi
 
-  AC_MSG_CHECKING([whether to build test_cryptoshares-qt])
+  AC_MSG_CHECKING([whether to build test_cortez-qt])
   if test x$use_gui_tests$bitcoin_enable_qt_test = xyesyes; then
     AC_MSG_RESULT([yes])
     BUILD_TEST_QT="yes"
@@ -1348,7 +1348,7 @@ esac
 AM_CONDITIONAL([USE_NUM_GMP], [test "x$set_bignum" = "xgmp"])
 AM_CONDITIONAL([USE_NUM_OPENSSL], [test "x$set_bignum" = "xopenssl"])
 
-AC_MSG_CHECKING([whether to build test_cryptoshares])
+AC_MSG_CHECKING([whether to build test_cortez])
 if test x$use_tests = xyes; then
   AC_MSG_RESULT([yes])
   BUILD_TEST="yes"

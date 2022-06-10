@@ -12,11 +12,11 @@ fi
 	echo "1" | sudo update-alternatives --config x86_64-w64-mingw32-g++
 
 # Clone code from official Github repository
-	rm -rf cryptoshares
-	git clone https://github.com/cryptoshares/cryptoshares
+	rm -rf cortez
+	git clone https://github.com/cortez-project/cortez
 
 # Entering directory
-	cd cryptoshares
+	cd cortez
 
 # Compile dependencies
 	cd depends
@@ -30,6 +30,6 @@ fi
 	cd ..
 
 # Create zip file of binaries
-	cp cryptoshares/src/cryptosharesd.exe cryptoshares/src/cryptoshares-cli.exe cryptoshares/src/cryptoshares-tx.exe cryptoshares/src/qt/cryptoshares-qt.exe .
-	zip SHARES-Windows.zip cryptosharesd.exe cryptoshares-cli.exe cryptoshares-tx.exe cryptoshares-qt.exe
-	rm -f cryptosharesd.exe cryptoshares-cli.exe cryptoshares-tx.exe cryptoshares-qt.exe
+	cp cortez/src/cortezd.exe cortez/src/cortez-cli.exe cortez/src/cortez-tx.exe cortez/src/qt/cortez-qt.exe .
+	zip CRTZ-Windows.zip cortezd.exe cortez-cli.exe cortez-tx.exe cortez-qt.exe
+	rm -f cortezd.exe cortez-cli.exe cortez-tx.exe cortez-qt.exe

@@ -1,6 +1,6 @@
 // Copyright (c) 2019-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The CRYPTOSHARES Core Developers
+// Copyright (c) 2022 The Cortez Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -90,7 +90,7 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget* parent) : PWidget(_mainWindow, par
     ui->pushButtonStack->setButtonText(tr("Staking Disabled"));
 
     ui->pushButtonConf->setButtonClassStyle("cssClass", "btn-check-conf");
-    ui->pushButtonConf->setButtonText("cryptoshares.conf");
+    ui->pushButtonConf->setButtonText("cortez.conf");
     ui->pushButtonConf->setChecked(false);
 
     ui->pushButtonMasternodes->setButtonClassStyle("cssClass", "btn-check-masternodes");
@@ -352,7 +352,7 @@ void TopBar::onBtnConfClicked()
     ui->pushButtonConf->setChecked(false);
 
     if (!GUIUtil::openConfigfile())
-        inform(tr("Unable to open cryptoshares.conf with default application"));
+        inform(tr("Unable to open cortez.conf with default application"));
 }
 
 void TopBar::onBtnMasternodesClicked()
@@ -551,7 +551,7 @@ void TopBar::loadWalletModel()
     connect(walletModel, &WalletModel::encryptionStatusChanged, this, &TopBar::refreshStatus);
     // Ask for passphrase if needed
     connect(walletModel, &WalletModel::requireUnlock, this, &TopBar::unlockWallet);
-    // update the display unit, to not use the default ("SHARES")
+    // update the display unit, to not use the default ("CRTZ")
     updateDisplayUnit();
 
     refreshStatus();
@@ -677,7 +677,7 @@ void TopBar::updateBalances(const interfaces::WalletBalances& newBalance)
 
     CAmount nAvailableBalance = newBalance.balance - nLockedBalance;
 
-    // SHARES
+    // CRTZ
     // Top
     ui->labelAmountTopPiv->setText(GUIUtil::formatBalance(nAvailableBalance, nDisplayUnit));
     // Expanded

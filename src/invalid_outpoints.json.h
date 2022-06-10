@@ -1,5 +1,5 @@
 // Copyright (c) 2018 The PIVX developers
-// Copyright (c) 2021 The CRYPTOSHARES Core Developers
+// Copyright (c) 2021 The Cortez Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 

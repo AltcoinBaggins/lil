@@ -3,7 +3,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The CRYPTOSHARES Core Developers
+// Copyright (c) 2022 The Cortez Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -85,12 +85,12 @@
 #include <openssl/crypto.h>
 #include <openssl/rand.h>
 
-const char * const PIVX_CONF_FILENAME = "cryptoshares.conf";
-const char * const PIVX_PID_FILENAME = "cryptoshares.pid";
+const char * const PIVX_CONF_FILENAME = "cortez.conf";
+const char * const PIVX_PID_FILENAME = "cortez.pid";
 const char * const PIVX_MASTERNODE_CONF_FILENAME = "masternode.conf";
 
 
-// CRYPTOSHARES only features
+// Cortez only features
 // Masternode
 bool fMasterNode = false;
 std::string strMasterNodePrivKey = "";
@@ -267,7 +267,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "cryptoshares";
+    const char* pszModule = "cortez";
 #endif
     if (pex)
         return strprintf(
@@ -287,13 +287,13 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 
 fs::path GetDefaultDataDir()
 {
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\cryptoshares
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\cryptoshares
-// Mac: ~/Library/Application Support/cryptoshares
-// Unix: ~/.cryptoshares
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\cortez
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\cortez
+// Mac: ~/Library/Application Support/cortez
+// Unix: ~/.cortez
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "CRYPTOSHARES";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Cortez";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -305,10 +305,10 @@ fs::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "CRYPTOSHARES";
+    return pathRet / "Cortez";
 #else
     // Unix
-    return pathRet / ".cryptoshares";
+    return pathRet / ".cortez";
 #endif
 #endif
 }
@@ -321,13 +321,13 @@ static RecursiveMutex csPathCached;
 static fs::path ZC_GetBaseParamsDir()
 {
     // Copied from GetDefaultDataDir and adapter for zcash params.
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\cryptosharesParams
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\cryptosharesParams
-    // Mac: ~/Library/Application Support/cryptosharesParams
-    // Unix: ~/.cryptoshares-params
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\cortezParams
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\cortezParams
+    // Mac: ~/Library/Application Support/cortezParams
+    // Unix: ~/.cortez-params
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "CRYPTOSHARESParams";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "CortezParams";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -339,10 +339,10 @@ static fs::path ZC_GetBaseParamsDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "CRYPTOSHARESParams";
+    return pathRet / "CortezParams";
 #else
     // Unix
-    return pathRet / ".cryptoshares-params";
+    return pathRet / ".cortez-params";
 #endif
 #endif
 }
@@ -426,7 +426,7 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
 {
     fs::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()) {
-        // Create empty cryptoshares.conf if it does not exist
+        // Create empty cortez.conf if it does not exist
         FILE* configFile = fsbridge::fopen(GetConfigFile(), "a");
         if (configFile != NULL)
             fclose(configFile);
@@ -437,7 +437,7 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
     setOptions.insert("*");
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it) {
-        // Don't overwrite existing settings so command line settings override cryptoshares.conf
+        // Don't overwrite existing settings so command line settings override cortez.conf
         std::string strKey = std::string("-") + it->string_key;
         std::string strValue = it->value[0];
         InterpretNegativeSetting(strKey, strValue);

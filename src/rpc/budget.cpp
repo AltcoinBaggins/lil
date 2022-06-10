@@ -1,7 +1,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The CRYPTOSHARES Core Developers
+// Copyright (c) 2022 The Cortez Core Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -83,7 +83,7 @@ void checkBudgetInputs(const UniValue& params, std::string &strProposalName, std
 
     address = DecodeDestination(params[4].get_str());
     if (!IsValidDestination(address))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SHARES address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid CRTZ address");
 
     nAmount = AmountFromValue(params[5]);
     if (nAmount < 10 * COIN)
@@ -97,7 +97,7 @@ UniValue preparebudget(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() != 6)
         throw std::runtime_error(
-            "preparebudget \"proposal-name\" \"url\" payment-count block-start \"SHARES-address\" monthy-payment\n"
+            "preparebudget \"proposal-name\" \"url\" payment-count block-start \"CRTZ-address\" monthy-payment\n"
             "\nPrepare proposal for network by signing and creating tx\n"
 
             "\nArguments:\n"
@@ -105,7 +105,7 @@ UniValue preparebudget(const JSONRPCRequest& request)
             "2. \"url\":            (string, required) URL of proposal details (64 character limit)\n"
             "3. payment-count:    (numeric, required) Total number of monthly payments\n"
             "4. block-start:      (numeric, required) Starting super block height\n"
-            "5. \"SHARES-address\":   (string, required) SHARES address to send payments to\n"
+            "5. \"CRTZ-address\":   (string, required) CRTZ address to send payments to\n"
             "6. monthly-payment:  (numeric, required) Monthly payment amount\n"
 
             "\nResult:\n"
@@ -132,7 +132,7 @@ UniValue preparebudget(const JSONRPCRequest& request)
 
     checkBudgetInputs(request.params, strProposalName, strURL, nPaymentCount, nBlockStart, address, nAmount);
 
-    // Parse SHARES address
+    // Parse CRTZ address
     CScript scriptPubKey = GetScriptForDestination(address);
 
     // create transaction 15 minutes into the future, to allow for confirmation time
@@ -146,7 +146,7 @@ UniValue preparebudget(const JSONRPCRequest& request)
     CWalletTx wtx;
     // make our change address
     CReserveKey keyChange(pwalletMain);
-    if (!pwalletMain->CreateBudgetFeeTX(wtx, proposalHash, keyChange, false)) { // 50 SHARES collateral for proposal
+    if (!pwalletMain->CreateBudgetFeeTX(wtx, proposalHash, keyChange, false)) { // 50 CRTZ collateral for proposal
         throw std::runtime_error("Error making collateral transaction for proposal. Please check your wallet balance.");
     }
 
@@ -162,7 +162,7 @@ UniValue submitbudget(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() != 7)
         throw std::runtime_error(
-            "submitbudget \"proposal-name\" \"url\" payment-count block-start \"SHARES-address\" monthly-payment \"fee-tx\"\n"
+            "submitbudget \"proposal-name\" \"url\" payment-count block-start \"CRTZ-address\" monthly-payment \"fee-tx\"\n"
             "\nSubmit proposal to the network\n"
 
             "\nArguments:\n"
@@ -170,7 +170,7 @@ UniValue submitbudget(const JSONRPCRequest& request)
             "2. \"url\":            (string, required) URL of proposal details (64 character limit)\n"
             "3. payment-count:    (numeric, required) Total number of monthly payments\n"
             "4. block-start:      (numeric, required) Starting super block height\n"
-            "5. \"SHARES-address\":   (string, required) SHARES address to send payments to\n"
+            "5. \"CRTZ-address\":   (string, required) CRTZ address to send payments to\n"
             "6. monthly-payment:  (numeric, required) Monthly payment amount\n"
             "7. \"fee-tx\":         (string, required) Transaction hash from preparebudget command\n"
 
@@ -190,7 +190,7 @@ UniValue submitbudget(const JSONRPCRequest& request)
 
     checkBudgetInputs(request.params, strProposalName, strURL, nPaymentCount, nBlockStart, address, nAmount);
 
-    // Parse SHARES address
+    // Parse CRTZ address
     CScript scriptPubKey = GetScriptForDestination(address);
 
     uint256 hash = ParseHashV(request.params[6], "parameter 1");
@@ -545,7 +545,7 @@ UniValue getbudgetprojection(const JSONRPCRequest& request)
             "    \"BlockEnd\": n,                (numeric) Proposal ending block\n"
             "    \"TotalPaymentCount\": n,       (numeric) Number of payments\n"
             "    \"RemainingPaymentCount\": n,   (numeric) Number of remaining payments\n"
-            "    \"PaymentAddress\": \"xxxx\",     (string) SHARES address of payment\n"
+            "    \"PaymentAddress\": \"xxxx\",     (string) CRTZ address of payment\n"
             "    \"Ratio\": x.xxx,               (numeric) Ratio of yeas vs nays\n"
             "    \"Yeas\": n,                    (numeric) Number of yea votes\n"
             "    \"Nays\": n,                    (numeric) Number of nay votes\n"
@@ -607,7 +607,7 @@ UniValue getbudgetinfo(const JSONRPCRequest& request)
             "    \"BlockEnd\": n,                (numeric) Proposal ending block\n"
             "    \"TotalPaymentCount\": n,       (numeric) Number of payments\n"
             "    \"RemainingPaymentCount\": n,   (numeric) Number of remaining payments\n"
-            "    \"PaymentAddress\": \"xxxx\",     (string) SHARES address of payment\n"
+            "    \"PaymentAddress\": \"xxxx\",     (string) CRTZ address of payment\n"
             "    \"Ratio\": x.xxx,               (numeric) Ratio of yeas vs nays\n"
             "    \"Yeas\": n,                    (numeric) Number of yea votes\n"
             "    \"Nays\": n,                    (numeric) Number of nay votes\n"

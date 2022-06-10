@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2013 The Bitcoin Core developers
 // Copyright (c) 2017-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The CRYPTOSHARES Core Developers
+// Copyright (c) 2022 The Cortez Core Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -45,7 +45,7 @@ BasicTestingSetup::~BasicTestingSetup()
 TestingSetup::TestingSetup()
 {
         ClearDatadirCache();
-        pathTemp = GetTempPath() / strprintf("test_cryptoshares_%lu_%i", (unsigned long)GetTime(), (int)(InsecureRandRange(100000)));
+        pathTemp = GetTempPath() / strprintf("test_cortez_%lu_%i", (unsigned long)GetTime(), (int)(InsecureRandRange(100000)));
         fs::create_directories(pathTemp);
         mapArgs["-datadir"] = pathTemp.string();
         pblocktree = new CBlockTreeDB(1 << 20, true);

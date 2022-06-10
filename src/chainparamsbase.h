@@ -1,7 +1,7 @@
 // Copyright (c) 2014 The Bitcoin developers
 // Copyright (c) 2017-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The CRYPTOSHARES Core Developers
+// Copyright (c) 2022 The Cortez Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -12,8 +12,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between cryptoshares-cli and cryptosharesd)
- * of a given instance of the cryptoshares system.
+ * CBaseChainParams defines the base parameters (shared between cortez-cli and cortezd)
+ * of a given instance of the cortez system.
  */
 class CBaseChainParams
 {

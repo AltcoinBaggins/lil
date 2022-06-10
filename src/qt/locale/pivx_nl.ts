@@ -122,12 +122,12 @@
         <translation>Ontvangstadressen</translation>
     </message>
     <message>
-        <source>These are your SHARES addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw SHARES adressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden van geld.</translation>
+        <source>These are your CRTZ addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw CRTZ adressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden van geld.</translation>
     </message>
     <message>
-        <source>These are your SHARES addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw SHARES adressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
+        <source>These are your CRTZ addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dit zijn uw CRTZ adressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -364,8 +364,8 @@ voor bewijs van Inzet</translation>
         <translation>Annuleren</translation>
     </message>
     <message>
-        <source>SHARES will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SHARESs from being stolen by malware infecting your computer.</source>
-        <translation>SHARES zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw SHARES's kunnen stelen.</translation>
+        <source>CRTZ will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CRTZs from being stolen by malware infecting your computer.</source>
+        <translation>CRTZ zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw CRTZ's kunnen stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -465,8 +465,8 @@ voor bewijs van Inzet</translation>
         <translation>Munt Selectie</translation>
     </message>
     <message>
-        <source>Select SHARES Outputs to Spend</source>
-        <translation>Selecteer SHARES Outputs om te besteden</translation>
+        <source>Select CRTZ Outputs to Spend</source>
+        <translation>Selecteer CRTZ Outputs om te besteden</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -493,8 +493,8 @@ voor bewijs van Inzet</translation>
         <translation>Bedrag</translation>
     </message>
     <message>
-        <source>0.00 SHARES</source>
-        <translation>0.00 SHARES</translation>
+        <source>0.00 CRTZ</source>
+        <translation>0.00 CRTZ</translation>
     </message>
     <message>
         <source>0</source>
@@ -723,8 +723,8 @@ voor bewijs van Inzet</translation>
         <translation>Bekijk de geschiedenis van uw account</translation>
     </message>
     <message>
-        <source>How to get SHARES</source>
-        <translation>Hoe SHARES verkrijgen</translation>
+        <source>How to get CRTZ</source>
+        <translation>Hoe CRTZ verkrijgen</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -747,8 +747,8 @@ voor bewijs van Inzet</translation>
         <translation>Filter volgens</translation>
     </message>
     <message>
-        <source>Amount of SHARES and zSHARES staked.</source>
-        <translation>Hoeveelheid aan gestaked SHARES en zSHARES.</translation>
+        <source>Amount of CRTZ and zCRTZ staked.</source>
+        <translation>Hoeveelheid aan gestaked CRTZ en zCRTZ.</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -843,8 +843,8 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>Wijzig verzend adres</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid SHARES address.</source>
-        <translation>Het ingevoerde adres: "%1" is geen geldig SHARES adres.</translation>
+        <source>The entered address "%1" is not a valid CRTZ address.</source>
+        <translation>Het ingevoerde adres: "%1" is geen geldig CRTZ adres.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -896,16 +896,16 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>versie</translation>
     </message>
     <message>
-        <source>CRYPTOSHARES</source>
-        <translation>CRYPTOSHARES</translation>
+        <source>Cortez</source>
+        <translation>Cortez</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About CRYPTOSHARES</source>
-        <translation>Over CRYPTOSHARES</translation>
+        <source>About Cortez</source>
+        <translation>Over Cortez</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -959,16 +959,16 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>Welkom</translation>
     </message>
     <message>
-        <source>Welcome to CRYPTOSHARES.</source>
-        <translation>Welkom bij CRYPTOSHARES.</translation>
+        <source>Welcome to Cortez.</source>
+        <translation>Welkom bij Cortez.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where CRYPTOSHARES will store its data.</source>
-        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar CRYPTOSHARES zijn data opslaat.</translation>
+        <source>As this is the first time the program is launched, you can choose where Cortez will store its data.</source>
+        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar Cortez zijn data opslaat.</translation>
     </message>
     <message>
-        <source>CRYPTOSHARES will download and store a copy of the SHARES block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>CRYPTOSHARES zal een kopie van de SHARES blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee zal ook in deze map worden opgeslagen.</translation>
+        <source>Cortez will download and store a copy of the CRTZ block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Cortez zal een kopie van de CRTZ blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee zal ook in deze map worden opgeslagen.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -987,8 +987,8 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>Akkoord</translation>
     </message>
     <message>
-        <source>CRYPTOSHARES</source>
-        <translation>CRYPTOSHARES</translation>
+        <source>Cortez</source>
+        <translation>Cortez</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1095,8 +1095,8 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>Creëer Nieuwe Masternode Controller</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a SHARES Masternode you must dedicate a collateral amount of SHARES (the unit of SHARES) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Om een SHARES Masternode te creëren moet u 10.000 SHARES (de eenheid van SHARES) aan het netwerk wijden (deze munten zijn echter nog steeds van u en zullen nooit uw bezit verlaten). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;U kunt de node op elk gewenst moment deactiveren en de munten ontgrendelen.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a CRTZ Masternode you must dedicate a collateral amount of CRTZ (the unit of CRTZ) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Om een CRTZ Masternode te creëren moet u 10.000 CRTZ (de eenheid van CRTZ) aan het netwerk wijden (deze munten zijn echter nog steeds van u en zullen nooit uw bezit verlaten). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;U kunt de node op elk gewenst moment deactiveren en de munten ontgrendelen.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Set Masternode Name</source>
@@ -1116,7 +1116,7 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of collateral amount will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Een transactie van 10,000 SHARES zal gemaakt worden&lt;/p&gt;&lt;p&gt;naar een nieuw leeg adres in uw portemonnee.&lt;/p&gt;&lt;p&gt;Het adres is gelabeld onder de masternode's naam.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Een transactie van 10,000 CRTZ zal gemaakt worden&lt;/p&gt;&lt;p&gt;naar een nieuw leeg adres in uw portemonnee.&lt;/p&gt;&lt;p&gt;Het adres is gelabeld onder de masternode's naam.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1322,7 +1322,7 @@ Gelieve nog enkele minuten te wachten (het onderpand van een masternode vereist 
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the cryptoshares.conf file
+You will only have to paste the data in the cortez.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1330,7 +1330,7 @@ this controller wallet (select the Masternode in the list and press "start").
 op een externe server aan uw klembord.
 
 
-U hoeft alleen de gegevens in het cryptoshares.conf bestand te plakken
+U hoeft alleen de gegevens in het cortez.conf bestand te plakken
 van uw externe server en start deze vervolgens de Masternode met
 deze controller portemonnee (selecteer de Masternode in de lijst en druk op "start").
 </translation>
@@ -1514,8 +1514,8 @@ NODES</translation>
         <translation>Ingelezen data te groot</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "cryptoshares" prefix</source>
-        <translation>Ongeldige URI, begint niet met de "cryptoshares" prefix</translation>
+        <source>Invalid URI, not starting with "cortez" prefix</source>
+        <translation>Ongeldige URI, begint niet met de "cortez" prefix</translation>
     </message>
 </context>
 <context>
@@ -1560,8 +1560,8 @@ NODES</translation>
         <translation>Als je de uitgaven van onbevestigde wijzigingen uitschakelt, de wijziging van een transactie&lt;br/&gt;kan niet worden gebruikt tot die transactie tenminste één bevestiging heeft.&lt;br/&gt;Dit beïnvloedt ook hoe uw saldo is berekend.</translation>
     </message>
     <message>
-        <source>Automatically open the SHARES client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Open de SHARES client poort automatisch op de router. Dit werkt alleen als je router UPnP ondersteunt en het is ingeschakeld.</translation>
+        <source>Automatically open the CRTZ client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Open de CRTZ client poort automatisch op de router. Dit werkt alleen als je router UPnP ondersteunt en het is ingeschakeld.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1580,12 +1580,12 @@ NODES</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start SHARES after logging in to the system.</source>
-        <translation>SHARES automatisch opstarten na inloggen op het systeem.</translation>
+        <source>Automatically start CRTZ after logging in to the system.</source>
+        <translation>CRTZ automatisch opstarten na inloggen op het systeem.</translation>
     </message>
     <message>
-        <source>&amp;Start SHARES on system login</source>
-        <translation>&amp;SHARES starten bij systeemlogin</translation>
+        <source>&amp;Start CRTZ on system login</source>
+        <translation>&amp;CRTZ starten bij systeemlogin</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1612,58 +1612,58 @@ NODES</translation>
         <translation>&amp;Netwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting SHARES.</source>
-        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van SHARES.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting CRTZ.</source>
+        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van CRTZ.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-        https://discord.gg/UXGTjfsBFe</source>
+        https://discord.gg/RpBXAnvp7k</source>
         <translation>Taal ontbreekt of vertaling onvolledig? Help om bij te dragen aan vertalingen:
-        https://discord.gg/UXGTjfsBFe</translation>
+        https://discord.gg/RpBXAnvp7k</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Map poort gebruikt &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SHARES units to zSHARES</source>
-        <translation>Schakel automatisch slaan van SHARES-eenheden in op zSHARES</translation>
+        <source>Enable automatic minting of CRTZ units to zCRTZ</source>
+        <translation>Schakel automatisch slaan van CRTZ-eenheden in op zCRTZ</translation>
     </message>
     <message>
-        <source>Enable zSHARES Automint</source>
-        <translation>Schakel zSHARES Automint in</translation>
+        <source>Enable zCRTZ Automint</source>
+        <translation>Schakel zCRTZ Automint in</translation>
     </message>
     <message>
-        <source>Enable automatic zSHARES minting from specific addresses</source>
-        <translation>Automatische zSHARES munting inschakelen vanuit specifiek adres</translation>
+        <source>Enable automatic zCRTZ minting from specific addresses</source>
+        <translation>Automatische zCRTZ munting inschakelen vanuit specifiek adres</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint Adressen Inschakelen</translation>
     </message>
     <message>
-        <source>Percentage of incoming SHARES which get automatically converted to zSHARES via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage inkomende SHARES die automatisch wordt omgezet naar zSHARES via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming CRTZ which get automatically converted to zCRTZ via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentage inkomende CRTZ die automatisch wordt omgezet naar zCRTZ via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zSHARES</source>
-        <translation>Percentage autominted zSHARES</translation>
+        <source>Percentage of autominted zCRTZ</source>
+        <translation>Percentage autominted zCRTZ</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough SHARES for this denomination is available</source>
-        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg SHARES voor deze denominatie beschikbaar is</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough CRTZ for this denomination is available</source>
+        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg CRTZ voor deze denominatie beschikbaar is</translation>
     </message>
     <message>
-        <source>Preferred Automint zSHARES Denomination</source>
-        <translation>Gewenste Automint zSHARES denominatie</translation>
+        <source>Preferred Automint zCRTZ Denomination</source>
+        <translation>Gewenste Automint zCRTZ denominatie</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Stake splitsdrempel:</translation>
     </message>
     <message>
-        <source>Connect to the SHARES network through a SOCKS5 proxy.</source>
-        <translation>Maak verbinding met het SHARES netwerk via een SOCKS5 proxy.</translation>
+        <source>Connect to the CRTZ network through a SOCKS5 proxy.</source>
+        <translation>Maak verbinding met het CRTZ netwerk via een SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1809,8 +1809,8 @@ NODES</translation>
 <context>
     <name>PIVXGUI</name>
     <message>
-        <source>CRYPTOSHARES</source>
-        <translation>CRYPTOSHARES</translation>
+        <source>Cortez</source>
+        <translation>Cortez</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1837,8 +1837,8 @@ NODES</translation>
         <translation>Programma afsluiten</translation>
     </message>
     <message>
-        <source>CRYPTOSHARES client</source>
-        <translation>CRYPTOSHARES client</translation>
+        <source>Cortez client</source>
+        <translation>Cortez client</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1904,12 +1904,12 @@ Adres: %4
         <translation>Ongeldig betalingsadres %1</translation>
     </message>
     <message>
-        <source>Cannot start cryptoshares: click-to-pay handler</source>
-        <translation>Kan cryptoshares niet starten: click-to-pay handler</translation>
+        <source>Cannot start cortez: click-to-pay handler</source>
+        <translation>Kan cortez niet starten: click-to-pay handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid SHARES address or malformed URI parameters.</source>
-        <translation>URL kan niet ontleed worden! Dit kan worden veroorzaakt door een ongeldig SHARES adres of misvormde URL parameters.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid CRTZ address or malformed URI parameters.</source>
+        <translation>URL kan niet ontleed worden! Dit kan worden veroorzaakt door een ongeldig CRTZ adres of misvormde URL parameters.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1994,8 +1994,8 @@ Adres: %4
         <translation>Bedrag</translation>
     </message>
     <message>
-        <source>Enter SHARES address (e.g. %1)</source>
-        <translation>Voer een SHARES adres in (b.v. %1)</translation>
+        <source>Enter CRTZ address (e.g. %1)</source>
+        <translation>Voer een CRTZ adres in (b.v. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2038,12 +2038,12 @@ Adres: %4
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>A fatal error occurred. SHARES can no longer continue safely and will quit.</source>
-        <translation>Een kritieke fout is opgelopen. SHARES kan niet langer veilig uitgevoerd worden en zal afsluiten.</translation>
+        <source>A fatal error occurred. CRTZ can no longer continue safely and will quit.</source>
+        <translation>Een kritieke fout is opgelopen. CRTZ kan niet langer veilig uitgevoerd worden en zal afsluiten.</translation>
     </message>
     <message>
-        <source>CRYPTOSHARES</source>
-        <translation>CRYPTOSHARES</translation>
+        <source>Cortez</source>
+        <translation>Cortez</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -2062,8 +2062,8 @@ Adres: %4
         <translation>Fout bij het lezen van het masternode configuratiebestand: %1</translation>
     </message>
     <message>
-        <source>CRYPTOSHARES didn't yet exit safely...</source>
-        <translation>CRYPTOSHARES is nog niet veilig afgesloten...</translation>
+        <source>Cortez didn't yet exit safely...</source>
+        <translation>Cortez is nog niet veilig afgesloten...</translation>
     </message>
     <message>
         <source>Contact</source>
@@ -2273,8 +2273,8 @@ Adres: %4
         <translation>Blockchain</translation>
     </message>
     <message>
-        <source>Open the SHARES debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open het SHARES debug log bestand uit de huidige data directory. Dit kan enkele seconden duren voor grote logbestanden.</translation>
+        <source>Open the CRTZ debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open het CRTZ debug log bestand uit de huidige data directory. Dit kan enkele seconden duren voor grote logbestanden.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2417,8 +2417,8 @@ Adres: %4
         <translation>Aangepast back-up pad:</translation>
     </message>
     <message>
-        <source>Custom zSHARES Backup Path:</source>
-        <translation>Aangepast zSHARES back-up pad:</translation>
+        <source>Custom zCRTZ Backup Path:</source>
+        <translation>Aangepast zCRTZ back-up pad:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2497,8 +2497,8 @@ Adres: %4
         <translation>Uit:</translation>
     </message>
     <message>
-        <source>Welcome to the SHARES RPC console.</source>
-        <translation>Welkom bij de SHARES RPC console.</translation>
+        <source>Welcome to the CRTZ RPC console.</source>
+        <translation>Welkom bij de CRTZ RPC console.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -2639,8 +2639,8 @@ Adres: %4
         <translation>Geen adres</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive SHARES</source>
-        <translation>Scan de QR code of kopieer het adres om SHARES te ontvangen</translation>
+        <source>Scan the QR code or copy the address to receive CRTZ</source>
+        <translation>Scan de QR code of kopieer het adres om CRTZ te ontvangen</translation>
     </message>
     <message>
         <source>Add Label</source>
@@ -2769,12 +2769,12 @@ Adres: %4
         <translation>Bedrag</translation>
     </message>
     <message>
-        <source>SHARES</source>
-        <translation>SHARES</translation>
+        <source>CRTZ</source>
+        <translation>CRTZ</translation>
     </message>
     <message>
-        <source>Instead of sharing only a SHARES address, you can create a payment request, bundling up more information</source>
-        <translation>In plaats van een SHARES-adres te delen, kunt u een betalingsverzoek creëren dat meer informatie bundelt.</translation>
+        <source>Instead of sharing only a CRTZ address, you can create a payment request, bundling up more information</source>
+        <translation>In plaats van een CRTZ-adres te delen, kunt u een betalingsverzoek creëren dat meer informatie bundelt.</translation>
     </message>
     <message>
         <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
@@ -2852,8 +2852,8 @@ Adres: %4
         <translation>Aangepast wijzigingsadres</translation>
     </message>
     <message>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" SHARES address</source>
-        <translation>De rest van de waarde die resulteert uit de ingangen minus de waarde van de uitgangen gaat naar het "wijzig" SHARES-adres</translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" CRTZ address</source>
+        <translation>De rest van de waarde die resulteert uit de ingangen minus de waarde van de uitgangen gaat naar het "wijzig" CRTZ-adres</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -2879,8 +2879,8 @@ Adres: %4
         <translation>Aanbevolen</translation>
     </message>
     <message>
-        <source>SHARES/kilobyte</source>
-        <translation>SHARES/kilobyte</translation>
+        <source>CRTZ/kilobyte</source>
+        <translation>CRTZ/kilobyte</translation>
     </message>
     <message>
         <source>0.00 KB</source>
@@ -3151,9 +3151,9 @@ Vergeet deze niet op te schrijven en veilig te bewaren, anders verlies je mogeli
         <translation>BIP38 Tool</translation>
     </message>
     <message>
-        <source>Encrypt your SHARES addresses (key pair actually) using BIP38 encryption.
+        <source>Encrypt your CRTZ addresses (key pair actually) using BIP38 encryption.
 Using this mechanism you can share your keys without middle-man risk, only need to store your passphrase safely</source>
-        <translation>Encrypteer uw SHARES-adressen (met key pair) gebruikmakende van BIP38 versleuteling.
+        <translation>Encrypteer uw CRTZ-adressen (met key pair) gebruikmakende van BIP38 versleuteling.
 Door gebruik te maken van dit mechanisme kan je jouw sleutels delen zonder het risico van een tussenpersoon, je moet enkel je wachtwoordzin veilig opbergen</translation>
     </message>
     <message>
@@ -3189,8 +3189,8 @@ Door gebruik te maken van dit mechanisme kan je jouw sleutels delen zonder het r
         <translation>DECRYPTEER SLEUTEL</translation>
     </message>
     <message>
-        <source>SHARES address</source>
-        <translation>SHARES adres</translation>
+        <source>CRTZ address</source>
+        <translation>CRTZ adres</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -3322,8 +3322,8 @@ Verify that you have installed a predetermined text editor.</source>
 Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translation>
     </message>
     <message>
-        <source>Welcome to the SHARES RPC console.</source>
-        <translation>Welkom bij de SHARES RPC console.</translation>
+        <source>Welcome to the CRTZ RPC console.</source>
+        <translation>Welkom bij de CRTZ RPC console.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -3507,50 +3507,50 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>Formulier</translation>
     </message>
     <message>
-        <source>1) What is SHARES?</source>
-        <translation>1) Wat is SHARES?</translation>
+        <source>1) What is CRTZ?</source>
+        <translation>1) Wat is CRTZ?</translation>
     </message>
     <message>
-        <source>2) Why are my SHARES unspendable?</source>
-        <translation>2) Waarom is mijn SHARES niet besteedbaar?</translation>
+        <source>2) Why are my CRTZ unspendable?</source>
+        <translation>2) Waarom is mijn CRTZ niet besteedbaar?</translation>
     </message>
     <message>
-        <source>https://cryptosharescoin.io/</source>
-        <translation>https://cryptosharescoin.io/</translation>
+        <source>https://cortezcoin.io/</source>
+        <translation>https://cortezcoin.io/</translation>
     </message>
     <message>
         <source>1</source>
         <translation>1</translation>
     </message>
     <message>
-        <source>What is SHARES?</source>
-        <translation>Wat is SHARES?</translation>
+        <source>What is CRTZ?</source>
+        <translation>Wat is CRTZ?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           SHARES is a form of digital online money using blockchain technology
+                           CRTZ is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  SHARES incorporates market leading security &amp;
+                           zero fees.  CRTZ incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zSHARES) and Zerocoin staking.
+                           to implement ZeroCoin(zCRTZ) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           SHARES utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of SHARES to participate in earning block rewards
+                           CRTZ utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of CRTZ to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to create and vote on proposals.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           SHARES is een vorm van digitaal online geld dat gebruik maakt van blockchain technologie.
+                           CRTZ is een vorm van digitaal online geld dat gebruik maakt van blockchain technologie.
                            die gemakkelijk wereldwijd kan worden overgebracht, onmiddellijk en met bijna
-                           geen kosten.  SHARES omvat marktleidende beveiliging &amp;
+                           geen kosten.  CRTZ omvat marktleidende beveiliging &amp;
                            privacy en is ook de eerste PoS (Proof of Stake) Cryptovaluta
-                           om ZeroCoin (zSHARES) en Zerocoin staking te implementeren.
+                           om ZeroCoin (zCRTZ) en Zerocoin staking te implementeren.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           SHARES gebruikt een Proof of Stake (PoS) consensussysteemalgoritme,
-                           waardoor alle eigenaren van SHARES kunnen deelnemen aan het verdienen van blokbeloningen
+                           CRTZ gebruikt een Proof of Stake (PoS) consensussysteemalgoritme,
+                           waardoor alle eigenaren van CRTZ kunnen deelnemen aan het verdienen van blokbeloningen
                            en tegelijkertijd het netwerk te beveiligen met volledige node portemonnees, en ook om
                            Masternodes uit te voeren en om voorstellen op te stellen en daarover te stemmen.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -3561,25 +3561,25 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my SHARES unspendable?</source>
-        <translation>Waarom is mijn SHARES niet besteedbaar?</translation>
+        <source>Why are my CRTZ unspendable?</source>
+        <translation>Waarom is mijn CRTZ niet besteedbaar?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received SHARES requires 6 confirmations on the network
+                           Newly received CRTZ requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Your SHARES wallet also needs to be completely synchronized
+                           Your CRTZ wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Nieuw ontvangen SHARES vereist 6 bevestigingen op het netwerk
+                           Nieuw ontvangen CRTZ vereist 6 bevestigingen op het netwerk
                            om in aanmerking te komen voor uitgaven die ongeveer 6 minuten in beslag kunnen nemen.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Uw SHARES portemonnee moet ook volledig gesynchroniseerd zijn
+                           Uw CRTZ portemonnee moet ook volledig gesynchroniseerd zijn
                            om de balans te zien en uit te geven op het netwerk.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -3589,12 +3589,12 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>3</translation>
     </message>
     <message>
-        <source>How do I stake SHARES?</source>
-        <translation>Hoe stake ik SHARES?</translation>
+        <source>How do I stake CRTZ?</source>
+        <translation>Hoe stake ik CRTZ?</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"&gt;&lt;li align="justify" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Make sure your wallet is completely synchronized and you are using the latest release. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;You must have a balance of SHARES with a minimum of 600 confirmations. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Your wallet must stay online and be unlocked for staking purposes. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Once all those steps are followed staking should be enabled. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &amp;quot;Staking Enabled&amp;quot; to indicate it is staking. Using the command line interface (cryptoshares-cli); the command &lt;span style=" font-style:italic;"&gt;getstakingstatus&lt;/span&gt; will confirm that staking is active. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"&gt;&lt;li align="justify" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Zorg ervoor dat uw portemonnee volledig gesynchroniseerd is en je op de juiste versie zit. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Je moet een balans van SHARES hebben met een minimum van 600 bevestigingen. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Uw portemonnee moet steeds online en ontgrendeld blijven voor stakingsdoeleinden. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Van zodra al deze stappen gevolgd zijn, zou staking ingeschakeld moeten zijn. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Je kan de stakingsstatus controleren door over het pakketicoontje te gaan gaan met je muis. Deze staat op de linker van de portemonnee interface. Dit pakketje zal oplichten en zal &amp;quot;Staking Inschakeld&amp;quot; vermelden om aan te geven dat staking actief is. Als je gebruik maakt van de command line interface (cryptoshares-cli); het commando &lt;span style=" font-style:italic;"&gt;getstakingstatus&lt;/span&gt; zal bevestigen dat staking actief is. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"&gt;&lt;li align="justify" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Make sure your wallet is completely synchronized and you are using the latest release. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;You must have a balance of CRTZ with a minimum of 600 confirmations. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Your wallet must stay online and be unlocked for staking purposes. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Once all those steps are followed staking should be enabled. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &amp;quot;Staking Enabled&amp;quot; to indicate it is staking. Using the command line interface (cortez-cli); the command &lt;span style=" font-style:italic;"&gt;getstakingstatus&lt;/span&gt; will confirm that staking is active. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"&gt;&lt;li align="justify" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Zorg ervoor dat uw portemonnee volledig gesynchroniseerd is en je op de juiste versie zit. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Je moet een balans van CRTZ hebben met een minimum van 600 bevestigingen. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Uw portemonnee moet steeds online en ontgrendeld blijven voor stakingsdoeleinden. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Van zodra al deze stappen gevolgd zijn, zou staking ingeschakeld moeten zijn. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Je kan de stakingsstatus controleren door over het pakketicoontje te gaan gaan met je muis. Deze staat op de linker van de portemonnee interface. Dit pakketje zal oplichten en zal &amp;quot;Staking Inschakeld&amp;quot; vermelden om aan te geven dat staking actief is. Als je gebruik maakt van de command line interface (cortez-cli); het commando &lt;span style=" font-style:italic;"&gt;getstakingstatus&lt;/span&gt; zal bevestigen dat staking actief is. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>4</source>
@@ -3616,14 +3616,14 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style='color: #b088ff' href='https://discord.gg/UXGTjfsBFe'&gt;
+                           &lt;a style='color: #b088ff' href='https://discord.gg/RpBXAnvp7k'&gt;
                            #support in our Discord&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            We hebben ondersteuningskanalen in de meeste van onze officiële chatgroepen, bijvoorbeeld
-                           &lt;a style='color: #b088ff' href='https://discord.gg/UXGTjfsBFe'&gt;
+                           &lt;a style='color: #b088ff' href='https://discord.gg/RpBXAnvp7k'&gt;
                            #support in onze Discord&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -3638,12 +3638,12 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the collateral amount can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Een Masternode Controller portemonnee is waar de 10.000 SHARES onderpand zich kan bevinden tijdens een Controller-Remote masternode setup. Het is een portemonnee die de remote masternode portemonnee(s) kan activeren en waarmee u uw ondergepande munten offline kunt houden terwijl de remote masternode online blijft. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Een Masternode Controller portemonnee is waar de 10.000 CRTZ onderpand zich kan bevinden tijdens een Controller-Remote masternode setup. Het is een portemonnee die de remote masternode portemonnee(s) kan activeren en waarmee u uw ondergepande munten offline kunt houden terwijl de remote masternode online blijft. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           A masternode is a computer running a full node SHARES wallet with a
+                           A masternode is a computer running a full node CRTZ wallet with a
                            required amount of secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
@@ -3665,10 +3665,10 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in SHARES Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in CRTZ Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the SHARES network&lt;/li&gt;
+                           &lt;li&gt;Help secure the CRTZ network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
@@ -3684,8 +3684,8 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Een masternode is een computer met een volledige node SHARES core portemonnee met een
-                           vereiste van 10.000 SHARES onderpand om extra diensten te kunnen verlenen
+                           Een masternode is een computer met een volledige node CRTZ core portemonnee met een
+                           vereiste van 10.000 CRTZ onderpand om extra diensten te kunnen verlenen
                            aan het netwerk en in ruil daarvoor ontvangt u regelmatig een deel van de blokbeloning.
                            Deze diensten omvatten::
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -3706,17 +3706,17 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                            Masternode Voordelen:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Deelnemen in het SHARES Bestuur&lt;/li&gt;
+                           &lt;li&gt;Deelnemen in het CRTZ Bestuur&lt;/li&gt;
                            &lt;li&gt;Verdien Masternode Beloningen&lt;/li&gt;
                            &lt;li&gt;Commodity-optie voor toekomstige verkoop&lt;/li&gt;
-                           &lt;li&gt;Helpt bij het beveiligen van het SHARES netwerk&lt;/li&gt;
+                           &lt;li&gt;Helpt bij het beveiligen van het CRTZ netwerk&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            Vereisten:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 SHARES per Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 CRTZ per Masternode instance&lt;/li&gt;
                            &lt;li&gt;Moet in een kernportemonnee worden opgeborgen&lt;/li&gt;
                            &lt;li&gt;Vereist een vast IP-adres
                            &lt;li&gt;Masternode portemonnee moet online blijven&lt;/li&gt;
@@ -3729,8 +3729,8 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>Frequently Asked Questions</translation>
     </message>
     <message>
-        <source>3) How do I stake SHARES?</source>
-        <translation>3) Hoe stake ik SHARES?</translation>
+        <source>3) How do I stake CRTZ?</source>
+        <translation>3) Hoe stake ik CRTZ?</translation>
     </message>
     <message>
         <source>4) Where I should go if I need support?</source>
@@ -3852,8 +3852,8 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>Kan de back-upmap niet openen</translation>
     </message>
     <message>
-        <source>Unable to open cryptoshares.conf with default application</source>
-        <translation>Kan cryptoshares.conf niet openen met de standaard applicatie</translation>
+        <source>Unable to open cortez.conf with default application</source>
+        <translation>Kan cortez.conf niet openen met de standaard applicatie</translation>
     </message>
     <message>
         <source>In:</source>
@@ -3907,8 +3907,8 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>Aantal van script verificatiethreads</translation>
     </message>
     <message>
-        <source>Start SHARES on system login</source>
-        <translation>Start SHARES bij systeemlogin</translation>
+        <source>Start CRTZ on system login</source>
+        <translation>Start CRTZ bij systeemlogin</translation>
     </message>
     <message>
         <source>Minimize to the tray instead of the taskbar</source>
@@ -3995,8 +3995,8 @@ Weet u het zeker?
         <translation>Selectievakje</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SHARES addresses after it matures.</source>
-        <translation>Met MultiSend kunt u automatisch tot 100% van uw inzet of masternode beloning naar een lijst met andere SHARES-adressen sturen nadat deze volwaardig zijn geworden.</translation>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other CRTZ addresses after it matures.</source>
+        <translation>Met MultiSend kunt u automatisch tot 100% van uw inzet of masternode beloning naar een lijst met andere CRTZ-adressen sturen nadat deze volwaardig zijn geworden.</translation>
     </message>
     <message>
         <source>Active</source>
@@ -4122,8 +4122,8 @@ Vink één of beide selectievakjes aan om beloningen op de inzet en/of masternod
         <translation>Bericht</translation>
     </message>
     <message>
-        <source>SHARES address or contact label</source>
-        <translation>SHARES adres of contactlabel</translation>
+        <source>CRTZ address or contact label</source>
+        <translation>CRTZ adres of contactlabel</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -4443,8 +4443,8 @@ Vink één of beide selectievakjes aan om beloningen op de inzet en/of masternod
         <translation>Veelgestelde vragen</translation>
     </message>
     <message>
-        <source>About SHARES</source>
-        <translation>Over SHARES</translation>
+        <source>About CRTZ</source>
+        <translation>Over CRTZ</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -4514,8 +4514,8 @@ Weet je zeker dat?
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>CRYPTOSHARES is shutting down...</source>
-        <translation>CRYPTOSHARES is aan het afsluiten...</translation>
+        <source>Cortez is shutting down...</source>
+        <translation>Cortez is aan het afsluiten...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -4544,8 +4544,8 @@ Weet je zeker dat?
         <translation>Laden...</translation>
     </message>
     <message>
-        <source>CRYPTOSHARES</source>
-        <translation>CRYPTOSHARES</translation>
+        <source>Cortez</source>
+        <translation>Cortez</translation>
     </message>
 </context>
 <context>
@@ -5064,25 +5064,25 @@ Selecteer minder invoeren met muntcontrole.</translation>
     </message>
     <message>
         <source>Welcome to
-CRYPTOSHARES Wallet</source>
+Cortez Wallet</source>
         <translation>Welkom bij
-CRYPTOSHARES Portemonnee</translation>
+Cortez Portemonnee</translation>
     </message>
     <message>
-        <source>SHARES is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>SHARES is 's werelds meest innovatieve Proof of Stake blockchain gebaseerde technologie. Ontwikkeld door een team van zeer ervaren ontwikkelaars en cryptografen.</translation>
+        <source>CRTZ is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>CRTZ is 's werelds meest innovatieve Proof of Stake blockchain gebaseerde technologie. Ontwikkeld door een team van zeer ervaren ontwikkelaars en cryptografen.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - SHARES believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Zoals ons manifest zegt: Privacy is een niet-onderhandelbaar fundamenteel mensenrecht; het geeft gebruikers de vrijheid om hun gegevens te delen wanneer en met wie ze maar willen - SHARES gelooft in soevereiniteit.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - CRTZ believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Zoals ons manifest zegt: Privacy is een niet-onderhandelbaar fundamenteel mensenrecht; het geeft gebruikers de vrijheid om hun gegevens te delen wanneer en met wie ze maar willen - CRTZ gelooft in soevereiniteit.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>The masternode network is SHARES's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
-        <translation>Het masternode netwerk is SHARES's tweedelaagse netwerk bovenop de blockchain die onze DAO in staat stelt om gedecentraliseerd bestuur, treasury te leveren</translation>
+        <source>The masternode network is CRTZ's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>Het masternode netwerk is CRTZ's tweedelaagse netwerk bovenop de blockchain die onze DAO in staat stelt om gedecentraliseerd bestuur, treasury te leveren</translation>
     </message>
     <message>
-        <source>How SHARES respects your privacy?</source>
-        <translation>Hoe respecteert SHARES uw privacy?</translation>
+        <source>How CRTZ respects your privacy?</source>
+        <translation>Hoe respecteert CRTZ uw privacy?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -5116,8 +5116,8 @@ CRYPTOSHARES Portemonnee</translation>
         <translation>Bind naar het opgegeven adres om te luisteren naar JSON-RPC verbindingen. Gebruik [host]:poort notatie voor IPv6. Deze optie kan meerdere keren worden opgegeven (standaard: bind aan alle interfaces)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. CRYPTOSHARES is probably already running.</source>
-        <translation>Kan geen vergrendeling op data directory %s verkrijgen. CRYPTOSHARES loopt waarschijnlijk al.</translation>
+        <source>Cannot obtain a lock on data directory %s. Cortez is probably already running.</source>
+        <translation>Kan geen vergrendeling op data directory %s verkrijgen. Cortez loopt waarschijnlijk al.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -5276,8 +5276,8 @@ CRYPTOSHARES Portemonnee</translation>
         <translation>De totale lengte van de netwerkversie (%i) overschrijdt de maximale lengte (%i). Verminder het aantal of de grootte van uacommentaren.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. CRYPTOSHARES is probably already running.</source>
-        <translation>Niet mogelijk te binden aan %s op deze computer. CRYPTOSHARES loopt waarschijnlijk al.</translation>
+        <source>Unable to bind to %s on this computer. Cortez is probably already running.</source>
+        <translation>Niet mogelijk te binden aan %s op deze computer. Cortez loopt waarschijnlijk al.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5292,8 +5292,8 @@ CRYPTOSHARES Portemonnee</translation>
         <translation>Waarschuwing: -paytxfee is zeer hoog ingesteld! Dit zijn de transactie kosten die je betaalt als je een transactie verstuurt.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong CRYPTOSHARES will not work properly.</source>
-        <translation>Waarschuwing: Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt CRYPTOSHARES niet goed.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Cortez will not work properly.</source>
+        <translation>Waarschuwing: Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt Cortez niet goed.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5500,8 +5500,8 @@ CRYPTOSHARES Portemonnee</translation>
         <translation>Informatie</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. CRYPTOSHARES is shutting down.</source>
-        <translation>Initialisatie saniteitscontrole mislukt. CRYPTOSHARES wordt afgesloten.</translation>
+        <source>Initialization sanity check failed. Cortez is shutting down.</source>
+        <translation>Initialisatie saniteitscontrole mislukt. Cortez wordt afgesloten.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -5532,8 +5532,8 @@ CRYPTOSHARES Portemonnee</translation>
         <translation>Ongeldige netmask opgegeven in -whitelist: '%s'</translation>
     </message>
     <message>
-        <source>Recalculating SHARES supply...</source>
-        <translation>Hercalculatie van SHARES aanbod...</translation>
+        <source>Recalculating CRTZ supply...</source>
+        <translation>Hercalculatie van CRTZ aanbod...</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5552,8 +5552,8 @@ CRYPTOSHARES Portemonnee</translation>
         <translation>Dit is een pre-release test build - gebruik op eigen risico - niet gebruiken voor staking of handel applicaties!</translation>
     </message>
     <message>
-        <source>Disable all SHARES specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
-        <translation>Schakel alle specifieke SHARES functionaliteit uit (Masternodes, Zerocoin, Budgeting) (0-1, standaard: %u)</translation>
+        <source>Disable all CRTZ specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
+        <translation>Schakel alle specifieke CRTZ functionaliteit uit (Masternodes, Zerocoin, Budgeting) (0-1, standaard: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5820,12 +5820,12 @@ CRYPTOSHARES Portemonnee</translation>
         <translation>Kosten (in %s/Kb) kleiner dan dit worden beschouwd als zero fee voor transactie verrichting (standaard: %s)</translation>
     </message>
     <message>
-        <source>Minimum positive amount (in SHARES) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
-        <translation>Minimum geldige waarde (in SHARES) toegestaan bij GUI en RPC voor de staking splitsdrempel (standaard: %s)</translation>
+        <source>Minimum positive amount (in CRTZ) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
+        <translation>Minimum geldige waarde (in CRTZ) toegestaan bij GUI en RPC voor de staking splitsdrempel (standaard: %s)</translation>
     </message>
     <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong CRYPTOSHARES will not work properly.</source>
-        <translation>Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd ingesteld staat, werkt CRYPTOSHARES niet goed.</translation>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong Cortez will not work properly.</source>
+        <translation>Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd ingesteld staat, werkt Cortez niet goed.</translation>
     </message>
     <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect/-noconnect)</source>
@@ -6098,8 +6098,8 @@ CRYPTOSHARES Portemonnee</translation>
         <translation>Synchroniseren sporks...</translation>
     </message>
     <message>
-        <source>Syncing zSHARES wallet...</source>
-        <translation>Synchroniseren zSHARES portemonnee...</translation>
+        <source>Syncing zCRTZ wallet...</source>
+        <translation>Synchroniseren zCRTZ portemonnee...</translation>
     </message>
     <message>
         <source>The threshold value cannot be less than %s</source>
@@ -6218,8 +6218,8 @@ CRYPTOSHARES Portemonnee</translation>
         <translation>Gebruikersnaam voor JSON-RPC verbindingen</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zSHARES</source>
-        <translation>Waarde is minder dan de kleinst beschikbare denominatie (=1) van zSHARES</translation>
+        <source>Value is below the smallest available denomination (= 1) of zCRTZ</source>
+        <translation>Waarde is minder dan de kleinst beschikbare denominatie (=1) van zCRTZ</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -6234,8 +6234,8 @@ CRYPTOSHARES Portemonnee</translation>
         <translation>Portemonnee %s verblijft buiten de data directory %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart CRYPTOSHARES to complete</source>
-        <translation>Wallet moest worden herschreven: start CRYPTOSHARES opnieuw om te voltooien</translation>
+        <source>Wallet needed to be rewritten: restart Cortez to complete</source>
+        <translation>Wallet moest worden herschreven: start Cortez opnieuw om te voltooien</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -6301,12 +6301,12 @@ CRYPTOSHARES Portemonnee</translation>
         <translation>Zenden</translation>
     </message>
     <message>
-        <source>Send public coins (SHARES)</source>
-        <translation>Verstuur publieke munten (SHARES)</translation>
+        <source>Send public coins (CRTZ)</source>
+        <translation>Verstuur publieke munten (CRTZ)</translation>
     </message>
     <message>
-        <source>SHARES address or contact label</source>
-        <translation>SHARES adres of contactlabel</translation>
+        <source>CRTZ address or contact label</source>
+        <translation>CRTZ adres of contactlabel</translation>
     </message>
     <message>
         <source>Amount</source>

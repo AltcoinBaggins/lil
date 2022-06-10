@@ -5,10 +5,10 @@
 """Test bitcoind with different proxy configuration.
 
 Test plan:
-- Start cryptosharesd's with different proxy configurations
+- Start cortezd's with different proxy configurations
 - Use addnode to initiate connections
 - Verify that proxies are connected to, and the right connection command is given
-- Proxy configurations to test on cryptosharesd side:
+- Proxy configurations to test on cortezd side:
     - `-proxy` (proxy everything)
     - `-onion` (proxy just onions)
     - `-proxyrandomize` Circuit randomization
@@ -18,8 +18,8 @@ Test plan:
     - proxy on IPv6
 
 - Create various proxies (as threads)
-- Create cryptosharesds that connect to them
-- Manipulate the cryptosharesds using addnode (onetry) an observe effects
+- Create cortezds that connect to them
+- Manipulate the cortezds using addnode (onetry) an observe effects
 
 addnode connect to IPv4
 addnode connect to IPv6

@@ -3,7 +3,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The CRYPTOSHARES Core Developers
+// Copyright (c) 2022 The Cortez Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -267,11 +267,11 @@ UniValue stop(const JSONRPCRequest& jsonRequest)
     if (jsonRequest.fHelp || jsonRequest.params.size() > 1)
         throw std::runtime_error(
             "stop\n"
-            "\nStop CRYPTOSHARES server.");
+            "\nStop Cortez server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "CRYPTOSHARES server stopping";
+    return "Cortez server stopping";
 }
 
 
@@ -362,32 +362,32 @@ static const CRPCCommand vRPCCommands[] =
         { "hidden",             "waitforblock",           &waitforblock,           true },
         { "hidden",             "waitforblockheight",     &waitforblockheight,     true },
 
-        /* SHARES features */
-        {"cryptoshares", "listmasternodes", &listmasternodes, true },
-        {"cryptoshares", "getmasternodecount", &getmasternodecount, true },
-        {"cryptoshares", "createmasternodebroadcast", &createmasternodebroadcast, true },
-        {"cryptoshares", "decodemasternodebroadcast", &decodemasternodebroadcast, true },
-        {"cryptoshares", "relaymasternodebroadcast", &relaymasternodebroadcast, true },
-        {"cryptoshares", "masternodecurrent", &masternodecurrent, true },
-        {"cryptoshares", "startmasternode", &startmasternode, true },
-        {"cryptoshares", "createmasternodekey", &createmasternodekey, true },
-        {"cryptoshares", "getmasternodeoutputs", &getmasternodeoutputs, true },
-        {"cryptoshares", "listmasternodeconf", &listmasternodeconf, true },
-        {"cryptoshares", "getmasternodestatus", &getmasternodestatus, true },
-        {"cryptoshares", "getmasternodewinners", &getmasternodewinners, true },
-        {"cryptoshares", "getmasternodescores", &getmasternodescores, true },
-        {"cryptoshares", "preparebudget", &preparebudget, true },
-        {"cryptoshares", "submitbudget", &submitbudget, true },
-        {"cryptoshares", "mnbudgetvote", &mnbudgetvote, true },
-        {"cryptoshares", "getbudgetvotes", &getbudgetvotes, true },
-        {"cryptoshares", "getnextsuperblock", &getnextsuperblock, true },
-        {"cryptoshares", "getbudgetprojection", &getbudgetprojection, true },
-        {"cryptoshares", "getbudgetinfo", &getbudgetinfo, true },
-        {"cryptoshares", "mnbudgetrawvote", &mnbudgetrawvote, true },
-        {"cryptoshares", "mnfinalbudget", &mnfinalbudget, true },
-        {"cryptoshares", "checkbudgets", &checkbudgets, true },
-        {"cryptoshares", "mnsync", &mnsync, true },
-        {"cryptoshares", "spork", &spork, true },
+        /* CRTZ features */
+        {"cortez", "listmasternodes", &listmasternodes, true },
+        {"cortez", "getmasternodecount", &getmasternodecount, true },
+        {"cortez", "createmasternodebroadcast", &createmasternodebroadcast, true },
+        {"cortez", "decodemasternodebroadcast", &decodemasternodebroadcast, true },
+        {"cortez", "relaymasternodebroadcast", &relaymasternodebroadcast, true },
+        {"cortez", "masternodecurrent", &masternodecurrent, true },
+        {"cortez", "startmasternode", &startmasternode, true },
+        {"cortez", "createmasternodekey", &createmasternodekey, true },
+        {"cortez", "getmasternodeoutputs", &getmasternodeoutputs, true },
+        {"cortez", "listmasternodeconf", &listmasternodeconf, true },
+        {"cortez", "getmasternodestatus", &getmasternodestatus, true },
+        {"cortez", "getmasternodewinners", &getmasternodewinners, true },
+        {"cortez", "getmasternodescores", &getmasternodescores, true },
+        {"cortez", "preparebudget", &preparebudget, true },
+        {"cortez", "submitbudget", &submitbudget, true },
+        {"cortez", "mnbudgetvote", &mnbudgetvote, true },
+        {"cortez", "getbudgetvotes", &getbudgetvotes, true },
+        {"cortez", "getnextsuperblock", &getnextsuperblock, true },
+        {"cortez", "getbudgetprojection", &getbudgetprojection, true },
+        {"cortez", "getbudgetinfo", &getbudgetinfo, true },
+        {"cortez", "mnbudgetrawvote", &mnbudgetrawvote, true },
+        {"cortez", "mnfinalbudget", &mnfinalbudget, true },
+        {"cortez", "checkbudgets", &checkbudgets, true },
+        {"cortez", "mnsync", &mnsync, true },
+        {"cortez", "spork", &spork, true },
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -606,14 +606,14 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(std::string methodname, std::string args)
 {
-    return "> cryptoshares-cli " + methodname + " " + args + "\n";
+    return "> cortez-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(std::string methodname, std::string args)
 {
     return "> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", "
            "\"method\": \"" +
-           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:22191/\n";
+           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:9992/\n";
 }
 
 void RPCSetTimerInterfaceIfUnset(RPCTimerInterface *iface)

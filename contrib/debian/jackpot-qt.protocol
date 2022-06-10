@@ -1,6 +1,6 @@
 [Protocol]
-exec=cryptoshares-qt '%u'
-protocol=cryptoshares
+exec=cortez-qt '%u'
+protocol=cortez
 input=none
 output=none
 helper=true

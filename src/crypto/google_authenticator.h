@@ -1,9 +1,9 @@
-// Copyright (c) 2022 The CRYPTOSHARES Core Developers
+// Copyright (c) 2022 The Cortez Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CRYPTOSHARES_CRYPTO_GOOGLE_AUTHENTICATOR_H
-#define CRYPTOSHARES_CRYPTO_GOOGLE_AUTHENTICATOR_H
+#ifndef Cortez_CRYPTO_GOOGLE_AUTHENTICATOR_H
+#define Cortez_CRYPTO_GOOGLE_AUTHENTICATOR_H
 
 #include <cstdint>
 
@@ -22,4 +22,4 @@ public:
     int GeneratePin();
 };
 
-#endif // CRYPTOSHARES_CRYPTO_GOOGLE_AUTHENTICATOR_H
+#endif // Cortez_CRYPTO_GOOGLE_AUTHENTICATOR_H

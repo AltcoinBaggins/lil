@@ -454,7 +454,7 @@
             <enum>Qt::NoFocus</enum>
            </property>
            <property name="text">
-            <string>How to get SHARES</string>
+            <string>How to get CRTZ</string>
            </property>
           </widget>
          </item>
@@ -519,7 +519,7 @@
             <item>
              <widget class="QLabel" name="labelMessage">
               <property name="text">
-               <string>Amount of SHARES staked.</string>
+               <string>Amount of CRTZ staked.</string>
               </property>
              </widget>
             </item>
@@ -567,7 +567,7 @@
                 <item>
                     <widget class="QLabel" name="labelAmountPiv">
                         <property name="text">
-                            <string notr="true">0 SHARES</string>
+                            <string notr="true">0 CRTZ</string>
                         </property>
                         <property name="alignment">
                             <set>Qt::AlignCenter</set>
@@ -694,7 +694,7 @@
                 <item>
                  <widget class="QLabel" name="labelPiv">
                   <property name="text">
-                   <string notr="true">SHARES</string>
+                   <string notr="true">CRTZ</string>
                   </property>
                  </widget>
                 </item>
@@ -736,7 +736,7 @@
                 <item>
                     <widget class="QLabel" name="labelMNRewards">
                         <property name="text">
-                            <string>SHARES MN</string>
+                            <string>CRTZ MN</string>
                         </property>
                     </widget>
                 </item>

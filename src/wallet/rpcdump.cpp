@@ -2,7 +2,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The CRYPTOSHARES Core Developers
+// Copyright (c) 2022 The Cortez Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -80,12 +80,12 @@ UniValue importprivkey(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() < 1 || request.params.size() > 4)
         throw std::runtime_error(
-            "importprivkey \"cryptosharesprivkey\" ( \"label\" rescan fStakingAddress )\n"
+            "importprivkey \"cortezprivkey\" ( \"label\" rescan fStakingAddress )\n"
             "\nAdds a private key (as returned by dumpprivkey) to your wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"cryptosharesprivkey\"      (string, required) The private key (see dumpprivkey)\n"
+            "1. \"cortezprivkey\"      (string, required) The private key (see dumpprivkey)\n"
             "2. \"label\"            (string, optional, default=\"\") An optional label\n"
             "3. rescan               (boolean, optional, default=true) Rescan the wallet for transactions\n"
 
@@ -377,13 +377,13 @@ UniValue dumpprivkey(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() != 1)
         throw std::runtime_error(
-            "dumpprivkey \"cryptosharesaddress\"\n"
-            "\nReveals the private key corresponding to 'cryptosharesaddress'.\n"
+            "dumpprivkey \"cortezaddress\"\n"
+            "\nReveals the private key corresponding to 'cortezaddress'.\n"
             "Then the importprivkey can be used with this output\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"cryptosharesaddress\"   (string, required) The cryptoshares address for the private key\n"
+            "1. \"cortezaddress\"   (string, required) The cortez address for the private key\n"
 
             "\nResult:\n"
             "\"key\"                (string) The private key\n"
@@ -398,7 +398,7 @@ UniValue dumpprivkey(const JSONRPCRequest& request)
     std::string strAddress = request.params[0].get_str();
     CTxDestination dest = DecodeDestination(strAddress);
     if (!IsValidDestination(dest))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid CRYPTOSHARES address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Cortez address");
     CKeyID keyID = *boost::get<CKeyID>(&dest);
     if (!keyID)
         throw JSONRPCError(RPC_TYPE_ERROR, "Address does not refer to a key");
@@ -465,7 +465,7 @@ UniValue dumpwallet(const JSONRPCRequest& request)
 
     CBlockIndex* tip = chainActive.Tip();
     // produce output
-    file << strprintf("# Wallet dump created by CRYPTOSHARES %s (%s)\n", CLIENT_BUILD, CLIENT_DATE);
+    file << strprintf("# Wallet dump created by Cortez %s (%s)\n", CLIENT_BUILD, CLIENT_DATE);
     file << strprintf("# * Created on %s\n", EncodeDumpTime(GetTime()));
     if (tip) {
         file << strprintf("# * Best block at time of backup was %i (%s),\n", tip->nHeight,
@@ -543,12 +543,12 @@ UniValue bip38encrypt(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() != 2)
         throw std::runtime_error(
-            "bip38encrypt \"cryptosharesaddress\" \"passphrase\"\n"
-            "\nEncrypts a private key corresponding to 'cryptosharesaddress'.\n" +
+            "bip38encrypt \"cortezaddress\" \"passphrase\"\n"
+            "\nEncrypts a private key corresponding to 'cortezaddress'.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"cryptosharesaddress\"   (string, required) The cryptoshares address for the private key (you must hold the key already)\n"
+            "1. \"cortezaddress\"   (string, required) The cortez address for the private key (you must hold the key already)\n"
             "2. \"passphrase\"   (string, required) The passphrase you want the private key to be encrypted with - Valid special chars: !#$%&'()*+,-./:;<=>?`{|}~ \n"
 
             "\nResult:\n"
@@ -567,7 +567,7 @@ UniValue bip38encrypt(const JSONRPCRequest& request)
 
     CTxDestination address = DecodeDestination(strAddress);
     if (!IsValidDestination(address))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid CRYPTOSHARES address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Cortez address");
     CKeyID keyID = *boost::get<CKeyID>(&address);
     if (!keyID)
         throw JSONRPCError(RPC_TYPE_ERROR, "Address does not refer to a key");
@@ -589,7 +589,7 @@ UniValue bip38decrypt(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() != 2)
         throw std::runtime_error(
-            "bip38decrypt \"cryptosharesaddress\" \"passphrase\"\n"
+            "bip38decrypt \"cortezaddress\" \"passphrase\"\n"
             "\nDecrypts and then imports password protected private key.\n" +
             HelpRequiringPassphrase() + "\n"
 

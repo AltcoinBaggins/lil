@@ -1,19 +1,19 @@
-# CRYPTOSHARES Standard Wallet
+# Cortez Standard Wallet
 
 ## Coin Specs
 
 - PoW Algorithm: X11KVS  
-- Premine: 7.750.000 SHARES (Total coin supply from previous blockchain, distributed after maturing, the remaining is burned)
-- Max. Supply: 1.200.000.000 SHARES 
+- Premine: 7.750.000 CRTZ (Total coin supply from previous blockchain, distributed after maturing, the remaining is burned)
+- Max. Supply: 1.200.000.000 CRTZ 
 - PoW Blocks: 1 - 1000
 - PoS Blocks: Starting from 1001
 - MN Blocks: Starting from 3001
 - Block Time: 60 Seconds
 - Maturity: 100 Confirmations 
-- Prefix: SHARES addresses start with the capital letter "P"  
-- Ports: 22190 (p2p) / 22191 (rpc)   
-- Explorer [explorer.cryptoshares.net](https://explorer.cryptoshares.net/SHARES/blocks)   
-- Website [cryptoshares.net](https://cryptoshares.net/)   
+- Prefix: CRTZ addresses start with the capital letter "P"  
+- Ports: 9991 (p2p) / 9992 (rpc)   
+- Explorer [explorer.cortezcoin.com](https://explorer.cortezcoin.com/CRTZ/blocks)   
+- Website [cortezcoin.com](https://cortezcoin.com/)   
 
 ## Rewards Breakdown
 

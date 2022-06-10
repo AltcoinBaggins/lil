@@ -3,7 +3,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The CRYPTOSHARES Core Developers
+// Copyright (c) 2022 The Cortez Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -137,7 +137,7 @@ UniValue getaddressinfo(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() > 1)
         throw std::runtime_error(
                 "getaddressinfo ( \"address\" )\n"
-                "\nReturn information about the given SHARES address.\n"
+                "\nReturn information about the given CRTZ address.\n"
                 "Some of the information will only be present if the address is in the active wallet.\n"
                 "{Result:\n"
                 "  \"address\" : \"address\",              (string) The bitcoin address validated.\n"
@@ -162,7 +162,7 @@ UniValue getaddressinfo(const JSONRPCRequest& request)
                 "                                                         hdseedid) and relation to the wallet (ismine, iswatchonly).\n"
                 "  \"iscompressed\" : true|false,        (boolean, optional) If the pubkey is compressed.\n"
                 "  \"label\" :  \"label\"                  (string) The label associated with the address, \"\" is the default label.\n"
-                "  \"account\" : \"account\"                 (string) DEPRECATED. This field will be removed in v5.0. To see this deprecated field, start cryptosharesd with -deprecatedrpc=accounts. The account associated with the address, \"\" is the default account\n"
+                "  \"account\" : \"account\"                 (string) DEPRECATED. This field will be removed in v5.0. To see this deprecated field, start cortezd with -deprecatedrpc=accounts. The account associated with the address, \"\" is the default account\n"
                 "  \"timestamp\" : timestamp,            (number, optional) The creation time of the key, if available, expressed in the UNIX epoch time.\n"
                 "  \"hdkeypath\" : \"keypath\"             (string, optional) The HD keypath, if the key is HD and available.\n"
                 "  \"hdseedid\" : \"<hash160>\"            (string, optional) The Hash160 of the HD seed.\n"
@@ -457,7 +457,7 @@ UniValue getnewaddress(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() > 1)
         throw std::runtime_error(
             "getnewaddress ( \"label\" )\n"
-            "\nReturns a new SHARES address for receiving payments.\n"
+            "\nReturns a new CRTZ address for receiving payments.\n"
             "If 'label' is specified, it is added to the address book \n"
             "so payments received with the address will be associated with 'label'.\n"
 
@@ -465,7 +465,7 @@ UniValue getnewaddress(const JSONRPCRequest& request)
             "1. \"label\"        (string, optional) The label name for the address to be linked to. if not provided, the default label \"\" is used. It can also be set to the empty string \"\" to represent the default label. The label does not need to exist, it will be created if there is no label by the given name.\n"
 
             "\nResult:\n"
-            "\"SHARESaddress\"    (string) The new SHARES address\n"
+            "\"CRTZaddress\"    (string) The new CRTZ address\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getnewaddress", "") + HelpExampleRpc("getnewaddress", ""));
@@ -504,9 +504,9 @@ UniValue getaccountaddress(const JSONRPCRequest& request)
 {
     if (!IsDeprecatedRPCEnabled("accounts")) {
         if (request.fHelp) {
-            throw std::runtime_error("getaccountaddress (Deprecated, will be removed in v5.0. To use this command, start cryptosharesd with -deprecatedrpc=accounts)");
+            throw std::runtime_error("getaccountaddress (Deprecated, will be removed in v5.0. To use this command, start cortezd with -deprecatedrpc=accounts)");
         }
-        throw JSONRPCError(RPC_METHOD_DEPRECATED, "getaccountaddress is deprecated and will be removed in v5.0. To use this command, start cryptosharesd with -deprecatedrpc=accounts.");
+        throw JSONRPCError(RPC_METHOD_DEPRECATED, "getaccountaddress is deprecated and will be removed in v5.0. To use this command, start cortezd with -deprecatedrpc=accounts.");
     }
 
     if (request.fHelp || request.params.size() < 1 || request.params.size() > 2)
@@ -518,7 +518,7 @@ UniValue getaccountaddress(const JSONRPCRequest& request)
             "1. \"account\"       (string, required) The account for the address. It can also be set to the empty string \"\" to represent the default account. The account does not need to exist, it will be created and a new address created  if there is no account by the given name.\n"
 
             "\nResult:\n"
-            "\"SHARESaddress\"   (string) The account SHARES address.\n"
+            "\"CRTZaddress\"   (string) The account CRTZ address.\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getaccountaddress", "") + HelpExampleCli("getaccountaddress", "\"\"") +
@@ -540,7 +540,7 @@ UniValue getrawchangeaddress(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() > 1)
         throw std::runtime_error(
             "getrawchangeaddress\n"
-            "\nReturns a new SHARES address, for receiving change.\n"
+            "\nReturns a new CRTZ address, for receiving change.\n"
             "This is for use with raw transactions, NOT normal use.\n"
 
             "\nResult:\n"
@@ -571,18 +571,18 @@ UniValue setlabel(const JSONRPCRequest& request)
 {
     if (!IsDeprecatedRPCEnabled("accounts") && request.strMethod == "setaccount") {
         if (request.fHelp) {
-            throw std::runtime_error("setaccount (Deprecated, will be removed in v5.0. To use this command, start cryptosharesd with -deprecatedrpc=accounts)");
+            throw std::runtime_error("setaccount (Deprecated, will be removed in v5.0. To use this command, start cortezd with -deprecatedrpc=accounts)");
         }
-        throw JSONRPCError(RPC_METHOD_DEPRECATED, "setaccount is deprecated and will be removed in v5.0. To use this command, start cryptosharesd with -deprecatedrpc=accounts.");
+        throw JSONRPCError(RPC_METHOD_DEPRECATED, "setaccount is deprecated and will be removed in v5.0. To use this command, start cortezd with -deprecatedrpc=accounts.");
     }
 
     if (request.fHelp || request.params.size() != 2)
         throw std::runtime_error(
-            "setlabel \"SHARESaddress\" \"label\"\n"
+            "setlabel \"CRTZaddress\" \"label\"\n"
             "\nSets the label associated with the given address.\n"
 
             "\nArguments:\n"
-            "1. \"SHARESaddress\"   (string, required) The SHARES address to be associated with a label.\n"
+            "1. \"CRTZaddress\"   (string, required) The CRTZ address to be associated with a label.\n"
             "2. \"label\"         (string, required) The label to assign to the address.\n"
 
             "\nExamples:\n" +
@@ -592,7 +592,7 @@ UniValue setlabel(const JSONRPCRequest& request)
 
     CTxDestination dest = DecodeDestination(request.params[0].get_str());
     if (!IsValidDestination(dest))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SHARES address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid CRTZ address");
 
     std::string old_label = pwalletMain->mapAddressBook[dest].name;
     std::string label = LabelFromValue(request.params[1]);
@@ -627,18 +627,18 @@ UniValue getaccount(const JSONRPCRequest& request)
 {
     if (!IsDeprecatedRPCEnabled("accounts")) {
         if (request.fHelp) {
-            throw std::runtime_error("getaccount (Deprecated, will be removed in v5.0. To use this command, start cryptosharesd with -deprecatedrpc=accounts)");
+            throw std::runtime_error("getaccount (Deprecated, will be removed in v5.0. To use this command, start cortezd with -deprecatedrpc=accounts)");
         }
-        throw JSONRPCError(RPC_METHOD_DEPRECATED, "getaccount is deprecated and will be removed in v5.0. To use this command, start cryptosharesd with -deprecatedrpc=accounts.");
+        throw JSONRPCError(RPC_METHOD_DEPRECATED, "getaccount is deprecated and will be removed in v5.0. To use this command, start cortezd with -deprecatedrpc=accounts.");
     }
 
     if (request.fHelp || request.params.size() != 1)
         throw std::runtime_error(
-            "getaccount \"SHARESaddress\"\n"
+            "getaccount \"CRTZaddress\"\n"
             "\nDEPRECATED. Returns the account associated with the given address.\n"
 
             "\nArguments:\n"
-            "1. \"SHARESaddress\"  (string, required) The SHARES address for account lookup.\n"
+            "1. \"CRTZaddress\"  (string, required) The CRTZ address for account lookup.\n"
 
             "\nResult:\n"
             "\"accountname\"        (string) the account address\n"
@@ -651,7 +651,7 @@ UniValue getaccount(const JSONRPCRequest& request)
 
     CTxDestination address = DecodeDestination(request.params[0].get_str());
     if (!IsValidDestination(address))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SHARES address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid CRTZ address");
 
     std::string strAccount;
     std::map<CTxDestination, AddressBook::CAddressBookData>::iterator mi = pwalletMain->mapAddressBook.find(address);
@@ -664,9 +664,9 @@ UniValue getaddressesbyaccount(const JSONRPCRequest& request)
 {
     if (!IsDeprecatedRPCEnabled("accounts")) {
         if (request.fHelp) {
-            throw std::runtime_error("getaddressesbyaccount (Deprecated, will be removed in v5.0. To use this command, start cryptosharesd with -deprecatedrpc=accounts)");
+            throw std::runtime_error("getaddressesbyaccount (Deprecated, will be removed in v5.0. To use this command, start cortezd with -deprecatedrpc=accounts)");
         }
-        throw JSONRPCError(RPC_METHOD_DEPRECATED, "getaddressesbyaccount is deprecated and will be removed in v5.0. To use this command, start cryptosharesd with -deprecatedrpc=accounts.");
+        throw JSONRPCError(RPC_METHOD_DEPRECATED, "getaddressesbyaccount is deprecated and will be removed in v5.0. To use this command, start cortezd with -deprecatedrpc=accounts.");
     }
 
     if (request.fHelp || request.params.size() != 1)
@@ -679,7 +679,7 @@ UniValue getaddressesbyaccount(const JSONRPCRequest& request)
 
             "\nResult:\n"
             "[                     (json array of string)\n"
-            "  \"SHARESaddress\"  (string) a SHARES address associated with the given account\n"
+            "  \"CRTZaddress\"  (string) a CRTZ address associated with the given account\n"
             "  ,...\n"
             "]\n"
 
@@ -720,7 +720,7 @@ void SendMoney(const CTxDestination& address, CAmount nValue, CWalletTx& wtxNew)
         throw JSONRPCError(RPC_WALLET_ERROR, strError);
     }
 
-    // Parse SHARES address
+    // Parse CRTZ address
     CScript scriptPubKey = GetScriptForDestination(address);
 
     // Create and send the transaction
@@ -741,13 +741,13 @@ UniValue sendtoaddress(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() < 2 || request.params.size() > 4)
         throw std::runtime_error(
-            "sendtoaddress \"SHARESaddress\" amount ( \"comment\" \"comment-to\" )\n"
+            "sendtoaddress \"CRTZaddress\" amount ( \"comment\" \"comment-to\" )\n"
             "\nSend an amount to a given address. The amount is a real and is rounded to the nearest 0.00000001\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"SHARESaddress\"  (string, required) The SHARES address to send to.\n"
-            "2. \"amount\"      (numeric, required) The amount in SHARES to send. eg 0.1\n"
+            "1. \"CRTZaddress\"  (string, required) The CRTZ address to send to.\n"
+            "2. \"amount\"      (numeric, required) The amount in CRTZ to send. eg 0.1\n"
             "3. \"comment\"     (string, optional) A comment used to store what the transaction is for. \n"
             "                             This is not part of the transaction, just kept in your wallet.\n"
             "4. \"comment-to\"  (string, optional) A comment to store the name of the person or organization \n"
@@ -766,7 +766,7 @@ UniValue sendtoaddress(const JSONRPCRequest& request)
 
     CTxDestination address = DecodeDestination(request.params[0].get_str());
     if (!IsValidDestination(address))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SHARES address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid CRTZ address");
 
     // Amount
     CAmount nAmount = AmountFromValue(request.params[1]);
@@ -798,8 +798,8 @@ UniValue listaddressgroupings(const JSONRPCRequest& request)
             "[\n"
             "  [\n"
             "    [\n"
-            "      \"SHARESaddress\",     (string) The SHARES address\n"
-            "      amount,                 (numeric) The amount in SHARES\n"
+            "      \"CRTZaddress\",     (string) The CRTZ address\n"
+            "      amount,                 (numeric) The amount in CRTZ\n"
             "      \"label\"             (string, optional) The label\n"
             "    ]\n"
             "    ,...\n"
@@ -835,12 +835,12 @@ UniValue signmessage(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() != 2)
         throw std::runtime_error(
-            "signmessage \"SHARESaddress\" \"message\"\n"
+            "signmessage \"CRTZaddress\" \"message\"\n"
             "\nSign a message with the private key of an address" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"SHARESaddress\"  (string, required) The SHARES address to use for the private key.\n"
+            "1. \"CRTZaddress\"  (string, required) The CRTZ address to use for the private key.\n"
             "2. \"message\"         (string, required) The message to create a signature of.\n"
 
             "\nResult:\n"
@@ -890,15 +890,15 @@ UniValue getreceivedbyaddress(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() < 1 || request.params.size() > 2)
         throw std::runtime_error(
-            "getreceivedbyaddress \"SHARESaddress\" ( minconf )\n"
-            "\nReturns the total amount received by the given SHARESaddress in transactions with at least minconf confirmations.\n"
+            "getreceivedbyaddress \"CRTZaddress\" ( minconf )\n"
+            "\nReturns the total amount received by the given CRTZaddress in transactions with at least minconf confirmations.\n"
 
             "\nArguments:\n"
-            "1. \"SHARESaddress\"  (string, required) The SHARES address for transactions.\n"
+            "1. \"CRTZaddress\"  (string, required) The CRTZ address for transactions.\n"
             "2. minconf             (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n"
 
             "\nResult:\n"
-            "amount   (numeric) The total amount in SHARES received at this address.\n"
+            "amount   (numeric) The total amount in CRTZ received at this address.\n"
 
             "\nExamples:\n"
             "\nThe amount from transactions with at least 1 confirmation\n" +
@@ -912,10 +912,10 @@ UniValue getreceivedbyaddress(const JSONRPCRequest& request)
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
-    // SHARES address
+    // CRTZ address
     CTxDestination address = DecodeDestination(request.params[0].get_str());
     if (!IsValidDestination(address))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SHARES address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid CRTZ address");
     CScript scriptPubKey = GetScriptForDestination(address);
     if (!IsMine(*pwalletMain, scriptPubKey))
         throw JSONRPCError(RPC_WALLET_ERROR, "Address not found in wallet");
@@ -946,9 +946,9 @@ UniValue getreceivedbylabel(const JSONRPCRequest& request)
 {
     if (!IsDeprecatedRPCEnabled("accounts") && request.strMethod == "getreceivedbyaccount") {
         if (request.fHelp) {
-            throw std::runtime_error("getreceivedbyaccount (Deprecated, will be removed in v5.0. To use this command, start cryptosharesd with -deprecatedrpc=accounts)");
+            throw std::runtime_error("getreceivedbyaccount (Deprecated, will be removed in v5.0. To use this command, start cortezd with -deprecatedrpc=accounts)");
         }
-        throw JSONRPCError(RPC_METHOD_DEPRECATED, "getreceivedbyaccount is deprecated and will be removed in v5.0. To use this command, start cryptosharesd with -deprecatedrpc=accounts.");
+        throw JSONRPCError(RPC_METHOD_DEPRECATED, "getreceivedbyaccount is deprecated and will be removed in v5.0. To use this command, start cortezd with -deprecatedrpc=accounts.");
     }
 
     if (request.fHelp || request.params.size() < 1 || request.params.size() > 2)
@@ -961,7 +961,7 @@ UniValue getreceivedbylabel(const JSONRPCRequest& request)
             "2. minconf          (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n"
 
             "\nResult:\n"
-            "amount              (numeric) The total amount in SHARES received for this label.\n"
+            "amount              (numeric) The total amount in CRTZ received for this label.\n"
 
             "\nExamples:\n"
             "\nAmount received by the default label with at least 1 confirmation\n" +
@@ -1016,14 +1016,14 @@ UniValue getbalance(const JSONRPCRequest& request)
 
             "\nArguments:\n"
             "1. \"account\"      (string, optional) DEPRECATED. This argument will be removed in v5.0.\n"
-            "                    To use this deprecated argument, start cryptosharesd with -deprecatedrpc=accounts."
+            "                    To use this deprecated argument, start cortezd with -deprecatedrpc=accounts."
             "2. minconf          (numeric, optional, default=1) DEPRECATED. This argument will be removed in v5.0.\n"
-            "                    To use this deprecated argument, start cryptosharesd with -deprecatedrpc=accounts. Only include transactions confirmed at least this many times.\n"
+            "                    To use this deprecated argument, start cortezd with -deprecatedrpc=accounts. Only include transactions confirmed at least this many times.\n"
             "3. includeWatchonly (bool, optional, default=false) DEPRECATED. This argument will be removed in v5.0.\n"
-            "                    To use this deprecated argument, start cryptosharesd with -deprecatedrpc=accounts. Also include balance in watchonly addresses (see 'importaddress')\n"
+            "                    To use this deprecated argument, start cortezd with -deprecatedrpc=accounts. Also include balance in watchonly addresses (see 'importaddress')\n"
             
             "\nResult:\n"
-            "amount              (numeric) The total amount in SHARES received for this account.\n"
+            "amount              (numeric) The total amount in CRTZ received for this account.\n"
 
             "\nExamples:\n"
             "\nThe total amount in the wallet\n" +
@@ -1075,9 +1075,9 @@ UniValue movecmd(const JSONRPCRequest& request)
 {
     if (!IsDeprecatedRPCEnabled("accounts")) {
         if (request.fHelp) {
-            throw std::runtime_error("move (Deprecated, will be removed in v5.0. To use this command, start cryptosharesd with -deprecatedrpc=accounts)");
+            throw std::runtime_error("move (Deprecated, will be removed in v5.0. To use this command, start cortezd with -deprecatedrpc=accounts)");
         }
-        throw JSONRPCError(RPC_METHOD_DEPRECATED, "move is deprecated and will be removed in v5.0. To use this command, start cryptosharesd with -deprecatedrpc=accounts.");
+        throw JSONRPCError(RPC_METHOD_DEPRECATED, "move is deprecated and will be removed in v5.0. To use this command, start cortezd with -deprecatedrpc=accounts.");
     }
 
     if (request.fHelp || request.params.size() < 3 || request.params.size() > 5)
@@ -1088,7 +1088,7 @@ UniValue movecmd(const JSONRPCRequest& request)
             "\nArguments:\n"
             "1. \"fromaccount\"   (string, required) The name of the account to move funds from. May be the default account using \"\".\n"
             "2. \"toaccount\"     (string, required) The name of the account to move funds to. May be the default account using \"\".\n"
-            "3. amount            (numeric, required) Quantity of SHARES to move between accounts.\n"
+            "3. amount            (numeric, required) Quantity of CRTZ to move between accounts.\n"
             "4. minconf           (numeric, optional, default=1) Only use funds with at least this many confirmations.\n"
             "5. \"comment\"       (string, optional) An optional comment, stored in the wallet only.\n"
 
@@ -1096,9 +1096,9 @@ UniValue movecmd(const JSONRPCRequest& request)
             "true|false           (boolean) true if successful.\n"
 
             "\nExamples:\n"
-            "\nMove 0.01 SHARES from the default account to the account named tabby\n" +
+            "\nMove 0.01 CRTZ from the default account to the account named tabby\n" +
             HelpExampleCli("move", "\"\" \"tabby\" 0.01") +
-            "\nMove 0.01 SHARES from timotei to akiko with a comment\n" +
+            "\nMove 0.01 CRTZ from timotei to akiko with a comment\n" +
             HelpExampleCli("move", "\"timotei\" \"akiko\" 0.01 1 \"happy birthday!\"") +
             "\nAs a json rpc call\n" +
             HelpExampleRpc("move", "\"timotei\", \"akiko\", 0.01, 1, \"happy birthday!\""));
@@ -1152,22 +1152,22 @@ UniValue sendfrom(const JSONRPCRequest& request)
 {
     if (!IsDeprecatedRPCEnabled("accounts")) {
         if (request.fHelp) {
-            throw std::runtime_error("sendfrom (Deprecated, will be removed in v5.0. To use this command, start cryptosharesd with -deprecatedrpc=accounts)");
+            throw std::runtime_error("sendfrom (Deprecated, will be removed in v5.0. To use this command, start cortezd with -deprecatedrpc=accounts)");
         }
-        throw JSONRPCError(RPC_METHOD_DEPRECATED, "sendfrom is deprecated and will be removed in v5.0. To use this command, start cryptosharesd with -deprecatedrpc=accounts.");
+        throw JSONRPCError(RPC_METHOD_DEPRECATED, "sendfrom is deprecated and will be removed in v5.0. To use this command, start cortezd with -deprecatedrpc=accounts.");
     }
 
     if (request.fHelp || request.params.size() < 3 || request.params.size() > 7)
         throw std::runtime_error(
-            "sendfrom \"fromaccount\" \"toSHARESaddress\" amount ( minconf \"comment\" \"comment-to\" )\n"
-            "\nDEPRECATED (use sendtoaddress). Send an amount from an account to a SHARES address.\n"
+            "sendfrom \"fromaccount\" \"toCRTZaddress\" amount ( minconf \"comment\" \"comment-to\" )\n"
+            "\nDEPRECATED (use sendtoaddress). Send an amount from an account to a CRTZ address.\n"
             "The amount is a real and is rounded to the nearest 0.00000001." +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
             "1. \"fromaccount\"       (string, required) The name of the account to send funds from. May be the default account using \"\".\n"
-            "2. \"toSHARESaddress\"  (string, required) The SHARES address to send funds to.\n"
-            "3. amount                (numeric, required) The amount in SHARES. (transaction fee is added on top).\n"
+            "2. \"toCRTZaddress\"  (string, required) The CRTZ address to send funds to.\n"
+            "3. amount                (numeric, required) The amount in CRTZ. (transaction fee is added on top).\n"
             "4. minconf               (numeric, optional, default=1) Only use funds with at least this many confirmations.\n"
             "5. \"comment\"           (string, optional) A comment used to store what the transaction is for. \n"
             "                                     This is not part of the transaction, just kept in your wallet.\n"
@@ -1179,7 +1179,7 @@ UniValue sendfrom(const JSONRPCRequest& request)
             "\"transactionid\"        (string) The transaction id.\n"
 
             "\nExamples:\n"
-            "\nSend 0.01 SHARES from the default account to the address, must have at least 1 confirmation\n" +
+            "\nSend 0.01 CRTZ from the default account to the address, must have at least 1 confirmation\n" +
             HelpExampleCli("sendfrom", "\"\" \"DMJRSsuU9zfyrvxVaAEFQqK4MxZg6vgeS6\" 0.01") +
             "\nSend 0.01 from the tabby account to the given address, funds must have at least 6 confirmations\n" +
             HelpExampleCli("sendfrom", "\"tabby\" \"DMJRSsuU9zfyrvxVaAEFQqK4MxZg6vgeS6\" 0.01 6 \"donation\" \"seans outpost\"") +
@@ -1191,7 +1191,7 @@ UniValue sendfrom(const JSONRPCRequest& request)
     std::string strAccount = LabelFromValue(request.params[0]);
     CTxDestination address = DecodeDestination(request.params[1].get_str());
     if (!IsValidDestination(address))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SHARES address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid CRTZ address");
     CAmount nAmount = AmountFromValue(request.params[2]);
     int nMinDepth = 1;
     if (request.params.size() > 3)
@@ -1226,14 +1226,14 @@ UniValue sendmany(const JSONRPCRequest& request)
         help_text = "sendmany \"\" {\"address\":amount,...} ( minconf \"comment\" )\n"
             "\nSend multiple times. Amounts are double-precision floating point numbers.\n"
             "Note that the \"fromaccount\" argument has been removed in v4.2. To use this RPC with a \"fromaccount\" argument, restart\n"
-            "cryptosharesd with -deprecatedrpc=accounts\n" +
+            "cortezd with -deprecatedrpc=accounts\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
             "1. \"dummy\"               (string, required) Must be set to \"\" for backwards compatibility.\n"
             "2. \"amounts\"             (string, required) A json object with addresses and amounts\n"
             "    {\n"
-            "      \"address\":amount   (numeric) The SHARES address is the key, the numeric amount in SHARES is the value\n"
+            "      \"address\":amount   (numeric) The CRTZ address is the key, the numeric amount in CRTZ is the value\n"
             "      ,...\n"
             "    }\n"
             "3. minconf                 (numeric, optional, default=1) Only use the balance confirmed at least this many times.\n"
@@ -1260,7 +1260,7 @@ UniValue sendmany(const JSONRPCRequest& request)
             "1. \"fromaccount\"         (string, required) DEPRECATED. The account to send the funds from. Should be \"\" for the default account\n"
             "2. \"amounts\"             (string, required) A json object with addresses and amounts\n"
             "    {\n"
-            "      \"address\":amount   (numeric) The SHARES address is the key, the numeric amount in SHARES is the value\n"
+            "      \"address\":amount   (numeric) The CRTZ address is the key, the numeric amount in CRTZ is the value\n"
             "      ,...\n"
             "    }\n"
             "3. minconf                 (numeric, optional, default=1) Only use the balance confirmed at least this many times.\n"
@@ -1308,7 +1308,7 @@ UniValue sendmany(const JSONRPCRequest& request)
     for (const std::string& name_ : keys) {
         CTxDestination dest = DecodeDestination(name_);
         if (!IsValidDestination(dest))
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid SHARES address: ")+name_);
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid CRTZ address: ")+name_);
 
         if (setAddress.count(dest))
             throw JSONRPCError(RPC_INVALID_PARAMETER, std::string("Invalid parameter, duplicated address: ")+name_);
@@ -1356,20 +1356,20 @@ UniValue addmultisigaddress(const JSONRPCRequest& request)
         throw std::runtime_error(
             "addmultisigaddress nrequired [\"key\",...] ( \"label\" )\n"
             "\nAdd a nrequired-to-sign multisignature address to the wallet.\n"
-            "Each key is a SHARES address or hex-encoded public key.\n"
+            "Each key is a CRTZ address or hex-encoded public key.\n"
             "If 'label' is specified, assign address to that label.\n"
 
             "\nArguments:\n"
             "1. nrequired        (numeric, required) The number of required signatures out of the n keys or addresses.\n"
-            "2. \"keysobject\"   (string, required) A json array of SHARES addresses or hex-encoded public keys\n"
+            "2. \"keysobject\"   (string, required) A json array of CRTZ addresses or hex-encoded public keys\n"
             "     [\n"
-            "       \"address\"  (string) SHARES address or hex-encoded public key\n"
+            "       \"address\"  (string) CRTZ address or hex-encoded public key\n"
             "       ...,\n"
             "     ]\n"
             "3. \"label\"      (string, optional) A label to assign the addresses to.\n"
 
             "\nResult:\n"
-            "\"SHARESaddress\"  (string) A SHARES address associated with the keys.\n"
+            "\"CRTZaddress\"  (string) A CRTZ address associated with the keys.\n"
 
             "\nExamples:\n"
             "\nAdd a multisig address from 2 addresses\n" +
@@ -1572,7 +1572,7 @@ UniValue listreceivedbyaddress(const JSONRPCRequest& request)
             "    \"involvesWatchonly\" : \"true\",    (bool) Only returned if imported addresses were involved in transaction\n"
             "    \"address\" : \"receivingaddress\",  (string) The receiving address\n"
             "    \"account\" : \"accountname\",       (string) DEPRECATED. Backwards compatible alias for label.\n"
-            "    \"amount\" : x.xxx,                  (numeric) The total amount in SHARES received by the address\n"
+            "    \"amount\" : x.xxx,                  (numeric) The total amount in CRTZ received by the address\n"
             "    \"confirmations\" : n                (numeric) The number of confirmations of the most recent transaction included\n"
             "    \"bcconfirmations\" : n              (numeric) The number of blockchain confirmations of the most recent transaction included\n"
             "    \"label\" : \"label\",               (string) The label of the receiving address. The default label is \"\".\n"
@@ -1595,9 +1595,9 @@ UniValue listreceivedbylabel(const JSONRPCRequest& request)
 {
     if (!IsDeprecatedRPCEnabled("accounts") && request.strMethod == "listreceivedbyaccount") {
         if (request.fHelp) {
-            throw std::runtime_error("listreceivedbyaccount (Deprecated, will be removed in v5.0. To use this command, start cryptosharesd with -deprecatedrpc=accounts)");
+            throw std::runtime_error("listreceivedbyaccount (Deprecated, will be removed in v5.0. To use this command, start cortezd with -deprecatedrpc=accounts)");
         }
-        throw JSONRPCError(RPC_METHOD_DEPRECATED, "listreceivedbyaccount is deprecated and will be removed in v5.0. To use this command, start cryptosharesd with -deprecatedrpc=accounts.");
+        throw JSONRPCError(RPC_METHOD_DEPRECATED, "listreceivedbyaccount is deprecated and will be removed in v5.0. To use this command, start cortezd with -deprecatedrpc=accounts.");
     }
 
     if (request.fHelp || request.params.size() > 3)
@@ -1738,17 +1738,17 @@ UniValue listtransactions(const JSONRPCRequest& request)
             "\nResult:\n"
             "[\n"
             "  {\n"
-            "    \"address\":\"SHARESaddress\",    (string) The SHARES address of the transaction. Not present for \n"
+            "    \"address\":\"CRTZaddress\",    (string) The CRTZ address of the transaction. Not present for \n"
             "                                                move transactions (category = move).\n"
             "    \"category\":\"send|receive|move\", (string) The transaction category. 'move' is a local (off blockchain)\n"
             "                                                transaction between accounts, and not associated with an address,\n"
             "                                                transaction id or block. 'send' and 'receive' transactions are \n"
             "                                                associated with an address, transaction id and block details\n"
-            "    \"amount\": x.xxx,          (numeric) The amount in SHARES. This is negative for the 'send' category, and for the\n"
+            "    \"amount\": x.xxx,          (numeric) The amount in CRTZ. This is negative for the 'send' category, and for the\n"
             "                                         'move' category for moves outbound. It is positive for the 'receive' category,\n"
             "                                         and for the 'move' category for inbound funds.\n"
             "    \"vout\" : n,               (numeric) the vout value\n"
-            "    \"fee\": x.xxx,             (numeric) The amount of the fee in SHARES. This is negative and only available for the \n"
+            "    \"fee\": x.xxx,             (numeric) The amount of the fee in CRTZ. This is negative and only available for the \n"
             "                                         'send' category of transactions.\n"
             "    \"confirmations\": n,       (numeric) The number of confirmations for the transaction. Available for 'send' and \n"
             "                                         'receive' category of transactions.\n"
@@ -1791,17 +1791,17 @@ UniValue listtransactions(const JSONRPCRequest& request)
             "  {\n"
             "    \"account\":\"accountname\",       (string) DEPRECATED. The account name associated with the transaction. \n"
             "                                                It will be \"\" for the default account.\n"
-            "    \"address\":\"SHARESaddress\",    (string) The SHARES address of the transaction. Not present for \n"
+            "    \"address\":\"CRTZaddress\",    (string) The CRTZ address of the transaction. Not present for \n"
             "                                                move transactions (category = move).\n"
             "    \"category\":\"send|receive|move\", (string) The transaction category. 'move' is a local (off blockchain)\n"
             "                                                transaction between accounts, and not associated with an address,\n"
             "                                                transaction id or block. 'send' and 'receive' transactions are \n"
             "                                                associated with an address, transaction id and block details\n"
-            "    \"amount\": x.xxx,          (numeric) The amount in SHARES. This is negative for the 'send' category, and for the\n"
+            "    \"amount\": x.xxx,          (numeric) The amount in CRTZ. This is negative for the 'send' category, and for the\n"
             "                                         'move' category for moves outbound. It is positive for the 'receive' category,\n"
             "                                         and for the 'move' category for inbound funds.\n"
             "    \"vout\" : n,               (numeric) the vout value\n"
-            "    \"fee\": x.xxx,             (numeric) The amount of the fee in SHARES. This is negative and only available for the \n"
+            "    \"fee\": x.xxx,             (numeric) The amount of the fee in CRTZ. This is negative and only available for the \n"
             "                                         'send' category of transactions.\n"
             "    \"confirmations\": n,       (numeric) The number of confirmations for the transaction. Available for 'send' and \n"
             "                                         'receive' category of transactions.\n"
@@ -1906,9 +1906,9 @@ UniValue listaccounts(const JSONRPCRequest& request)
 {
     if (!IsDeprecatedRPCEnabled("accounts")) {
         if (request.fHelp) {
-            throw std::runtime_error("listaccounts (Deprecated, will be removed in v5.0. To use this command, start cryptosharesd with -deprecatedrpc=accounts)");
+            throw std::runtime_error("listaccounts (Deprecated, will be removed in v5.0. To use this command, start cortezd with -deprecatedrpc=accounts)");
         }
-        throw JSONRPCError(RPC_METHOD_DEPRECATED, "listaccounts is deprecated and will be removed in v5.0. To use this command, start cryptosharesd with -deprecatedrpc=accounts.");
+        throw JSONRPCError(RPC_METHOD_DEPRECATED, "listaccounts is deprecated and will be removed in v5.0. To use this command, start cortezd with -deprecatedrpc=accounts.");
     }
 
     if (request.fHelp || request.params.size() > 2)
@@ -2001,13 +2001,13 @@ UniValue listsinceblock(const JSONRPCRequest& request)
             "\nResult:\n"
             "{\n"
             "  \"transactions\": [\n"
-            "    \"account\":\"accountname\",       (string) DEPRECATED. This field will be removed in v5.0. To see this deprecated field, start cryptosharesd with -deprecatedrpc=accounts. The account name associated with the transaction. Will be \"\" for the default account.\n"
-            "    \"address\":\"SHARESaddress\",    (string) The SHARES address of the transaction. Not present for move transactions (category = move).\n"
+            "    \"account\":\"accountname\",       (string) DEPRECATED. This field will be removed in v5.0. To see this deprecated field, start cortezd with -deprecatedrpc=accounts. The account name associated with the transaction. Will be \"\" for the default account.\n"
+            "    \"address\":\"CRTZaddress\",    (string) The CRTZ address of the transaction. Not present for move transactions (category = move).\n"
             "    \"category\":\"send|receive\",     (string) The transaction category. 'send' has negative amounts, 'receive' has positive amounts.\n"
-            "    \"amount\": x.xxx,          (numeric) The amount in SHARES. This is negative for the 'send' category, and for the 'move' category for moves \n"
+            "    \"amount\": x.xxx,          (numeric) The amount in CRTZ. This is negative for the 'send' category, and for the 'move' category for moves \n"
             "                                          outbound. It is positive for the 'receive' category, and for the 'move' category for inbound funds.\n"
             "    \"vout\" : n,               (numeric) the vout value\n"
-            "    \"fee\": x.xxx,             (numeric) The amount of the fee in SHARES. This is negative and only available for the 'send' category of transactions.\n"
+            "    \"fee\": x.xxx,             (numeric) The amount of the fee in CRTZ. This is negative and only available for the 'send' category of transactions.\n"
             "    \"confirmations\": n,       (numeric) The number of confirmations for the transaction. Available for 'send' and 'receive' category of transactions.\n"
             "    \"bcconfirmations\" : n,    (numeric) The number of blockchain confirmations for the transaction. Available for 'send' and 'receive' category of transactions.\n"
             "    \"blockhash\": \"hashvalue\",     (string) The block hash containing the transaction. Available for 'send' and 'receive' category of transactions.\n"
@@ -2087,7 +2087,7 @@ UniValue gettransaction(const JSONRPCRequest& request)
 
             "\nResult:\n"
             "{\n"
-            "  \"amount\" : x.xxx,        (numeric) The transaction amount in SHARES\n"
+            "  \"amount\" : x.xxx,        (numeric) The transaction amount in CRTZ\n"
             "  \"confirmations\" : n,     (numeric) The number of confirmations\n"
             "  \"bcconfirmations\" : n,   (numeric) The number of blockchain confirmations\n"
             "  \"blockhash\" : \"hash\",  (string) The block hash\n"
@@ -2098,10 +2098,10 @@ UniValue gettransaction(const JSONRPCRequest& request)
             "  \"timereceived\" : ttt,    (numeric) The time received in seconds since epoch (1 Jan 1970 GMT)\n"
             "  \"details\" : [\n"
             "    {\n"
-            "      \"account\" : \"accountname\",  (string) DEPRECATED.This field will be removed in v5.0. To see this deprecated field, start cryptosharesd with -deprecatedrpc=accounts. The account name involved in the transaction, can be \"\" for the default account.\n"
-            "      \"address\" : \"SHARESaddress\",   (string) The SHARES address involved in the transaction\n"
+            "      \"account\" : \"accountname\",  (string) DEPRECATED.This field will be removed in v5.0. To see this deprecated field, start cortezd with -deprecatedrpc=accounts. The account name involved in the transaction, can be \"\" for the default account.\n"
+            "      \"address\" : \"CRTZaddress\",   (string) The CRTZ address involved in the transaction\n"
             "      \"category\" : \"send|receive\",    (string) The category, either 'send' or 'receive'\n"
-            "      \"amount\" : x.xxx                  (numeric) The amount in SHARES\n"
+            "      \"amount\" : x.xxx                  (numeric) The amount in CRTZ\n"
             "      \"vout\" : n,                       (numeric) the vout value\n"
             "    }\n"
             "    ,...\n"
@@ -2255,7 +2255,7 @@ UniValue walletpassphrase(const JSONRPCRequest& request)
         throw std::runtime_error(
             "walletpassphrase \"passphrase\" timeout ( stakingonly )\n"
             "\nStores the wallet decryption key in memory for 'timeout' seconds.\n"
-            "This is needed prior to performing transactions related to private keys such as sending SHARESs\n"
+            "This is needed prior to performing transactions related to private keys such as sending CRTZs\n"
 
             "\nArguments:\n"
             "1. \"passphrase\"     (string, required) The wallet passphrase\n"
@@ -2420,10 +2420,10 @@ UniValue encryptwallet(const JSONRPCRequest& request)
             "\nExamples:\n"
             "\nEncrypt you wallet\n" +
             HelpExampleCli("encryptwallet", "\"my pass phrase\"") +
-            "\nNow set the passphrase to use the wallet, such as for signing or sending SHARESs\n" +
+            "\nNow set the passphrase to use the wallet, such as for signing or sending CRTZs\n" +
             HelpExampleCli("walletpassphrase", "\"my pass phrase\"") +
             "\nNow we can so something like sign\n" +
-            HelpExampleCli("signmessage", "\"SHARESaddress\" \"test message\"") +
+            HelpExampleCli("signmessage", "\"CRTZaddress\" \"test message\"") +
             "\nNow lock the wallet again by removing the passphrase\n" +
             HelpExampleCli("walletlock", "") +
             "\nAs a json rpc call\n" +
@@ -2454,7 +2454,7 @@ UniValue encryptwallet(const JSONRPCRequest& request)
     // slack space in .dat files; that is bad if the old data is
     // unencrypted private keys. So:
     StartShutdown();
-    return "wallet encrypted; cryptoshares server stopping, restart to run with encrypted wallet. The keypool has been flushed, you need to make a new backup.";
+    return "wallet encrypted; cortez server stopping, restart to run with encrypted wallet. The keypool has been flushed, you need to make a new backup.";
 }
 
 UniValue listunspent(const JSONRPCRequest& request)
@@ -2471,9 +2471,9 @@ UniValue listunspent(const JSONRPCRequest& request)
                 "\nArguments:\n"
                 "1. minconf          (numeric, optional, default=1) The minimum confirmations to filter\n"
                 "2. maxconf          (numeric, optional, default=9999999) The maximum confirmations to filter\n"
-                "3. \"addresses\"    (string) A json array of SHARES addresses to filter\n"
+                "3. \"addresses\"    (string) A json array of CRTZ addresses to filter\n"
                 "    [\n"
-                "      \"address\"   (string) SHARES address\n"
+                "      \"address\"   (string) CRTZ address\n"
                 "      ,...\n"
                 "    ]\n"
                 "4. watchonlyconfig  (numeric, optional, default=1) 1 = list regular unspent transactions,  2 = list all unspent transactions (including watchonly)\n"
@@ -2483,12 +2483,12 @@ UniValue listunspent(const JSONRPCRequest& request)
                 "  {\n"
                 "    \"txid\" : \"txid\",        (string) the transaction id\n"
                 "    \"vout\" : n,               (numeric) the vout value\n"
-                "    \"address\" : \"address\",  (string) the SHARES address\n"
+                "    \"address\" : \"address\",  (string) the CRTZ address\n"
                 "    \"label\" : \"label\",      (string) The associated label, or \"\" for the default label\n"
-                "    \"account\" : \"account\",  (string) DEPRECATED.This field will be removed in v5.0. To see this deprecated field, start cryptosharesd with -deprecatedrpc=accounts. Backwards compatible alias for label.\n"
+                "    \"account\" : \"account\",  (string) DEPRECATED.This field will be removed in v5.0. To see this deprecated field, start cortezd with -deprecatedrpc=accounts. Backwards compatible alias for label.\n"
                 "    \"scriptPubKey\" : \"key\", (string) the script key\n"
                 "    \"redeemScript\" : \"key\", (string) the redeemscript key\n"
-                "    \"amount\" : x.xxx,         (numeric) the transaction amount in SHARES\n"
+                "    \"amount\" : x.xxx,         (numeric) the transaction amount in CRTZ\n"
                 "    \"confirmations\" : n,      (numeric) The number of confirmations\n"
                 "    \"spendable\" : true|false  (boolean) Whether we have the private keys to spend this output\n"
                 "    \"solvable\" : xxx          (bool) Whether we know how to spend this output, ignoring the lack of keys\n"
@@ -2516,7 +2516,7 @@ UniValue listunspent(const JSONRPCRequest& request)
             const UniValue& input = inputs[inx];
             CTxDestination dest = DecodeDestination(input.get_str());
             if (!IsValidDestination(dest))
-                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid SHARES address: ") + input.get_str());
+                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid CRTZ address: ") + input.get_str());
             if (destinations.count(dest))
                 throw JSONRPCError(RPC_INVALID_PARAMETER, std::string("Invalid parameter, duplicated address: ") + input.get_str());
             destinations.insert(dest);
@@ -2598,7 +2598,7 @@ UniValue lockunspent(const JSONRPCRequest& request)
             "lockunspent unlock [{\"txid\":\"txid\",\"vout\":n},...]\n"
             "\nUpdates list of temporarily unspendable outputs.\n"
             "Temporarily lock (unlock=false) or unlock (unlock=true) specified transaction outputs.\n"
-            "A locked transaction output will not be chosen by automatic coin selection, when spending SHARESs.\n"
+            "A locked transaction output will not be chosen by automatic coin selection, when spending CRTZs.\n"
             "Locks are stored in memory only. Nodes start with zero locked outputs, and the locked output list\n"
             "is always cleared (by virtue of process exit) when a node stops or fails.\n"
             "Also see the listunspent call\n"
@@ -2762,7 +2762,7 @@ UniValue settxfee(const JSONRPCRequest& request)
             "\nSet the transaction fee per kB.\n"
 
             "\nArguments:\n"
-            "1. amount         (numeric, required) The transaction fee in SHARES/kB rounded to the nearest 0.00000001\n"
+            "1. amount         (numeric, required) The transaction fee in CRTZ/kB rounded to the nearest 0.00000001\n"
 
             "\nResult\n"
             "true|false        (boolean) Returns true if successful\n"
@@ -2790,16 +2790,16 @@ UniValue getwalletinfo(const JSONRPCRequest& request)
             "\nResult:\n"
             "{\n"
             "  \"walletversion\": xxxxx,                  (numeric) the wallet version\n"
-            "  \"balance\": xxxxxxx,                      (numeric) the total SHARES balance of the wallet\n"
-            "  \"unconfirmed_balance\": xxx,              (numeric) the total unconfirmed balance of the wallet in SHARES\n"
-            "  \"immature_balance\": xxxxxx,              (numeric) the total immature balance of the wallet in SHARES\n"
+            "  \"balance\": xxxxxxx,                      (numeric) the total CRTZ balance of the wallet\n"
+            "  \"unconfirmed_balance\": xxx,              (numeric) the total unconfirmed balance of the wallet in CRTZ\n"
+            "  \"immature_balance\": xxxxxx,              (numeric) the total immature balance of the wallet in CRTZ\n"
             "  \"txcount\": xxxxxxx,                      (numeric) the total number of transactions in the wallet\n"
             "  \"keypoololdest\": xxxxxx,                 (numeric) the timestamp (seconds since GMT epoch) of the oldest pre-generated key in the key pool\n"
             "  \"keypoolsize\": xxxx,                     (numeric) how many new keys are pre-generated (only counts external keys)\n"
             "  \"keypoolsize_hd_internal\": xxxx,         (numeric) how many new keys are pre-generated for internal use (used for change outputs, only appears if the wallet is using this feature, otherwise external keys are used)\n"
             "  \"keypoolsize_hd_ecommerce\": xxxx,        (numeric) how many new keys are pre-generated for ecommerce use\n"
             "  \"unlocked_until\": ttt,                   (numeric) the timestamp in seconds since epoch (midnight Jan 1 1970 GMT) that the wallet is unlocked for transfers, or 0 if the wallet is locked\n"
-            "  \"paytxfee\": x.xxxx                       (numeric) the transaction fee configuration, set in SHARES/kB\n"
+            "  \"paytxfee\": x.xxxx                       (numeric) the transaction fee configuration, set in CRTZ/kB\n"
             "  \"hdseedid\": \"<hash160>\"                (string, optional) the Hash160 of the HD seed (only present when HD is enabled)\n"
             "}\n"
 
@@ -2846,11 +2846,11 @@ UniValue setstakesplitthreshold(const JSONRPCRequest& request)
             "Whenever a successful stake is found, the stake amount is split across as many outputs (each with a value\n"
             "higher than the threshold) as possible.\n"
             "E.g. If the coinstake input + the block stake reward is 2000, and the split threshold is 499, the corresponding\n"
-            "coinstake transaction will have 4 outputs (of 500 SHARES each)."
+            "coinstake transaction will have 4 outputs (of 500 CRTZ each)."
             + HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. value                   (numeric, required) Threshold value (in SHARES).\n"
+            "1. value                   (numeric, required) Threshold value (in CRTZ).\n"
             "                                     Set to 0 to disable stake-splitting\n"
             "                                     If > 0, it must be >= " + FormatMoney(CWallet::minStakeSplitThreshold) + "\n"
 
@@ -2913,7 +2913,7 @@ UniValue autocombinerewards(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() < 1 || (fEnable && request.params.size() != 2) || request.params.size() > 2)
         throw std::runtime_error(
             "autocombinerewards enable ( threshold )\n"
-            "\nWallet will automatically monitor for any coins with value below the threshold amount, and combine them if they reside with the same SHARES address\n"
+            "\nWallet will automatically monitor for any coins with value below the threshold amount, and combine them if they reside with the same CRTZ address\n"
             "When autocombinerewards runs it will create a transaction, and therefore will be subject to transaction fees.\n"
 
             "\nArguments:\n"
@@ -3118,7 +3118,7 @@ UniValue multisend(const JSONRPCRequest& request)
     std::string strAddress = request.params[0].get_str();
     CBitcoinAddress address(strAddress);
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SHARES address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid CRTZ address");
     if (std::stoi(request.params[1].get_str().c_str()) < 0)
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid parameter, expected valid percentage");
     if (pwalletMain->IsLocked())
@@ -3164,11 +3164,11 @@ UniValue getzerocoinbalance(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() != 0)
         throw std::runtime_error(
             "getzerocoinbalance\n"
-            "\nReturn the wallet's total zSHARES balance.\n" +
+            "\nReturn the wallet's total zCRTZ balance.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
-            "amount         (numeric) Total zSHARES balance.\n"
+            "amount         (numeric) Total zCRTZ balance.\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getzerocoinbalance", "") + HelpExampleRpc("getzerocoinbalance", ""));
@@ -3192,7 +3192,7 @@ UniValue listmintedzerocoins(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() > 2)
         throw std::runtime_error(
             "listmintedzerocoins (fVerbose) (fMatureOnly)\n"
-            "\nList all zSHARES mints in the wallet.\n" +
+            "\nList all zCRTZ mints in the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -3211,7 +3211,7 @@ UniValue listmintedzerocoins(const JSONRPCRequest& request)
             "  {\n"
             "    \"serial hash\": \"xxx\",   (string) Mint serial hash in hex format.\n"
             "    \"version\": n,   (numeric) Zerocoin version number.\n"
-            "    \"zSHARES ID\": \"xxx\",   (string) Pubcoin in hex format.\n"
+            "    \"zCRTZ ID\": \"xxx\",   (string) Pubcoin in hex format.\n"
             "    \"denomination\": n,   (numeric) Coin denomination.\n"
             "    \"mint height\": n     (numeric) Height of the block containing this mint.\n"
             "    \"confirmations\": n   (numeric) Number of confirmations.\n"
@@ -3244,7 +3244,7 @@ UniValue listmintedzerocoins(const JSONRPCRequest& request)
             UniValue objMint(UniValue::VOBJ);
             objMint.push_back(Pair("serial hash", m.hashSerial.GetHex()));  // Serial hash
             objMint.push_back(Pair("version", m.nVersion));                 // Zerocoin version
-            objMint.push_back(Pair("zSHARES ID", m.hashPubcoin.GetHex()));     // PubCoin
+            objMint.push_back(Pair("zCRTZ ID", m.hashPubcoin.GetHex()));     // PubCoin
             int denom = libzerocoin::ZerocoinDenominationToInt(m.denom);
             objMint.push_back(Pair("denomination", denom));                 // Denomination
             objMint.push_back(Pair("mint height", m.nHeight));              // Mint Height
@@ -3321,7 +3321,7 @@ UniValue listspentzerocoins(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() != 0)
         throw std::runtime_error(
             "listspentzerocoins\n"
-            "\nList all the spent zSHARES mints in the wallet.\n" +
+            "\nList all the spent zCRTZ mints in the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
@@ -3353,11 +3353,11 @@ UniValue mintzerocoin(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() < 1 || request.params.size() > 2)
         throw std::runtime_error(
             "mintzerocoin amount ( utxos )\n"
-            "\nMint the specified zSHARES amount\n" +
+            "\nMint the specified zCRTZ amount\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. amount      (numeric, required) Enter an amount of SHARES to convert to zSHARES\n"
+            "1. amount      (numeric, required) Enter an amount of CRTZ to convert to zCRTZ\n"
             "2. utxos       (string, optional) A json array of objects.\n"
             "                   Each object needs the txid (string) and vout (numeric)\n"
             "  [\n"
@@ -3394,7 +3394,7 @@ UniValue mintzerocoin(const JSONRPCRequest& request)
 
 
     if (!Params().IsRegTestNet())
-        throw JSONRPCError(RPC_WALLET_ERROR, "zSHARES minting is DISABLED");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zCRTZ minting is DISABLED");
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
@@ -3471,7 +3471,7 @@ UniValue spendzerocoin(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() > 2 || request.params.size() < 1)
         throw std::runtime_error(
             "spendzerocoin amount ( \"address\" )\n"
-            "\nSpend zSHARES to a SHARES address.\n" +
+            "\nSpend zCRTZ to a CRTZ address.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -3495,8 +3495,8 @@ UniValue spendzerocoin(const JSONRPCRequest& request)
             "  ],\n"
             "  \"outputs\": [                 (array) JSON array of output objects.\n"
             "    {\n"
-            "      \"value\": amount,         (numeric) Value in SHARES.\n"
-            "      \"address\": \"xxx\"         (string) SHARES address or \"zerocoinmint\" for reminted change.\n"
+            "      \"value\": amount,         (numeric) Value in CRTZ.\n"
+            "      \"address\": \"xxx\"         (string) CRTZ address or \"zerocoinmint\" for reminted change.\n"
             "    }\n"
             "    ,...\n"
             "  ]\n"
@@ -3507,7 +3507,7 @@ UniValue spendzerocoin(const JSONRPCRequest& request)
             HelpExampleRpc("spendzerocoin", "5000 \"DMJRSsuU9zfyrvxVaAEFQqK4MxZg6vgeS6\""));
 
     if (!Params().IsRegTestNet())
-        throw JSONRPCError(RPC_WALLET_ERROR, "zSHARES minting is DISABLED");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zCRTZ minting is DISABLED");
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
@@ -3524,7 +3524,7 @@ UniValue spendzerocoinmints(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() < 1 || request.params.size() > 2)
         throw std::runtime_error(
             "spendzerocoinmints mints_list ( \"address\" ) \n"
-            "\nSpend zSHARES mints to a SHARES address.\n" +
+            "\nSpend zCRTZ mints to a CRTZ address.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -3547,8 +3547,8 @@ UniValue spendzerocoinmints(const JSONRPCRequest& request)
             "  ],\n"
             "  \"outputs\": [                 (array) JSON array of output objects.\n"
             "    {\n"
-            "      \"value\": amount,         (numeric) Value in SHARES.\n"
-            "      \"address\": \"xxx\"         (string) SHARES address or \"zerocoinmint\" for reminted change.\n"
+            "      \"value\": amount,         (numeric) Value in CRTZ.\n"
+            "      \"address\": \"xxx\"         (string) CRTZ address or \"zerocoinmint\" for reminted change.\n"
             "    }\n"
             "    ,...\n"
             "  ]\n"
@@ -3559,7 +3559,7 @@ UniValue spendzerocoinmints(const JSONRPCRequest& request)
             HelpExampleRpc("spendzerocoinmints", "[\"0d8c16eee7737e3cc1e4e70dc006634182b175e039700931283b202715a0818f\", \"dfe585659e265e6a509d93effb906d3d2a0ac2fe3464b2c3b6d71a3ef34c8ad7\"], \"DMJRSsuU9zfyrvxVaAEFQqK4MxZg6vgeS6\""));
 
     if (!Params().IsRegTestNet())
-        throw JSONRPCError(RPC_WALLET_ERROR, "zSHARES minting is DISABLED");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zCRTZ minting is DISABLED");
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
@@ -3607,7 +3607,7 @@ extern UniValue DoZpivSpend(const CAmount nAmount, std::vector<CZerocoinMint>& v
     if(address_str != "") { // Spend to supplied destination address
         address = DecodeDestination(address_str);
         if(!IsValidDestination(address))
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SHARES address");
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid CRTZ address");
         outputs.push_back(std::pair<CTxDestination, CAmount>(address, nAmount));
     }
 
@@ -3848,12 +3848,12 @@ UniValue exportzerocoins(const JSONRPCRequest& request)
 
             "\nArguments:\n"
             "1. \"include_spent\"        (bool, required) Include mints that have already been spent\n"
-            "2. \"denomination\"         (integer, optional) Export a specific denomination of zSHARES\n"
+            "2. \"denomination\"         (integer, optional) Export a specific denomination of zCRTZ\n"
 
             "\nResult:\n"
             "[                   (array of json object)\n"
             "  {\n"
-            "    \"id\": \"serial hash\",  (string) the mint's zSHARES serial hash \n"
+            "    \"id\": \"serial hash\",  (string) the mint's zCRTZ serial hash \n"
             "    \"d\": n,         (numeric) the mint's zerocoin denomination \n"
             "    \"p\": \"pubcoin\", (string) The public coin\n"
             "    \"s\": \"serial\",  (string) The secret serial number\n"
@@ -3861,8 +3861,8 @@ UniValue exportzerocoins(const JSONRPCRequest& request)
             "    \"t\": \"txid\",    (string) The txid that the coin was minted in\n"
             "    \"h\": n,         (numeric) The height the tx was added to the blockchain\n"
             "    \"u\": used,      (boolean) Whether the mint has been spent\n"
-            "    \"v\": version,   (numeric) The version of the zSHARES\n"
-            "    \"k\": \"privkey\"  (string) The zSHARES private key (V2+ zSHARES only)\n"
+            "    \"v\": version,   (numeric) The version of the zCRTZ\n"
+            "    \"k\": \"privkey\"  (string) The zCRTZ private key (V2+ zCRTZ only)\n"
             "  }\n"
             "  ,...\n"
             "]\n"
@@ -3931,7 +3931,7 @@ UniValue importzerocoins(const JSONRPCRequest& request)
             "\nResult:\n"
             "{\n"
             "  \"added\": n,        (numeric) The quantity of zerocoin mints that were added\n"
-            "  \"value\": amount    (numeric) The total zSHARES value of zerocoin mints that were added\n"
+            "  \"value\": amount    (numeric) The total zCRTZ value of zerocoin mints that were added\n"
             "}\n"
 
             "\nExamples\n" +
@@ -4009,7 +4009,7 @@ UniValue reconsiderzerocoins(const JSONRPCRequest& request)
     if(request.fHelp || !request.params.empty())
         throw std::runtime_error(
             "reconsiderzerocoins\n"
-            "\nCheck archived zSHARES list to see if any mints were added to the blockchain.\n" +
+            "\nCheck archived zCRTZ list to see if any mints were added to the blockchain.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
@@ -4059,19 +4059,19 @@ UniValue setzpivseed(const JSONRPCRequest& request)
 {
     if(request.fHelp || request.params.size() != 1)
         throw std::runtime_error(
-            "setzSHARESseed \"seed\"\n"
-            "\nSet the wallet's deterministic zSHARES seed to a specific value.\n" +
+            "setzCRTZseed \"seed\"\n"
+            "\nSet the wallet's deterministic zCRTZ seed to a specific value.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"seed\"        (string, required) The deterministic zSHARES seed.\n"
+            "1. \"seed\"        (string, required) The deterministic zCRTZ seed.\n"
 
             "\nResult\n"
             "\"success\" : b,  (boolean) Whether the seed was successfully set.\n"
 
             "\nExamples\n" +
-            HelpExampleCli("setzSHARESseed", "63f793e7895dd30d99187b35fbfb314a5f91af0add9e0a4e5877036d1e392dd5") +
-            HelpExampleRpc("setzSHARESseed", "63f793e7895dd30d99187b35fbfb314a5f91af0add9e0a4e5877036d1e392dd5"));
+            HelpExampleCli("setzCRTZseed", "63f793e7895dd30d99187b35fbfb314a5f91af0add9e0a4e5877036d1e392dd5") +
+            HelpExampleRpc("setzCRTZseed", "63f793e7895dd30d99187b35fbfb314a5f91af0add9e0a4e5877036d1e392dd5"));
 
     EnsureWalletIsUnlocked();
 
@@ -4093,15 +4093,15 @@ UniValue getzpivseed(const JSONRPCRequest& request)
 {
     if(request.fHelp || !request.params.empty())
         throw std::runtime_error(
-            "getzSHARESseed\n"
-            "\nCheck archived zSHARES list to see if any mints were added to the blockchain.\n" +
+            "getzCRTZseed\n"
+            "\nCheck archived zCRTZ list to see if any mints were added to the blockchain.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult\n"
-            "\"seed\" : s,  (string) The deterministic zSHARES seed.\n"
+            "\"seed\" : s,  (string) The deterministic zCRTZ seed.\n"
 
             "\nExamples\n" +
-            HelpExampleCli("getzSHARESseed", "") + HelpExampleRpc("getzSHARESseed", ""));
+            HelpExampleCli("getzCRTZseed", "") + HelpExampleRpc("getzCRTZseed", ""));
 
     EnsureWalletIsUnlocked();
 
@@ -4119,12 +4119,12 @@ UniValue generatemintlist(const JSONRPCRequest& request)
     if(request.fHelp || request.params.size() != 2)
         throw std::runtime_error(
             "generatemintlist\n"
-            "\nShow mints that are derived from the deterministic zSHARES seed.\n" +
+            "\nShow mints that are derived from the deterministic zCRTZ seed.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments\n"
-            "1. \"count\"  : n,  (numeric) Which sequential zSHARES to start with.\n"
-            "2. \"range\"  : n,  (numeric) How many zSHARES to generate.\n"
+            "1. \"count\"  : n,  (numeric) Which sequential zCRTZ to start with.\n"
+            "2. \"range\"  : n,  (numeric) How many zCRTZ to generate.\n"
 
             "\nResult:\n"
             "[\n"
@@ -4166,8 +4166,8 @@ UniValue generatemintlist(const JSONRPCRequest& request)
 UniValue dzpivstate(const JSONRPCRequest& request) {
     if (request.fHelp || request.params.size() != 0)
         throw std::runtime_error(
-                "dzSHARESstate\n"
-                        "\nThe current state of the mintpool of the deterministic zSHARES wallet.\n" +
+                "dzCRTZstate\n"
+                        "\nThe current state of the mintpool of the deterministic zCRTZ wallet.\n" +
                 HelpRequiringPassphrase() + "\n"
 
                         "\nExamples\n" +
@@ -4177,7 +4177,7 @@ UniValue dzpivstate(const JSONRPCRequest& request) {
     UniValue obj(UniValue::VOBJ);
     int nCount, nCountLastUsed;
     zwallet->GetState(nCount, nCountLastUsed);
-    obj.push_back(Pair("dzSHARES_count", nCount));
+    obj.push_back(Pair("dzCRTZ_count", nCount));
     obj.push_back(Pair("mintpool_count", nCountLastUsed));
 
     return obj;
@@ -4218,17 +4218,17 @@ UniValue searchdzpiv(const JSONRPCRequest& request)
 {
     if(request.fHelp || request.params.size() != 3)
         throw std::runtime_error(
-            "searchdzSHARES\n"
-            "\nMake an extended search for deterministically generated zSHARES that have not yet been recognized by the wallet.\n" +
+            "searchdzCRTZ\n"
+            "\nMake an extended search for deterministically generated zCRTZ that have not yet been recognized by the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments\n"
-            "1. \"count\"       (numeric) Which sequential zSHARES to start with.\n"
-            "2. \"range\"       (numeric) How many zSHARES to generate.\n"
+            "1. \"count\"       (numeric) Which sequential zCRTZ to start with.\n"
+            "2. \"range\"       (numeric) How many zCRTZ to generate.\n"
             "3. \"threads\"     (numeric) How many threads should this operation consume.\n"
 
             "\nExamples\n" +
-            HelpExampleCli("searchdzSHARES", "1, 100, 2") + HelpExampleRpc("searchdzSHARES", "1, 100, 2"));
+            HelpExampleCli("searchdzCRTZ", "1, 100, 2") + HelpExampleRpc("searchdzCRTZ", "1, 100, 2"));
 
     EnsureWalletIsUnlocked();
 
@@ -4276,7 +4276,7 @@ UniValue spendrawzerocoin(const JSONRPCRequest& request)
             "2. \"randomnessHex\"    (string, required) A zerocoin randomness value (hex)\n"
             "3. denom                (numeric, required) A zerocoin denomination (decimal)\n"
             "4. \"priv key\"         (string, required) The private key associated with this coin (hex)\n"
-            "5. \"address\"          (string, optional) SHARES address to spend to. If not specified, "
+            "5. \"address\"          (string, optional) CRTZ address to spend to. If not specified, "
             "                        or empty string, spend to change address.\n"
             "6. \"mintTxId\"         (string, optional) txid of the transaction containing the mint. If not"
             "                        specified, or empty string, the blockchain will be scanned (could take a while)"
@@ -4289,7 +4289,7 @@ UniValue spendrawzerocoin(const JSONRPCRequest& request)
             HelpExampleRpc("spendrawzerocoin", "\"f80892e78c30a393ef4ab4d5a9d5a2989de6ebc7b976b241948c7f489ad716a2\", \"a4fd4d7248e6a51f1d877ddd2a4965996154acc6b8de5aa6c83d4775b283b600\", 100, \"xxx\""));
 
     if (!Params().IsRegTestNet())
-        throw JSONRPCError(RPC_WALLET_ERROR, "zSHARES minting is DISABLED");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zCRTZ minting is DISABLED");
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
 

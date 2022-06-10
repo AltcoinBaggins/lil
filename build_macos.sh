@@ -7,11 +7,11 @@ then
 fi
 
 # Clone code from official Github repository
-    rm -rf cryptoshares
-    git clone https://github.com/cryptoshares/cryptoshares
+    rm -rf cortez
+    git clone https://github.com/cortez-project/cortez
 
 # Entering directory
-    cd cryptoshares
+    cd cortez
 
 # Compile dependencies
     cd depends
@@ -31,6 +31,6 @@ fi
     cd ..
 
 # Create zip file of binaries
-    cp cryptoshares/src/cryptosharesd cryptoshares/src/cryptoshares-cli cryptoshares/src/cryptoshares-tx cryptoshares/src/qt/cryptoshares-qt cryptoshares/CRYPTOSHARES-Core.dmg .
-    zip SHARES-MacOS.zip cryptosharesd cryptoshares-cli cryptoshares-tx cryptoshares-qt CRYPTOSHARES-Core.dmg
-    rm -f cryptosharesd cryptoshares-cli cryptoshares-tx cryptoshares-qt CRYPTOSHARES-Core.dmg
+    cp cortez/src/cortezd cortez/src/cortez-cli cortez/src/cortez-tx cortez/src/qt/cortez-qt cortez/Cortez-Core.dmg .
+    zip CRTZ-MacOS.zip cortezd cortez-cli cortez-tx cortez-qt Cortez-Core.dmg
+    rm -f cortezd cortez-cli cortez-tx cortez-qt Cortez-Core.dmg

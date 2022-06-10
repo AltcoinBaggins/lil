@@ -11,11 +11,11 @@ fi
 	sudo apt install git zip unzip build-essential libtool bsdmainutils autotools-dev autoconf pkg-config automake python3 libqt5svg5-dev -y
 
 # Clone code from official Github repository
-	rm -rf cryptoshares
-	git clone https://github.com/cryptoshares/cryptoshares
+	rm -rf cortez
+	git clone https://github.com/cortez-project/cortez
 
 # Entering directory
-	cd cryptoshares
+	cd cortez
 
 # Compile dependencies
 	cd depends
@@ -29,6 +29,6 @@ fi
 	cd ..
 
 # Create zip file of binaries
-	cp cryptoshares/src/cryptosharesd cryptoshares/src/cryptoshares-cli cryptoshares/src/cryptoshares-tx cryptoshares/src/qt/cryptoshares-qt .
-	zip SHARES-$(git describe --abbrev=0 --tags | sed s/v//)-Linux.zip cryptosharesd cryptoshares-cli cryptoshares-tx cryptoshares-qt
-	rm -f cryptosharesd cryptoshares-cli cryptoshares-tx cryptoshares-qt
+	cp cortez/src/cortezd cortez/src/cortez-cli cortez/src/cortez-tx cortez/src/qt/cortez-qt .
+	zip CRTZ-$(git describe --abbrev=0 --tags | sed s/v//)-Linux.zip cortezd cortez-cli cortez-tx cortez-qt
+	rm -f cortezd cortez-cli cortez-tx cortez-qt

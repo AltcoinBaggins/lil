@@ -2,16 +2,6 @@
 COIN_PATH=$(dirname "$0")/../
 PWD=$(pwd)
 
-if [ $# -eq 0 ]; then
-    echo "$0:Error: invalid command line" 1>&2
-    print_help
-    exit 1
-fi
-if [ ".$1" = ".-h" ] || [ ".$1" = ".--help" ]; then
-    print_help
-    exit 0
-fi
-
 print_help() {
     echo "This is Cortez Shitcoin Generator"
     echo 'Copyright (c) 1994-2022 AltcoinBaggins and mdfkbtc'
@@ -28,6 +18,16 @@ print_help() {
     echo '  -u, --all       update only URL variables'
     echo ''
 }
+
+if [ $# -eq 0 ]; then
+    echo "$0:Error: invalid command line" 1>&2
+    print_help
+    exit 1
+fi
+if [ ".$1" = ".-h" ] || [ ".$1" = ".--help" ]; then
+    print_help
+    exit 0
+fi
 
 ## Load configuration
 source "${COIN_PATH}/fork/fork.conf"
@@ -55,6 +55,8 @@ find . -type f -iname '*' -not -path "./.git/*" -exec sed -i "s/Cortez/${COIN_NA
 find . -type f -iname '*' -not -path "./.git/*" -exec sed -i "s/cortez/${COIN_NAME_LOW}/g" {} +
 find . -type f -iname '*' -not -path "./.git/*" -exec sed -i "s/9991/${P2P_PORT}/g" {} +
 find . -type f -iname '*' -not -path "./.git/*" -exec sed -i "s/9992/${RPC_PORT}/g" {} +
+find . -type f -iname '*' -not -path "./.git/*" -exec sed -i "s/000006564484/${TOTAL_SUPPLY}/g" {} +
+find . -type f -iname '*' -not -path "./.git/*" -exec sed -i "s/111116564484/${PREMINE}/g" {} +
 
 ## Rename files
 # Repeat to make sure it works recursively, TODO: use better loop

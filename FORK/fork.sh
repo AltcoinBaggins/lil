@@ -7,7 +7,7 @@ print_help() {
     echo 'Copyright (c) 1994-2022 AltcoinBaggins and mdfkbtc'
     echo 'Report bugs to your grandmother.'
     echo ''
-    echo 'Usage: shtool <command>'
+    echo 'Usage: '$( basename "${0}" )" <command>"
     echo ''
     echo 'Available global <command>s:'
 #   echo '  -v, --version   display shtool version information'

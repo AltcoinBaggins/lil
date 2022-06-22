@@ -255,8 +255,8 @@ public:
         vSeeds.push_back(CDNSSeedData("45.77.222.79", "45.77.222.79"));
         vSeeds.push_back(CDNSSeedData("108.61.81.41", "108.61.81.41"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63);     // S
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 28);     // C
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 80);     // Z
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 78);     // Y
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 122);        // r
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x2D)(0x02)(0x31)(0x33).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x25)(0x2B).convert_to_container<std::vector<unsigned char> >();

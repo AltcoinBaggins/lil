@@ -8,7 +8,7 @@ fi
 
 # Clone code from official Github repository
     rm -rf lapislazuli
-    git clone https://github.com/lapislazuli-project/lapislazuli
+    git clone https://github.com/lapislazulicoin/lilli
 
 # Entering directory
     cd lapislazuli

@@ -26,9 +26,9 @@ Drag LapisLazuli-Qt to your applications folder, and then run LapisLazuli-Qt.
 
 ### Need Help?
 
-* See the documentation at the [LapisLazuli Wiki](https://github.com/lapislazuli-project/lapislazuli.git)
+* See the documentation at the [LapisLazuli Wiki](https://github.com/lapislazulicoin/lilli.git)
 for help and more information.
-* Join our Discord server [Discord Server](https://discord.gg/RpBXAnvp7k)
+* Join our Discord server [Discord Server](https://discord.gg/ZKWKHXk7GP)
 
 Building
 ---------------------
@@ -48,7 +48,7 @@ The LapisLazuli repo's [root README](/README.md) contains relevant information o
 - [Multiwallet Qt Development](multiwallet-qt.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://github.com/lapislazuli-project/lapislazuli.git)
+- [Source Code Documentation (External Link)](https://github.com/lapislazulicoin/lilli.git)
 - [Translation Process](translation_process.md)
 - [Unit Tests](unit-tests.md)
 - [Unauthenticated REST Interface](REST-interface.md)
@@ -56,7 +56,7 @@ The LapisLazuli repo's [root README](/README.md) contains relevant information o
 
 ### Resources
 * Discuss on the [LapisLazuli Homepage]https://lapislazulicoin.io/).
-* Join the [LapisLazuli Discord](https://discord.gg/RpBXAnvp7k).
+* Join the [LapisLazuli Discord](https://discord.gg/ZKWKHXk7GP).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

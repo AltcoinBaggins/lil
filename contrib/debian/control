@@ -29,8 +29,8 @@ Build-Depends: debhelper,
  dh-systemd
 Standards-Version: 3.9.2
 Homepage: https://lapislazulicoin.io/
-Vcs-Git: git://github.com/lapislazuli-project/lapislazuli.git
-Vcs-Browser: https://github.com/lapislazuli-project/lapislazuli
+Vcs-Git: git://github.com/lapislazulicoin/lilli.git
+Vcs-Browser: https://github.com/lapislazulicoin/lilli
 
 Package: lapislazulid
 Architecture: any

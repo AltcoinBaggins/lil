@@ -12,8 +12,8 @@
 - Maturity: 100 Confirmations 
 - Prefix: LiLLi addresses start with the capital letter "P"  
 - Ports: 19330 (p2p) / 19660 (rpc)   
-- Explorer [explorer.lapislazulicoin.com](https://explorer.lapislazulicoin.com/LiLLi/blocks)   
-- Website [lapislazulicoin.com](https://lapislazulicoin.com/)   
+- Explorer [explorer.lillicoin.com](https://explorer.lillicoin.com/LiLLi/blocks)   
+- Website [www.lillicoin.com](https://www.lillicoin.com/)   
 
 ## Rewards Breakdown
 

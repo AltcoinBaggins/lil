@@ -3,9 +3,9 @@
 
 #define MyAppName "LapisLazuli Core"
 #define MyAppPublisher "2022 LapisLazuli Core Developers"
-#define MyAppURL "https://lapislazulicoin.com"
+#define MyAppURL "https://www.lillicoin.com"
 #define MyAppExeName "lapislazuli-qt.exe"
-#define MyAppExtraData "https://explorer.lapislazulicoin.com/bootstraps/LiLLi/bootstrap.zip"
+#define MyAppExtraData "https://explorer.lillicoin.com/bootstraps/LiLLi/bootstrap.zip"
 #define MyAppVersion GetVersionNumbersString(".\package\" + MyAppExeName)
 
 #include ReadReg(HKLM, 'Software\WOW6432Node\Mitrich Software\Inno Download Plugin', 'InstallDir') + '\idp.iss'

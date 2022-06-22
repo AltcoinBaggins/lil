@@ -339,15 +339,15 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.push_back(CDNSSeedData("tseeder", "tseeder.lapislazulicoin.com"));
-	    vSeeds.push_back(CDNSSeedData("tseed1", "tseed1.lapislazulicoin.com"));
-        vSeeds.push_back(CDNSSeedData("tseed2", "tseed2.lapislazulicoin.com"));
-        vSeeds.push_back(CDNSSeedData("tseed3", "tseed3.lapislazulicoin.com"));
-        vSeeds.push_back(CDNSSeedData("tseed4", "tseed4.lapislazulicoin.com"));
-	    vSeeds.push_back(CDNSSeedData("tseed5", "tseed5.lapislazulicoin.com"));
-	    vSeeds.push_back(CDNSSeedData("tseed6", "tseed6.lapislazulicoin.com"));
-	    vSeeds.push_back(CDNSSeedData("tseed7", "tseed7.lapislazulicoin.com"));
-	    vSeeds.push_back(CDNSSeedData("tseed8", "tseed8.lapislazulicoin.com"));
+        vSeeds.push_back(CDNSSeedData("tseeder", "tseeder.lillicoin.com"));
+	    vSeeds.push_back(CDNSSeedData("tseed1", "tseed1.lillicoin.com"));
+        vSeeds.push_back(CDNSSeedData("tseed2", "tseed2.lillicoin.com"));
+        vSeeds.push_back(CDNSSeedData("tseed3", "tseed3.lillicoin.com"));
+        vSeeds.push_back(CDNSSeedData("tseed4", "tseed4.lillicoin.com"));
+	    vSeeds.push_back(CDNSSeedData("tseed5", "tseed5.lillicoin.com"));
+	    vSeeds.push_back(CDNSSeedData("tseed6", "tseed6.lillicoin.com"));
+	    vSeeds.push_back(CDNSSeedData("tseed7", "tseed7.lillicoin.com"));
+	    vSeeds.push_back(CDNSSeedData("tseed8", "tseed8.lillicoin.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet lapislazuli addresses start with 'x' or 'y'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet lapislazuli script addresses start with '8' or '9'

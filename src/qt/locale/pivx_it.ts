@@ -1617,9 +1617,9 @@ NODE</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-        https://discord.gg/RpBXAnvp7k</source>
+        https://discord.gg/ZKWKHXk7GP</source>
         <translation>Lingua mancante o traduzione incompleta? Aiutaci a contribuire alle traduzioni qui:
-        https://discord.gg/RpBXAnvp7k</translation>
+        https://discord.gg/ZKWKHXk7GP</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -3616,14 +3616,14 @@ per vedere e spendere i saldi sulla rete.
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style='color: #b088ff' href='https://discord.gg/RpBXAnvp7k'&gt;
+                           &lt;a style='color: #b088ff' href='https://discord.gg/ZKWKHXk7GP'&gt;
                            #support in our Discord&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            Abbiamo canali di supporto nella maggior parte dei nostri gruppi di chat ufficiali, ad esempio
-                           &lt;a style='color: #b088ff' href='https://discord.gg/RpBXAnvp7k'&gt;
+                           &lt;a style='color: #b088ff' href='https://discord.gg/ZKWKHXk7GP'&gt;
                            #support nel nostro Discord&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>

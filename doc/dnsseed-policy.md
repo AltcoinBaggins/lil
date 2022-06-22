@@ -44,7 +44,7 @@ related to the DNS seed operation.
 If these expectations cannot be satisfied the operator should
 discontinue providing services and contact the active LapisLazuli
 Core development team as well as posting on the
-[LapisLazuli Discord](https://discord.gg/RpBXAnvp7k).
+[LapisLazuli Discord](https://discord.gg/ZKWKHXk7GP).
 
 Behavior outside of these expectations may be reasonable in some
 situations but should be discussed in public in advance.

@@ -1,9 +1,9 @@
-// Copyright (c) 2022 The Cortez Core Developers
+// Copyright (c) 2022 The LapisLazuli Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Cortez_CRYPTO_GOOGLE_AUTHENTICATOR_H
-#define Cortez_CRYPTO_GOOGLE_AUTHENTICATOR_H
+#ifndef LapisLazuli_CRYPTO_GOOGLE_AUTHENTICATOR_H
+#define LapisLazuli_CRYPTO_GOOGLE_AUTHENTICATOR_H
 
 #include <cstdint>
 
@@ -22,4 +22,4 @@ public:
     int GeneratePin();
 };
 
-#endif // Cortez_CRYPTO_GOOGLE_AUTHENTICATOR_H
+#endif // LapisLazuli_CRYPTO_GOOGLE_AUTHENTICATOR_H

@@ -1,5 +1,5 @@
 // Copyright (c) 2018 The PIVX developers
-// Copyright (c) 2021 The Cortez Core Developers
+// Copyright (c) 2021 The LapisLazuli Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -4163,11 +4163,11 @@ std::string LoadInvalidOutPoints()
             "    \"n\": 0\n"
             "  },\n"
             "  {\n"
-            "    \"txid\": \"a5d75b7f99edfc8259580285999197eb755b7e20342cfa0731b09f5b0b3635a7\",\n"
+            "    \"txid\": \"a5d75b7f99edfc82595802851933097eb755b7e20342cfa0731b09f5b0b3635a7\",\n"
             "    \"n\": 0\n"
             "  },\n"
             "  {\n"
-            "    \"txid\": \"a5d75b7f99edfc8259580285999197eb755b7e20342cfa0731b09f5b0b3635a7\",\n"
+            "    \"txid\": \"a5d75b7f99edfc82595802851933097eb755b7e20342cfa0731b09f5b0b3635a7\",\n"
             "    \"n\": 1\n"
             "  },\n"
             "  {\n"

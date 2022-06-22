@@ -1,5 +1,5 @@
 // Copyright (c) 2019 The PIVX developers
-// Copyright (c) 2022 The Cortez Core Developers
+// Copyright (c) 2022 The LapisLazuli Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -55,7 +55,7 @@ SettingsMainOptionsWidget::SettingsMainOptionsWidget(PIVXGUI* _window, QWidget *
     setCssProperty({ui->labelTitleSizeDb, ui->labelTitleThreads}, "text-main-settings");
 
     // Switch
-    ui->pushSwitchStart->setText(tr("Start CRTZ on system login"));
+    ui->pushSwitchStart->setText(tr("Start LiLLi on system login"));
     ui->pushSwitchStart->setProperty("cssClass", "btn-switch");
 
     // Combobox

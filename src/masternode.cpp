@@ -1,7 +1,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The Cortez Core Developers
+// Copyright (c) 2022 The LapisLazuli Core Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -365,7 +365,7 @@ CAmount CMasternode::GetBlockValue(int nHeight)
     if (nHeight >   10000) return 2.0 * COIN;
     if (nHeight >    2000) return 0.50 * COIN;
     if (nHeight >       1) return 5000.0 * COIN;    // POW BLOCK REWARD   
-    if (nHeight >       0) return 111116564484 * COIN;
+    if (nHeight >       0) return 15500000 * COIN;
 
     return 0;
 }
@@ -780,13 +780,13 @@ bool CMasternodeBroadcast::CheckInputsAndAdd(int& nDoS)
     }
 
     // verify that sig time is legit in past
-    // should be at least not earlier than block when 1000 CRTZ tx got MASTERNODE_MIN_CONFIRMATIONS
+    // should be at least not earlier than block when 1000 LiLLi tx got MASTERNODE_MIN_CONFIRMATIONS
     uint256 hashBlock = UINT256_ZERO;
     CTransaction tx2;
     GetTransaction(vin.prevout.hash, tx2, hashBlock, true);
     BlockMap::iterator mi = mapBlockIndex.find(hashBlock);
     if (mi != mapBlockIndex.end() && (*mi).second) {
-        CBlockIndex* pMNIndex = (*mi).second;                                                        // block for 1000 CRTZ tx -> 1 confirmation
+        CBlockIndex* pMNIndex = (*mi).second;                                                        // block for 1000 LiLLi tx -> 1 confirmation
         CBlockIndex* pConfIndex = chainActive[pMNIndex->nHeight + MASTERNODE_MIN_CONFIRMATIONS - 1]; // block where tx got MASTERNODE_MIN_CONFIRMATIONS
         if (pConfIndex->GetBlockTime() > sigTime) {
             LogPrint(BCLog::MASTERNODE,"mnb - Bad sigTime %d for Masternode %s (%i conf block is at %d)\n",

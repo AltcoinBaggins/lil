@@ -1,19 +1,19 @@
-# Cortez Standard Wallet
+# LapisLazuli Standard Wallet
 
 ## Coin Specs
 
 - PoW Algorithm: X11KVS  
-- Premine: 7.750.000 CRTZ (Total coin supply from previous blockchain, distributed after maturing, the remaining is burned)
-- Max. Supply: 1.200.000.000 CRTZ 
+- Premine: 7.750.000 LiLLi (Total coin supply from previous blockchain, distributed after maturing, the remaining is burned)
+- Max. Supply: 1.200.000.000 LiLLi 
 - PoW Blocks: 1 - 1000
 - PoS Blocks: Starting from 1001
 - MN Blocks: Starting from 3001
 - Block Time: 60 Seconds
 - Maturity: 100 Confirmations 
-- Prefix: CRTZ addresses start with the capital letter "P"  
-- Ports: 9991 (p2p) / 9992 (rpc)   
-- Explorer [explorer.cortezcoin.com](https://explorer.cortezcoin.com/CRTZ/blocks)   
-- Website [cortezcoin.com](https://cortezcoin.com/)   
+- Prefix: LiLLi addresses start with the capital letter "P"  
+- Ports: 19330 (p2p) / 19660 (rpc)   
+- Explorer [explorer.lapislazulicoin.com](https://explorer.lapislazulicoin.com/LiLLi/blocks)   
+- Website [lapislazulicoin.com](https://lapislazulicoin.com/)   
 
 ## Rewards Breakdown
 

@@ -1,38 +1,38 @@
-Cortez Core
+LapisLazuli Core
 =============
 
 Setup
 ---------------------
-[Cortez Core]https://cortezcoin.io/) is the original Cortez client and it builds the backbone of the network. However, it downloads and stores the entire history of Cortez transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[LapisLazuli Core]https://lapislazulicoin.io/) is the original LapisLazuli client and it builds the backbone of the network. However, it downloads and stores the entire history of LapisLazuli transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Cortez Core on your native platform.
+The following are some helpful notes on how to run LapisLazuli Core on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/cortez-qt` (GUI) or
-- `bin/cortezd` (headless)
+- `bin/lapislazuli-qt` (GUI) or
+- `bin/lapislazulid` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run Cortez-qt.exe.
+Unpack the files into a directory, and then run LapisLazuli-qt.exe.
 
 ### macOS
 
-Drag Cortez-Qt to your applications folder, and then run Cortez-Qt.
+Drag LapisLazuli-Qt to your applications folder, and then run LapisLazuli-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Cortez Wiki](https://github.com/cortez-project/cortez.git)
+* See the documentation at the [LapisLazuli Wiki](https://github.com/lapislazuli-project/lapislazuli.git)
 for help and more information.
 * Join our Discord server [Discord Server](https://discord.gg/RpBXAnvp7k)
 
 Building
 ---------------------
-The following are developer notes on how to build Cortez Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build LapisLazuli Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [Dependencies](dependencies.md)
 - [macOS Build Notes](build-osx.md)
@@ -42,21 +42,21 @@ The following are developer notes on how to build Cortez Core on your native pla
 
 Development
 ---------------------
-The Cortez repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The LapisLazuli repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://github.com/cortez-project/cortez.git)
+- [Source Code Documentation (External Link)](https://github.com/lapislazuli-project/lapislazuli.git)
 - [Translation Process](translation_process.md)
 - [Unit Tests](unit-tests.md)
 - [Unauthenticated REST Interface](REST-interface.md)
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [Cortez Homepage]https://cortezcoin.io/).
-* Join the [Cortez Discord](https://discord.gg/RpBXAnvp7k).
+* Discuss on the [LapisLazuli Homepage]https://lapislazulicoin.io/).
+* Join the [LapisLazuli Discord](https://discord.gg/RpBXAnvp7k).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

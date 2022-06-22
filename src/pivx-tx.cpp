@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2015-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The Cortez Core Developers
+// Copyright (c) 2022 The LapisLazuli Core Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -48,10 +48,10 @@ static bool AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help")) {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Cortez cortez-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("LapisLazuli lapislazuli-tx utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
-                               "  cortez-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded cortez transaction") + "\n" +
-                               "  cortez-tx [options] -create [commands]   " + _("Create hex-encoded cortez transaction") + "\n" +
+                               "  lapislazuli-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded lapislazuli transaction") + "\n" +
+                               "  lapislazuli-tx [options] -create [commands]   " + _("Create hex-encoded lapislazuli transaction") + "\n" +
                                "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());
@@ -596,7 +596,7 @@ static int CommandLineRawTx(int argc, char* argv[])
             if (argc < 2)
                 throw std::runtime_error("too few parameters");
 
-            // param: hex-encoded cortez transaction
+            // param: hex-encoded lapislazuli transaction
             std::string strHexTx(argv[1]);
             if (strHexTx == "-") // "-" implies standard input
                 strHexTx = readStdin();

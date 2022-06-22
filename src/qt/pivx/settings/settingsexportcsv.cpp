@@ -1,6 +1,6 @@
 // Copyright (c) 2019-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The Cortez Core Developers
+// Copyright (c) 2022 The LapisLazuli Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -55,7 +55,7 @@ void SettingsExportCSV::selectFileOutput(const bool& isTxExport)
 {
     QString filename = GUIUtil::getSaveFileName(this,
                                         isTxExport ? tr("Export CSV") : tr("Export Address List"), QString(),
-                                        isTxExport ? tr("Cortez_tx_csv_export(*.csv)") : tr("Cortez_addresses_csv_export(*.csv)"),
+                                        isTxExport ? tr("LapisLazuli_tx_csv_export(*.csv)") : tr("LapisLazuli_addresses_csv_export(*.csv)"),
                                         nullptr);
 
     if (isTxExport) {

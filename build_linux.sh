@@ -11,11 +11,11 @@ fi
 	sudo apt install git zip unzip build-essential libtool bsdmainutils autotools-dev autoconf pkg-config automake python3 libqt5svg5-dev -y
 
 # Clone code from official Github repository
-	rm -rf cortez
-	git clone https://github.com/cortez-project/cortez
+	rm -rf lapislazuli
+	git clone https://github.com/lapislazuli-project/lapislazuli
 
 # Entering directory
-	cd cortez
+	cd lapislazuli
 
 # Compile dependencies
 	cd depends
@@ -29,6 +29,6 @@ fi
 	cd ..
 
 # Create zip file of binaries
-	cp cortez/src/cortezd cortez/src/cortez-cli cortez/src/cortez-tx cortez/src/qt/cortez-qt .
-	zip CRTZ-$(git describe --abbrev=0 --tags | sed s/v//)-Linux.zip cortezd cortez-cli cortez-tx cortez-qt
-	rm -f cortezd cortez-cli cortez-tx cortez-qt
+	cp lapislazuli/src/lapislazulid lapislazuli/src/lapislazuli-cli lapislazuli/src/lapislazuli-tx lapislazuli/src/qt/lapislazuli-qt .
+	zip LiLLi-$(git describe --abbrev=0 --tags | sed s/v//)-Linux.zip lapislazulid lapislazuli-cli lapislazuli-tx lapislazuli-qt
+	rm -f lapislazulid lapislazuli-cli lapislazuli-tx lapislazuli-qt

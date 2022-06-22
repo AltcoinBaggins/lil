@@ -122,12 +122,12 @@
         <translation>Адреса получения</translation>
     </message>
     <message>
-        <source>These are your CRTZ addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Это ваши CRTZ-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
+        <source>These are your LiLLi addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Это ваши LiLLi-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
     </message>
     <message>
-        <source>These are your CRTZ addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Это ваши CRTZ-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
+        <source>These are your LiLLi addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Это ваши LiLLi-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -363,8 +363,8 @@ for staking</source>
         <translation>ОТМЕНА</translation>
     </message>
     <message>
-        <source>CRTZ will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CRTZs from being stolen by malware infecting your computer.</source>
-        <translation>CRTZ сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши CRTZ от кражи с использованием вредоносного ПО.</translation>
+        <source>LiLLi will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LiLLis from being stolen by malware infecting your computer.</source>
+        <translation>LiLLi сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши LiLLi от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -464,8 +464,8 @@ for staking</source>
         <translation>Выбор монеты</translation>
     </message>
     <message>
-        <source>Select CRTZ Outputs to Spend</source>
-        <translation>Выберите CRTZ выходы для расходов</translation>
+        <source>Select LiLLi Outputs to Spend</source>
+        <translation>Выберите LiLLi выходы для расходов</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -492,8 +492,8 @@ for staking</source>
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>0.00 CRTZ</source>
-        <translation>0.00 CRTZ </translation>
+        <source>0.00 LiLLi</source>
+        <translation>0.00 LiLLi </translation>
     </message>
     <message>
         <source>0</source>
@@ -722,8 +722,8 @@ for staking</source>
         <translation>Обзор истории вашего аккаунта</translation>
     </message>
     <message>
-        <source>How to get CRTZ</source>
-        <translation>Как получить CRTZ</translation>
+        <source>How to get LiLLi</source>
+        <translation>Как получить LiLLi</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -746,8 +746,8 @@ for staking</source>
         <translation>Сортировать по</translation>
     </message>
     <message>
-        <source>Amount of CRTZ and zCRTZ staked.</source>
-        <translation>Сумма добытых CRTZ и zCRTZ</translation>
+        <source>Amount of LiLLi and zLiLLi staked.</source>
+        <translation>Сумма добытых LiLLi и zLiLLi</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -842,8 +842,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>Изменить адрес отправки</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid CRTZ address.</source>
-        <translation>Введенный адрес "%1" не является CRTZ адресом.</translation>
+        <source>The entered address "%1" is not a valid LiLLi address.</source>
+        <translation>Введенный адрес "%1" не является LiLLi адресом.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -895,16 +895,16 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>версия</translation>
     </message>
     <message>
-        <source>Cortez</source>
-        <translation>Cortez</translation>
+        <source>LapisLazuli</source>
+        <translation>LapisLazuli</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-бит)</translation>
     </message>
     <message>
-        <source>About Cortez</source>
-        <translation>О Cortez</translation>
+        <source>About LapisLazuli</source>
+        <translation>О LapisLazuli</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -958,16 +958,16 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>Добро пожаловать</translation>
     </message>
     <message>
-        <source>Welcome to Cortez.</source>
-        <translation>Добро пожаловать в Cortez.</translation>
+        <source>Welcome to LapisLazuli.</source>
+        <translation>Добро пожаловать в LapisLazuli.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Cortez will store its data.</source>
-        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные Cortez.</translation>
+        <source>As this is the first time the program is launched, you can choose where LapisLazuli will store its data.</source>
+        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные LapisLazuli.</translation>
     </message>
     <message>
-        <source>Cortez will download and store a copy of the CRTZ block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Cortez загрузит и сохранит копию цепочки блоков CRTZ. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
+        <source>LapisLazuli will download and store a copy of the LiLLi block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>LapisLazuli загрузит и сохранит копию цепочки блоков LiLLi. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -986,8 +986,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>ХОРОШО</translation>
     </message>
     <message>
-        <source>Cortez</source>
-        <translation>Cortez</translation>
+        <source>LapisLazuli</source>
+        <translation>LapisLazuli</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1111,7 +1111,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of collateral amount will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;На новый пустой адрес в вашем кошельке&lt;/p&gt;&lt;p&gt; будет сделана транзакция в 10 000 CRTZ. &lt;/p&gt;&lt;p&gt;Адрес отмечен под именем мастерноды.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;На новый пустой адрес в вашем кошельке&lt;/p&gt;&lt;p&gt; будет сделана транзакция в 10 000 LiLLi. &lt;/p&gt;&lt;p&gt;Адрес отмечен под именем мастерноды.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1316,7 +1316,7 @@ Please wait few more minutes (masternode collaterals require %1 confirmations).<
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the cortez.conf file
+You will only have to paste the data in the lapislazuli.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1324,7 +1324,7 @@ this controller wallet (select the Masternode in the list and press "start").
 на удаленном сервере в буфер обмена.
 
 
-Вам необходимо только вставить данные в файл cortez.conf
+Вам необходимо только вставить данные в файл lapislazuli.conf
 вашего удаленного сервера и запустить его, а затем запустить мастерноду,
 используя этот кошелек контроллера (выберите мастерноду из списка и нажмите «Старт»).
 </translation>
@@ -1508,8 +1508,8 @@ NODES</source>
         <translation>Проанализированные данные слишком большие</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "cortez" prefix</source>
-        <translation>Неверный URI, не начинается с префикса "cortez"</translation>
+        <source>Invalid URI, not starting with "lapislazuli" prefix</source>
+        <translation>Неверный URI, не начинается с префикса "lapislazuli"</translation>
     </message>
 </context>
 <context>
@@ -1554,8 +1554,8 @@ NODES</source>
         <translation>Отключив проведение неподтвержденных изменений все изменения о транзакции &lt;br/&gt;не будут использованы пока транзакция не получит хотя бы одно подтверждение.&lt;br/&gt;Также это влияет на расчет вашего баланса.</translation>
     </message>
     <message>
-        <source>Automatically open the CRTZ client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть клиентский порт CRTZ через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
+        <source>Automatically open the LiLLi client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть клиентский порт LiLLi через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1574,12 +1574,12 @@ NODES</source>
         <translation>Эксперт</translation>
     </message>
     <message>
-        <source>Automatically start CRTZ after logging in to the system.</source>
-        <translation>Автоматически запускать CRTZ после входа в систему.</translation>
+        <source>Automatically start LiLLi after logging in to the system.</source>
+        <translation>Автоматически запускать LiLLi после входа в систему.</translation>
     </message>
     <message>
-        <source>&amp;Start CRTZ on system login</source>
-        <translation>&amp;Запускать CRTZ при входе в систему</translation>
+        <source>&amp;Start LiLLi on system login</source>
+        <translation>&amp;Запускать LiLLi при входе в систему</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1606,8 +1606,8 @@ NODES</source>
         <translation>&amp;Сеть</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting CRTZ.</source>
-        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска CRTZ.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting LiLLi.</source>
+        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска LiLLi.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1620,44 +1620,44 @@ NODES</source>
         <translation>Карта порта, использующего &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of CRTZ units to zCRTZ</source>
-        <translation>Невозможно автоматически отчеканить единицы CRTZ для zCRTZ</translation>
+        <source>Enable automatic minting of LiLLi units to zLiLLi</source>
+        <translation>Невозможно автоматически отчеканить единицы LiLLi для zLiLLi</translation>
     </message>
     <message>
-        <source>Enable zCRTZ Automint</source>
-        <translation>Невозможно авточеканка  zCRTZ</translation>
+        <source>Enable zLiLLi Automint</source>
+        <translation>Невозможно авточеканка  zLiLLi</translation>
     </message>
     <message>
-        <source>Enable automatic zCRTZ minting from specific addresses</source>
-        <translation>Включить автоматическое чеканку zCRTZ с определенных адресов</translation>
+        <source>Enable automatic zLiLLi minting from specific addresses</source>
+        <translation>Включить автоматическое чеканку zLiLLi с определенных адресов</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Включить адреса с автоматической чеканкой</translation>
     </message>
     <message>
-        <source>Percentage of incoming CRTZ which get automatically converted to zCRTZ via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент приходящих CRTZ, которые автоматически конвертируются в zCRTZ благодаря Zerocoin протоколу (min: 10%)</translation>
+        <source>Percentage of incoming LiLLi which get automatically converted to zLiLLi via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент приходящих LiLLi, которые автоматически конвертируются в zLiLLi благодаря Zerocoin протоколу (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zCRTZ</source>
-        <translation>Процент  авточеканненых zCRTZ</translation>
+        <source>Percentage of autominted zLiLLi</source>
+        <translation>Процент  авточеканненых zLiLLi</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough CRTZ for this denomination is available</source>
-        <translation>Подождите с автоматическим преобразованием в Zerocoin, пока не будет достаточно CRTZ для этой номинации.</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough LiLLi for this denomination is available</source>
+        <translation>Подождите с автоматическим преобразованием в Zerocoin, пока не будет достаточно LiLLi для этой номинации.</translation>
     </message>
     <message>
-        <source>Preferred Automint zCRTZ Denomination</source>
-        <translation>Предпочитаемый номинал авточеканной  монеты  zCRTZ</translation>
+        <source>Preferred Automint zLiLLi Denomination</source>
+        <translation>Предпочитаемый номинал авточеканной  монеты  zLiLLi</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Порог разделения доли:</translation>
     </message>
     <message>
-        <source>Connect to the CRTZ network through a SOCKS5 proxy.</source>
-        <translation>Подключиться к сети CRTZ через SOCKS5 прокси.</translation>
+        <source>Connect to the LiLLi network through a SOCKS5 proxy.</source>
+        <translation>Подключиться к сети LiLLi через SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1803,8 +1803,8 @@ NODES</source>
 <context>
     <name>PIVXGUI</name>
     <message>
-        <source>Cortez</source>
-        <translation>Cortez</translation>
+        <source>LapisLazuli</source>
+        <translation>LapisLazuli</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1831,8 +1831,8 @@ NODES</source>
         <translation>Завершить работу</translation>
     </message>
     <message>
-        <source>Cortez client</source>
-        <translation>Клиент Cortez</translation>
+        <source>LapisLazuli client</source>
+        <translation>Клиент LapisLazuli</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1898,12 +1898,12 @@ Address: %4
         <translation>Неверный адрес оплаты %1</translation>
     </message>
     <message>
-        <source>Cannot start cortez: click-to-pay handler</source>
-        <translation>Не удалось запустить cortez: обработчик click-to-pay </translation>
+        <source>Cannot start lapislazuli: click-to-pay handler</source>
+        <translation>Не удалось запустить lapislazuli: обработчик click-to-pay </translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid CRTZ address or malformed URI parameters.</source>
-        <translation>URI не интерпретируется! Причиной этому может быть неверный CRTZ адрес или неверные параметеры URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid LiLLi address or malformed URI parameters.</source>
+        <translation>URI не интерпретируется! Причиной этому может быть неверный LiLLi адрес или неверные параметеры URI.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1988,8 +1988,8 @@ Address: %4
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>Enter CRTZ address (e.g. %1)</source>
-        <translation>Введите адрес CRTZ (например, %1)</translation>
+        <source>Enter LiLLi address (e.g. %1)</source>
+        <translation>Введите адрес LiLLi (например, %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2032,12 +2032,12 @@ Address: %4
         <translation>%1 мс</translation>
     </message>
     <message>
-        <source>A fatal error occurred. CRTZ can no longer continue safely and will quit.</source>
-        <translation>Произошла фатальная ошибка. CRTZ больше не может безопасно продолжать работу и завершит работу.</translation>
+        <source>A fatal error occurred. LiLLi can no longer continue safely and will quit.</source>
+        <translation>Произошла фатальная ошибка. LiLLi больше не может безопасно продолжать работу и завершит работу.</translation>
     </message>
     <message>
-        <source>Cortez</source>
-        <translation>Cortez</translation>
+        <source>LapisLazuli</source>
+        <translation>LapisLazuli</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -2056,8 +2056,8 @@ Address: %4
         <translation>Ошибка чтения файла конфигурации мастерноды: %1</translation>
     </message>
     <message>
-        <source>Cortez didn't yet exit safely...</source>
-        <translation>Cortez еще не вышел безопасно...</translation>
+        <source>LapisLazuli didn't yet exit safely...</source>
+        <translation>LapisLazuli еще не вышел безопасно...</translation>
     </message>
     <message>
         <source>Contact</source>
@@ -2267,8 +2267,8 @@ Address: %4
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the CRTZ debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть протокол отладки CRTZ. Это может занять некоторе время, если файл протокола очень большой.</translation>
+        <source>Open the LiLLi debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть протокол отладки LiLLi. Это может занять некоторе время, если файл протокола очень большой.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2411,8 +2411,8 @@ Address: %4
         <translation>Пользовательский путь резервного копирования:</translation>
     </message>
     <message>
-        <source>Custom zCRTZ Backup Path:</source>
-        <translation>Пользовательский путь резервного копирования zCRTZ:</translation>
+        <source>Custom zLiLLi Backup Path:</source>
+        <translation>Пользовательский путь резервного копирования zLiLLi:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2492,8 +2492,8 @@ Address: %4
         <translation>Вывод:</translation>
     </message>
     <message>
-        <source>Welcome to the CRTZ RPC console.</source>
-        <translation>Добро пожаловать в окружение CRTZ RPC.</translation>
+        <source>Welcome to the LiLLi RPC console.</source>
+        <translation>Добро пожаловать в окружение LiLLi RPC.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -2634,8 +2634,8 @@ Address: %4
         <translation>Нет адресов</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive CRTZ</source>
-        <translation>Сканируйте QR-код или скопируйте адрес для получения CRTZ</translation>
+        <source>Scan the QR code or copy the address to receive LiLLi</source>
+        <translation>Сканируйте QR-код или скопируйте адрес для получения LiLLi</translation>
     </message>
     <message>
         <source>Add Label</source>
@@ -2764,12 +2764,12 @@ Address: %4
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>CRTZ</source>
-        <translation>CRTZ</translation>
+        <source>LiLLi</source>
+        <translation>LiLLi</translation>
     </message>
     <message>
-        <source>Instead of sharing only a CRTZ address, you can create a payment request, bundling up more information</source>
-        <translation>Вместо того, чтобы делиться только адресом CRTZ, вы можете создать запрос на оплату, связывая больше информации</translation>
+        <source>Instead of sharing only a LiLLi address, you can create a payment request, bundling up more information</source>
+        <translation>Вместо того, чтобы делиться только адресом LiLLi, вы можете создать запрос на оплату, связывая больше информации</translation>
     </message>
     <message>
         <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
@@ -2847,8 +2847,8 @@ Address: %4
         <translation>Смена адреса</translation>
     </message>
     <message>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" CRTZ address</source>
-        <translation>Остаточная часть значения, полученного от значения входов минус выходов, идет на «изменение» адреса CRTZ</translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" LiLLi address</source>
+        <translation>Остаточная часть значения, полученного от значения входов минус выходов, идет на «изменение» адреса LiLLi</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -2874,8 +2874,8 @@ Address: %4
         <translation>рекомендуемые</translation>
     </message>
     <message>
-        <source>CRTZ/kilobyte</source>
-        <translation>CRTZ/килобайт</translation>
+        <source>LiLLi/kilobyte</source>
+        <translation>LiLLi/килобайт</translation>
     </message>
     <message>
         <source>0.00 KB</source>
@@ -3146,9 +3146,9 @@ Remember to write it down and store it safely, otherwise you might lose access t
         <translation>Инструмент BIP38</translation>
     </message>
     <message>
-        <source>Encrypt your CRTZ addresses (key pair actually) using BIP38 encryption.
+        <source>Encrypt your LiLLi addresses (key pair actually) using BIP38 encryption.
 Using this mechanism you can share your keys without middle-man risk, only need to store your passphrase safely</source>
-        <translation>Зашифруйте свои адреса CRTZ (фактически, пару ключей), используя шифрование BIP38.
+        <translation>Зашифруйте свои адреса LiLLi (фактически, пару ключей), используя шифрование BIP38.
 С помощью этого механизма вы можете делиться своими ключами без риска посредника, вам нужно только безопасно хранить вашу парольную фразу</translation>
     </message>
     <message>
@@ -3184,8 +3184,8 @@ Using this mechanism you can share your keys without middle-man risk, only need 
         <translation>Расшифровать ключ</translation>
     </message>
     <message>
-        <source>CRTZ address</source>
-        <translation>Адрес CRTZ</translation>
+        <source>LiLLi address</source>
+        <translation>Адрес LiLLi</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -3317,8 +3317,8 @@ Verify that you have installed a predetermined text editor.</source>
 Убедитесь, что вы установили заранее установленный текстовый редактор.</translation>
     </message>
     <message>
-        <source>Welcome to the CRTZ RPC console.</source>
-        <translation>Добро пожаловать в окружение CRTZ RPC.</translation>
+        <source>Welcome to the LiLLi RPC console.</source>
+        <translation>Добро пожаловать в окружение LiLLi RPC.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -3501,49 +3501,49 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <translation>Вид</translation>
     </message>
     <message>
-        <source>1) What is CRTZ?</source>
-        <translation>1) Что такое CRTZ?</translation>
+        <source>1) What is LiLLi?</source>
+        <translation>1) Что такое LiLLi?</translation>
     </message>
     <message>
-        <source>2) Why are my CRTZ unspendable?</source>
-        <translation>2) Почему мои CRTZ невозможно потратить?</translation>
+        <source>2) Why are my LiLLi unspendable?</source>
+        <translation>2) Почему мои LiLLi невозможно потратить?</translation>
     </message>
     <message>
-        <source>https://cortezcoin.io/</source>
-        <translation>https://cortezcoin.io/</translation>
+        <source>https://lapislazulicoin.io/</source>
+        <translation>https://lapislazulicoin.io/</translation>
     </message>
     <message>
         <source>1</source>
         <translation>1</translation>
     </message>
     <message>
-        <source>What is CRTZ?</source>
-        <translation>Что такое CRTZ?</translation>
+        <source>What is LiLLi?</source>
+        <translation>Что такое LiLLi?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           CRTZ is a form of digital online money using blockchain technology
+                           LiLLi is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  CRTZ incorporates market leading security &amp;
+                           zero fees.  LiLLi incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zCRTZ) and Zerocoin staking.
+                           to implement ZeroCoin(zLiLLi) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           CRTZ utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of CRTZ to participate in earning block rewards
+                           LiLLi utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of LiLLi to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to create and vote on proposals.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-CRTZ - это форма цифровых онлайн-денег, использующая технологию блокчейн,
+LiLLi - это форма цифровых онлайн-денег, использующая технологию блокчейн,
 которая может быть легко переведена по всему миру, мгновенно и с практически
-нулевой комиссией. CRTZ включает в себя лидирующую на рынке защиту и
+нулевой комиссией. LiLLi включает в себя лидирующую на рынке защиту и
 «конфиденциальность», а также является первой PoS криптовалютой (Proof of Stake),
-в которой реализована система стекинга ZeroCoin (zCRTZ) и Zerocoin.
+в которой реализована система стекинга ZeroCoin (zLiLLi) и Zerocoin.
 &lt;/p&gt;&lt;p align="justify"&gt;
-CRTZ использует консенсус PoS (Proof of Stake), позволяя всем владельцам CRTZ участвовать в заработке вознаграждений
+LiLLi использует консенсус PoS (Proof of Stake), позволяя всем владельцам LiLLi участвовать в заработке вознаграждений
 при этом обеспечивая безопасность сети с помощью кошельков с полными узлами, а также позволяет
 запускать мастерноды для создания предложений и голосования по ним.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
@@ -3553,25 +3553,25 @@ CRTZ использует консенсус PoS (Proof of Stake), позвол�
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my CRTZ unspendable?</source>
-        <translation>Почему мои CRTZ невозможно потратить?</translation>
+        <source>Why are my LiLLi unspendable?</source>
+        <translation>Почему мои LiLLi невозможно потратить?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received CRTZ requires 6 confirmations on the network
+                           Newly received LiLLi requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Your CRTZ wallet also needs to be completely synchronized
+                           Your LiLLi wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Недавно полученным CRTZ требуется 6 подтверждений в сети,
+Недавно полученным LiLLi требуется 6 подтверждений в сети,
 чтобы получить право быть расходуемыми. Это может занять примерно 6 минут.
 &lt;/p&gt;&lt;p align="justify"&gt;
-Ваш кошелек CRTZ также должен быть полностью синхронизирован,
+Ваш кошелек LiLLi также должен быть полностью синхронизирован,
 чтобы видеть баланс и расходовать его в сети.
  &lt;/p&gt;&lt;/body&gt;&lt;/html&gt; </translation>
     </message>
@@ -3580,8 +3580,8 @@ CRTZ использует консенсус PoS (Proof of Stake), позвол�
         <translation>3</translation>
     </message>
     <message>
-        <source>How do I stake CRTZ?</source>
-        <translation>Как мне запустить стекинг CRTZ?</translation>
+        <source>How do I stake LiLLi?</source>
+        <translation>Как мне запустить стекинг LiLLi?</translation>
     </message>
     <message>
         <source>4</source>
@@ -3612,7 +3612,7 @@ CRTZ использует консенсус PoS (Proof of Stake), позвол�
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           A masternode is a computer running a full node CRTZ wallet with a
+                           A masternode is a computer running a full node LiLLi wallet with a
                            required amount of secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
@@ -3634,10 +3634,10 @@ CRTZ использует консенсус PoS (Proof of Stake), позвол�
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in CRTZ Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in LiLLi Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the CRTZ network&lt;/li&gt;
+                           &lt;li&gt;Help secure the LiLLi network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
@@ -3652,7 +3652,7 @@ CRTZ использует консенсус PoS (Proof of Stake), позвол�
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
-Мастернода - это компьютер, на котором запущен базовый кошелек CRTZ с полным узлом и для которого требуется обеспечение в 10000 CRTZ для обеспечения дополнительных услуг сети и, в свою очередь, регулярного получения части вознаграждения за блок. Эти услуги в себя включают:
+Мастернода - это компьютер, на котором запущен базовый кошелек LiLLi с полным узлом и для которого требуется обеспечение в 10000 LiLLi для обеспечения дополнительных услуг сети и, в свою очередь, регулярного получения части вознаграждения за блок. Эти услуги в себя включают:
 
 Децентрализованное управление (Голосование по предложениям)
 Децентрализованная система бюджетирования (Казначейство)
@@ -3663,14 +3663,14 @@ CRTZ использует консенсус PoS (Proof of Stake), позвол�
 
 Привилегии мастерноды:
 
-Участие в управлении CRTZ
+Участие в управлении LiLLi
 Получение вознаграждений за мастерноду
 Товарные опционы для будущей продажи
-Помощь в защите сети CRTZ
+Помощь в защите сети LiLLi
 
 Требования:
 
-10 000 CRTZ для каждой мастерноды
+10 000 LiLLi для каждой мастерноды
 Должен храниться в основном кошельке
 Требуется выделенный IP-адрес
 Кошелек мастерноды должен оставаться в сети</translation>
@@ -3680,8 +3680,8 @@ CRTZ использует консенсус PoS (Proof of Stake), позвол�
         <translation>Часто задаваемые вопросы</translation>
     </message>
     <message>
-        <source>3) How do I stake CRTZ?</source>
-        <translation>3) Как мне запустить стекинг CRTZ?</translation>
+        <source>3) How do I stake LiLLi?</source>
+        <translation>3) Как мне запустить стекинг LiLLi?</translation>
     </message>
     <message>
         <source>4) Where I should go if I need support?</source>
@@ -3803,8 +3803,8 @@ CRTZ использует консенсус PoS (Proof of Stake), позвол�
         <translation>Невозможно открыть папку резервных копий</translation>
     </message>
     <message>
-        <source>Unable to open cortez.conf with default application</source>
-        <translation>Невозможно открыть cortez.conf с приложением по умолчанию</translation>
+        <source>Unable to open lapislazuli.conf with default application</source>
+        <translation>Невозможно открыть lapislazuli.conf с приложением по умолчанию</translation>
     </message>
     <message>
         <source>In:</source>
@@ -3858,8 +3858,8 @@ CRTZ использует консенсус PoS (Proof of Stake), позвол�
         <translation>Количество потоков проверки скрипта</translation>
     </message>
     <message>
-        <source>Start CRTZ on system login</source>
-        <translation>Запускать CRTZ при входе в систему</translation>
+        <source>Start LiLLi on system login</source>
+        <translation>Запускать LiLLi при входе в систему</translation>
     </message>
     <message>
         <source>Minimize to the tray instead of the taskbar</source>
@@ -3946,8 +3946,8 @@ Are you sure?
         <translation>Флажок</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other CRTZ addresses after it matures.</source>
-        <translation>MultiSend позволяет автоматически отправлять до 100% ваших вознаграждений от стекинга или мастернод в список других адресов CRTZ после его созревания.</translation>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other LiLLi addresses after it matures.</source>
+        <translation>MultiSend позволяет автоматически отправлять до 100% ваших вознаграждений от стекинга или мастернод в список других адресов LiLLi после его созревания.</translation>
     </message>
     <message>
         <source>Active</source>
@@ -4073,8 +4073,8 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation>Сообщение</translation>
     </message>
     <message>
-        <source>CRTZ address or contact label</source>
-        <translation>CRTZ адрес или лейбл контакта</translation>
+        <source>LiLLi address or contact label</source>
+        <translation>LiLLi адрес или лейбл контакта</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -4394,8 +4394,8 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation>ЧаВо</translation>
     </message>
     <message>
-        <source>About CRTZ</source>
-        <translation>О CRTZ</translation>
+        <source>About LiLLi</source>
+        <translation>О LiLLi</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -4465,8 +4465,8 @@ Are you sure?
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Cortez is shutting down...</source>
-        <translation>Cortez выключается...</translation>
+        <source>LapisLazuli is shutting down...</source>
+        <translation>LapisLazuli выключается...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -4495,8 +4495,8 @@ Are you sure?
         <translation>Загрузка...</translation>
     </message>
     <message>
-        <source>Cortez</source>
-        <translation>Cortez</translation>
+        <source>LapisLazuli</source>
+        <translation>LapisLazuli</translation>
     </message>
 </context>
 <context>
@@ -5014,25 +5014,25 @@ Select fewer inputs with coin control.</source>
     </message>
     <message>
         <source>Welcome to
-Cortez Wallet</source>
+LapisLazuli Wallet</source>
         <translation>Добро пожаловать
-в основной кошелек Cortez</translation>
+в основной кошелек LapisLazuli</translation>
     </message>
     <message>
-        <source>CRTZ is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>CRTZ - самая инновационная в мире технология на основе блокчейна Proof of Stake. Разработана командой опытных разработчиков и криптографов.</translation>
+        <source>LiLLi is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>LiLLi - самая инновационная в мире технология на основе блокчейна Proof of Stake. Разработана командой опытных разработчиков и криптографов.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - CRTZ believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Как говорится в нашем манифесте: конфиденциальность является не подлежащим обсуждению основным правом человека; это дает пользователям свободу делиться своими данными в любое время и с кем угодно, ведь CRTZ верит в собственный суверенитет.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - LiLLi believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Как говорится в нашем манифесте: конфиденциальность является не подлежащим обсуждению основным правом человека; это дает пользователям свободу делиться своими данными в любое время и с кем угодно, ведь LiLLi верит в собственный суверенитет.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>The masternode network is CRTZ's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
-        <translation>Сеть мастернод - это сеть второго уровня CRTZ поверх блокчейна, которая позволяет нашему ДАО обеспечивать децентрализованное управление и казначейство.</translation>
+        <source>The masternode network is LiLLi's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>Сеть мастернод - это сеть второго уровня LiLLi поверх блокчейна, которая позволяет нашему ДАО обеспечивать децентрализованное управление и казначейство.</translation>
     </message>
     <message>
-        <source>How CRTZ respects your privacy?</source>
-        <translation>Как CRTZ уважает вашу конфиденциальность?</translation>
+        <source>How LiLLi respects your privacy?</source>
+        <translation>Как LiLLi уважает вашу конфиденциальность?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -5066,8 +5066,8 @@ Cortez Wallet</source>
         <translation>Привяжите к указанному адресу для прослушивания соединений JSON-RPC. Используйте [host]: обозначение порта для IPv6. Эта опция может быть указана несколько раз (по умолчанию: привязка ко всем интерфейсам)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Cortez is probably already running.</source>
-        <translation>Не удается получить блокировку в каталоге данных %s. Cortez, вероятно, уже запущен.</translation>
+        <source>Cannot obtain a lock on data directory %s. LapisLazuli is probably already running.</source>
+        <translation>Не удается получить блокировку в каталоге данных %s. LapisLazuli, вероятно, уже запущен.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -5226,8 +5226,8 @@ Cortez Wallet</source>
         <translation>Общая длина строки версии сети (%i) превышает максимальную длину (%i). Уменьшите количество или размер uacomments.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Cortez is probably already running.</source>
-        <translation>Не удалось привязать к %s на этом компьютере. Cortez, вероятно, уже запущен.</translation>
+        <source>Unable to bind to %s on this computer. LapisLazuli is probably already running.</source>
+        <translation>Не удалось привязать к %s на этом компьютере. LapisLazuli, вероятно, уже запущен.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5242,8 +5242,8 @@ Cortez Wallet</source>
         <translation>Предупреждение: -paytxfee установлен очень высоко! Это комиссия за транзакцию, которую вы заплатите, если вы отправляете транзакцию.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Cortez will not work properly.</source>
-        <translation>Внимание: проверьте правильность даты и времени вашего компьютера! Если ваши часы ошибочны, Cortez не будет работать должным образом.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong LapisLazuli will not work properly.</source>
+        <translation>Внимание: проверьте правильность даты и времени вашего компьютера! Если ваши часы ошибочны, LapisLazuli не будет работать должным образом.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5450,8 +5450,8 @@ Cortez Wallet</source>
         <translation>Информация</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Cortez is shutting down.</source>
-        <translation>Инициализация проверки работоспособности не удалась. Cortez отключается.</translation>
+        <source>Initialization sanity check failed. LapisLazuli is shutting down.</source>
+        <translation>Инициализация проверки работоспособности не удалась. LapisLazuli отключается.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -5482,8 +5482,8 @@ Cortez Wallet</source>
         <translation>Недопустимая сетевая маска, указанная в -whitelist: '%s'</translation>
     </message>
     <message>
-        <source>Recalculating CRTZ supply...</source>
-        <translation>Перерасчет предложения CRTZ...</translation>
+        <source>Recalculating LiLLi supply...</source>
+        <translation>Перерасчет предложения LiLLi...</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5502,8 +5502,8 @@ Cortez Wallet</source>
         <translation>Это предварительная версия сборки - используйте на свой страх и риск - не используйте для ставок или коммерческих приложений!</translation>
     </message>
     <message>
-        <source>Disable all CRTZ specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
-        <translation>Отключите все специфические функции CRTZ (Masternodes, Zerocoin, Бюджетирование) (0-1, по умолчанию: %u)</translation>
+        <source>Disable all LiLLi specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
+        <translation>Отключите все специфические функции LiLLi (Masternodes, Zerocoin, Бюджетирование) (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5770,12 +5770,12 @@ Cortez Wallet</source>
         <translation>Комиссия (в %s/Кбайт) меньше этого значения считается с нулевой комиссией за создание транзакции (по умолчанию: %s)</translation>
     </message>
     <message>
-        <source>Minimum positive amount (in CRTZ) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
-        <translation>Минимальная положительная сумма (в CRTZ), разрешенная GUI и RPC для порога разделения стекинга (по умолчанию: %s)</translation>
+        <source>Minimum positive amount (in LiLLi) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
+        <translation>Минимальная положительная сумма (в LiLLi), разрешенная GUI и RPC для порога разделения стекинга (по умолчанию: %s)</translation>
     </message>
     <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong Cortez will not work properly.</source>
-        <translation>Пожалуйста, проверьте правильность даты и времени на вашем компьютере! Если ваши часы не точны, Cortez не будет работать должным образом.</translation>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong LapisLazuli will not work properly.</source>
+        <translation>Пожалуйста, проверьте правильность даты и времени на вашем компьютере! Если ваши часы не точны, LapisLazuli не будет работать должным образом.</translation>
     </message>
     <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect/-noconnect)</source>
@@ -6044,8 +6044,8 @@ Cortez Wallet</source>
         <translation>Синхронизация спорков ...</translation>
     </message>
     <message>
-        <source>Syncing zCRTZ wallet...</source>
-        <translation>Синхронизация zCRTZ кошелька ...</translation>
+        <source>Syncing zLiLLi wallet...</source>
+        <translation>Синхронизация zLiLLi кошелька ...</translation>
     </message>
     <message>
         <source>The threshold value cannot be less than %s</source>
@@ -6164,8 +6164,8 @@ Cortez Wallet</source>
         <translation>Имя пользователя для соединений JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zCRTZ</source>
-        <translation>Значение ниже наименьшего доступного номинала (= 1) zCRTZ</translation>
+        <source>Value is below the smallest available denomination (= 1) of zLiLLi</source>
+        <translation>Значение ниже наименьшего доступного номинала (= 1) zLiLLi</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -6180,8 +6180,8 @@ Cortez Wallet</source>
         <translation>Кошелек %s находится за пределами каталога данных %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Cortez to complete</source>
-        <translation>Кошелек необходимо переписать: перезапустите Cortez, чтобы завершить</translation>
+        <source>Wallet needed to be rewritten: restart LapisLazuli to complete</source>
+        <translation>Кошелек необходимо переписать: перезапустите LapisLazuli, чтобы завершить</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -6247,12 +6247,12 @@ Cortez Wallet</source>
         <translation>Отправить</translation>
     </message>
     <message>
-        <source>Send public coins (CRTZ)</source>
-        <translation>Отправить монеты (CRTZ)</translation>
+        <source>Send public coins (LiLLi)</source>
+        <translation>Отправить монеты (LiLLi)</translation>
     </message>
     <message>
-        <source>CRTZ address or contact label</source>
-        <translation>CRTZ адрес или лейбл контакта</translation>
+        <source>LiLLi address or contact label</source>
+        <translation>LiLLi адрес или лейбл контакта</translation>
     </message>
     <message>
         <source>Amount</source>

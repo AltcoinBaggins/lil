@@ -14,9 +14,9 @@ We can also remove our custom unofficial fixes for build system
 And of course "mnSync HACK" commit if present, or commit UNHACK :)
 
 ## Seed nodes
-Copy stripped binaries to `~/public/public` as baggins on cortez, log in to the seednode and run:
+Copy stripped binaries to `~/public/public` as baggins on lapislazuli, log in to the seednode and run:
 
-```cortez-cli stop ; sleep 5 ; killall -9 cortezd ; rm cortez* ; wget http://hulk.veles.network/public/cortezd ; wget http://hulk.veles.network/public/cortez-cli ; chmod +x cortez* ; cp cortez* /usr/local/bin/ ; nano ~/.cortez/cortez.conf ; cortezd -debug -daemon ; sleep 2 ; cortez-cli getinfo```
+```lapislazuli-cli stop ; sleep 5 ; killall -9 lapislazulid ; rm lapislazuli* ; wget http://hulk.veles.network/public/lapislazulid ; wget http://hulk.veles.network/public/lapislazuli-cli ; chmod +x lapislazuli* ; cp lapislazuli* /usr/local/bin/ ; nano ~/.lapislazuli/lapislazuli.conf ; lapislazulid -debug -daemon ; sleep 2 ; lapislazuli-cli getinfo```
 
 
 ## Generate Genesis for cryptoshares-based coins

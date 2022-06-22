@@ -3,7 +3,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The Cortez Core Developers
+// Copyright (c) 2022 The LapisLazuli Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -40,7 +40,7 @@ extern const char * const PIVX_PID_FILENAME;
 extern const char * const PIVX_MASTERNODE_CONF_FILENAME;
 extern const char * const DEFAULT_DEBUGLOGFILE;
 
-//CRTZ only features
+//LiLLi only features
 
 extern bool fMasterNode;
 extern bool fLiteMode;
@@ -179,7 +179,7 @@ void SetThreadPriority(int nPriority);
 template <typename Callable>
 void TraceThread(const char* name, Callable func)
 {
-    std::string s = strprintf("cortez-%s", name);
+    std::string s = strprintf("lapislazuli-%s", name);
     util::ThreadRename(s.c_str());
     try {
         LogPrintf("%s thread start\n", name);

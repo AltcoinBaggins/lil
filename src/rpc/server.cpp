@@ -3,7 +3,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The Cortez Core Developers
+// Copyright (c) 2022 The LapisLazuli Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -267,11 +267,11 @@ UniValue stop(const JSONRPCRequest& jsonRequest)
     if (jsonRequest.fHelp || jsonRequest.params.size() > 1)
         throw std::runtime_error(
             "stop\n"
-            "\nStop Cortez server.");
+            "\nStop LapisLazuli server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "Cortez server stopping";
+    return "LapisLazuli server stopping";
 }
 
 
@@ -362,32 +362,32 @@ static const CRPCCommand vRPCCommands[] =
         { "hidden",             "waitforblock",           &waitforblock,           true },
         { "hidden",             "waitforblockheight",     &waitforblockheight,     true },
 
-        /* CRTZ features */
-        {"cortez", "listmasternodes", &listmasternodes, true },
-        {"cortez", "getmasternodecount", &getmasternodecount, true },
-        {"cortez", "createmasternodebroadcast", &createmasternodebroadcast, true },
-        {"cortez", "decodemasternodebroadcast", &decodemasternodebroadcast, true },
-        {"cortez", "relaymasternodebroadcast", &relaymasternodebroadcast, true },
-        {"cortez", "masternodecurrent", &masternodecurrent, true },
-        {"cortez", "startmasternode", &startmasternode, true },
-        {"cortez", "createmasternodekey", &createmasternodekey, true },
-        {"cortez", "getmasternodeoutputs", &getmasternodeoutputs, true },
-        {"cortez", "listmasternodeconf", &listmasternodeconf, true },
-        {"cortez", "getmasternodestatus", &getmasternodestatus, true },
-        {"cortez", "getmasternodewinners", &getmasternodewinners, true },
-        {"cortez", "getmasternodescores", &getmasternodescores, true },
-        {"cortez", "preparebudget", &preparebudget, true },
-        {"cortez", "submitbudget", &submitbudget, true },
-        {"cortez", "mnbudgetvote", &mnbudgetvote, true },
-        {"cortez", "getbudgetvotes", &getbudgetvotes, true },
-        {"cortez", "getnextsuperblock", &getnextsuperblock, true },
-        {"cortez", "getbudgetprojection", &getbudgetprojection, true },
-        {"cortez", "getbudgetinfo", &getbudgetinfo, true },
-        {"cortez", "mnbudgetrawvote", &mnbudgetrawvote, true },
-        {"cortez", "mnfinalbudget", &mnfinalbudget, true },
-        {"cortez", "checkbudgets", &checkbudgets, true },
-        {"cortez", "mnsync", &mnsync, true },
-        {"cortez", "spork", &spork, true },
+        /* LiLLi features */
+        {"lapislazuli", "listmasternodes", &listmasternodes, true },
+        {"lapislazuli", "getmasternodecount", &getmasternodecount, true },
+        {"lapislazuli", "createmasternodebroadcast", &createmasternodebroadcast, true },
+        {"lapislazuli", "decodemasternodebroadcast", &decodemasternodebroadcast, true },
+        {"lapislazuli", "relaymasternodebroadcast", &relaymasternodebroadcast, true },
+        {"lapislazuli", "masternodecurrent", &masternodecurrent, true },
+        {"lapislazuli", "startmasternode", &startmasternode, true },
+        {"lapislazuli", "createmasternodekey", &createmasternodekey, true },
+        {"lapislazuli", "getmasternodeoutputs", &getmasternodeoutputs, true },
+        {"lapislazuli", "listmasternodeconf", &listmasternodeconf, true },
+        {"lapislazuli", "getmasternodestatus", &getmasternodestatus, true },
+        {"lapislazuli", "getmasternodewinners", &getmasternodewinners, true },
+        {"lapislazuli", "getmasternodescores", &getmasternodescores, true },
+        {"lapislazuli", "preparebudget", &preparebudget, true },
+        {"lapislazuli", "submitbudget", &submitbudget, true },
+        {"lapislazuli", "mnbudgetvote", &mnbudgetvote, true },
+        {"lapislazuli", "getbudgetvotes", &getbudgetvotes, true },
+        {"lapislazuli", "getnextsuperblock", &getnextsuperblock, true },
+        {"lapislazuli", "getbudgetprojection", &getbudgetprojection, true },
+        {"lapislazuli", "getbudgetinfo", &getbudgetinfo, true },
+        {"lapislazuli", "mnbudgetrawvote", &mnbudgetrawvote, true },
+        {"lapislazuli", "mnfinalbudget", &mnfinalbudget, true },
+        {"lapislazuli", "checkbudgets", &checkbudgets, true },
+        {"lapislazuli", "mnsync", &mnsync, true },
+        {"lapislazuli", "spork", &spork, true },
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -606,14 +606,14 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(std::string methodname, std::string args)
 {
-    return "> cortez-cli " + methodname + " " + args + "\n";
+    return "> lapislazuli-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(std::string methodname, std::string args)
 {
     return "> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", "
            "\"method\": \"" +
-           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:9992/\n";
+           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:19660/\n";
 }
 
 void RPCSetTimerInterfaceIfUnset(RPCTimerInterface *iface)

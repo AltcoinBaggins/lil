@@ -1,6 +1,6 @@
 // Copyright (c) 2018-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The Cortez Core Developers
+// Copyright (c) 2022 The LapisLazuli Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -425,7 +425,7 @@ bool UpdateZPIVSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJus
     if (!consensus.NetworkUpgradeActive(pindex->nHeight, Consensus::UPGRADE_ZC))
         return true;
 
-    //Add mints to zCRTZ supply (mints are forever disabled after last checkpoint)
+    //Add mints to zLiLLi supply (mints are forever disabled after last checkpoint)
     if (pindex->nHeight < consensus.height_last_ZC_AccumCheckpoint) {
         std::list<CZerocoinMint> listMints;
         std::set<uint256> setAddedToWallet;
@@ -456,7 +456,7 @@ bool UpdateZPIVSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJus
         }
     }
 
-    //Remove spends from zCRTZ supply
+    //Remove spends from zLiLLi supply
     std::list<libzerocoin::CoinDenomination> listDenomsSpent = ZerocoinSpendListFromBlock(block, true);
     for (const libzerocoin::CoinDenomination& denom : listDenomsSpent) {
         mapZerocoinSupply.at(denom)--;
@@ -466,7 +466,7 @@ bool UpdateZPIVSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJus
     }
 
     // Update Wrapped Serials amount
-    // A one-time event where only the zCRTZ supply was off (due to serial duplication off-chain on main net)
+    // A one-time event where only the zLiLLi supply was off (due to serial duplication off-chain on main net)
     if (Params().NetworkID() == CBaseChainParams::MAIN && pindex->nHeight == consensus.height_last_ZC_WrappedSerials + 1) {
         for (const libzerocoin::CoinDenomination& denom : libzerocoin::zerocoinDenomList)
             mapZerocoinSupply.at(denom) += GetWrapppedSerialInflation(denom);
@@ -487,19 +487,19 @@ bool UpdateZPIVSupplyDisconnect(const CBlock& block, CBlockIndex* pindex)
         return true;
 
     // Undo Update Wrapped Serials amount
-    // A one-time event where only the zCRTZ supply was off (due to serial duplication off-chain on main net)
+    // A one-time event where only the zLiLLi supply was off (due to serial duplication off-chain on main net)
     if (Params().NetworkID() == CBaseChainParams::MAIN && pindex->nHeight == consensus.height_last_ZC_WrappedSerials + 1) {
         for (const libzerocoin::CoinDenomination& denom : libzerocoin::zerocoinDenomList)
             mapZerocoinSupply.at(denom) -= GetWrapppedSerialInflation(denom);
     }
 
-    // Re-add spends to zCRTZ supply
+    // Re-add spends to zLiLLi supply
     std::list<libzerocoin::CoinDenomination> listDenomsSpent = ZerocoinSpendListFromBlock(block, true);
     for (const libzerocoin::CoinDenomination& denom : listDenomsSpent) {
         mapZerocoinSupply.at(denom)++;
     }
 
-    // Remove mints from zCRTZ supply (mints are forever disabled after last checkpoint)
+    // Remove mints from zLiLLi supply (mints are forever disabled after last checkpoint)
     if (pindex->nHeight < consensus.height_last_ZC_AccumCheckpoint) {
         std::list<CZerocoinMint> listMints;
         std::set<uint256> setAddedToWallet;

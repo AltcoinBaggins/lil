@@ -952,7 +952,7 @@
                          <enum>Qt::NoFocus</enum>
                         </property>
                         <property name="text">
-                         <string>     About CRTZ</string>
+                         <string>     About LiLLi</string>
                         </property>
                         <property name="checkable">
                          <bool>false</bool>

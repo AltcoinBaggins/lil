@@ -67,15 +67,15 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += cortezd
+  bin_PROGRAMS += lapislazulid
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += cortez-cli cortez-tx
+  bin_PROGRAMS += lapislazuli-cli lapislazuli-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
-# cortez core #
+# lapislazuli core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrdb.h \
@@ -227,7 +227,7 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between cortezd and cortez-qt
+# server: shared between lapislazulid and lapislazuli-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -282,7 +282,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between cortezd and cortez-qt, but only linked
+# wallet: shared between lapislazulid and lapislazuli-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -412,7 +412,7 @@ if USE_NUM_OPENSSL
   libzerocoin_libbitcoin_zerocoin_a_SOURCES += libzerocoin/bignum_openssl.cpp
 endif
 
-# common: shared between cortezd, and cortez-qt and non-server tools
+# common: shared between lapislazulid, and lapislazuli-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -487,7 +487,7 @@ if GLIBC_BACK_COMPAT
 AM_LDFLAGS += $(COMPAT_LDFLAGS)
 endif
 
-# cli: shared between cortez-cli and cortez-qt
+# cli: shared between lapislazuli-cli and lapislazuli-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -497,16 +497,16 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# cortezd binary #
-cortezd_SOURCES = pivxd.cpp
-cortezd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-cortezd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-cortezd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# lapislazulid binary #
+lapislazulid_SOURCES = pivxd.cpp
+lapislazulid_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+lapislazulid_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+lapislazulid_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-cortezd_SOURCES += pivxd-res.rc
+lapislazulid_SOURCES += pivxd-res.rc
 endif
-cortezd_LDADD = \
+lapislazulid_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_WALLET) \
   $(LIBBITCOIN_COMMON) \
@@ -520,38 +520,38 @@ cortezd_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-cortezd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+lapislazulid_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# cortez-cli binary #
-cortez_cli_SOURCES = pivx-cli.cpp
-cortez_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-cortez_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-cortez_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# lapislazuli-cli binary #
+lapislazuli_cli_SOURCES = pivx-cli.cpp
+lapislazuli_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+lapislazuli_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+lapislazuli_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-cortez_cli_SOURCES += pivx-cli-res.rc
+lapislazuli_cli_SOURCES += pivx-cli-res.rc
 endif
 
-cortez_cli_LDADD = \
+lapislazuli_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-cortez_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+lapislazuli_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# cortez-tx binary #
-cortez_tx_SOURCES = pivx-tx.cpp
-cortez_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-cortez_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-cortez_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# lapislazuli-tx binary #
+lapislazuli_tx_SOURCES = pivx-tx.cpp
+lapislazuli_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+lapislazuli_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+lapislazuli_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-cortez_tx_SOURCES += pivx-tx-res.rc
+lapislazuli_tx_SOURCES += pivx-tx-res.rc
 endif
 
-cortez_tx_LDADD = \
+lapislazuli_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -559,7 +559,7 @@ cortez_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-cortez_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+lapislazuli_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

@@ -7,11 +7,11 @@ then
 fi
 
 # Clone code from official Github repository
-    rm -rf cortez
-    git clone https://github.com/cortez-project/cortez
+    rm -rf lapislazuli
+    git clone https://github.com/lapislazuli-project/lapislazuli
 
 # Entering directory
-    cd cortez
+    cd lapislazuli
 
 # Compile dependencies
     cd depends
@@ -31,6 +31,6 @@ fi
     cd ..
 
 # Create zip file of binaries
-    cp cortez/src/cortezd cortez/src/cortez-cli cortez/src/cortez-tx cortez/src/qt/cortez-qt cortez/Cortez-Core.dmg .
-    zip CRTZ-MacOS.zip cortezd cortez-cli cortez-tx cortez-qt Cortez-Core.dmg
-    rm -f cortezd cortez-cli cortez-tx cortez-qt Cortez-Core.dmg
+    cp lapislazuli/src/lapislazulid lapislazuli/src/lapislazuli-cli lapislazuli/src/lapislazuli-tx lapislazuli/src/qt/lapislazuli-qt lapislazuli/LapisLazuli-Core.dmg .
+    zip LiLLi-MacOS.zip lapislazulid lapislazuli-cli lapislazuli-tx lapislazuli-qt LapisLazuli-Core.dmg
+    rm -f lapislazulid lapislazuli-cli lapislazuli-tx lapislazuli-qt LapisLazuli-Core.dmg

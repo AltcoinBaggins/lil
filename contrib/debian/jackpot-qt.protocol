@@ -1,6 +1,6 @@
 [Protocol]
-exec=cortez-qt '%u'
-protocol=cortez
+exec=lapislazuli-qt '%u'
+protocol=lapislazuli
 input=none
 output=none
 helper=true

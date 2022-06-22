@@ -1,8 +1,8 @@
-# Cortez Improvement Proposals (DEIPs)
+# LapisLazuli Improvement Proposals (DEIPs)
 
-Cortez projects need a way how to document their technical decisions and features. Therefore:
+LapisLazuli projects need a way how to document their technical decisions and features. Therefore:
 
-DEIP stands for Cortez Improvement Proposal. Similar to Bitcoin's BIPs, and Dash's DIPs, a DEIP is a design document providing: information to the Cortez community, or a description of a new feature for the Cortez Standard Wallet (DSW), or a description of its processes or environment. Each DEIP should provide a concise technical specification of the feature and a rationale for the feature.
+DEIP stands for LapisLazuli Improvement Proposal. Similar to Bitcoin's BIPs, and Dash's DIPs, a DEIP is a design document providing: information to the LapisLazuli community, or a description of a new feature for the LapisLazuli Standard Wallet (DSW), or a description of its processes or environment. Each DEIP should provide a concise technical specification of the feature and a rationale for the feature.
 
 Because DSW is forked from the PIVX codebase, that is also forked from Dash codebase, that is also forked from Bitcoin codebase, many of the BIPs and DIPs can be applied to DSW as well. 
 
@@ -10,18 +10,18 @@ Because DSW is forked from the PIVX codebase, that is also forked from Dash code
 
 We use the same general guidelines for introducing a new DEIP as specified in [BIP 2](https://github.com/bitcoin/bips/blob/master/bip-0002.mediawiki), with a few differences. Specifically:
 
-* Instead of the BIP editor, initiate contact with the Cortez development team and your request should be routed to a DEIP editor(s). The DEIP workflow mimics the DIP/BIP workflow.
+* Instead of the BIP editor, initiate contact with the LapisLazuli development team and your request should be routed to a DEIP editor(s). The DEIP workflow mimics the DIP/BIP workflow.
 * Recommended licenses include the MIT license
 * Markdown format is the preferred format for DEIPs
-* Following a discussion, the proposal should be submitted to the DEIPs git repository as a pull request. This draft must be written in BIP/DIP/DEIP style as described in [BIP 2](https://github.com/bitcoin/bips/blob/master/bip-0002.mediawiki), and named with an alias such as "dip-johndoe-infinitecortez" until the editor has assigned it a DEIP number (authors MUST NOT self-assign DEIP numbers).
+* Following a discussion, the proposal should be submitted to the DEIPs git repository as a pull request. This draft must be written in BIP/DIP/DEIP style as described in [BIP 2](https://github.com/bitcoin/bips/blob/master/bip-0002.mediawiki), and named with an alias such as "dip-johndoe-infinitelapislazuli" until the editor has assigned it a DEIP number (authors MUST NOT self-assign DEIP numbers).
 * Having a DEIP here does not make it a formally accepted standard until its status becomes Final or Active.
 
-## Cortez Improvement Proposal Summary
+## LapisLazuli Improvement Proposal Summary
 
 Number | Layer | Title | Owner | Type | Status
 --- | --- | --- | --- | --- | ---
-[0](DEIP0000.md) |  | DEIP Template | Cortez Development | Informational | Final
+[0](DEIP0000.md) |  | DEIP Template | LapisLazuli Development | Informational | Final
 
 ## License
 
-Unless otherwise specified, Cortez Improvement Proposals (DEIPs) are released under the terms of the MIT license. See [LICENSE](LICENSE) for more information or see the [MIT License](https://opensource.org/licenses/MIT).
+Unless otherwise specified, LapisLazuli Improvement Proposals (DEIPs) are released under the terms of the MIT license. See [LICENSE](LICENSE) for more information or see the [MIT License](https://opensource.org/licenses/MIT).

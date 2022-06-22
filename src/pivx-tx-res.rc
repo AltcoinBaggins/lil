@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Cortez"
-            VALUE "FileDescription",    "cortez-tx (CLI Cortez transaction editor utility)"
+            VALUE "CompanyName",        "LapisLazuli"
+            VALUE "FileDescription",    "lapislazuli-tx (CLI LapisLazuli transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "cortez-tx"
+            VALUE "InternalName",       "lapislazuli-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "cortez-tx.exe"
-            VALUE "ProductName",        "cortez-tx"
+            VALUE "OriginalFilename",   "lapislazuli-tx.exe"
+            VALUE "ProductName",        "lapislazuli-tx"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

@@ -210,7 +210,7 @@
              </size>
             </property>
             <property name="text">
-             <string>Instead of sharing only a CRTZ address, you can create a payment request, bundling up more information</string>
+             <string>Instead of sharing only a LiLLi address, you can create a payment request, bundling up more information</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -327,7 +327,7 @@
                    <item>
                     <widget class="QLabel" name="comboBoxCoin">
                      <property name="text">
-                      <string>CRTZ</string>
+                      <string>LiLLi</string>
                      </property>
                      <property name="alignment">
                       <set>Qt::AlignCenter</set>

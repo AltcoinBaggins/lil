@@ -1,6 +1,6 @@
 // Copyright (c) 2019-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The Cortez Core Developers
+// Copyright (c) 2022 The LapisLazuli Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -55,7 +55,7 @@ DashboardWidget::DashboardWidget(PIVXGUI* parent) :
     setCssSubtitleScreen(ui->labelSubtitle);
 
     // Staking Information
-    ui->labelMessage->setText(tr("Amount of CRTZ earned via Staking & Masternodes"));
+    ui->labelMessage->setText(tr("Amount of LiLLi earned via Staking & Masternodes"));
     setCssSubtitleScreen(ui->labelMessage);
     setCssProperty(ui->labelSquarePiv, "square-chart-piv");
     setCssProperty(ui->labelPiv, "text-chart-piv");
@@ -70,7 +70,7 @@ DashboardWidget::DashboardWidget(PIVXGUI* parent) :
 
     setCssProperty(ui->labelChart, "legend-chart");
     setCssProperty(ui->labelAmountPiv, "text-stake-piv-disable");
-	ui->labelAmountMNRewards->setText("0 CRTZ");
+	ui->labelAmountMNRewards->setText("0 LiLLi");
 	setCssProperty(ui->labelAmountMNRewards, "text-stake-mnrewards-disable");
 
 
@@ -229,7 +229,7 @@ void DashboardWidget::loadWalletModel()
         connect(walletModel->getOptionsModel(), &OptionsModel::hideChartsChanged, this, &DashboardWidget::onHideChartsChanged);
 #endif
     }
-    // update the display unit, to not use the default ("CRTZ")
+    // update the display unit, to not use the default ("LiLLi")
     updateDisplayUnit();
 }
 
@@ -519,7 +519,7 @@ void DashboardWidget::updateStakeFilter()
     }
 }
 
-// pair CRTZ, zCRTZ
+// pair LiLLi, zLiLLi
 const QMap<int, QMap<QString, qint64>> DashboardWidget::getAmountBy()
 {
     updateStakeFilter();
@@ -580,7 +580,7 @@ bool DashboardWidget::loadChartData(bool withMonthNames)
     }
 
     chartData = new ChartData();
-    chartData->amountsByCache = getAmountBy(); // pair CRTZ, zCRTZ
+    chartData->amountsByCache = getAmountBy(); // pair LiLLi, zLiLLi
 
     std::pair<int,int> range = getChartRange(chartData->amountsByCache);
     if (range.first == 0 && range.second == 0) {

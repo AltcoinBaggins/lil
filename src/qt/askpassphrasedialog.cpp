@@ -2,7 +2,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The Cortez Core Developers
+// Copyright (c) 2022 The LapisLazuli Core Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -349,9 +349,9 @@ void AskPassphraseDialog::warningMessage()
     openStandardDialog(
             tr("Wallet encrypted"),
             "<qt>" +
-            tr("Cortez will close now to finish the encryption process. "
+            tr("LapisLazuli will close now to finish the encryption process. "
                "Remember that encrypting your wallet cannot fully protect "
-               "your CRTZs from being stolen by malware infecting your computer.") +
+               "your LiLLis from being stolen by malware infecting your computer.") +
             "<br><br><b>" +
             tr("IMPORTANT: Any previous backups you have made of your wallet file "
                "should be replaced with the newly generated, encrypted wallet file. "

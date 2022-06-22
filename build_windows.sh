@@ -12,11 +12,11 @@ fi
 	echo "1" | sudo update-alternatives --config x86_64-w64-mingw32-g++
 
 # Clone code from official Github repository
-	rm -rf cortez
-	git clone https://github.com/cortez-project/cortez
+	rm -rf lapislazuli
+	git clone https://github.com/lapislazuli-project/lapislazuli
 
 # Entering directory
-	cd cortez
+	cd lapislazuli
 
 # Compile dependencies
 	cd depends
@@ -30,6 +30,6 @@ fi
 	cd ..
 
 # Create zip file of binaries
-	cp cortez/src/cortezd.exe cortez/src/cortez-cli.exe cortez/src/cortez-tx.exe cortez/src/qt/cortez-qt.exe .
-	zip CRTZ-Windows.zip cortezd.exe cortez-cli.exe cortez-tx.exe cortez-qt.exe
-	rm -f cortezd.exe cortez-cli.exe cortez-tx.exe cortez-qt.exe
+	cp lapislazuli/src/lapislazulid.exe lapislazuli/src/lapislazuli-cli.exe lapislazuli/src/lapislazuli-tx.exe lapislazuli/src/qt/lapislazuli-qt.exe .
+	zip LiLLi-Windows.zip lapislazulid.exe lapislazuli-cli.exe lapislazuli-tx.exe lapislazuli-qt.exe
+	rm -f lapislazulid.exe lapislazuli-cli.exe lapislazuli-tx.exe lapislazuli-qt.exe

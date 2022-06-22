@@ -1,13 +1,13 @@
 [Desktop Entry]
 Version=1.0
-Name=Cortez 
-Comment=Cortez P2P Cryptocurrency
-Comment[fr]=Cortez, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Cortez, eşten eşe kriptografik sanal para birimi
-Exec=cortez-qt %u
+Name=LapisLazuli 
+Comment=LapisLazuli P2P Cryptocurrency
+Comment[fr]=LapisLazuli, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=LapisLazuli, eşten eşe kriptografik sanal para birimi
+Exec=lapislazuli-qt %u
 Terminal=false
 Type=Application
 Icon=pivx128
-MimeType=x-scheme-handler/cortez;
+MimeType=x-scheme-handler/lapislazuli;
 Categories=Office;Finance;
-StartupWMClass=cortez-qt
+StartupWMClass=lapislazuli-qt

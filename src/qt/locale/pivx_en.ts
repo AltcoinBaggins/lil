@@ -152,12 +152,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your CRTZ addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your LiLLi addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your CRTZ addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your LiLLi addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -448,7 +448,7 @@ for staking</source>
     </message>
     <message>
         <location line="+161"/>
-        <source>CRTZ will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CRTZs from being stolen by malware infecting your computer.</source>
+        <source>LiLLi will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LiLLis from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -579,7 +579,7 @@ for staking</source>
     </message>
     <message>
         <location line="+81"/>
-        <source>Select CRTZ Outputs to Spend</source>
+        <source>Select LiLLi Outputs to Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -617,7 +617,7 @@ for staking</source>
         <location line="-393"/>
         <location line="+124"/>
         <location line="+461"/>
-        <source>0.00 CRTZ</source>
+        <source>0.00 LiLLi</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -910,7 +910,7 @@ for staking</source>
     </message>
     <message>
         <location line="+357"/>
-        <source>How to get CRTZ</source>
+        <source>How to get LiLLi</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -940,7 +940,7 @@ for staking</source>
     </message>
     <message>
         <location line="-558"/>
-        <source>Amount of CRTZ and zCRTZ staked.</source>
+        <source>Amount of LiLLi and zLiLLi staked.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1060,7 +1060,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+67"/>
-        <source>The entered address &quot;%1&quot; is not a valid CRTZ address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid LiLLi address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1124,7 +1124,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+0"/>
-        <source>Cortez</source>
+        <source>LapisLazuli</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1135,7 +1135,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+6"/>
-        <source>About Cortez</source>
+        <source>About LapisLazuli</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1203,17 +1203,17 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+90"/>
-        <source>Welcome to Cortez.</source>
+        <source>Welcome to LapisLazuli.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+35"/>
-        <source>As this is the first time the program is launched, you can choose where Cortez will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where LapisLazuli will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>Cortez will download and store a copy of the CRTZ block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>LapisLazuli will download and store a copy of the LiLLi block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1238,7 +1238,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location filename="../intro.cpp" line="+100"/>
-        <source>Cortez</source>
+        <source>LapisLazuli</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1370,7 +1370,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+23"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a CRTZ Masternode you must dedicate a collateral amount of CRTZ (the unit of CRTZ) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a LiLLi Masternode you must dedicate a collateral amount of LiLLi (the unit of LiLLi) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1640,7 +1640,7 @@ Please wait few more minutes (masternode collaterals require %1 confirmations).<
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the cortez.conf file
+You will only have to paste the data in the lapislazuli.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press &quot;start&quot;).
 </source>
@@ -1854,7 +1854,7 @@ NODES</source>
     </message>
     <message>
         <location line="+6"/>
-        <source>Invalid URI, not starting with &quot;cortez&quot; prefix</source>
+        <source>Invalid URI, not starting with &quot;lapislazuli&quot; prefix</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1910,7 +1910,7 @@ NODES</source>
     </message>
     <message>
         <location line="+33"/>
-        <source>Automatically open the CRTZ client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the LiLLi client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1935,12 +1935,12 @@ NODES</source>
     </message>
     <message>
         <location line="-236"/>
-        <source>Automatically start CRTZ after logging in to the system.</source>
+        <source>Automatically start LiLLi after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start CRTZ on system login</source>
+        <source>&amp;Start LiLLi on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1975,7 +1975,7 @@ NODES</source>
     </message>
     <message>
         <location line="+192"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting CRTZ.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting LiLLi.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1991,17 +1991,17 @@ NODES</source>
     </message>
     <message>
         <location line="-187"/>
-        <source>Enable automatic minting of CRTZ units to zCRTZ</source>
+        <source>Enable automatic minting of LiLLi units to zLiLLi</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Enable zCRTZ Automint</source>
+        <source>Enable zLiLLi Automint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Enable automatic zCRTZ minting from specific addresses</source>
+        <source>Enable automatic zLiLLi minting from specific addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2011,23 +2011,23 @@ NODES</source>
     </message>
     <message>
         <location line="+11"/>
-        <source>Percentage of incoming CRTZ which get automatically converted to zCRTZ via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming LiLLi which get automatically converted to zLiLLi via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Percentage of autominted zCRTZ</source>
+        <source>Percentage of autominted zLiLLi</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+30"/>
         <location line="+16"/>
-        <source>Wait with automatic conversion to Zerocoin until enough CRTZ for this denomination is available</source>
+        <source>Wait with automatic conversion to Zerocoin until enough LiLLi for this denomination is available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-13"/>
-        <source>Preferred Automint zCRTZ Denomination</source>
+        <source>Preferred Automint zLiLLi Denomination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2037,7 +2037,7 @@ NODES</source>
     </message>
     <message>
         <location line="+98"/>
-        <source>Connect to the CRTZ network through a SOCKS5 proxy.</source>
+        <source>Connect to the LiLLi network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2225,7 +2225,7 @@ NODES</source>
         <location filename="../pivx/pivxgui.cpp" line="+69"/>
         <location line="+298"/>
         <location line="+69"/>
-        <source>Cortez</source>
+        <source>LapisLazuli</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2260,7 +2260,7 @@ NODES</source>
     </message>
     <message>
         <location line="+39"/>
-        <source>Cortez client</source>
+        <source>LapisLazuli client</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2348,12 +2348,12 @@ Address: %4
     </message>
     <message>
         <location line="-101"/>
-        <source>Cannot start cortez: click-to-pay handler</source>
+        <source>Cannot start lapislazuli: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+107"/>
-        <source>URI cannot be parsed! This can be caused by an invalid CRTZ address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid LiLLi address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2466,11 +2466,11 @@ Address: %4
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+138"/>
-        <source>Enter CRTZ address (e.g. %1)</source>
+        <source>Enter LiLLi address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+CRTZ"/>
+        <location line="+LiLLi"/>
         <source>%1 d</source>
         <translation>%1 d</translation>
     </message>
@@ -2522,7 +2522,7 @@ Address: %4
     </message>
     <message>
         <location filename="../pivx.cpp" line="+518"/>
-        <source>A fatal error occurred. CRTZ can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. LiLLi can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2530,7 +2530,7 @@ Address: %4
         <location line="+7"/>
         <location line="+13"/>
         <location line="+19"/>
-        <source>Cortez</source>
+        <source>LapisLazuli</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2555,7 +2555,7 @@ Address: %4
     </message>
     <message>
         <location line="+64"/>
-        <source>Cortez didn&apos;t yet exit safely...</source>
+        <source>LapisLazuli didn&apos;t yet exit safely...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2847,7 +2847,7 @@ Address: %4
     </message>
     <message>
         <location line="+93"/>
-        <source>Open the CRTZ debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the LiLLi debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3029,7 +3029,7 @@ Address: %4
     </message>
     <message>
         <location line="+29"/>
-        <source>Custom zCRTZ Backup Path:</source>
+        <source>Custom zLiLLi Backup Path:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3129,7 +3129,7 @@ Address: %4
     </message>
     <message>
         <location line="-39"/>
-        <source>Welcome to the CRTZ RPC console.</source>
+        <source>Welcome to the LiLLi RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3310,7 +3310,7 @@ Address: %4
     </message>
     <message>
         <location filename="../pivx/forms/receivewidget.ui" line="+61"/>
-        <source>Scan the QR code or copy the address to receive CRTZ</source>
+        <source>Scan the QR code or copy the address to receive LiLLi</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3473,12 +3473,12 @@ Address: %4
     </message>
     <message>
         <location line="+74"/>
-        <source>CRTZ</source>
+        <source>LiLLi</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-117"/>
-        <source>Instead of sharing only a CRTZ address, you can create a payment request, bundling up more information</source>
+        <source>Instead of sharing only a LiLLi address, you can create a payment request, bundling up more information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3577,7 +3577,7 @@ Address: %4
     </message>
     <message>
         <location line="+72"/>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the &quot;change&quot; CRTZ address</source>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the &quot;change&quot; LiLLi address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3610,7 +3610,7 @@ Address: %4
     </message>
     <message>
         <location line="+86"/>
-        <source>CRTZ/kilobyte</source>
+        <source>LiLLi/kilobyte</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3943,7 +3943,7 @@ Remember to write it down and store it safely, otherwise you might lose access t
     </message>
     <message>
         <location line="+7"/>
-        <source>Encrypt your CRTZ addresses (key pair actually) using BIP38 encryption.
+        <source>Encrypt your LiLLi addresses (key pair actually) using BIP38 encryption.
 Using this mechanism you can share your keys without middle-man risk, only need to store your passphrase safely</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3990,7 +3990,7 @@ Using this mechanism you can share your keys without middle-man risk, only need 
     </message>
     <message>
         <location line="+77"/>
-        <source>CRTZ address</source>
+        <source>LiLLi address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4157,7 +4157,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+148"/>
-        <source>Welcome to the CRTZ RPC console.</source>
+        <source>Welcome to the LiLLi RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4385,17 +4385,17 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+152"/>
-        <source>1) What is CRTZ?</source>
+        <source>1) What is LiLLi?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>2) Why are my CRTZ unspendable?</source>
+        <source>2) Why are my LiLLi unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+148"/>
-        <source>https://cortezcoin.io/</source>
+        <source>https://lapislazulicoin.io/</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4405,21 +4405,21 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+18"/>
-        <source>What is CRTZ?</source>
+        <source>What is LiLLi?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           CRTZ is a form of digital online money using blockchain technology
+                           LiLLi is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  CRTZ incorporates market leading security &amp;
+                           zero fees.  LiLLi incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zCRTZ) and Zerocoin staking.
+                           to implement ZeroCoin(zLiLLi) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           CRTZ utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of CRTZ to participate in earning block rewards
+                           LiLLi utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of LiLLi to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to create and vote on proposals.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4433,17 +4433,17 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+21"/>
-        <source>Why are my CRTZ unspendable?</source>
+        <source>Why are my LiLLi unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           Newly received CRTZ requires 6 confirmations on the network
+                           Newly received LiLLi requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           Your CRTZ wallet also needs to be completely synchronized
+                           Your LiLLi wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -4456,12 +4456,12 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+18"/>
-        <source>How do I stake CRTZ?</source>
+        <source>How do I stake LiLLi?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Make sure your wallet is completely synchronized and you are using the latest release. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You must have a balance of CRTZ with a minimum of 600 confirmations. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Your wallet must stay online and be unlocked for staking purposes. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Once all those steps are followed staking should be enabled. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &amp;quot;Staking Enabled&amp;quot; to indicate it is staking. Using the command line interface (cortez-cli); the command &lt;span style=&quot; font-style:italic;&quot;&gt;getstakingstatus&lt;/span&gt; will confirm that staking is active. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Make sure your wallet is completely synchronized and you are using the latest release. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You must have a balance of LiLLi with a minimum of 600 confirmations. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Your wallet must stay online and be unlocked for staking purposes. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Once all those steps are followed staking should be enabled. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &amp;quot;Staking Enabled&amp;quot; to indicate it is staking. Using the command line interface (lapislazuli-cli); the command &lt;span style=&quot; font-style:italic;&quot;&gt;getstakingstatus&lt;/span&gt; will confirm that staking is active. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4514,7 +4514,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <location line="-131"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           A masternode is a computer running a full node CRTZ wallet with a
+                           A masternode is a computer running a full node LiLLi wallet with a
                            required amount of secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
@@ -4536,10 +4536,10 @@ There was an error trying to save the address list to %1. Please try again.</sou
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in CRTZ Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in LiLLi Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the CRTZ network&lt;/li&gt;
+                           &lt;li&gt;Help secure the LiLLi network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
 
@@ -4562,7 +4562,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+158"/>
-        <source>3) How do I stake CRTZ?</source>
+        <source>3) How do I stake LiLLi?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4715,7 +4715,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+4"/>
-        <source>Unable to open cortez.conf with default application</source>
+        <source>Unable to open lapislazuli.conf with default application</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4783,7 +4783,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location filename="../pivx/settings/settingsmainoptionswidget.cpp" line="+57"/>
-        <source>Start CRTZ on system login</source>
+        <source>Start LiLLi on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4891,7 +4891,7 @@ Are you sure?
     </message>
     <message>
         <location filename="../pivx/settings/settingsmultisendwidget.cpp" line="+164"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other CRTZ addresses after it matures.</source>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other LiLLi addresses after it matures.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5046,7 +5046,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     </message>
     <message>
         <location line="-62"/>
-        <source>CRTZ address or contact label</source>
+        <source>LiLLi address or contact label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5456,7 +5456,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     </message>
     <message>
         <location line="+31"/>
-        <source>About CRTZ</source>
+        <source>About LiLLi</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5538,7 +5538,7 @@ Are you sure?
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+71"/>
-        <source>Cortez is shutting down...</source>
+        <source>LapisLazuli is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5574,7 +5574,7 @@ Are you sure?
     </message>
     <message>
         <location filename="../pivx/splash.cpp" line="+30"/>
-        <source>Cortez</source>
+        <source>LapisLazuli</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -6271,27 +6271,27 @@ Select fewer inputs with coin control.</source>
     <message>
         <location line="+89"/>
         <source>Welcome to
-Cortez Wallet</source>
+LapisLazuli Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+27"/>
-        <source>CRTZ is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <source>LiLLi is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - CRTZ believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - LiLLi believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+83"/>
-        <source>The masternode network is CRTZ&apos;s second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <source>The masternode network is LiLLi&apos;s second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-103"/>
-        <source>How CRTZ respects your privacy?</source>
+        <source>How LiLLi respects your privacy?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6306,7 +6306,7 @@ Cortez Wallet</source>
     </message>
 </context>
 <context>
-    <name>cortez</name>
+    <name>lapislazuli</name>
     <message>
         <location filename="../pivxstrings.cpp" line="+12"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
@@ -6339,7 +6339,7 @@ Cortez Wallet</source>
     </message>
     <message>
         <location line="+5"/>
-        <source>Cannot obtain a lock on data directory %s. Cortez is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. LapisLazuli is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6539,7 +6539,7 @@ Cortez Wallet</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to bind to %s on this computer. Cortez is probably already running.</source>
+        <source>Unable to bind to %s on this computer. LapisLazuli is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6559,7 +6559,7 @@ Cortez Wallet</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Cortez will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong LapisLazuli will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6819,7 +6819,7 @@ Cortez Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. Cortez is shutting down.</source>
+        <source>Initialization sanity check failed. LapisLazuli is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6859,7 +6859,7 @@ Cortez Wallet</source>
     </message>
     <message>
         <location line="+50"/>
-        <source>Recalculating CRTZ supply...</source>
+        <source>Recalculating LiLLi supply...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6894,7 +6894,7 @@ Cortez Wallet</source>
     </message>
     <message>
         <location line="-144"/>
-        <source>Disable all CRTZ specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all LiLLi specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7254,12 +7254,12 @@ Cortez Wallet</source>
     </message>
     <message>
         <location line="+37"/>
-        <source>Minimum positive amount (in CRTZ) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
+        <source>Minimum positive amount (in LiLLi) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Please check that your computer&apos;s date and time are correct! If your clock is wrong Cortez will not work properly.</source>
+        <source>Please check that your computer&apos;s date and time are correct! If your clock is wrong LapisLazuli will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7314,7 +7314,7 @@ Cortez Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading %s: Wallet requires newer version of Cortez</source>
+        <source>Error loading %s: Wallet requires newer version of LapisLazuli</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7636,7 +7636,7 @@ Cortez Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Syncing zCRTZ wallet...</source>
+        <source>Syncing zLiLLi wallet...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7791,7 +7791,7 @@ Cortez Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Value is below the smallest available denomination (= 1) of zCRTZ</source>
+        <source>Value is below the smallest available denomination (= 1) of zLiLLi</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7816,7 +7816,7 @@ Cortez Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Cortez to complete</source>
+        <source>Wallet needed to be rewritten: restart LapisLazuli to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7900,12 +7900,12 @@ Cortez Wallet</source>
     </message>
     <message>
         <location line="-505"/>
-        <source>Send public coins (CRTZ)</source>
+        <source>Send public coins (LiLLi)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+60"/>
-        <source>CRTZ address or contact label</source>
+        <source>LiLLi address or contact label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

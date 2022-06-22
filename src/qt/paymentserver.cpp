@@ -2,7 +2,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The Cortez Core Developers
+// Copyright (c) 2022 The LapisLazuli Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -78,7 +78,7 @@ namespace // Anon namespace
 //
 static QString ipcServerName()
 {
-    QString name("CortezQt");
+    QString name("LapisLazuliQt");
 
     // Append a simple hash of the datadir
     // Note that GetDataDir(true) returns a different path
@@ -185,11 +185,11 @@ void PaymentServer::ipcParseCommandLine(int argc, char* argv[])
         if (arg.startsWith("-"))
             continue;
 
-        // If the cortez: URI contains a payment request, we are not able to detect the
+        // If the lapislazuli: URI contains a payment request, we are not able to detect the
         // network as that would require fetching and parsing the payment request.
         // That means clicking such an URI which contains a testnet payment request
         // will start a mainnet instance and throw a "wrong network" error.
-        if (arg.startsWith(BITCOIN_IPC_PREFIX, Qt::CaseInsensitive)) // cortez: URI
+        if (arg.startsWith(BITCOIN_IPC_PREFIX, Qt::CaseInsensitive)) // lapislazuli: URI
         {
             savedPaymentRequests.append(arg);
 
@@ -269,7 +269,7 @@ PaymentServer::PaymentServer(QObject* parent, bool startLocalServer) : QObject(p
     GOOGLE_PROTOBUF_VERIFY_VERSION;
 
     // Install global event filter to catch QFileOpenEvents
-    // on Mac: sent when you click cortez: links
+    // on Mac: sent when you click lapislazuli: links
     // other OSes: helpful when dealing with payment request files (in the future)
     if (parent)
         parent->installEventFilter(this);
@@ -285,7 +285,7 @@ PaymentServer::PaymentServer(QObject* parent, bool startLocalServer) : QObject(p
         if (!uriServer->listen(name)) {
             // constructor is called early in init, so don't use "emit message()" here
             QMessageBox::critical(0, tr("Payment request error"),
-                tr("Cannot start cortez: click-to-pay handler"));
+                tr("Cannot start lapislazuli: click-to-pay handler"));
         } else {
             connect(uriServer, &QLocalServer::newConnection, this, &PaymentServer::handleURIConnection);
             connect(this, &PaymentServer::receivedPaymentACK, this, &PaymentServer::handlePaymentACK);
@@ -299,12 +299,12 @@ PaymentServer::~PaymentServer()
 }
 
 //
-// OSX-specific way of handling cortez: URIs and
+// OSX-specific way of handling lapislazuli: URIs and
 // PaymentRequest mime types
 //
 bool PaymentServer::eventFilter(QObject* object, QEvent* event)
 {
-    // clicking on cortez: URIs creates FileOpen events on the Mac
+    // clicking on lapislazuli: URIs creates FileOpen events on the Mac
     if (event->type() == QEvent::FileOpen) {
         QFileOpenEvent* fileEvent = static_cast<QFileOpenEvent*>(event);
         if (!fileEvent->file().isEmpty())
@@ -325,7 +325,7 @@ void PaymentServer::initNetManager()
     if (netManager != NULL)
         delete netManager;
 
-    // netManager is used to fetch paymentrequests given in cortez: URIs
+    // netManager is used to fetch paymentrequests given in lapislazuli: URIs
     netManager = new QNetworkAccessManager(this);
 
     QNetworkProxy proxy;
@@ -360,7 +360,7 @@ void PaymentServer::handleURIOrFile(const QString& s)
         return;
     }
 
-    if (s.startsWith(BITCOIN_IPC_PREFIX, Qt::CaseInsensitive)) // cortez: URI
+    if (s.startsWith(BITCOIN_IPC_PREFIX, Qt::CaseInsensitive)) // lapislazuli: URI
     {
         QUrlQuery uri((QUrl(s)));
         if (uri.hasQueryItem("r")) // payment request URI
@@ -392,7 +392,7 @@ void PaymentServer::handleURIOrFile(const QString& s)
                     Q_EMIT receivedPaymentRequest(recipient);
             } else
                 Q_EMIT message(tr("URI handling"),
-                    tr("URI cannot be parsed! This can be caused by an invalid CRTZ address or malformed URI parameters."),
+                    tr("URI cannot be parsed! This can be caused by an invalid LiLLi address or malformed URI parameters."),
                     CClientUIInterface::ICON_WARNING);
 
             return;
@@ -506,7 +506,7 @@ bool PaymentServer::processPaymentRequest(PaymentRequestPlus& request, SendCoins
             // Append destination address
             addresses.append(QString::fromStdString(EncodeDestination(dest)));
         } else if (!recipient.authenticatedMerchant.isEmpty()) {
-            // Insecure payments to custom CRTZ addresses are not supported
+            // Insecure payments to custom LiLLi addresses are not supported
             // (there is no good way to tell the user where they are paying in a way
             // they'd have a chance of understanding).
             Q_EMIT message(tr("Payment request rejected"),

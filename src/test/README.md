@@ -5,42 +5,42 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with `make check`.
 
-To run the cortezd tests manually, launch `src/test/test_cortez`. To recompile
+To run the lapislazulid tests manually, launch `src/test/test_lapislazuli`. To recompile
 after a test file was modified, run `make` and then run the test again. If you
 modify a non-test file, use `make -C src/test` to recompile only what's needed
-to run the cortezd tests.
+to run the lapislazulid tests.
 
-To add more cortezd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more lapislazulid tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the `test/` directory or add new .cpp files that
 implement new BOOST_FIXTURE_TEST_SUITE sections.
 
-To run the cortez-qt tests manually, launch `src/qt/test/test_cortez-qt`
+To run the lapislazuli-qt tests manually, launch `src/qt/test/test_lapislazuli-qt`
 
-To add more cortez-qt tests, add them to the `src/qt/test/` directory and
+To add more lapislazuli-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.
 
 ### Running individual tests
 
-test_cortez has some built-in command-line arguments; for
+test_lapislazuli has some built-in command-line arguments; for
 example, to run just the getarg_tests verbosely:
 
-    test_cortez --log_level=all --run_test=getarg_tests
+    test_lapislazuli --log_level=all --run_test=getarg_tests
 
 ... or to run just the doubledash test:
 
-    test_cortez --run_test=getarg_tests/doubledash
+    test_lapislazuli --run_test=getarg_tests/doubledash
 
-Run `test_cortez --help` for the full list.
+Run `test_lapislazuli --help` for the full list.
 
 ### Note on adding test cases
 
 The sources in this directory are unit test cases.  Boost includes a
-unit testing framework, and since cortez already uses boost, it makes
+unit testing framework, and since lapislazuli already uses boost, it makes
 sense to simply use this framework rather than require developers to
 configure some other framework (we want as few impediments to creating
 unit tests as possible).
 
-The build system is setup to compile an executable called `test_cortez`
+The build system is setup to compile an executable called `test_lapislazuli`
 that runs all of the unit tests.  The main source file is called
 test_pivx.cpp, which simply includes other files that contain the
 actual unit tests (outside of a couple required preprocessor

@@ -3,9 +3,9 @@ pipeline {
     agent any
 
     environment {
-        NAME = 'Cortez'
-        BASE_NAME = 'cortez'
-        ZIP_NAME = 'CRTZ'
+        NAME = 'LapisLazuli'
+        BASE_NAME = 'lapislazuli'
+        ZIP_NAME = 'LiLLi'
     }
 
     stages {

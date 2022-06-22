@@ -1,6 +1,6 @@
 // Copyright (c) 2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
-// Copyright (c) 2022 The Cortez Core Developers
+// Copyright (c) 2022 The LapisLazuli Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -145,7 +145,7 @@ bool ContextualCheckZerocoinSpend(const CTransaction& tx, const libzerocoin::Coi
     //Reject serial's that are already in the blockchain
     int nHeightTx = 0;
     if (IsSerialInBlockchain(spend->getCoinSerialNumber(), nHeightTx))
-        return error("%s : zCRTZ spend with serial %s is already in block %d\n", __func__,
+        return error("%s : zLiLLi spend with serial %s is already in block %d\n", __func__,
                      spend->getCoinSerialNumber().GetHex(), nHeightTx);
 
     return true;
@@ -154,11 +154,11 @@ bool ContextualCheckZerocoinSpend(const CTransaction& tx, const libzerocoin::Coi
 bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const libzerocoin::CoinSpend* spend, int nHeight, const uint256& hashBlock)
 {
     const Consensus::Params& consensus = Params().GetConsensus();
-    //Check to see if the zCRTZ is properly signed
+    //Check to see if the zLiLLi is properly signed
     if (consensus.NetworkUpgradeActive(nHeight, Consensus::UPGRADE_ZC_V2)) {
         try {
             if (!spend->HasValidSignature())
-                return error("%s: V2 zCRTZ spend does not have a valid signature\n", __func__);
+                return error("%s: V2 zLiLLi spend does not have a valid signature\n", __func__);
         } catch (const libzerocoin::InvalidSerialException& e) {
             // Check if we are in the range of the attack
             if(!isBlockBetweenFakeSerialAttackRange(nHeight))
@@ -171,7 +171,7 @@ bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const lib
         if (tx.IsCoinStake())
             expectedType = libzerocoin::SpendType::STAKE;
         if (spend->getSpendType() != expectedType) {
-            return error("%s: trying to spend zCRTZ without the correct spend type. txid=%s\n", __func__,
+            return error("%s: trying to spend zLiLLi without the correct spend type. txid=%s\n", __func__,
                          tx.GetHash().GetHex());
         }
     }
@@ -182,7 +182,7 @@ bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const lib
     if (!spend->HasValidSerial(consensus.Zerocoin_Params(fUseV1Params)))  {
         // Up until this block our chain was not checking serials correctly..
         if (!isBlockBetweenFakeSerialAttackRange(nHeight))
-            return error("%s : zCRTZ spend with serial %s from tx %s is not in valid range\n", __func__,
+            return error("%s : zLiLLi spend with serial %s from tx %s is not in valid range\n", __func__,
                      spend->getCoinSerialNumber().GetHex(), tx.GetHash().GetHex());
         else
             LogPrintf("%s:: HasValidSerial :: Invalid serial detected within range in block %d\n", __func__, nHeight);
@@ -211,12 +211,12 @@ bool RecalculatePIVSupply(int nHeightStart, bool fSkipZpiv)
         for (auto& denom : libzerocoin::zerocoinDenomList) mapZerocoinSupply.insert(std::make_pair(denom, 0));
     }
 
-    uiInterface.ShowProgress(_("Recalculating CRTZ supply..."), 0);
+    uiInterface.ShowProgress(_("Recalculating LiLLi supply..."), 0);
     while (true) {
         if (pindex->nHeight % 1000 == 0) {
             LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
             int percent = std::max(1, std::min(99, (int)((double)((pindex->nHeight - nHeightStart) * 100) / (chainHeight - nHeightStart))));
-            uiInterface.ShowProgress(_("Recalculating CRTZ supply..."), percent);
+            uiInterface.ShowProgress(_("Recalculating LiLLi supply..."), percent);
         }
 
         CBlock block;
@@ -252,7 +252,7 @@ bool RecalculatePIVSupply(int nHeightStart, bool fSkipZpiv)
         // Rewrite money supply
         nMoneySupply += (nValueOut - nValueIn);
 
-        // Rewrite zCRTZ supply too
+        // Rewrite zLiLLi supply too
         if (!fSkipZpiv && consensus.NetworkUpgradeActive(pindex->nHeight, Consensus::UPGRADE_ZC)) {
             UpdateZPIVSupplyConnect(block, pindex, true);
         }

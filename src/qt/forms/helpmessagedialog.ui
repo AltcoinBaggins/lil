@@ -22,7 +22,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string notr="true">Cortez - Command-line options</string>
+   <string notr="true">LapisLazuli - Command-line options</string>
   </property>
   <property name="styleSheet">
    <string notr="true">#HelpMessageDialog {

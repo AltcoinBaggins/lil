@@ -117,9 +117,9 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x62f52439d4d2fd1de981ae93e2dba03577f9a52375b2222aa91ea70b1bbf147c"));
 
         consensus.fPowAllowMinDifficultyBlocks = false;
-        consensus.powLimit   = ~UINT256_ZERO >> 14;
-        consensus.posLimitV1 = ~UINT256_ZERO >> 24;
-        consensus.posLimitV2 = ~UINT256_ZERO >> 20;
+        consensus.powLimit   = ~UINT256_ZERO >> 1;
+        consensus.posLimitV1 = ~UINT256_ZERO >> 10;
+        consensus.posLimitV2 = ~UINT256_ZERO >> 10;
         consensus.nBudgetCycleBlocks = 30 * 24 * 60;       // approx. 1 every 30 days
         consensus.nBudgetFeeConfirmations = 6;      // Number of confirmations for the finalization fee
         consensus.nCoinbaseMaturity = 100;
@@ -133,7 +133,7 @@ public:
         consensus.nStakeMinDepthV2 = 100;
         consensus.nTargetTimespan = 40 * 60;
         consensus.nTargetTimespanV2 = 30 * 60;
-        consensus.nTargetSpacing = 1 * 60;
+        consensus.nTargetSpacing = 1;
         consensus.nTimeSlotLength = 15;
 
         // spork keys

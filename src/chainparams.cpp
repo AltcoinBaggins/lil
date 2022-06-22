@@ -176,15 +176,15 @@ public:
         // Network upgrades
         consensus.vUpgrades[Consensus::BASE_NETWORK].nActivationHeight                   = Consensus::NetworkUpgrade::ALWAYS_ACTIVE;
         consensus.vUpgrades[Consensus::UPGRADE_TESTDUMMY].nActivationHeight              = Consensus::NetworkUpgrade::NO_ACTIVATION_HEIGHT;
-        consensus.vUpgrades[Consensus::UPGRADE_POS].nActivationHeight                    = 2001;
-        consensus.vUpgrades[Consensus::UPGRADE_POS_V2].nActivationHeight                 = 2002;
+        consensus.vUpgrades[Consensus::UPGRADE_POS].nActivationHeight                    = 1001;
+        consensus.vUpgrades[Consensus::UPGRADE_POS_V2].nActivationHeight                 = 1002;
         consensus.vUpgrades[Consensus::UPGRADE_ZC].nActivationHeight                     = Consensus::NetworkUpgrade::NO_ACTIVATION_HEIGHT;
         consensus.vUpgrades[Consensus::UPGRADE_ZC_V2].nActivationHeight                  = Consensus::NetworkUpgrade::NO_ACTIVATION_HEIGHT;
-        consensus.vUpgrades[Consensus::UPGRADE_BIP65].nActivationHeight                  = 2003;
+        consensus.vUpgrades[Consensus::UPGRADE_BIP65].nActivationHeight                  = 1003;
         consensus.vUpgrades[Consensus::UPGRADE_ZC_PUBLIC].nActivationHeight              = Consensus::NetworkUpgrade::NO_ACTIVATION_HEIGHT;
-        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MODIFIER_V2].nActivationHeight      = 2001;
-        consensus.vUpgrades[Consensus::UPGRADE_TIME_PROTOCOL_V2].nActivationHeight       = 2030;
-        consensus.vUpgrades[Consensus::UPGRADE_P2PKH_BLOCK_SIGNATURES].nActivationHeight = 2030;
+        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MODIFIER_V2].nActivationHeight      = 1001;
+        consensus.vUpgrades[Consensus::UPGRADE_TIME_PROTOCOL_V2].nActivationHeight       = 1030;
+        consensus.vUpgrades[Consensus::UPGRADE_P2PKH_BLOCK_SIGNATURES].nActivationHeight = 1030;
         consensus.vUpgrades[Consensus::UPGRADE_STAKE_MIN_DEPTH_V2].nActivationHeight     = Consensus::NetworkUpgrade::NO_ACTIVATION_HEIGHT;
         consensus.vUpgrades[Consensus::UPGRADE_MASTERNODE_RANK_V2].nActivationHeight     = Consensus::NetworkUpgrade::NO_ACTIVATION_HEIGHT;
 
@@ -208,10 +208,10 @@ public:
         pchMessageStart[3] = 0x1a;
         nDefaultPort = 19330;
 
-        vSeeds.push_back(CDNSSeedData("173.199.119.55", "173.199.119.55"));
-	    vSeeds.push_back(CDNSSeedData("207.148.18.27", "207.148.18.27"));
-        vSeeds.push_back(CDNSSeedData("45.77.222.79", "45.77.222.79"));
-        vSeeds.push_back(CDNSSeedData("108.61.81.41", "108.61.81.41"));
+        vSeeds.push_back(CDNSSeedData("155.138.247.115", "155.138.247.115"));
+	    vSeeds.push_back(CDNSSeedData("45.76.234.234", "45.76.234.234"));
+        vSeeds.push_back(CDNSSeedData("144.202.70.149", "144.202.70.149"));
+        vSeeds.push_back(CDNSSeedData("45.32.193.245", "45.32.193.245"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 80);     // Z
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 78);     // Y

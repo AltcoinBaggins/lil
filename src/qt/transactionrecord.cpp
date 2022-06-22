@@ -59,7 +59,7 @@ bool TransactionRecord::decomposeCoinStake(const CWallet* wallet, const CWalletT
     } else {
         // Masternode reward
         CTxDestination destMN;
-        int nIndexMN = (int) wtx.vout.size() - 2;
+        int nIndexMN = (int) wtx.vout.size() - 1;   // -3 for dev
         if (ExtractDestination(wtx.vout[nIndexMN].scriptPubKey, destMN) && (mine = IsMine(*wallet, destMN)) ) {
             sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
             sub.type = TransactionRecord::MNReward;
@@ -67,6 +67,7 @@ bool TransactionRecord::decomposeCoinStake(const CWallet* wallet, const CWalletT
             sub.credit = wtx.vout[nIndexMN].nValue;
         }
 
+/*
         // Dev reward
         CTxDestination dest;
         CTxDestination destDev = DecodeDestination(Params().GetConsensus().devAddress);
@@ -77,6 +78,7 @@ bool TransactionRecord::decomposeCoinStake(const CWallet* wallet, const CWalletT
             sub.address = EncodeDestination(destDev);
             sub.credit = wtx.vout[nIndexDev].nValue;
         }
+*/        
     }
 
     parts.append(sub);

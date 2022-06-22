@@ -70,7 +70,7 @@ static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits
  */
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256S("00000e2ef10b1a68f6cb3be6b7236c928a6b538cc363c6d83431d20da551dc1d"))
+    (0, uint256S("0000011664eec3d892c155aef3920b0165a59d53eef7ff7de1552bf14da5a55f"))
     (2000, uint256S("00010eae84201a017914ec3c949b17d4a34ad08a6e4f1895536e286eeca3767b"))
     (2500, uint256S("bb9d69455a7c811c461b240ce3419ac147a25d7e3158670b91e35f69b87fcdde"))
     (3000, uint256S("9b460351402b7715432b194a18aff970393eb561a56903e48ed3d618f26e733c"))
@@ -111,52 +111,10 @@ public:
         networkID = CBaseChainParams::MAIN;
         strNetworkID = "main";
 
-         uint32_t nGenesisTime = 1655892222;
-
-         arith_uint256 test;
-         bool fNegative;
-         bool fOverflow;
-         test.SetCompact(0x1e0ffff0, &fNegative, &fOverflow);
-         std::cout << "Test threshold: " << test.GetHex() << "\n\n";
-
-         int genesisNonce = 0;
-         uint256 TempHashHolding = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000");
-         uint256 BestBlockHash = uint256S("0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-         for (int i=0;i<40000000;i++) {
-             genesis = CreateGenesisBlock(nGenesisTime, i, 0x1e0ffff0, 1, 0 * COIN);
-             //genesis.hashPrevBlock = TempHashHolding;
-             consensus.hashGenesisBlock = genesis.GetHash();
-
-             arith_uint256 BestBlockHashArith = UintToArith256(BestBlockHash);
-             if (UintToArith256(consensus.hashGenesisBlock) < BestBlockHashArith) {
-                 BestBlockHash = consensus.hashGenesisBlock;
-                 std::cout << BestBlockHash.GetHex() << " Nonce: " << i << "\n";
-                 std::cout << "   PrevBlockHash: " << genesis.hashPrevBlock.GetHex() << "\n";
-             }
-
-             TempHashHolding = consensus.hashGenesisBlock;
-
-             if (BestBlockHashArith < test) {
-                 genesisNonce = i - 1;
-                 break;
-             }
-             //std::cout << consensus.hashGenesisBlock.GetHex() << "\n";
-         }
-         std::cout << "\n";
-         std::cout << "\n";
-         std::cout << "\n";
-
-         std::cout << "hashGenesisBlock to 0x" << BestBlockHash.GetHex() << std::endl;
-         std::cout << "Genesis Nonce to " << genesisNonce << std::endl;
-         std::cout << "Genesis Merkle 0x" << genesis.hashMerkleRoot.GetHex() << std::endl;
-
-         exit(0);
- 
-         // /////////////////////////////////////////////////////////////////
-        genesis = CreateGenesisBlock(1655892222, 843626, 0x1e0ffff0, 1, 0 * COIN);
+        genesis = CreateGenesisBlock(1655892222, 896959, 0x1e0ffff0, 1, 0 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x00000e2ef10b1a68f6cb3be6b7236c928a6b538cc363c6d83431d20da551dc1d"));
-        assert(genesis.hashMerkleRoot == uint256S("0xbdf973831136c309d99fe01de7fbdfb635c7dd51e471f94a855291d96d47aba7"));
+        assert(consensus.hashGenesisBlock == uint256S("0x0000011664eec3d892c155aef3920b0165a59d53eef7ff7de1552bf14da5a55f"));
+        assert(genesis.hashMerkleRoot == uint256S("0x62f52439d4d2fd1de981ae93e2dba03577f9a52375b2222aa91ea70b1bbf147c"));
 
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.powLimit   = ~UINT256_ZERO >> 14;
@@ -179,17 +137,17 @@ public:
         consensus.nTimeSlotLength = 15;
 
         // spork keys
-        consensus.strSporkPubKey = "049db62447c5078d3456f71f3362ef1bd7e8f3f424989fd81aabfb11f6befdcc5e47499d06af03675bbddba515def6cac3e69809fe07ee78b23415857aacd813c9";
+        consensus.strSporkPubKey = "048e6c1eeb953507f23a68fb3c69efee87db9cbb762e0a8cb99d503cea28f14c72d5aedad3dd17afeb877061b407cfe33bf897169a91ea249171564d5cd010f238";
         consensus.strSporkPubKeyOld = "";
         consensus.nTime_EnforceNewSporkKey = 0;
         consensus.nTime_RejectOldSporkKey = 0;
 
         // dev address
-        consensus.devAddress = "SXARDKdzEHXUwKYCGESQji79EYNvPicono";
+        consensus.devAddress = "ZXXXXXXXXXXXXXXXXXXXXXXXXXXXVtkn93";
 
         // burn addresses
         consensus.mBurnAddresses = {
-           { "PXXXXXXXXXXXXXXXXXXXXXXXXXXXVtkn93", 0 }
+           { "ZXXXXXXXXXXXXXXXXXXXXXXXXXXXVtkn93", 0 }
         };
 
         // height-based activations

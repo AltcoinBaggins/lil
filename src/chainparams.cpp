@@ -133,7 +133,7 @@ public:
         consensus.nStakeMinDepthV2 = 100;
         consensus.nTargetTimespan = 40 * 60;
         consensus.nTargetTimespanV2 = 30 * 60;
-        consensus.nTargetSpacing = 1;
+        consensus.nTargetSpacing = 60;
         consensus.nTimeSlotLength = 15;
 
         // spork keys

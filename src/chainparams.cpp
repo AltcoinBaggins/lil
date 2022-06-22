@@ -208,10 +208,10 @@ public:
         pchMessageStart[3] = 0x1a;
         nDefaultPort = 19330;
 
-        vSeeds.push_back(CDNSSeedData("173.199.119.55", "173.199.119.55"));
-	    vSeeds.push_back(CDNSSeedData("207.148.18.27", "207.148.18.27"));
-        vSeeds.push_back(CDNSSeedData("45.77.222.79", "45.77.222.79"));
-        vSeeds.push_back(CDNSSeedData("108.61.81.41", "108.61.81.41"));
+        vSeeds.push_back(CDNSSeedData("155.138.247.115", "155.138.247.115"));
+	    vSeeds.push_back(CDNSSeedData("45.76.234.234", "45.76.234.234"));
+        vSeeds.push_back(CDNSSeedData("144.202.70.149", "144.202.70.149"));
+        vSeeds.push_back(CDNSSeedData("45.32.193.245", "45.32.193.245"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 80);     // Z
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 78);     // Y

@@ -350,62 +350,48 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, const CBloc
         }
     }
 
-    CTxDestination dev_destination = DecodeDestination(Params().GetConsensus().devAddress);
-    CScript devScript = GetScriptForDestination(dev_destination);
+    if (hasPayment) {
+        CAmount masternodePayment = CMasternode::GetMasternodePayment(pindexPrev->nHeight + 1);
+        if (fProofOfStake) {
+            /**For Proof Of Stake vout[0] must be null
+             * Stake reward can be split into many different outputs, so we must
+             * use vout.size() to align with several different cases.
+             * An additional output is appended as the masternode payment
+             */
+            unsigned int i = txNew.vout.size();
+            txNew.vout.resize(i + 1);
+            txNew.vout[i].scriptPubKey = payee;
+            txNew.vout[i].nValue = masternodePayment;
 
-    // fallback when no MNs currently available
-    if (!hasPayment) {
-        payee = devScript;
-    }
-
-    CAmount masternodePayment = CMasternode::GetMasternodePayment(pindexPrev->nHeight + 1);
-    CAmount blockValue = CMasternode::GetBlockValue(pindexPrev->nHeight + 1);
-    CAmount nDevReward = CMasternode::GetDevPayment(pindexPrev->nHeight + 1);
-
-    if (fProofOfStake) {
-        /**For Proof Of Stake vout[0] must be null
-         * Stake reward can be split into many different outputs, so we must
-         * use vout.size() to align with several different cases.
-         * An additional output is appended as the masternode payment
-         */
-        unsigned int i = txNew.vout.size();
-        txNew.vout.resize(i + 1);
-
-        // add dev reward
-        txNew.vout.push_back(CTxOut(nDevReward, CScript(devScript.begin(), devScript.end())));
-        
-        txNew.vout[i].scriptPubKey = payee;
-        txNew.vout[i].nValue = masternodePayment;
-
-        //subtract mn payment from the stake reward
-        if (!txNew.vout[1].IsZerocoinMint()) {
-            if (i == 2) {
-                // Majority of cases; do it quick and move on
-                txNew.vout[i - 1].nValue -= masternodePayment + nDevReward;
-            } else if (i > 2) {
-                // special case, stake is split between (i-1) outputs
-                unsigned int outputs = i-1;
-                CAmount mnPaymentSplit = (masternodePayment + nDevReward) / outputs;
-                CAmount mnPaymentRemainder = (masternodePayment + nDevReward) - (mnPaymentSplit * outputs);
-                for (unsigned int j=1; j<=outputs; j++) {
-                    txNew.vout[j].nValue -= mnPaymentSplit;
+            //subtract mn payment from the stake reward
+            if (!txNew.vout[1].IsZerocoinMint()) {
+                if (i == 2) {
+                    // Majority of cases; do it quick and move on
+                    txNew.vout[i - 1].nValue -= masternodePayment;
+                } else if (i > 2) {
+                    // special case, stake is split between (i-1) outputs
+                    unsigned int outputs = i-1;
+                    CAmount mnPaymentSplit = masternodePayment / outputs;
+                    CAmount mnPaymentRemainder = masternodePayment - (mnPaymentSplit * outputs);
+                    for (unsigned int j=1; j<=outputs; j++) {
+                        txNew.vout[j].nValue -= mnPaymentSplit;
+                    }
+                    // in case it's not an even division, take the last bit of dust from the last one
+                    txNew.vout[outputs].nValue -= mnPaymentRemainder;
                 }
-                // in case it's not an even division, take the last bit of dust from the last one
-                txNew.vout[outputs].nValue -= mnPaymentRemainder;
             }
+        } else {
+            txNew.vout.resize(2);
+            txNew.vout[1].scriptPubKey = payee;
+            txNew.vout[1].nValue = masternodePayment;
+            txNew.vout[0].nValue = CMasternode::GetBlockValue(pindexPrev->nHeight + 1) - masternodePayment;
         }
-    } else {
-        txNew.vout.resize(2);
-        txNew.vout[1].scriptPubKey = payee;
-        txNew.vout[1].nValue = masternodePayment;
-        txNew.vout[0].nValue = blockValue - masternodePayment;
+
+        CTxDestination address1;
+        ExtractDestination(payee, address1);
+
+        LogPrint(BCLog::MASTERNODE,"Masternode payment of %s to %s\n", FormatMoney(masternodePayment).c_str(), EncodeDestination(address1).c_str());
     }
-
-    CTxDestination address1;
-    ExtractDestination(payee, address1);
-
-    LogPrint(BCLog::MASTERNODE,"Masternode payment of %s to %s\n", FormatMoney(masternodePayment).c_str(), EncodeDestination(address1).c_str());
-
 }
 
 void CMasternodePayments::ProcessMessageMasternodePayments(CNode* pfrom, std::string& strCommand, CDataStream& vRecv)

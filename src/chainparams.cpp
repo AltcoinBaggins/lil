@@ -53,7 +53,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "Solar Orbiter swings by the sun to unravel its mysteries, 26/03/2022, CNN";
+    const char* pszTimestamp = "The United Kingdom has the highest inflation in the G7, 22/06/2022, CNN";
     const CScript genesisOutputScript = CScript() << ParseHex("04f8e575ae6a7fcf97b4cb8b213a74b550ccbdb4cabff3d0bfe9ec15f5b863be758acb3aead94933428425dd5e934dced26f022c0b33682b4ebf5fdce242bbe0f6") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -111,7 +111,49 @@ public:
         networkID = CBaseChainParams::MAIN;
         strNetworkID = "main";
 
-        genesis = CreateGenesisBlock(1648294666, 843626, 0x1e0ffff0, 1, 0 * COIN);
+         uint32_t nGenesisTime = 1655892222;
+
+         arith_uint256 test;
+         bool fNegative;
+         bool fOverflow;
+         test.SetCompact(0x1e0ffff0, &fNegative, &fOverflow);
+         std::cout << "Test threshold: " << test.GetHex() << "\n\n";
+
+         int genesisNonce = 0;
+         uint256 TempHashHolding = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000");
+         uint256 BestBlockHash = uint256S("0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+         for (int i=0;i<40000000;i++) {
+             genesis = CreateGenesisBlock(nGenesisTime, i, 0x1e0ffff0, 1, 0 * COIN);
+             //genesis.hashPrevBlock = TempHashHolding;
+             consensus.hashGenesisBlock = genesis.GetHash();
+
+             arith_uint256 BestBlockHashArith = UintToArith256(BestBlockHash);
+             if (UintToArith256(consensus.hashGenesisBlock) < BestBlockHashArith) {
+                 BestBlockHash = consensus.hashGenesisBlock;
+                 std::cout << BestBlockHash.GetHex() << " Nonce: " << i << "\n";
+                 std::cout << "   PrevBlockHash: " << genesis.hashPrevBlock.GetHex() << "\n";
+             }
+
+             TempHashHolding = consensus.hashGenesisBlock;
+
+             if (BestBlockHashArith < test) {
+                 genesisNonce = i - 1;
+                 break;
+             }
+             //std::cout << consensus.hashGenesisBlock.GetHex() << "\n";
+         }
+         std::cout << "\n";
+         std::cout << "\n";
+         std::cout << "\n";
+
+         std::cout << "hashGenesisBlock to 0x" << BestBlockHash.GetHex() << std::endl;
+         std::cout << "Genesis Nonce to " << genesisNonce << std::endl;
+         std::cout << "Genesis Merkle 0x" << genesis.hashMerkleRoot.GetHex() << std::endl;
+
+         exit(0);
+ 
+         // /////////////////////////////////////////////////////////////////
+        genesis = CreateGenesisBlock(1655892222, 843626, 0x1e0ffff0, 1, 0 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000e2ef10b1a68f6cb3be6b7236c928a6b538cc363c6d83431d20da551dc1d"));
         assert(genesis.hashMerkleRoot == uint256S("0xbdf973831136c309d99fe01de7fbdfb635c7dd51e471f94a855291d96d47aba7"));

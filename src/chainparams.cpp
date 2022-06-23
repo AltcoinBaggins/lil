@@ -188,11 +188,11 @@ public:
         consensus.vUpgrades[Consensus::UPGRADE_MASTERNODE_RANK_V2].nActivationHeight     = Consensus::NetworkUpgrade::NO_ACTIVATION_HEIGHT;
 
         consensus.vUpgrades[Consensus::UPGRADE_POS].hashActivationBlock                    = uint256S("0x3c03ada2b9f69af61fde5d066698628c7cb1325db0106a96a18b022ec0e3c4ed");
-        consensus.vUpgrades[Consensus::UPGRADE_POS_V2].hashActivationBlock                 = uint256S("0x19f186ca124f34deee43061575035ca5691045e8086da4fd4a3267d5b37c117f");
-        consensus.vUpgrades[Consensus::UPGRADE_BIP65].hashActivationBlock                  = uint256S("0xba69aa7d67307f87f8cdcb9e289db75cdae9df58bd391616b13bc27ef1835339");
-        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MODIFIER_V2].hashActivationBlock      = uint256S("0xd6a13653568ceb09996b69c2ac7a6cd9e0b3c9ee257911bd187ad339e7bcdf19");
-        consensus.vUpgrades[Consensus::UPGRADE_TIME_PROTOCOL_V2].hashActivationBlock       = uint256S("0x5362da09588c3bf7fe342241f156dcc3e2c4446c023bdd3fc10a5858678d84c1");
-        consensus.vUpgrades[Consensus::UPGRADE_P2PKH_BLOCK_SIGNATURES].hashActivationBlock = uint256S("0x5362da09588c3bf7fe342241f156dcc3e2c4446c023bdd3fc10a5858678d84c1");
+        consensus.vUpgrades[Consensus::UPGRADE_POS_V2].hashActivationBlock                 = uint256S("0xf0894cacda23368302722f980e2737a65b83728c4917b85372b68c9c9f1c4fd7");
+        consensus.vUpgrades[Consensus::UPGRADE_BIP65].hashActivationBlock                  = uint256S("0xd9d10c57b0fc997723731871a7a43a31b16123f1273f41c61b7719e14415ae1b");
+        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MODIFIER_V2].hashActivationBlock      = uint256S("0x3c03ada2b9f69af61fde5d066698628c7cb1325db0106a96a18b022ec0e3c4ed");
+        consensus.vUpgrades[Consensus::UPGRADE_TIME_PROTOCOL_V2].hashActivationBlock       = uint256S("0x63367ca697a3373a326eb006693e85a31509c1d6e750afe44c4c9a56ac4e7050");
+        consensus.vUpgrades[Consensus::UPGRADE_P2PKH_BLOCK_SIGNATURES].hashActivationBlock = uint256S("0x63367ca697a3373a326eb006693e85a31509c1d6e750afe44c4c9a56ac4e7050");
         consensus.vUpgrades[Consensus::UPGRADE_STAKE_MIN_DEPTH_V2].hashActivationBlock     = uint256S("0x0");
         consensus.vUpgrades[Consensus::UPGRADE_MASTERNODE_RANK_V2].hashActivationBlock     = uint256S("0x0");
 
